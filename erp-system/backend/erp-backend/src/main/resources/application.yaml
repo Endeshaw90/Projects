@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: erp-backend
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/erpdb
+    username: erp_saas_user
+    password: Myerpsaas@1990!
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQLDialect
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+
+# ✅ Add JWT secret + expiration
+jwt:
+  secret: mySuperSecretKey12345
+  expiration: 3600000 # 1 hour in ms
+
+server:
+  port: 8080
