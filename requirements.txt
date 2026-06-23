@@ -1,0 +1,13 @@
+langchain
+PyPDF2
+docx2txt
+tiktoken
+python-dotenv
+faiss-cpu
+openai
+unstructured
+python-docx
+unstructured[pdf]
+pdfminer.six
+pypdf
+

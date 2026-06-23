@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "80aa7dd9-82b9-4805-bc47-f709184cda3f",
+		"name": "ESB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19382143"
+	},
+	"item": [
+		{
+			"name": "Changesub ESSB",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "source",
+						"value": "eKYC",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "requestId",
+						"value": "12346_1223242968710950912",
+						"type": "text"
+					},
+					{
+						"key": "requestTimestamp",
+						"value": "2024-03-29 03:10:50",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"serviceCharacteristic\" : [ {\r\n    \"name\" : \"entityType\",\r\n    \"value\" : \"DEVICE\",\r\n    \"id\" : \"string\",\r\n    \"valueType\" : \"string\",\r\n    \"@baseType\" : \"string\",\r\n    \"arrayIndex\" : \"-1\",\r\n    \"characteristicRelationship\" : [ {\r\n      \"id\" : \"string\",\r\n      \"relationshipType\" : \"string\"\r\n    } ],\r\n    \"@type\" : \"string\",\r\n    \"@schemaLocation\" : \"string\"\r\n  }, {\r\n    \"name\" : \"SubscriberKey\",\r\n    \"value\" : \"D_17141293\",\r\n    \"id\" : \"string\",\r\n    \"valueType\" : \"string\",\r\n    \"@baseType\" : \"string\",\r\n    \"arrayIndex\" : \"-1\",\r\n    \"characteristicRelationship\" : [ {\r\n      \"id\" : \"string\",\r\n      \"relationshipType\" : \"string\"\r\n    } ],\r\n    \"@type\" : \"string\",\r\n    \"@schemaLocation\" : \"string\"\r\n  }, {\r\n    \"name\" : \"subscriptionId\",\r\n    \"value\" : \"3f7f1988-e4be-489c-bc96-31f57c6e5b1d\",\r\n    \"arrayIndex\" : \"0\",\r\n    \"@type\" : \"subscriptions\",\r\n    \"id\" : \"string\",\r\n    \"valueType\" : \"string\",\r\n    \"@baseType\" : \"string\",\r\n    \"characteristicRelationship\" : [ {\r\n      \"id\" : \"string\",\r\n      \"relationshipType\" : \"string\"\r\n    } ],\r\n    \"@schemaLocation\" : \"string\"\r\n  } ],\r\n  \"state\" : \"feasibilityChecked\",\r\n  \"serviceSpecification\" : {\r\n    \"name\" : \"string\",\r\n    \"@baseType\" : \"string\",\r\n    \"href\" : \"string\",\r\n    \"@schemaLocation\" : \"string\",\r\n    \"@referredType\" : \"string\",\r\n    \"@type\" : \"string\",\r\n    \"version\" : \"string\",\r\n    \"id\" : \"string\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bss-prod-apps.esb.bss.safaricomet.net/service-mgmt/safaricom/api/v1/addondeactivation/service",
+					"protocol": "https",
+					"host": [
+						"bss-prod-apps",
+						"esb",
+						"bss",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"service-mgmt",
+						"safaricom",
+						"api",
+						"v1",
+						"addondeactivation",
+						"service"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query Device ESB",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "requestId",
+						"value": "12345"
+					},
+					{
+						"key": "requestTimestamp",
+						"value": "1006260220402"
+					},
+					{
+						"key": "source",
+						"value": "CRM"
+					}
+				],
+				"url": {
+					"raw": "https://bss-prod-apps.esb.bss2.safaricomet.net/service-mgmt/safaricom/api/v1/querydevice/service/D_938720",
+					"protocol": "https",
+					"host": [
+						"bss-prod-apps",
+						"esb",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"service-mgmt",
+						"safaricom",
+						"api",
+						"v1",
+						"querydevice",
+						"service",
+						"D_938720"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

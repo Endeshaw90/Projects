@@ -1,0 +1,33 @@
+BSS SAFARICOM|DC2 JUMP|WARNING|DISK SPACE
+=========================================
+#!/bin/bash
+cd /home/anpin.abraham@safaricomet.net/scripts/disk/
+
+dsk=`df -h|grep bss-nfs-log | awk -F " " '{print $3}' | sed 's/G//'`
+time=`date "+%F %H:%M"`
+perc=$((100*$dsk/1024))
+if [[ $perc -ge 70 ]]; then
+
+echo "$time :NFS partition is high at $perc%, please reduce" >>disk.log
+echo "<html><body><p><font color="black" font face="Garamond, Arial">Dear Team,<br/><br/>Please check the below critical observations from Safaricom BSS DC2.<br/><br/></font></p><table border="1"align="center"><tr bgcolor="Red"><th colspan="1"><font color="White" font face="Book Antiqua" size ="3">CRITICAL|DISK SPACE UTILIZATION</th><th bgcolor="#DCDCDC" align="center"><font color="red" font face="Book Antiqua" size ="2"><tr><th colspan="1" align="center" height ="20" ><font color="red" font face="Book Antiqua" size ="2">Disk space utilization in DC2 Jump Server's nfs LOG partition is at $perc%.</font></th></tr></th></font></table><p><font color="black" font face="Garamond, Arial">Thanks and Regards,<br/><b>Operations Team<br/>6D Technologies</b><br/><br/><b><i>Note: </b>This is a System generated mail alert.</i></font></p></body></html>" > body.html
+
+/home/anpin.abraham@safaricomet.net/scripts/SendEmail -f bss@safaricom.et -t thanvir.jalal@6dtech.co.in,akhil.gangadharan@6dtech.co.in,arun.govindaraj@6dtech.co.in,anoop.gopalakrishnan@6dtech.co.in,nishmitha.mahesh@6dtech.co.in,akshay.poothamveettil@6dtech.co.in,anjali.mathew@6dtech.co.in,sebastian.jose@6dtech.co.in,sreya.viswambharan@6dtech.co.in,arun.mohanan@6dtech.co.in,greejith.kaladharan@6dtech.co.in,sruthi.sekharankutty@6dtech.co.in,drowpathy.vinod@6dtech.co.in,anpin.abraham@6dtech.co.in,rishikesh.venugopal@6dtech.co.in,sandeep.kadiyala@6dtech.co.in,seid.mohammed@partner.safaricom.et,million.habteyes@partner.safaricom.et,asnake.mammo@partner.safaricom.et,abenezer.mekonnen@partner.safaricom.et,L16DNOC.Support@safaricom.et -s  10.3.124.25:25 -u "BSS SAFARICOM|DC2 JUMP|WARNING|DISK SPACE" -o  message-file=/home/anpin.abraham@safaricomet.net/scripts/disk/body.html
+
+else
+
+echo "$time :nfs log disk is fine" >>disk.log
+
+fi
+cdrp=`df -h|grep bss-nfs-cdr | awk -F " " '{print $3}' | sed 's/G//'`
+cdperc=$((100*$cdrp/1500))
+if [[ $cdperc -ge 75 ]]; then
+
+echo "$time :NFS CDR partition is high at $cdperc%, please reduce" >>disk.log
+echo "<html><body><p><font color="black" font face="Garamond, Arial">Dear Team,<br/><br/>Please check the below critical observations from Safaricom BSS DC2.<br/><br/></font></p><table border="1"align="center"><tr bgcolor="Red"><th colspan="1"><font color="White" font face="Book Antiqua" size ="3">CRITICAL|DISK SPACE UTILIZATION</th><th bgcolor="#DCDCDC" align="center"><font color="red" font face="Book Antiqua" size ="2"><tr><th colspan="1" align="center" height ="20" ><font color="red" font face="Book Antiqua" size ="2">Disk space utilization in DC2 Jump Server's nfs CDR partition is at $cdperc%.</font></th></tr></th></font></table><p><font color="black" font face="Garamond, Arial">Thanks and Regards,<br/><b>Operations Team<br/>6D Technologies</b><br/><br/><b><i>Note: </b>This is a System generated mail alert.</i></font></p></body></html>" > body.html
+
+/home/anpin.abraham@safaricomet.net/scripts/SendEmail -f bss@safaricom.et -t thanvir.jalal@6dtech.co.in,akhil.gangadharan@6dtech.co.in,arun.govindaraj@6dtech.co.in,anoop.gopalakrishnan@6dtech.co.in,nishmitha.mahesh@6dtech.co.in,akshay.poothamveettil@6dtech.co.in,anjali.mathew@6dtech.co.in,sebastian.jose@6dtech.co.in,sreya.viswambharan@6dtech.co.in,arun.mohanan@6dtech.co.in,greejith.kaladharan@6dtech.co.in,sruthi.sekharankutty@6dtech.co.in,drowpathy.vinod@6dtech.co.in,anpin.abraham@6dtech.co.in,sanjay.nair@6dtech.co.in,sandeep.kadiyala@6dtech.co.in,seid.mohammed@partner.safaricom.et,million.habteyes@partner.safaricom.et,asnake.mammo@partner.safaricom.et,abenezer.mekonnen@partner.safaricom.et,L16DNOC.Support@safaricom.et -s  10.3.124.25:25 -u "BSS SAFARICOM|DC2 JUMP|WARNING|DISK SPACE" -o  message-file=/home/anpin.abraham@safaricomet.net/scripts/disk/body.html
+
+else
+	echo "$time :nfs cdr disk is fine" >>disk.log
+fi
+exit

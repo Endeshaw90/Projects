@@ -1,0 +1,3040 @@
+{
+	"info": {
+		"_postman_id": "b61f046b-f386-4eff-b0b1-1a94d8f1e6d8",
+		"name": "IMPL_2Setup",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19382143"
+	},
+	"item": [
+		{
+			"name": "Post_Paid Onboarding_IMPL2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "833542656000000000000000",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "username",
+						"value": "admin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"category\": \"B2C product order\",\r\n\t\"orderType\": \"Onboarding\",\r\n\t\"description\": \"Product Order illustration sample\",\r\n\t\"saFormId\": \"SA_06042023154007678\",\r\n\t\"shopId\": \"shop Id 9\",\r\n\t\"externalId\": \"PO-456\",\r\n\t\"priority\": \"1\",\r\n\t\"channel\": [\r\n\t\t{\r\n\t\t\t\"id\": \"1\",\r\n\t\t\t\"name\": \"CRM\",\r\n\t\t\t\"role\": \"Used channel for order capture\"\r\n\t\t}\r\n\t],\r\n\t\"profile\": {\r\n\t\t\"profileType\": \"1\",\r\n\t\t\"partyCharacteristic\": [\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"subscriberCategory\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"15\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"subscriberSubCategory\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"152\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"profileType\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"1\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"customerType\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"1522\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"minorFlag\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"0\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"annualTurnover\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"4000\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"noOfEmployees\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"2\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"industry\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"1\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"sector\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"Trades\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"majorSICCode\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"1\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"registrationNumber\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"132//123\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"vatNumber\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"112233\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"tinNumber\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"0068732942\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"safaricomPartner\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"false\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"companyName\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"XYZ\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"licenseNumber\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"SSNLIC123457\"\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"languageAbility\": [\r\n\t\t\t{\r\n\t\t\t\t\"languageCode\": \"1\"\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"contactMedium\": [\r\n\t\t\t{\r\n\t\t\t\t\"preferred\": false,\r\n\t\t\t\t\"mediumType\": \"telephoneNumber\",\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"phoneNumber\": \"251123456789\",\r\n\t\t\t\t\t\"contactType\": \"smsNumber\"\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"preferred\": false,\r\n\t\t\t\t\"mediumType\": \"emailAddress\",\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"emailAddress\": \"fwa@fwa.com\",\r\n\t\t\t\t\t\"contactType\": \"emailAddress\"\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"preferred\": false,\r\n\t\t\t\t\"mediumType\": \"address\",\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"contactType\": \"permanentAddress\",\r\n\t\t\t\t\t\"addrLine1\": \"123\",\r\n\t\t\t\t\t\"addrLine2\": \"123\",\r\n\t\t\t\t\t\"addrLine3\": \"123\",\r\n\t\t\t\t\t\"addrLine4\": \"31\",\r\n\t\t\t\t\t\"addrLine5\": \"5\",\r\n\t\t\t\t\t\"addrLine7\": \"2\",\r\n\t\t\t\t\t\"addrLine8\": \"123\",\r\n\t\t\t\t\t\"addrLine9\": \"1223\",\r\n\t\t\t\t\t\"addrLine10\": \"12122\",\r\n\t\t\t\t\t\"addrLine11\": \"222\"\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"account\": {\r\n\t\t\t\"name\": \"XYZ\",\r\n\t\t\t\"chargingPattern\": \"2\",\r\n\t\t\t\"entityId\": \"200\",\r\n\t\t\t\"itemizedBillRequired\": \"0\",\r\n\t\t\t\"excelFileFlag\": \"0\",\r\n\t\t\t\"languageId\": \"1\",\r\n\t\t\t\"notificationAllowed\": \"0\",\r\n\t\t\t\"contactMedium\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"preferred\": false,\r\n\t\t\t\t\t\"mediumType\": \"address\",\r\n\t\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\t\"contactType\": \"billingAddress\",\r\n\t\t\t\t\t\t\"addrLine1\": \"123\",\r\n\t\t\t\t\t\t\"addrLine2\": \"123\",\r\n\t\t\t\t\t\t\"addrLine3\": \"123\",\r\n\t\t\t\t\t\t\"addrLine4\": \"31\",\r\n\t\t\t\t\t\t\"addrLine5\": \"5\",\r\n\t\t\t\t\t\t\"addrLine7\": \"2\",\r\n\t\t\t\t\t\t\"addrLine8\": \"123\",\r\n\t\t\t\t\t\t\"addrLine9\": \"1223\",\r\n\t\t\t\t\t\t\"addrLine10\": \"12122\",\r\n\t\t\t\t\t\t\"addrLine11\": \"222\"\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\t\t\t],\r\n\t\t\t\"serviceGroups\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"services\": [\r\n\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\"serviceId\": \"251700403129\",\r\n\t\t\t\t\t\t\t\"languageId\": \"1\",\r\n\t\t\t\t\t\t\t\"isSimPaired\": \"false\",\r\n\t\t\t\t\t\t\t\"name\": \"XYZ\",\r\n\t\t\t\t\t\t\t\"serviceType\": \"1\",\r\n\t\t\t\t\t\t\t\"connectionType\": \"2\",\r\n\t\t\t\t\t\t\t\"contactMedium\": [\r\n\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\"preferred\": false,\r\n\t\t\t\t\t\t\t\t\t\"mediumType\": \"address\",\r\n\t\t\t\t\t\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\t\t\t\t\t\"contactType\": \"permanent\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine1\": \"123\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine2\": \"123\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine3\": \"123\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine4\": \"31\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine5\": \"5\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine7\": \"2\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine8\": \"123\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine9\": \"1223\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine10\": \"12122\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine11\": \"222\"\r\n\t\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t],\r\n\t\t\t\t\t\t\t\"subscriptions\": [\r\n\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\"planDesc\": \"Pre-Pay Base Plan for Enterprise\",\r\n\t\t\t\t\t\t\t\t\t\"planType\": \"0\",\r\n\t\t\t\t\t\t\t\t\t\"autoRenewal\": \"1\",\r\n\t\t\t\t\t\t\t\t\t\"somCallRqd\": false,\r\n\t\t\t\t\t\t\t\t\t\"esbCallRqd\": false,\r\n\t\t\t\t\t\t\t\t\t\"commonAddon\": false,\r\n\t\t\t\t\t\t\t\t\t\"mandatoryAddon\": false,\r\n\t\t\t\t\t\t\t\t\t\"planId\": \"136\",\r\n\t\t\t\t\t\t\t\t\t\"planName\": \"Pre-Pay Base Plan for Enterprise\"\r\n\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t],\r\n\t\t\t\t\t\t\t\"characteristics\": [\r\n\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\"name\": \"ICCID\",\r\n\t\t\t\t\t\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\t\t\t\t\t\"value\": \"89251020010476013810\"\r\n\t\t\t\t\t\t\t\t},\r\n\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\"name\": \"IMSI\",\r\n\t\t\t\t\t\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\t\t\t\t\t\"value\": \"636020104760220\"\r\n\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t],\r\n\t\t\t\t\t\t\t\"chargingPattern\": \"2\",\r\n\t\t\t\t\t\t\t\"networkServiceId\": \"1\",\r\n\t\t\t\t\t\t\t\"redemptionEnabled\": \"True\",\r\n\t\t\t\t\t\t\t\"autoEnrollment\": \"True\"\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t]\r\n\t\t\t\t}\r\n\t\t\t],\r\n\t\t\t\"contacts\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"contactId\": \"1079\",\r\n\t\t\t\t\t\"contactType\": \"S\",\r\n\t\t\t\t\t\"status\": \"A\"\r\n\t\t\t\t}\r\n\t\t\t],\r\n\t\t\t\"preferredCurrency\": \"USD\",\r\n\t\t\t\"smsNumbers\": \"251123456789\",\r\n\t\t\t\"contactEmailId\": \"fwa@fwa.com\",\r\n\t\t\t\"sicCode\": \"11600\",\r\n\t\t\t\"emailNotificationAllowed\": \"0\",\r\n\t\t\t\"taxApplicable\": \"0\"\r\n\t\t},\r\n\t\t\"salesId\": \"ab398d57-6954-40a4-adf7-256517282c9c\"\r\n\t},\r\n\t\"payment\": {\r\n\t\t\"amount\": \"30.00\",\r\n\t\t\"upfrontPayment\": \"false\",\r\n\t\t\"isPaymentCollected\": \"true\",\r\n\t\t\"paymentChannel\": \"shop\",\r\n\t\t\"additionalCharges\": [\r\n\t\t\t{\r\n\t\t\t\t\"chargeType\": \"simCharges\",\r\n\t\t\t\t\"amount\": \"30.0\"\r\n\t\t\t}\r\n\t\t]\r\n\t},\r\n\t\"sourceNode\": \"CRM\",\r\n\t\"approvalDetails\": {\r\n\t\t\"approvalReqd\": \"false\"\r\n\t},\r\n\t\"saFormFilePath\": \"/crm-documents/\",\r\n\t\"saFormFileName\": \"SA_Form_SA_06042023154007678.pdf\",\r\n\t\"saFormDetails\": {\r\n\t\t\"opportunityName\": \"user tags2\",\r\n\t\t\"opportunityOwnerUser\": \"ab398d57-6954-40a4-adf7-256517282c9c\",\r\n\t\t\"opportunityOwnerEmailId\": \"sai.narayana@6dtech.co.in\"\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-service/orders/onboarding",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"onboarding"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Paid Onboarding_IMPL2 Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "833542656000000000000000",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "username",
+						"value": "admin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"category\": \"B2C product order\",\r\n    \"orderType\": \"Onboarding\",\r\n    \"description\": \"Product Order illustration sample\",\r\n    \"saFormId\": \"SA_29092023180936106\",\r\n    \"shopId\": \"S04\",\r\n    \"externalId\": \"PO-456\",\r\n    \"priority\": \"1\",\r\n    \"channel\": [\r\n        {\r\n            \"id\": \"1\",\r\n            \"name\": \"CRM\",\r\n            \"role\": \"Used channel for order capture\"\r\n        }\r\n    ],\r\n    \"profile\": {\r\n        \"profileType\": \"1\",\r\n        \"partyCharacteristic\": [\r\n            {\r\n                \"name\": \"subscriberCategory\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"15\"\r\n            },\r\n            {\r\n                \"name\": \"subscriberSubCategory\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"152\"\r\n            },\r\n            {\r\n                \"name\": \"profileType\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"1\"\r\n            },\r\n            {\r\n                \"name\": \"customerType\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"1521\"\r\n            },\r\n            {\r\n                \"name\": \"annualTurnover\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"4000\"\r\n            },\r\n            {\r\n                \"name\": \"industry\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"1\"\r\n            },\r\n            {\r\n                \"name\": \"sector\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"Trades\"\r\n            },\r\n            {\r\n                \"name\": \"majorSICCode\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"1\"\r\n            },\r\n            {\r\n                \"name\": \"tinNumber\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"klm00890\"\r\n            },\r\n            {\r\n                \"name\": \"companyName\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"saf\"\r\n            },\r\n            {\r\n                \"name\": \"licenseNumber\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"adm9\"\r\n            }\r\n        ],\r\n        \"languageAbility\": [\r\n            {\r\n                \"languageCode\": \"1\"\r\n            }\r\n        ],\r\n        \"contactMedium\": [\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"telephoneNumber\",\r\n                \"characteristic\": {\r\n                    \"phoneNumber\": \"251915891379\",\r\n                    \"contactType\": \"smsNumber\"\r\n                }\r\n            },\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"emailAddress\",\r\n                \"characteristic\": {\r\n                    \"emailAddress\": \"kava#n@gmail.com\",\r\n                    \"contactType\": \"emailAddress\"\r\n                }\r\n            },\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"address\",\r\n                \"characteristic\": {\r\n                    \"contactType\": \"permanentAddress\",\r\n                    \"addrLine1\": \"1House\",\r\n                    \"addrLine2\": \"2Street\",\r\n                    \"addrLine3\": \"3kebele\",\r\n                    \"addrLine4\": \"31\",\r\n                    \"addrLine5\": \"5\",\r\n                    \"addrLine7\": \"584\",\r\n                    \"addrLine8\": \"573135\",\r\n                    \"addrLine9\": \"573228\",\r\n                    \"addrLine10\": \"90\",\r\n                    \"addrLine11\": \"57\"\r\n                }\r\n            },\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"address\",\r\n                \"characteristic\": {\r\n                    \"contactType\": \"residentialAddress\",\r\n                    \"addrLine1\": \"1House\",\r\n                    \"addrLine2\": \"2Street\",\r\n                    \"addrLine3\": \"3kebele\",\r\n                    \"addrLine4\": \"31\",\r\n                    \"addrLine5\": \"5\",\r\n                    \"addrLine7\": \"584\",\r\n                    \"addrLine8\": \"573135\",\r\n                    \"addrLine9\": \"573228\",\r\n                    \"addrLine10\": \"90\",\r\n                    \"addrLine11\": \"57\"\r\n                }\r\n            }\r\n        ],\r\n        \"account\": {\r\n            \"name\": \"saf\",\r\n            \"billcycleId\": \"1\",\r\n            \"chargingPattern\": \"1\",\r\n            \"dispatchMode\": \"1\",\r\n            \"entityId\": \"200\",\r\n            \"itemizedBillRequired\": \"0\",\r\n            \"excelFileFlag\": \"0\",\r\n            \"languageId\": \"1\",\r\n            \"notificationAllowed\": \"0\",\r\n            \"taxCode\": \"1\",\r\n            \"contactMedium\": [\r\n                {\r\n                    \"preferred\": false,\r\n                    \"mediumType\": \"address\",\r\n                    \"characteristic\": {\r\n                        \"contactType\": \"residentialAddress\",\r\n                        \"addrLine1\": \"1House\",\r\n                        \"addrLine2\": \"2Street\",\r\n                        \"addrLine3\": \"3kebele\",\r\n                        \"addrLine4\": \"31\",\r\n                        \"addrLine5\": \"5\",\r\n                        \"addrLine7\": \"584\",\r\n                        \"addrLine8\": \"573135\",\r\n                        \"addrLine9\": \"573228\",\r\n                        \"addrLine10\": \"90\",\r\n                        \"addrLine11\": \"57\"\r\n                    }\r\n                }\r\n            ],\r\n            \"serviceGroups\": [\r\n                {\r\n                    \"services\": [\r\n                        {\r\n                            \"serviceId\": \"251799135938\",\r\n                            \"languageId\": \"1\",\r\n                            \"isSimPaired\": \"false\",\r\n                            \"name\": \"saf\",\r\n                            \"serviceType\": \"1\",\r\n                            \"connectionType\": \"1\",\r\n                            \"contactMedium\": [\r\n                                {\r\n                                    \"preferred\": false,\r\n                                    \"mediumType\": \"address\",\r\n                                    \"characteristic\": {\r\n                                        \"contactType\": \"permanent\",\r\n                                        \"addrLine1\": \"1House\",\r\n                                        \"addrLine2\": \"2Street\",\r\n                                        \"addrLine3\": \"3kebele\",\r\n                                        \"addrLine4\": \"31\",\r\n                                        \"addrLine5\": \"5\",\r\n                                        \"addrLine7\": \"584\",\r\n                                        \"addrLine8\": \"573135\",\r\n                                        \"addrLine9\": \"573228\",\r\n                                        \"addrLine10\": \"90\",\r\n                                        \"addrLine11\": \"57\"\r\n                                    }\r\n                                }\r\n                            ],\r\n                            \"deposit\": [\r\n                                {\r\n                                    \"comment\": \"deposit\",\r\n                                    \"currencyCode\": \"ETB\",\r\n                                    \"bookingId\": \"1\",\r\n                                    \"status\": \"1\",\r\n                                    \"depositAmount\": \"1000\"\r\n                                }\r\n                            ],\r\n                            \"characteristics\": [\r\n                                {\r\n                                    \"name\": \"ICCID\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"89251020010476023676\"\r\n                                },\r\n                                {\r\n                                    \"name\": \"IMSI\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"636020104761199\"\r\n                                }\r\n                            ],\r\n                            \"chargingPattern\": \"1\",\r\n                            \"networkServiceId\": \"1\",\r\n                            \"creditLimit\": \"0\",\r\n                            \"creditClass\": \"Custom Credit\",\r\n                            \"redemptionEnabled\": \"False\",\r\n                            \"autoEnrollment\": \"False\",\r\n                            \"serviceUsrClassificationID\": \"1\",\r\n                            \"mpesaAllowed\": \"No\",\r\n                            \"msisdnCategory\": \"Normal\"\r\n                        }\r\n                    ],\r\n                    \"subscriptions\": [\r\n                        {\r\n                            \"planDesc\": \"ENTERPRISE POSTPAY BASE PLAN\",\r\n                            \"planType\": \"0\",\r\n                            \"autoRenewal\": \"0\",\r\n                            \"somCallRqd\": false,\r\n                            \"esbCallRqd\": false,\r\n                            \"commonAddon\": false,\r\n                            \"mandatoryAddon\": false,\r\n                            \"planId\": \"385\",\r\n                            \"planName\": \"ENTERPRISE POSTPAY BASE PLAN\"\r\n                        }\r\n                    ]\r\n                }\r\n            ],\r\n            \"contacts\": [\r\n                {\r\n                    \"contactId\": \"1223\",\r\n                    \"contactType\": \"S\",\r\n                    \"status\": \"A\"\r\n                }\r\n            ],\r\n            \"preferredCurrency\": \"USD\",\r\n            \"smsNumbers\": \"251915891379\",\r\n            \"contactEmailId\": \"kava#n@gmail.com\",\r\n            \"autoDebit\": \"0\",\r\n            \"smsNotificationAllowed\": \"0\",\r\n            \"emailNotificationAllowed\": \"1\",\r\n            \"keyAccountManager\": \"ceb98fea-6c3f-4ad6-927d-b5b77dd53e96\",\r\n            \"taxApplicable\": \"1\",\r\n            \"creditManager\": \"ceb98fea-6c3f-4ad6-927d-b5b77dd53e96\",\r\n            \"exciseDutyApplicable\": \"0\"\r\n        },\r\n        \"relatedParty\": [],\r\n        \"salesId\": \"5221a0e3-0ec8-42e0-abfd-8c5008838847\"\r\n    },\r\n    \"payment\": {\r\n        \"amount\": \"3000.0\",\r\n        \"upfrontPayment\": \"true\",\r\n        \"isPaymentCollected\": \"false\",\r\n        \"paymentChannel\": \"shop\",\r\n        \"totalDeposit\": \"1000.0\",\r\n        \"totalDeviceCharges\": \"2000.0\"\r\n    },\r\n    \"sourceNode\": \"CRM\",\r\n    \"approvalDetails\": {\r\n        \"approvalReqd\": \"false\"\r\n    },\r\n    \"deviceSubscriptions\": [\r\n        {\r\n            \"somCallRqd\": false,\r\n            \"esbCallRqd\": false,\r\n            \"commonAddon\": false,\r\n            \"quantity\": \"1\",\r\n            \"amount\": \"2000.00\",\r\n            \"mandatoryAddon\": false,\r\n            \"planId\": \"410\",\r\n            \"planName\": \"Safaricom_ET_Kimem_Kerefa_4G_SFP_Vida\"\r\n        }\r\n    ],\r\n    \"saFormFilePath\": \"/crm-documents/\",\r\n    \"saFormDetails\": {\r\n        \"opportunityName\": \"Postpaid Onboarding With Device\",\r\n        \"opportunityOwnerUser\": \"5221a0e3-0ec8-42e0-abfd-8c5008838847\",\r\n        \"opportunityOwnerEmailId\": \"abhinav.kumar@6dtech.co.in\"\r\n    },\r\n    \"partnerId\": \"Indirect \",\r\n    \"partnerName\": \"adm9\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-service/orders/onboarding",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"onboarding"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prepaid_onboarding_IMPL 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "channel",
+						"value": "eKYC",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "66557657676444",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"Onboarding\",\r\n    \"description\": \"Onboarding order\",\r\n    \"externalId\": \"576583542475798\",\r\n    \"profile\": {\r\n        \"birthDate\": \"18-04-1987\",\r\n        \"localizedBirthDate\": \"21-01-1992\",\r\n        \"salesId\": \"123\",\r\n        \"familyName\": \"test\",\r\n        \"givenName\": \"Ops\",\r\n        \"nationality\": \"3\",\r\n        \"title\": \"1\",\r\n        \"partyCharacteristic\": [\r\n            {\r\n                \"name\": \"profileType\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"0\"\r\n            },\r\n            {\r\n                \"name\": \"subscriberCategory\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"23\"\r\n            },\r\n            {\r\n                \"name\": \"subscriberSubCategory\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"231\"\r\n            },\r\n            {\r\n                \"name\": \"biometricId\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"32132434324\"\r\n            },\r\n            {\r\n                \"name\": \"minorFlag\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"0\"\r\n            },\r\n            {\r\n                \"name\": \"paymentPreference\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"1\"\r\n            },\r\n            {\r\n                \"name\": \"occupation\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"Operations Engineer\"\r\n            },\r\n            {\r\n                \"name\": \"employer\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"6D\"\r\n            },\r\n            {\r\n                \"name\": \"position\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"Lead\"\r\n            },\r\n            {\r\n                \"name\": \"averageMonthlyIncome\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"2\"\r\n            }\r\n        ],\r\n        \"languageAbility\": [\r\n            {\r\n                \"languageCode\": \"1\"\r\n            }\r\n        ],\r\n        \"individualIdentification\": [\r\n            {\r\n                \"attachment\": [\r\n                    {\r\n                        \"description\": \"passport pdf\",\r\n                        \"mimeType\": \"pdf\",\r\n                        \"name\": \"passport copy\",\r\n                        \"url\": \"wwww.docsshare.com/customer11/passport/passport.pdf\",\r\n                        \"kycReferenceId\": \"12123232999\"\r\n                    }\r\n                ],\r\n                \"identificationId\": \"13258889571221\",\r\n                \"identificationType\": \"101\",\r\n                \"issuingAuthority\": \"ethiopian embassy\",\r\n                \"issuingDate\": \"12-10-2022 11:44:52\",\r\n                \"isExpired\": \"false\",\r\n                \"validFor\": {\r\n                    \"endDateTime\": \"14-10-2022 11:44:52\",\r\n                    \"startDateTime\": \"12-10-2022 11:44:52\"\r\n                }\r\n            }\r\n        ],\r\n        \"attachments\": [\r\n            {\r\n                \"description\": \"test attachment\",\r\n                \"mimeType\": \"test\",\r\n                \"name\": \"test doc\",\r\n                \"url\": \"test url\",\r\n                \"kycReferenceId\": \"121232329991\"\r\n            }\r\n        ],\r\n        \"contactMedium\": [\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"telephoneNumber\",\r\n                \"characteristic\": {\r\n                    \"phoneNumber\": \"9381231283213\",\r\n                    \"contactType\": \"smsNumber\"\r\n                }\r\n            },\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"telephoneNumber\",\r\n                \"characteristic\": {\r\n                    \"faxNumber\": \"11231283213\",\r\n                    \"contactType\": \"faxNumber\"\r\n                }\r\n            },\r\n            {\r\n                \"characteristic\": {\r\n                    \"contactType\": \"alternateSmsNumber\",\r\n                    \"altPhoneNumber\": \"9738646475\"\r\n                },\r\n                \"mediumType\": \"telephoneNumber\"\r\n            },\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"emailAddress\",\r\n                \"characteristic\": {\r\n                    \"emailAddress\": \"poornima.thota@6dtech.co.in\",\r\n                    \"contactType\": \"emailAddress\"\r\n                }\r\n            },\r\n            {\r\n                \"characteristic\": {\r\n                    \"contactType\": \"residentialAddress\",\r\n                    \"addrLine4\": \"bangalore\",\r\n                    \"addrLine5\": \"urban\"\r\n                },\r\n                \"mediumType\": \"address\"\r\n            },\r\n            {\r\n                \"characteristic\": {\r\n                    \"contactType\": \"permanentAddress\",\r\n                    \"addrLine4\": \"bangalore\",\r\n                    \"addrLine5\": \"urban\"\r\n                },\r\n                \"mediumType\": \"address\"\r\n            }\r\n        ],\r\n        \"account\": {\r\n            \"chargingPattern\": \"2\",\r\n            \"languageId\": \"1\",\r\n            \"name\": \"test account\",\r\n            \"remarks\": \"string\",\r\n            \"title\": \"Mr\",\r\n            \"preferredCurrency\": \"USSD\",\r\n            \"contactMedium\": [\r\n                {\r\n                    \"mediumType\": \"address\",\r\n                    \"characteristic\": {\r\n                        \"contactType\": \"billingAddress\",\r\n                        \"addrLine4\": 2,\r\n                        \"addrLine5\": 1\r\n                    }\r\n                }\r\n            ],\r\n            \"serviceGroups\": [\r\n                {\r\n                    \"services\": [\r\n                        {\r\n                            \"serviceId\": \"251799932916\",\r\n                            \"isSimPaired\": \"false\",\r\n                            \"name\": \"GSM Service\",\r\n                            \"languageId\": \"2\",\r\n                            \"serviceType\": \"Master\",\r\n                            \"networkServiceId\": \"1\",\r\n                            \"chargingPattern\": \"2\",\r\n                            \"contactMedium\": [\r\n                                {\r\n                                    \"mediumType\": \"address\",\r\n                                    \"characteristic\": {\r\n                                        \"contactType\": \"residentialAddress\",\r\n                                        \"addrLine4\": 2,\r\n                                        \"addrLine5\": 1\r\n                                    }\r\n                                }\r\n                            ],\r\n                            \"characteristics\": [\r\n                                {\r\n                                    \"name\": \"ICCID\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"89251120021061824982\"\r\n                                },\r\n                                {\r\n                                    \"name\": \"IMSI\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"6360211261321382\"\r\n                                }\r\n                            ],\r\n                            \"subscriptions\": [\r\n                                {\r\n                                    \"planId\": \"118\",\r\n                                    \"planType\": \"0\",\r\n                                    \"planName\": \"Baseplan\",\r\n                                    \"autoRenewal\": \"0\"\r\n                                }\r\n                            ]\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-service/orders/onboarding",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"onboarding"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prepaid_onboarding_IMPL 2 Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "09978876122",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"Onboarding\",\r\n    \"description\": \"Onboarding order\",\r\n    \"externalId\": \"121312012604786759845\",\r\n    \"profile\": {\r\n        \"birthDate\": \"18-04-1987\",\r\n        \"localizedBirthDate\": \"21-01-1992\",\r\n        \"salesId\": \"123\",\r\n        \"familyName\": \"Willams\",\r\n        \"givenName\": \"Chris\",\r\n        \"nationality\": \"3\",\r\n        \"title\": \"1\",\r\n        \"partyCharacteristic\": [\r\n            {\r\n                \"name\": \"profileType\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"0\"\r\n            },\r\n            {\r\n                \"name\": \"subscriberCategory\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"23\"\r\n            },\r\n            {\r\n                \"name\": \"subscriberSubCategory\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"231\"\r\n            },\r\n            {\r\n                \"name\": \"biometricId\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"32132434324\"\r\n            },\r\n            {\r\n                \"name\": \"minorFlag\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"0\"\r\n            },\r\n            {\r\n                \"name\": \"paymentPreference\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"1\"\r\n            },\r\n            {\r\n                \"name\": \"occupation\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"IT Professional\"\r\n            },\r\n            {\r\n                \"name\": \"employer\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"6d Technologies\"\r\n            },\r\n            {\r\n                \"name\": \"position\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"Software Engineer\"\r\n            },\r\n            {\r\n                \"name\": \"averageMonthlyIncome\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"1\"\r\n            }\r\n        ],\r\n        \"languageAbility\": [\r\n            {\r\n                \"languageCode\": \"2\"\r\n            }\r\n        ],\r\n        \"individualIdentification\": [\r\n            {\r\n                \"attachment\": [\r\n                    {\r\n                        \"description\": \"passport pdf\",\r\n                        \"mimeType\": \"pdf\",\r\n                        \"name\": \"passport copy\",\r\n                        \"url\": \"wwww.docsshare.com/customer11/passport/passport.pdf\",\r\n                        \"kycReferenceId\": \"12123232999\"\r\n                    }\r\n                ],\r\n                \"identificationId\": \"13213162271221\",\r\n                \"identificationType\": \"101\",\r\n                \"issuingAuthority\": \"ethiopian embassy\",\r\n                \"issuingDate\": \"12-10-2022 11:44:52\",\r\n                \"isExpired\": \"false\",\r\n                \"validFor\": {\r\n                    \"endDateTime\": \"14-10-2022 11:44:52\",\r\n                    \"startDateTime\": \"12-10-2022 11:44:52\"\r\n                }\r\n            }\r\n        ],\r\n        \"attachments\": [\r\n            {\r\n                \"description\": \"test attachment\",\r\n                \"mimeType\": \"test\",\r\n                \"name\": \"test doc\",\r\n                \"url\": \"test url\",\r\n                \"kycReferenceId\": \"121232329991\"\r\n            }\r\n        ],\r\n        \"contactMedium\": [\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"telephoneNumber\",\r\n                \"characteristic\": {\r\n                    \"phoneNumber\": \"251700403063\",\r\n                    \"contactType\": \"smsNumber\"\r\n                }\r\n            },\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"telephoneNumber\",\r\n                \"characteristic\": {\r\n                    \"faxNumber\": \"251700403063\",\r\n                    \"contactType\": \"faxNumber\"\r\n                }\r\n            },\r\n            {\r\n                \"characteristic\": {\r\n                    \"contactType\": \"alternateSmsNumber\",\r\n                    \"altPhoneNumber\": \"251700403063\"\r\n                },\r\n                \"mediumType\": \"telephoneNumber\"\r\n            },\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"emailAddress\",\r\n                \"characteristic\": {\r\n                    \"emailAddress\": \"poornima.thota@6dtech.co.in\",\r\n                    \"contactType\": \"emailAddress\"\r\n                }\r\n            },\r\n            {\r\n                \"characteristic\": {\r\n                    \"contactType\": \"residentialAddress\",\r\n                    \"addrLine4\": \"bangalore\",\r\n                    \"addrLine5\": \"urban\"\r\n                },\r\n                \"mediumType\": \"address\"\r\n            },\r\n            {\r\n                \"characteristic\": {\r\n                    \"contactType\": \"permanentAddress\",\r\n                    \"addrLine4\": \"bangalore\",\r\n                    \"addrLine5\": \"urban\"\r\n                },\r\n                \"mediumType\": \"address\"\r\n            }\r\n        ],\r\n        \"account\": {\r\n            \"chargingPattern\": \"2\",\r\n            \"languageId\": \"2\",\r\n            \"name\": \"test account\",\r\n            \"remarks\": \"string\",\r\n            \"title\": \"Mr\",\r\n            \"preferredCurrency\": \"USSD\",\r\n            \"contactMedium\": [\r\n                {\r\n                    \"mediumType\": \"address\",\r\n                    \"characteristic\": {\r\n                        \"contactType\": \"billingAddress\",\r\n                        \"addrLine4\": 2,\r\n                        \"addrLine5\": 1\r\n                    }\r\n                }\r\n            ],\r\n            \"serviceGroups\": [\r\n                {\r\n                    \"services\": [\r\n                        {\r\n                            \"serviceId\": \"251700403063\",\r\n                            \"isSimPaired\": \"false\",\r\n                            \"name\": \"GSM Service\",\r\n                            \"languageId\": \"2\",\r\n                            \"serviceType\": \"Master\",\r\n                            \"networkServiceId\": \"1\",\r\n                            \"chargingPattern\": \"2\",\r\n                            \"contactMedium\": [\r\n                                {\r\n                                    \"mediumType\": \"address\",\r\n                                    \"characteristic\": {\r\n                                        \"contactType\": \"residentialAddress\",\r\n                                        \"addrLine4\": 2,\r\n                                        \"addrLine5\": 1\r\n                                    }\r\n                                }\r\n                            ],\r\n                            \"characteristics\": [\r\n                                {\r\n                                    \"name\": \"ICCID\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"89251887490000013438\"\r\n                                },\r\n                                {\r\n                                    \"name\": \"IMSI\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"636024900004438\"\r\n                                }\r\n                            ],\r\n                            \"subscriptions\": [\r\n                                {\r\n                                    \"planId\": \"118\",\r\n                                    \"planType\": \"0\",\r\n                                    \"planName\": \"Baseplan\",\r\n                                    \"autoRenewal\": \"0\"\r\n                                }\r\n                            ]\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-service/orders/onboarding",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"onboarding"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Enterprise onboardingPre-2service",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "Onboarding_0091123",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"category\": \"B2C product order\",\r\n    \"orderType\": \"Onboarding\",\r\n    \"description\": \"Product Order illustration sample\",\r\n    \"saFormId\": \"SA_14052023232933308\",\r\n    \"shopId\": \"S07\",\r\n    \"externalId\": \"PO-456\",\r\n    \"priority\": \"1\",\r\n    \"channel\": [\r\n        {\r\n            \"id\": \"1\",\r\n            \"name\": \"CRM\",\r\n            \"role\": \"Used channel for order capture\"\r\n        }\r\n    ],\r\n    \"profile\": {\r\n        \"profileType\": \"1\",\r\n        \"partyCharacteristic\": [\r\n            {\r\n                \"name\": \"subscriberCategory\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"15\"\r\n            },\r\n            {\r\n                \"name\": \"subscriberSubCategory\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"151\"\r\n            },\r\n            {\r\n                \"name\": \"profileType\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"1\"\r\n            },\r\n            {\r\n                \"name\": \"customerType\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"1512\"\r\n            },\r\n            {\r\n                \"name\": \"minorFlag\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"0\"\r\n            },\r\n            {\r\n                \"name\": \"annualTurnover\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"5000\"\r\n            },\r\n            {\r\n                \"name\": \"industry\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"8\"\r\n            },\r\n            {\r\n                \"name\": \"sector\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"Services\"\r\n            },\r\n            {\r\n                \"name\": \"majorSICCode\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"8\"\r\n            },\r\n            {\r\n                \"name\": \"tinNumber\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"0061008351\"\r\n            },\r\n            {\r\n                \"name\": \"safaricomPartner\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"false\"\r\n            },\r\n            {\r\n                \"name\": \"companyName\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"SIX DEE OPS\"\r\n            },\r\n            {\r\n                \"name\": \"licenseNumber\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"ORO/SPZ/BRGN/04/486/2479211/2011\"\r\n            }\r\n        ],\r\n        \"languageAbility\": [\r\n            {\r\n                \"languageCode\": \"1\"\r\n            }\r\n        ],\r\n        \"contactMedium\": [\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"telephoneNumber\",\r\n                \"characteristic\": {\r\n                    \"phoneNumber\": \"251920156001\",\r\n                    \"contactType\": \"smsNumber\"\r\n                }\r\n            },\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"emailAddress\",\r\n                \"characteristic\": {\r\n                    \"emailAddress\": \"Noemail@gmail.com\",\r\n                    \"contactType\": \"emailAddress\"\r\n                }\r\n            },\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"address\",\r\n                \"characteristic\": {\r\n                    \"contactType\": \"permanentAddress\",\r\n                    \"addrLine3\": \"GEFERSA GUJE\",\r\n                    \"addrLine4\": \"53\",\r\n                    \"addrLine5\": \"8\",\r\n                    \"addrLine7\": \"383\"\r\n                }\r\n            }\r\n        ],\r\n        \"account\": {\r\n            \"name\": \"Six Dee Ops\",\r\n            \"chargingPattern\": \"2\",\r\n            \"entityId\": \"200\",\r\n            \"itemizedBillRequired\": \"0\",\r\n            \"excelFileFlag\": \"0\",\r\n            \"languageId\": \"1\",\r\n            \"notificationAllowed\": \"0\",\r\n            \"contactMedium\": [\r\n                {\r\n                    \"preferred\": false,\r\n                    \"mediumType\": \"address\",\r\n                    \"characteristic\": {\r\n                        \"contactType\": \"billingAddress\",\r\n                        \"addrLine3\": \"GEFERSA GUJE\",\r\n                        \"addrLine4\": \"53\",\r\n                        \"addrLine5\": \"8\",\r\n                        \"addrLine7\": \"383\"\r\n                    }\r\n                }\r\n            ],\r\n            \"serviceGroups\": [\r\n                {\r\n                    \"services\": [\r\n                        {\r\n                            \"serviceId\": \"251711315370\",\r\n                            \"languageId\": \"1\",\r\n                            \"isSimPaired\": \"false\",\r\n                            \"name\": \"Six Dee Ops\",\r\n                            \"serviceType\": \"1\",\r\n                            \"connectionType\": \"2\",\r\n                            \"contactMedium\": [\r\n                                {\r\n                                    \"preferred\": false,\r\n                                    \"mediumType\": \"address\",\r\n                                    \"characteristic\": {\r\n                                        \"contactType\": \"permanent\",\r\n                                        \"addrLine3\": \"GEFERSA GUJE\",\r\n                                        \"addrLine4\": \"53\",\r\n                                        \"addrLine5\": \"8\",\r\n                                        \"addrLine7\": \"383\"\r\n                                    }\r\n                                }\r\n                            ],\r\n                            \"subscriptions\": [\r\n                                {\r\n                                    \"planDesc\": \"Pre-Pay Base Plan for Enterprise + SIM\",\r\n                                    \"planType\": \"0\",\r\n                                    \"autoRenewal\": \"0\",\r\n                                    \"somCallRqd\": false,\r\n                                    \"esbCallRqd\": false,\r\n                                    \"commonAddon\": false,\r\n                                    \"mandatoryAddon\": false,\r\n                                    \"planId\": \"136\",\r\n                                    \"planName\": \"Pre-Pay Base Plan for Enterprise + SIM\"\r\n                                }\r\n                            ],\r\n                            \"characteristics\": [\r\n                                {\r\n                                    \"name\": \"ICCID\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"89251020001065010595\"\r\n                                },\r\n                                {\r\n                                    \"name\": \"IMSI\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"636020106501000\"\r\n                                }\r\n                            ],\r\n                            \"chargingPattern\": \"2\",\r\n                            \"networkServiceId\": \"1\",\r\n                            \"redemptionEnabled\": \"False\",\r\n                            \"autoEnrollment\": \"False\",\r\n                            \"serviceUsrClassificationID\": \"1\"\r\n                        },\r\n                        {\r\n                            \"serviceId\": \"251711417597\",\r\n                            \"languageId\": \"1\",\r\n                            \"isSimPaired\": \"false\",\r\n                            \"name\": \"KEFENI WONDU FEYISA\",\r\n                            \"serviceType\": \"1\",\r\n                            \"connectionType\": \"2\",\r\n                            \"contactMedium\": [\r\n                                {\r\n                                    \"preferred\": false,\r\n                                    \"mediumType\": \"address\",\r\n                                    \"characteristic\": {\r\n                                        \"contactType\": \"permanent\",\r\n                                        \"addrLine3\": \"GEFERSA GUJE\",\r\n                                        \"addrLine4\": \"53\",\r\n                                        \"addrLine5\": \"8\",\r\n                                        \"addrLine7\": \"383\"\r\n                                    }\r\n                                }\r\n                            ],\r\n                            \"subscriptions\": [\r\n                                {\r\n                                    \"planDesc\": \"Pre-Pay Base Plan for Enterprise + SIM\",\r\n                                    \"planType\": \"0\",\r\n                                    \"autoRenewal\": \"0\",\r\n                                    \"somCallRqd\": false,\r\n                                    \"esbCallRqd\": false,\r\n                                    \"commonAddon\": false,\r\n                                    \"mandatoryAddon\": false,\r\n                                    \"planId\": \"136\",\r\n                                    \"planName\": \"Pre-Pay Base Plan for Enterprise + SIM\"\r\n                                }\r\n                            ],\r\n                            \"characteristics\": [\r\n                                {\r\n                                    \"name\": \"ICCID\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"89251020001065011669\"\r\n                                },\r\n                                {\r\n                                    \"name\": \"IMSI\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"636020106501169\"\r\n                                }\r\n                            ],\r\n                            \"chargingPattern\": \"2\",\r\n                            \"networkServiceId\": \"1\",\r\n                            \"redemptionEnabled\": \"False\",\r\n                            \"autoEnrollment\": \"False\",\r\n                            \"serviceUsrClassificationID\": \"1\"\r\n                        }\r\n                    ]\r\n                }\r\n            ],\r\n            \"contacts\": [\r\n                {\r\n                    \"contactId\": \"1070\",\r\n                    \"contactType\": \"S\",\r\n                    \"status\": \"A\"\r\n                }\r\n            ],\r\n            \"preferredCurrency\": \"USD\",\r\n            \"smsNumbers\": \"251920156001\",\r\n            \"contactEmailId\": \"Noemail@gmail.com\",\r\n            \"sicCode\": \"62411\",\r\n            \"emailNotificationAllowed\": \"0\",\r\n            \"taxApplicable\": \"0\"\r\n        },\r\n        \"salesId\": \"a56ed50c-d44a-4172-916b-ed7df788ad60\"\r\n    },\r\n    \"sourceNode\": \"CRM\",\r\n    \"approvalDetails\": {\r\n        \"approvalReqd\": \"false\"\r\n    },\r\n    \"saFormFilePath\": \"/crm-documents/\",\r\n    \"saFormFileName\": \"SA_14052023232933308.pdf\",\r\n    \"saFormDetails\": {\r\n        \"opportunityName\": \"user tags2\",\r\n        \"opportunityOwnerUser\": \"ab398d57-6954-40a4-adf7-256517282c9c\",\r\n        \"opportunityOwnerEmailId\": \"sai.narayana@6dtech.co.in\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-service/orders/onboarding",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"onboarding"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Enterprise onboardingPrepaid",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "Onboa666543423rding_0091123",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"category\": \"B2C product order\",\r\n    \"orderType\": \"Onboarding\",\r\n    \"description\": \"Product Order illustration sample\",\r\n    \"saFormId\": \"SA_14052023232933308\",\r\n    \"shopId\": \"S07\",\r\n    \"externalId\": \"PO-456\",\r\n    \"priority\": \"1\",\r\n    \"channel\": [\r\n        {\r\n            \"id\": \"1\",\r\n            \"name\": \"CRM\",\r\n            \"role\": \"Used channel for order capture\"\r\n        }\r\n    ],\r\n    \"profile\": {\r\n        \"profileType\": \"1\",\r\n        \"partyCharacteristic\": [\r\n            {\r\n                \"name\": \"subscriberCategory\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"15\"\r\n            },\r\n            {\r\n                \"name\": \"subscriberSubCategory\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"151\"\r\n            },\r\n            {\r\n                \"name\": \"profileType\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"1\"\r\n            },\r\n            {\r\n                \"name\": \"customerType\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"1512\"\r\n            },\r\n            {\r\n                \"name\": \"minorFlag\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"0\"\r\n            },\r\n            {\r\n                \"name\": \"industry\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"8\"\r\n            },\r\n            {\r\n                \"name\": \"sector\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"Services\"\r\n            },\r\n            {\r\n                \"name\": \"majorSICCode\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"8\"\r\n            },\r\n            {\r\n                \"name\": \"safaricomPartner\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"false\"\r\n            },\r\n            {\r\n                \"name\": \"companyName\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"Ops Six Dee\"\r\n            },\r\n            {\r\n                \"name\": \"licenseNumber\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"ORO/SPZ/BRGN/04/486/5241574/2013\"\r\n            }\r\n        ],\r\n        \"languageAbility\": [\r\n            {\r\n                \"languageCode\": \"1\"\r\n            }\r\n        ],\r\n        \"contactMedium\": [\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"telephoneNumber\",\r\n                \"characteristic\": {\r\n                    \"phoneNumber\": \"251913339702\",\r\n                    \"contactType\": \"smsNumber\"\r\n                }\r\n            },\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"emailAddress\",\r\n                \"characteristic\": {\r\n                    \"emailAddress\": \"Noemail@gmail.com\",\r\n                    \"contactType\": \"emailAddress\"\r\n                }\r\n            },\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"address\",\r\n                \"characteristic\": {\r\n                    \"contactType\": \"permanentAddress\",\r\n                    \"addrLine4\": \"53\",\r\n                    \"addrLine5\": \"8\"\r\n                }\r\n            }\r\n        ],\r\n        \"account\": {\r\n            \"name\": \"Ops Six Dee\",\r\n            \"chargingPattern\": \"2\",\r\n            \"entityId\": \"200\",\r\n            \"itemizedBillRequired\": \"0\",\r\n            \"excelFileFlag\": \"0\",\r\n            \"languageId\": \"1\",\r\n            \"notificationAllowed\": \"0\",\r\n            \"contactMedium\": [\r\n                {\r\n                    \"preferred\": false,\r\n                    \"mediumType\": \"address\",\r\n                    \"characteristic\": {\r\n                        \"contactType\": \"billingAddress\",\r\n                        \"addrLine4\": \"53\",\r\n                        \"addrLine5\": \"8\"\r\n                    }\r\n                }\r\n            ],\r\n            \"serviceGroups\": [\r\n                {\r\n                    \"services\": [\r\n                        {\r\n                            \"serviceId\": \"251759313126\",\r\n                            \"languageId\": \"1\",\r\n                            \"isSimPaired\": \"false\",\r\n                            \"name\": \"Ops Six Dee\",\r\n                            \"serviceType\": \"1\",\r\n                            \"connectionType\": \"2\",\r\n                            \"contactMedium\": [\r\n                                {\r\n                                    \"preferred\": false,\r\n                                    \"mediumType\": \"address\",\r\n                                    \"characteristic\": {\r\n                                        \"contactType\": \"permanent\",\r\n                                        \"addrLine4\": \"53\",\r\n                                        \"addrLine5\": \"8\"\r\n                                    }\r\n                                }\r\n                            ],\r\n                            \"subscriptions\": [\r\n                                {\r\n                                    \"planDesc\": \"Pre-Pay Base Plan for Enterprise + SIM\",\r\n                                    \"planType\": \"0\",\r\n                                    \"autoRenewal\": \"0\",\r\n                                    \"somCallRqd\": false,\r\n                                    \"esbCallRqd\": false,\r\n                                    \"commonAddon\": false,\r\n                                    \"mandatoryAddon\": false,\r\n                                    \"planId\": \"136\",\r\n                                    \"planName\": \"Pre-Pay Base Plan for Enterprise + SIM\"\r\n                                }\r\n                            ],\r\n                            \"characteristics\": [\r\n                                {\r\n                                    \"name\": \"ICCID\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"89251085375081314091\"\r\n                                },\r\n                                {\r\n                                    \"name\": \"IMSI\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"636028788131491\"\r\n                                }\r\n                            ],\r\n                            \"chargingPattern\": \"2\",\r\n                            \"networkServiceId\": \"1\",\r\n                            \"redemptionEnabled\": \"False\",\r\n                            \"autoEnrollment\": \"False\",\r\n                            \"serviceUsrClassificationID\": \"1\"\r\n                        }\r\n                    ]\r\n                }\r\n            ],\r\n            \"contacts\": [\r\n                {\r\n                    \"contactId\": \"1070\",\r\n                    \"contactType\": \"S\",\r\n                    \"status\": \"A\"\r\n                }\r\n            ],\r\n            \"preferredCurrency\": \"USD\",\r\n            \"smsNumbers\": \"251913339702\",\r\n            \"contactEmailId\": \"Noemail@gmail.com\",\r\n            \"emailNotificationAllowed\": \"0\",\r\n            \"taxApplicable\": \"0\"\r\n        },\r\n        \"salesId\": \"a56ed50c-d44a-4172-916b-ed7df788ad60\"\r\n    },\r\n    \"sourceNode\": \"CRM\",\r\n    \"approvalDetails\": {\r\n        \"approvalReqd\": \"false\"\r\n    },\r\n    \"saFormFilePath\": \"/crm-documents/\",\r\n    \"saFormFileName\": \"SA_14052023232933308.pdf\",\r\n    \"saFormDetails\": {\r\n        \"opportunityName\": \"user tags2\",\r\n        \"opportunityOwnerUser\": \"ab398d57-6954-40a4-adf7-256517282c9c\",\r\n        \"opportunityOwnerEmailId\": \"sai.narayana@6dtech.co.in\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-service/orders/onboarding",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"onboarding"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "M-pesa Onboarding_IMPL2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "Onboa666543423rding_0091123",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"category\": \"B2C product order\",\r\n\t\"orderType\": \"Onboarding\",\r\n\t\"description\": \"Product Order illustration sample\",\r\n\t\"saFormId\": \"SA_13062023155531189\",\r\n\t\"shopId\": \"S07\",\r\n\t\"externalId\": \"PO-456\",\r\n\t\"priority\": \"1\",\r\n\t\"channel\": [\r\n\t\t{\r\n\t\t\t\"id\": \"1\",\r\n\t\t\t\"name\": \"CRM\",\r\n\t\t\t\"role\": \"Used channel for order capture\"\r\n\t\t}\r\n\t],\r\n\t\"profile\": {\r\n\t\t\"profileType\": \"1\",\r\n\t\t\"partyCharacteristic\": [\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"subscriberCategory\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"14\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"subscriberSubCategory\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"141\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"profileType\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"1\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"customerType\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"1411\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"minorFlag\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"0\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"annualTurnover\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"230000\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"industry\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"9\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"sector\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"Mixed\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"majorSICCode\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"9\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"tinNumber\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"0007425302\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"safaricomPartner\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"false\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"companyName\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"6d Mpesa Customer\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"licenseNumber\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"AA/KLK/W06/14/667/3947789/2013\"\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"languageAbility\": [\r\n\t\t\t{\r\n\t\t\t\t\"languageCode\": \"1\"\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"contactMedium\": [\r\n\t\t\t{\r\n\t\t\t\t\"preferred\": false,\r\n\t\t\t\t\"mediumType\": \"telephoneNumber\",\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"phoneNumber\": \"251799400521\",\r\n\t\t\t\t\t\"contactType\": \"smsNumber\"\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"preferred\": false,\r\n\t\t\t\t\"mediumType\": \"emailAddress\",\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"emailAddress\": \"charles.kitonga@safaricom.et\",\r\n\t\t\t\t\t\"contactType\": \"emailAddress\"\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"preferred\": false,\r\n\t\t\t\t\"mediumType\": \"address\",\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"contactType\": \"permanentAddress\",\r\n\t\t\t\t\t\"addrLine1\": \"1083\",\r\n\t\t\t\t\t\"addrLine3\": \"06\",\r\n\t\t\t\t\t\"addrLine4\": \"25\",\r\n\t\t\t\t\t\"addrLine5\": \"3\"\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"account\": {\r\n\t\t\t\"name\": \"6d Mpesa Customer\",\r\n\t\t\t\"chargingPattern\": \"2\",\r\n\t\t\t\"entityId\": \"200\",\r\n\t\t\t\"itemizedBillRequired\": \"0\",\r\n\t\t\t\"excelFileFlag\": \"0\",\r\n\t\t\t\"languageId\": \"1\",\r\n\t\t\t\"notificationAllowed\": \"0\",\r\n\t\t\t\"contactMedium\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"preferred\": false,\r\n\t\t\t\t\t\"mediumType\": \"address\",\r\n\t\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\t\"contactType\": \"billingAddress\",\r\n\t\t\t\t\t\t\"addrLine1\": \"1083\",\r\n\t\t\t\t\t\t\"addrLine3\": \"06\",\r\n\t\t\t\t\t\t\"addrLine4\": \"25\",\r\n\t\t\t\t\t\t\"addrLine5\": \"3\"\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\t\t\t],\r\n\t\t\t\"serviceGroups\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"services\": [\r\n\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\"serviceId\": \"251701710475\",\r\n\t\t\t\t\t\t\t\"languageId\": \"1\",\r\n\t\t\t\t\t\t\t\"isSimPaired\": \"false\",\r\n\t\t\t\t\t\t\t\"name\": \"NCC Mpesa Customer type\",\r\n\t\t\t\t\t\t\t\"serviceType\": \"3\",\r\n\t\t\t\t\t\t\t\"connectionType\": \"2\",\r\n\t\t\t\t\t\t\t\"contactMedium\": [\r\n\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\"preferred\": false,\r\n\t\t\t\t\t\t\t\t\t\"mediumType\": \"address\",\r\n\t\t\t\t\t\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\t\t\t\t\t\"contactType\": \"permanent\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine1\": \"1083\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine3\": \"06\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine4\": \"25\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine5\": \"3\"\r\n\t\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t],\r\n\t\t\t\t\t\t\t\"subscriptions\": [\r\n\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\"planDesc\": \"Mpesa  Till Base Plan\",\r\n\t\t\t\t\t\t\t\t\t\"planType\": \"0\",\r\n\t\t\t\t\t\t\t\t\t\"autoRenewal\": \"0\",\r\n\t\t\t\t\t\t\t\t\t\"somCallRqd\": false,\r\n\t\t\t\t\t\t\t\t\t\"esbCallRqd\": false,\r\n\t\t\t\t\t\t\t\t\t\"commonAddon\": false,\r\n\t\t\t\t\t\t\t\t\t\"mandatoryAddon\": false,\r\n\t\t\t\t\t\t\t\t\t\"planId\": \"746\",\r\n\t\t\t\t\t\t\t\t\t\"planName\": \"Mpesa  Till Base Plan\"\r\n\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t],\r\n\t\t\t\t\t\t\t\"characteristics\": [\r\n\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\"name\": \"ICCID\",\r\n\t\t\t\t\t\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\t\t\t\t\t\"value\": \"89251020008057307736\"\r\n\t\t\t\t\t\t\t\t},\r\n\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\"name\": \"IMSI\",\r\n\t\t\t\t\t\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\t\t\t\t\t\"value\": \"636020385730778\"\r\n\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t],\r\n\t\t\t\t\t\t\t\"chargingPattern\": \"2\",\r\n\t\t\t\t\t\t\t\"networkServiceId\": \"3\",\r\n\t\t\t\t\t\t\t\"redemptionEnabled\": \"False\",\r\n\t\t\t\t\t\t\t\"autoEnrollment\": \"False\",\r\n\t\t\t\t\t\t\t\"serviceUsrClassificationID\": \"1\"\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t]\r\n\t\t\t\t}\r\n\t\t\t],\r\n\t\t\t\"contacts\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"contactId\": \"1070\",\r\n\t\t\t\t\t\"contactType\": \"S\",\r\n\t\t\t\t\t\"status\": \"A\"\r\n\t\t\t\t}\r\n\t\t\t],\r\n\t\t\t\"preferredCurrency\": \"USD\",\r\n\t\t\t\"smsNumbers\": \"251799400521\",\r\n\t\t\t\"contactEmailId\": \"charles.kitonga@safaricom.et\",\r\n\t\t\t\"sicCode\": \"71113\",\r\n\t\t\t\"emailNotificationAllowed\": \"0\",\r\n\t\t\t\"taxApplicable\": \"0\"\r\n\t\t},\r\n\t\t\"salesId\": \"530fe83d-a9ec-430d-a325-329325c8f8e1\"\r\n\t},\r\n\t\"sourceNode\": \"CRM\",\r\n\t\"approvalDetails\": {\r\n\t\t\"approvalReqd\": \"false\"\r\n\t},\r\n\t\"saFormFilePath\": \"/documents/\",\r\n\t\"saFormFileName\": \"SA_Form_SA_13062023155531189.pdf\",\r\n\t\"saFormDetails\": {\r\n\t\t\"opportunityName\": \"6d Mpesa Customer Type\",\r\n\t\t\"opportunityOwnerUser\": \"530fe83d-a9ec-430d-a325-329325c8f8e1\",\r\n\t\t\"opportunityOwnerEmailId\": \"ejfbb.dfh@safaricom.et\"\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-service/orders/onboarding",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"onboarding"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SA form onb-Postpaid",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "579555454",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"category\": \"B2C product order\",\r\n    \"orderType\": \"Onboarding\",\r\n    \"description\": \"Product Order illustration sample\",\r\n    \"saFormId\": \"SA_10052023124538063\",\r\n    \"shopId\": \"S07\",\r\n    \"externalId\": \"PO-456\",\r\n    \"priority\": \"1\",\r\n    \"channel\": [\r\n        {\r\n            \"id\": \"1\",\r\n            \"name\": \"CRM\",\r\n            \"role\": \"Used channel for order capture\"\r\n        }\r\n    ],\r\n    \"profile\": {\r\n        \"profileType\": \"1\",\r\n        \"partyCharacteristic\": [\r\n            {\r\n                \"name\": \"subscriberCategory\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"15\"\r\n            },\r\n            {\r\n                \"name\": \"subscriberSubCategory\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"151\"\r\n            },\r\n            {\r\n                \"name\": \"profileType\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"1\"\r\n            },\r\n            {\r\n                \"name\": \"customerType\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"1511\"\r\n            },\r\n            {\r\n                \"name\": \"minorFlag\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"0\"\r\n            },\r\n            {\r\n                \"name\": \"annualTurnover\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"4000\"\r\n            },\r\n            {\r\n                \"name\": \"industry\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"1\"\r\n            },\r\n            {\r\n                \"name\": \"sector\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"Trades\"\r\n            },\r\n            {\r\n                \"name\": \"majorSICCode\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"1\"\r\n            },\r\n            {\r\n                \"name\": \"tinNumber\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"0068732942\"\r\n            },\r\n            {\r\n                \"name\": \"safaricomPartner\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"false\"\r\n            },\r\n            {\r\n                \"name\": \"companyName\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"SixDeeE\"\r\n            },\r\n            {\r\n                \"name\": \"licenseNumber\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"4558876\"\r\n            }\r\n        ],\r\n        \"languageAbility\": [\r\n            {\r\n                \"languageCode\": \"1\"\r\n            }\r\n        ],\r\n        \"contactMedium\": [\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"telephoneNumber\",\r\n                \"characteristic\": {\r\n                    \"phoneNumber\": \"251915891379\",\r\n                    \"contactType\": \"smsNumber\"\r\n                }\r\n            },\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"emailAddress\",\r\n                \"characteristic\": {\r\n                    \"emailAddress\": \"kavana.ranganath@6dtech.co.in\",\r\n                    \"contactType\": \"emailAddress\"\r\n                }\r\n            },\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"address\",\r\n                \"characteristic\": {\r\n                    \"contactType\": \"permanentAddress\",\r\n                    \"addrLine4\": \"31\",\r\n                    \"addrLine5\": \"5\",\r\n                    \"addrLine7\": \"584\"\r\n                }\r\n            }\r\n        ],\r\n        \"account\": {\r\n            \"name\": \"SixDeeE\",\r\n            \"billcycleId\": \"2\",\r\n            \"chargingPattern\": \"1\",\r\n            \"dispatchMode\": \"1\",\r\n            \"entityId\": \"200\",\r\n            \"itemizedBillRequired\": \"0\",\r\n            \"excelFileFlag\": \"0\",\r\n            \"languageId\": \"1\",\r\n            \"notificationAllowed\": \"0\",\r\n            \"riskcategoryId\": \"2\",\r\n            \"taxCode\": \"1\",\r\n            \"contactMedium\": [\r\n                {\r\n                    \"preferred\": false,\r\n                    \"mediumType\": \"address\",\r\n                    \"characteristic\": {\r\n                        \"contactType\": \"billingAddress\",\r\n                        \"addrLine4\": \"31\",\r\n                        \"addrLine5\": \"5\",\r\n                        \"addrLine7\": \"584\"\r\n                    }\r\n                }\r\n            ],\r\n            \"serviceGroups\": [\r\n                {\r\n                    \"services\": [\r\n                        {\r\n                            \"serviceId\": \"251795135170\",\r\n                            \"languageId\": \"1\",\r\n                            \"isSimPaired\": \"false\",\r\n                            \"name\": \"SixDeeE\",\r\n                            \"serviceType\": \"1\",\r\n                            \"connectionType\": \"1\",\r\n                            \"contactMedium\": [\r\n                                {\r\n                                    \"preferred\": false,\r\n                                    \"mediumType\": \"address\",\r\n                                    \"characteristic\": {\r\n                                        \"contactType\": \"permanent\",\r\n                                        \"addrLine4\": \"31\",\r\n                                        \"addrLine5\": \"5\",\r\n                                        \"addrLine7\": \"584\"\r\n                                    }\r\n                                }\r\n                            ],\r\n                            \"deposit\": [\r\n                                {\r\n                                    \"comment\": \"deposit\",\r\n                                    \"currencyCode\": \"ETB\",\r\n                                    \"bookingId\": \"1\",\r\n                                    \"status\": \"1\",\r\n                                    \"depositAmount\": \"11\"\r\n                                }\r\n                            ],\r\n                            \"subscriptions\": [\r\n                                {\r\n                                    \"planDesc\": \"ENTERPRISE POSTPAY BASE PLAN\",\r\n                                    \"planType\": \"0\",\r\n                                    \"autoRenewal\": \"0\",\r\n                                    \"somCallRqd\": false,\r\n                                    \"esbCallRqd\": false,\r\n                                    \"commonAddon\": false,\r\n                                    \"mandatoryAddon\": false,\r\n                                    \"planId\": \"385\",\r\n                                    \"planName\": \"ENTERPRISE POSTPAY BASE PLAN\"\r\n                                }\r\n                            ],\r\n                            \"characteristics\": [\r\n                                {\r\n                                    \"name\": \"ICCID\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"89251120010476023155\"\r\n                                },\r\n                                {\r\n                                    \"name\": \"IMSI\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"636520104761277\"\r\n                                }\r\n                            ],\r\n                            \"chargingPattern\": \"1\",\r\n                            \"networkServiceId\": \"1\",\r\n                            \"creditLimit\": \"10\",\r\n                            \"creditClass\": \"Custom Credit\",\r\n                            \"redemptionEnabled\": \"False\",\r\n                            \"autoEnrollment\": \"False\",\r\n                            \"serviceUsrClassificationID\": \"1\"\r\n                        }\r\n                    ]\r\n                }\r\n            ],\r\n            \r\n            \"preferredCurrency\": \"USD\",\r\n            \"smsNumbers\": \"251915891379\",\r\n            \"contactEmailId\": \"kavana.ranganath@6dtech.co.in\",\r\n            \"sicCode\": \"62221\",\r\n            \"emailNotificationAllowed\": \"1\",\r\n            \"keyAccountManager\": \"ceb98fea-6c3f-4ad6-927d-b5b77dd53e96\",\r\n            \"taxApplicable\": \"1\",\r\n            \"creditManager\": \"ceb98fea-6c3f-4ad6-927d-b5b77dd53e96\"\r\n        },\r\n        \"salesId\": \"a27d8a29-c70e-43f7-a722-f9a2fda57f4d\"\r\n    },\r\n    \"payment\": {\r\n        \"amount\": \"100\",\r\n        \"upfrontPayment\": \"true\",\r\n        \"isPaymentCollected\": \"false\",\r\n        \"paymentChannel\": \"shop\",\r\n        \"totalDeposit\": \"100\"\r\n    },\r\n    \"sourceNode\": \"CRM\",\r\n    \"approvalDetails\": {\r\n        \"approvalReqd\": \"false\"\r\n    },\r\n    \"saFormFilePath\": \"/crm-documents/\",\r\n    \"saFormFileName\": \"SA_Form_SA_10052023124538063.pdf\",\r\n    \"saFormDetails\": {\r\n        \"opportunityName\": \"COM Test1\",\r\n        \"opportunityOwnerUser\": \"a27d8a29-c70e-43f7-a722-f9a2fda57f4d\",\r\n        \"opportunityOwnerEmailId\": \"yashaswini.basavaraju@6dtech.co.in\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-service/orders/onboarding",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"onboarding"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lifecyclesynctermination_IMPL2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "579555454",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"orderType\": \"LifeCycleSyncTermination\",\r\n\t\"description\": \"Service or subscription Life Cycle Sync \",\r\n\t\"externalId\": \"D_0103206279\",\r\n\t\"requestedCompletionDate\": \"2022-03-03T11:57:45.438Z\",\r\n\t\"requestedStartDate\": \"1975-03-21T13:29:46.534Z\",\r\n\t\"serviceManagement\": {\r\n\t\t\"serviceId\": \"251700405268\",\r\n\t\t\"currentState\": \"Suspend\",\r\n\t\t\"newState\": \"Terminate\",\r\n\t\t\"reasonCode\": \"104\",\r\n\t\t\"reasonDesc\": \"Terminate\"\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-service/orders/lifecycle-sync/termination",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"lifecycle-sync",
+						"termination"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lifecyclesync_IMPL2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "579555454",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"orderType\": \"LifeCycleSync\",\r\n\t\"description\": \"Service or subscription Life Cycle Sync \",\r\n\t\"externalId\": \"D_0103206278\",\r\n\t\"requestedCompletionDate\": \"2022-03-03T11:57:45.438Z\",\r\n\t\"requestedStartDate\": \"1975-03-21T13:29:46.534Z\",\r\n\t\"serviceManagement\": {\r\n\t\t\"serviceId\": \"251700405268\",\r\n\t\t\"currentState\": \"Active\",\r\n\t\t\"newState\": \"Suspend\",\r\n\t\t\"reasonCode\": \"101\",\r\n\t\t\"reasonDesc\": \"Expired\"\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-service/orders/lifecycle-sync",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"lifecycle-sync"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add service to new account_IMPL 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "Onboarding_0091123",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"AddServiceToNewAccount\",\r\n    \"description\": \"Add Service order\",\r\n    \"externalId\": \"12131231632197296124\",\r\n    \"profile\": {\r\n        \"profileId\": \"235146\",\r\n        \"account\": {\r\n            \"chargingPattern\": \"2\",\r\n            \"languageId\": \"4\",\r\n            \"name\": \"test account\",\r\n            \"remarks\": \"string\",\r\n            \"title\": \"Mr\",\r\n            \"preferredCurrency\": \"USSD\",\r\n            \"contactMedium\": [\r\n                {\r\n                    \"mediumType\": \"address\",\r\n                    \"characteristic\": {\r\n                        \"contactType\": \"billingAddress\",\r\n                        \"addrLine1\": \"abcdfe\",\r\n                        \"addrLine2\": \"ssadffg\",\r\n                        \"addrLine4\": \"3\",\r\n                        \"addrLine5\": \"4\"\r\n                    }\r\n                }\r\n            ],\r\n            \"serviceGroups\": [\r\n                {\r\n                    \"services\": [\r\n                        {\r\n                            \"serviceId\": \"251722008748\",\r\n                            \"isSimPaired\": \"false\",\r\n                            \"name\": \"GSM Service\",\r\n                            \"languageId\": \"1\",\r\n                            \"serviceType\": \"Master\",\r\n                            \"networkServiceId\": \"1\",\r\n                            \"chargingPattern\": \"2\",\r\n                            \"contactMedium\": [\r\n                                {\r\n                                    \"mediumType\": \"address\",\r\n                                    \"characteristic\": {\r\n                                        \"contactType\": \"residentialAddress\",\r\n                                        \"addrLine1\": \"abcde\",\r\n                                        \"addrLine2\": \"efghh\",\r\n                                        \"addrLine4\": \"ytrfg\",\r\n                                        \"addrLine5\": \"23\"\r\n                                    }\r\n                                }\r\n                            ],\r\n                            \"characteristics\": [\r\n                                {\r\n                                    \"name\": \"ICCID\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"89251020900001993470\"\r\n                                },\r\n                                {\r\n                                    \"name\": \"IMSI\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"636029001097947\"\r\n                                }\r\n                            ],\r\n                            \"subscriptions\": [\r\n                                {\r\n                                    \"planId\": \"118\",\r\n                                    \"planType\": \"0\",\r\n                                    \"planName\": \"Baseplan\",\r\n                                    \"autoRenewal\": \"0\"\r\n                                }\r\n                            ]\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-service/orders/add-service-to-new-account",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"add-service-to-new-account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add service_Prepaid accpount_IMPL2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "eKYC",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "eKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "89345yyy",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"AddService\",\r\n    \"description\": \"Add service To Existing Customer\",\r\n    \"profile\": {\r\n        \"profileId\": \"124486\",\r\n        \"account\": {\r\n            \"chargingPattern\": \"2\",\r\n            \"serviceGroups\": [\r\n                {\r\n                    \"services\": [\r\n                        {\r\n                            \"serviceId\": \"251701943428\",\r\n                            \"languageId\": \"5\",\r\n                            \"isSimPaired\": \"false\",\r\n                            \"name\": \"Abdurahem Aljihad Abadura\",\r\n                            \"serviceType\": \"1\",\r\n                            \"subscriptions\": [\r\n                                {\r\n                                    \"planType\": \"0\",\r\n                                    \"somCallRqd\": false,\r\n                                    \"esbCallRqd\": false,\r\n                                    \"commonAddon\": false,\r\n                                    \"mandatoryAddon\": false,\r\n                                    \"planId\": \"118\",\r\n                                    \"planName\": \"Base All in One PO\"\r\n                                }\r\n                            ],\r\n                            \"characteristics\": [\r\n                                {\r\n                                    \"name\": \"IMSI\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"636021157911159\"\r\n                                },\r\n                                {\r\n                                    \"name\": \"ICCID\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"89251020011679118159\"\r\n                                }\r\n                            ],\r\n                            \"chargingPattern\": \"2\",\r\n                            \"networkServiceId\": \"1\"\r\n                        }\r\n                    ]\r\n                }\r\n            ],\r\n            \"accountId\": \"PREPAID_ACCOUNT\"\r\n        }\r\n    },\r\n    \"authentication\": {\r\n        \"authType\": \"Biometric\",\r\n        \"authId\": \"75dd4f00-5f3c-47a3-8514-7124a2550ccd\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-service/orders/add-service",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"add-service"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add service_Existing Account-Impl2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "eKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "add123445887",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"AddService\",\r\n    \"description\": \"Add Service order\",\r\n    \"externalId\": \"12131231632197296124\",\r\n    \"profile\": {\r\n        \"profileId\": \"621687\",\r\n        \"account\": {\r\n            \"accountId\": \"ET620496\",\r\n            \"serviceGroups\": [\r\n                {\r\n                    \"services\": [\r\n                        {\r\n                            \"serviceId\": \"251799500001\",\r\n                            \"isSimPaired\": \"false\",\r\n                            \"name\": \"6d test addDC02\",\r\n                            \"languageId\": \"1\",\r\n                            \"serviceType\": \"Master\",\r\n                            \"networkServiceId\": \"1\",\r\n                            \"chargingPattern\": \"2\",\r\n                            \"contactMedium\": [\r\n                                {\r\n                                    \"mediumType\": \"address\",\r\n                                    \"characteristic\": {\r\n                                        \"contactType\": \"residentialAddress\",\r\n                                        \"addrLine1\": \"house no 240\",\r\n                                        \"addrLine2\": \"1000 ADDIS ABABA\",\r\n                                        \"addrLine3\": \"Kebele 1, 1302/45\",\r\n                                        \"addrLine4\": 2,\r\n                                        \"addrLine5\": 1,\r\n                                        \"addrLine6\": 1,\r\n                                        \"addrLine7\": 1,\r\n                                        \"addrLine8\": \"1000\",\r\n                                        \"addrLine9\": \"P.O. Box 3000\",\r\n                                        \"addrLine10\": \"8.9804\",\r\n                                        \"addrLine11\": \"38.7577\"\r\n                                    }\r\n                                }\r\n                            ],\r\n                            \"characteristics\": [\r\n                                {\r\n                                    \"name\": \"ICCID\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"89251020010412060905\"\r\n                                },\r\n                                {\r\n                                    \"name\": \"IMSI\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"636020104124920\"\r\n                                }\r\n                            ],\r\n                            \"subscriptions\": [\r\n                                {\r\n                                    \"planId\": \"118\",\r\n                                    \"planType\": \"0\",\r\n                                    \"planName\": \"Base All in One PO\",\r\n                                    \"autoRenewal\": \"0\"\r\n                                }\r\n                            ]\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        }\r\n    },\r\n    \"authentication\": {\r\n        \"authType\": \"Biometric\",\r\n        \"authId\": \"12345678\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-service/orders/add-service",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"add-service"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update primary number_IMPL2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "Onboarding_0091123",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"UpdatePrimaryNumber\",\r\n    \"description\": \"Product Order illustration sample\",\r\n    \"externalId\": \"PO-456\",\r\n    \"requestedCompletionDate\": \"2022-09-28T06:37:01.806Z\",\r\n    \"requestedStartDate\": \"2022-09-28T06:37:01.806Z\",\r\n    \"serviceManagement\": {\r\n        \"serviceId\": \"251722000580\",\r\n        \"primaryNumber\": \"251821555133\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-service/orders/update-primary-number",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"update-primary-number"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "move to fwa  impl2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "Onboarding_0091123",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"orderType\": \"MoveToFWA\",\r\n\t\"serviceManagement\": {\r\n\t\t\"serviceId\": \"251714199375\",\r\n\t\t\"primaryNumber\": \"251821111432\"\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-service/orders/move-to-fwa",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"move-to-fwa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FWA_Addservice_Impl2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "66677888",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"AddService\",\r\n    \"description\": \"Add Service order\",\r\n    \"externalId\": \"122334455567\",\r\n    \"profile\": {\r\n        \"profileId\": \"242089\",\r\n        \"account\": {\r\n            \"accountId\": \"ET168143\",\r\n            \"serviceGroups\": [\r\n                {\r\n                    \"primaryNumber\": \"251799102970\",\r\n                    \"services\": [\r\n                        {\r\n                            \"serviceId\": \"251799102969\",\r\n                            \"name\": \"GSM Service\",\r\n                            \"languageId\": \"2\",\r\n                            \"isSimPaired\": false,\r\n                            \"serviceType\": \"Master\",\r\n                            \"networkServiceId\": \"2\",\r\n                            \"chargingPattern\": \"2\",\r\n                            \r\n                            \"contactMedium\": [\r\n                                {\r\n                                    \"mediumType\": \"address\",\r\n                                    \"characteristic\": {\r\n                                        \"contactType\": \"residentialAddress\",\r\n                                        \"addrLine1\": \"house no 268\",\r\n                                        \"addrLine2\": \"1000 ADDIS ABABA\",\r\n                                        \"addrLine3\": \"Kebele 1, 1302/29\",\r\n                                        \"addrLine4\": \"Addis Ababa\",\r\n                                        \"addrLine5\": \"Addis Ababa\",\r\n                                        \"addrLine6\": \"Shoa\",\r\n                                        \"addrLine7\": \"Achefer\",\r\n                                        \"addrLine8\": \"1000\",\r\n                                        \"addrLine9\": \"P.O. Box 1519\",\r\n                                        \"addrLine10\": \"8.9806\",\r\n                                        \"addrLine11\": \"38.7578\"\r\n                                    }\r\n                                }\r\n                            ],\r\n                            \"characteristics\": [\r\n                                {\r\n                                    \"name\": \"ICCID\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"89251020010476013634\"\r\n                                },\r\n                                {\r\n                                    \"name\": \"IMSI\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"636020104760193\"\r\n                                }\r\n                            ],\r\n                            \"subscriptions\": [\r\n                                {\r\n                                    \"planId\": \"136\",\r\n                                    \"planType\": \"0\",\r\n                                    \"planName\": \"Base PO for COM\"\r\n                                }\r\n                            ]\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-service/orders/add-service",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"add-service"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "starterpack_impl2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "Onboarding_0091123",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"orderType\": \"StarterPackProvisioning\",\r\n\t\"starterPack\": {\r\n\t\t\"serviceId\": \"251007100037\",\r\n\t\t\"imsi\": \"636021230000255\",\r\n\t\t\"iccid\": \"8925402123410000255\",\r\n\t\t\"subscriptions\": [\r\n\t\t\t{\r\n\t\t\t\t\"planId\": \"118\",\r\n\t\t\t\t\"planType\": \"0\"\r\n\t\t\t}\r\n\t\t]\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-service/orders/starter-pack",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"starter-pack"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LineBarring_IMPL2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "123rtrtr",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderType\": \"LineBarring\",\r\n  \"description\": \"Product Order illustration sample\",\r\n  \"externalId\": \"PO-456\",\r\n  \"requestedCompletionDate\": \"2022-10-23T12:45:19.229Z\",\r\n  \"requestedStartDate\": \"2022-10-23T12:45:19.229Z\",\r\n  \"serviceManagement\": {\r\n    \"serviceId\": \"251700860746\",\r\n    \"reason\": \"109\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://com.bss3.safaricomet.net/order-service/orders/line-barring",
+					"protocol": "https",
+					"host": [
+						"com",
+						"bss3",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"line-barring"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LineUnbarring_IMPL2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "8984545655",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderType\": \"LineUnBarring\",\r\n  \"description\": \"Product Order illustration sample\",\r\n  \"externalId\": \"PO-456\",\r\n  \"requestedCompletionDate\": \"2022-10-23T12:49:33.105Z\",\r\n  \"requestedStartDate\": \"2022-10-23T12:49:33.105Z\",\r\n  \"serviceManagement\": {\r\n    \"serviceId\": \"251700860746\",\r\n    \"reason\": \"109\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://com.bss3.safaricomet.net/order-service/orders/line-unbarring",
+					"protocol": "https",
+					"host": [
+						"com",
+						"bss3",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"line-unbarring"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Gifting-new_IMPL2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "gif454566100",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"Gifting\",\r\n    \"auditInfo\": \"345876477789\",\r\n    \"orderItem\": [\r\n        {\r\n            \"action\": \"add\",\r\n            \"itemCharacteristic\": [\r\n                {\r\n                    \"name\": \"beneficiary\",\r\n                    \"valueType\": \"string\",\r\n                    \"value\": \"251799152225\"\r\n                }\r\n            ],\r\n            \"product\": {\r\n                \"productSpecification\": {\r\n                    \"version\": \"1\"\r\n                }\r\n            },\r\n            \"service\": {\r\n                \"id\": \"251799152224\"\r\n            },\r\n            \"productOffering\": {\r\n                \"id\": \"455\",\r\n                \"name\": \"Addon\"\r\n            }\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-service/orders/gifting",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"gifting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-starterpack-impl2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "Onboarding_0091123",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"UpdateStarterPackKYC\",\r\n    \"externalId\": \"PO-456\",\r\n    \"requestedCompletionDate\": \"2021-11-26T03:26:26.627Z\",\r\n    \"requestedStartDate\": \"2021-11-26T03:26:26.627Z\",\r\n    \"customerInfo\": {\r\n        \"birthDate\": \"18-04-1998\",\r\n        \"localizedBirthDate\": \"21-01-1992\",\r\n        \"familyName\": \"raj\",\r\n        \"serviceId\": \"251722886746\",\r\n        \"givenName\": \"Prithivi\",\r\n        \"nationality\": \"2\",\r\n        \"title\": \"1\",\r\n        \"relatedParty\": [\r\n            {\r\n                \"id\": \"1\",\r\n                \"name\": \"vinaya\",\r\n                \"role\": \"G\",\r\n                \"emailAddress\": \"navin@gmail.com\",\r\n                \"phoneNumber\": \"9876587855\",\r\n                \"alternatePhoneNumber\": \"987654754544\"\r\n            }\r\n        ],\r\n        \"partyCharacteristic\": [\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"profileType\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"0\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"subscriberCategory\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"23\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"subscriberSubCategory\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"231\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"biometricId\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"32132434324\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"minorFlag\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"0\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"paymentPreference\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"1\"\r\n\t\t\t},\r\n      {\r\n        \"name\": \"occupation\",\r\n        \"valueType\": \"string\",\r\n        \"value\": \"IT Professional\"\r\n      },\r\n      {\r\n        \"name\": \"employer\",\r\n        \"valueType\": \"string\",\r\n        \"value\": \"6d Technologies\"\r\n      },\r\n      {\r\n        \"name\": \"position\",\r\n        \"valueType\": \"string\",\r\n        \"value\": \"Software Engineer\"\r\n      },\r\n      {\r\n        \"name\": \"averageMonthlyIncome\",\r\n        \"valueType\": \"string\",\r\n        \"value\": \"1\"\r\n      }\r\n\t\t],\r\n\t\t\"languageAbility\": [\r\n\t\t\t{\r\n\t\t\t\t\"languageCode\": \"1\"\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"individualIdentification\": [\r\n\t\t\t{\r\n\t\t\t\t\"attachment\": [\r\n\t\t\t\t\t{\r\n\t\t\t\t\t\t\"description\": \"passport pdf\",\r\n\t\t\t\t\t\t\"mimeType\": \"pdf\",\r\n\t\t\t\t\t\t\"name\": \"passport copy\",\r\n\t\t\t\t\t\t\"url\": \"wwww.docsshare.com/customer11/passport/passport.pdf\",\r\n\t\t\t\t\t\t\"kycReferenceId\": \"12123232999\"\r\n\t\t\t\t\t}\r\n\t\t\t\t],\r\n\t\t\t\t\"identificationId\": \"13213162271221\",\r\n\t\t\t\t\"identificationType\": \"101\",\r\n\t\t\t\t\"issuingAuthority\": \"ethiopian embassy\",\r\n\t\t\t\t\"issuingDate\": \"12-10-2022 11:44:52\",\r\n\t\t\t\t\"isExpired\":\"false\",\r\n\t\t\t\t\"validFor\": {\r\n\t\t\t\t\t\"endDateTime\": \"14-10-2022 11:44:52\",\r\n\t\t\t\t\t\"startDateTime\": \"12-10-2022 11:44:52\"\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"attachments\": [\r\n\t\t\t{\r\n\t\t\t\t\"description\": \"test attachment\",\r\n\t\t\t\t\"mimeType\": \"test\",\r\n\t\t\t\t\"name\": \"test doc\",\r\n\t\t\t\t\"url\": \"test url\",\r\n\t\t\t\t\"kycReferenceId\": \"121232329991\"\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"contactMedium\": [\r\n\t\t\t{\r\n\t\t\t\t\"preferred\": false,\r\n\t\t\t\t\"mediumType\": \"telephoneNumber\",\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"phoneNumber\": \"9381231283213\",\r\n\t\t\t\t\t\"contactType\": \"smsNumber\"\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"preferred\": false,\r\n\t\t\t\t\"mediumType\": \"telephoneNumber\",\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"faxNumber\": \"11231283213\",\r\n\t\t\t\t\t\"contactType\": \"faxNumber\"\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"contactType\": \"alternateSmsNumber\",\r\n\t\t\t\t\t\"altPhoneNumber\": \"9738646475\"\r\n\t\t\t\t},\r\n\t\t\t\t\"mediumType\": \"telephoneNumber\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"preferred\": false,\r\n\t\t\t\t\"mediumType\": \"emailAddress\",\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"emailAddress\": \"poornima.thota@6dtech.co.in\",\r\n\t\t\t\t\t\"contactType\": \"emailAddress\"\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"contactType\": \"residentialAddress\",\r\n\t\t\t\t\t\"addrLine4\": \"bangalore\",\r\n\t\t\t\t\t\"addrLine5\": \"urban\"\r\n\t\t\t\t},\r\n\t\t\t\t\"mediumType\": \"address\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"contactType\": \"permanentAddress\",\r\n\t\t\t\t\t\"addrLine4\": \"bangalore\",\r\n\t\t\t\t\t\"addrLine5\": \"urban\"\r\n\t\t\t\t},\r\n\t\t\t\t\"mediumType\": \"address\"\r\n\t\t\t}\r\n\t\t]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-service/orders/update-starterpack-kyc",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"update-starterpack-kyc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_view order Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Request-ID",
+						"value": "1234567987654589",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "4545663432",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "crm",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmuser",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-report/orders/966586331999842304/sub-orders/966586332201168896/stages?limit=20",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-report",
+						"orders",
+						"966586331999842304",
+						"sub-orders",
+						"966586332201168896",
+						"stages"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "skip/retry _IMPL 2 Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "Onboarding_0091123",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"Onboarding\",\r\n    \"description\": \"Onboarding order\",\r\n    \"externalId\": \"121312012604786759845\",\r\n    \"profile\": {\r\n        \"birthDate\": \"24-04-1988\",\r\n        \"familyName\": \"noiel\",\r\n        \"givenName\": \"sam\",\r\n        \"nationality\": \"3\",\r\n        \"title\": \"1\",\r\n        \"partyCharacteristic\": [\r\n            {\r\n                \"name\": \"profileType\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"0\"\r\n            },\r\n            {\r\n                \"name\": \"subscriberCategory\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"23\"\r\n            },\r\n            {\r\n                \"name\": \"minorFlag\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"0\"\r\n            },\r\n            {\r\n                \"name\": \"subscriberSubCategory\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"231\"\r\n            },\r\n            {\r\n                \"name\": \"biometricId\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"32132434324\"\r\n            },\r\n            {\r\n                \"name\": \"paymentPreference\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"2,1\"\r\n            }\r\n        ],\r\n        \"languageAbility\": [\r\n            {\r\n                \"languageCode\": \"1\"\r\n            }\r\n        ],\r\n        \"individualIdentification\": [\r\n            {\r\n                \"attachment\": [\r\n                    {\r\n                        \"content\": \"pdf\",\r\n                        \"description\": \"passport pdf\",\r\n                        \"mimeType\": \"pdf\",\r\n                        \"name\": \"passport copy\",\r\n                        \"url\": \"wwww.docsshare.com/customer11/passport/passport.pdf\",\r\n                        \"kycReferenceId\": \"12123343213\"\r\n                    }\r\n                ],\r\n                \"identificationId\": \"659988745511900\",\r\n                \"identificationType\": \"102\",\r\n                \"issuingAuthority\": \"ethiopian embassy\",\r\n                \"issuingDate\": \"2021-11-09\",\r\n                \"validFor\": {\r\n                    \"endDateTime\": \"2001-11-10T07:00:43.894Z\",\r\n                    \"startDateTime\": \"2026-11-09T07:00:43.894Z\"\r\n                }\r\n            }\r\n        ],\r\n        \"contactMedium\": [\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"telephoneNumber\",\r\n                \"characteristic\": {\r\n                    \"phoneNumber\": \"9381231283213\",\r\n                    \"contactType\": \"smsNumber\"\r\n                }\r\n            },\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"telephoneNumber\",\r\n                \"characteristic\": {\r\n                    \"faxNumber\": \"11231283213\",\r\n                    \"contactType\": \"faxNumber\"\r\n                }\r\n            },\r\n            {\r\n                \"characteristic\": {\r\n                    \"contactType\": \"alternateSmsNumber\",\r\n                    \"altPhoneNumber\": \"9738646475\"\r\n                },\r\n                \"mediumType\": \"telephoneNumber\"\r\n            },\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"emailAddress\",\r\n                \"characteristic\": {\r\n                    \"emailAddress\": \"testing@gmail.com\",\r\n                    \"contactType\": \"emailAddress\"\r\n                }\r\n            },\r\n            {\r\n                \"mediumType\": \"address\",\r\n                \"characteristic\": {\r\n                    \"contactType\": \"residentialAddress\",\r\n                    \"addrLine1\": \"house no 268\",\r\n                    \"addrLine2\": \"1000 ADDIS ABABA\",\r\n                    \"addrLine3\": \"Kebele 1, 1302/29\",\r\n                    \"addrLine4\": 2,\r\n                    \"addrLine5\": 1,\r\n                    \"addrLine6\": 1,\r\n                    \"addrLine7\": 1,\r\n                    \"addrLine8\": \"1000\",\r\n                    \"addrLine9\": \"P.O. Box 1519\",\r\n                    \"addrLine10\": \"8.9806\",\r\n                    \"addrLine11\": \"38.7578\"\r\n                }\r\n            },\r\n            {\r\n                \"characteristic\": {\r\n                    \"contactType\": \"permanentAddress\",\r\n                    \"addrLine1\": \"house no 268\",\r\n                    \"addrLine2\": \"1000 ADDIS ABABA\",\r\n                    \"addrLine3\": \"Kebele 1, 1302/29\",\r\n                    \"addrLine4\": 2,\r\n                    \"addrLine5\": 1,\r\n                    \"addrLine6\": 1,\r\n                    \"addrLine7\": 1,\r\n                    \"addrLine8\": \"1000\",\r\n                    \"addrLine9\": \"P.O. Box 1519\",\r\n                    \"addrLine10\": \"8.9806\",\r\n                    \"addrLine11\": \"38.7578\"\r\n                },\r\n                \"mediumType\": \"address\"\r\n            }\r\n        ],\r\n        \"account\": {\r\n            \"chargingPattern\": \"2\",\r\n            \"languageId\": \"1\",\r\n            \"name\": \"test account\",\r\n            \"remarks\": \"string\",\r\n            \"title\": \"Mr\",\r\n            \"preferredCurrency\": \"USSD\",\r\n            \"contactMedium\": [\r\n                {\r\n                    \"mediumType\": \"address\",\r\n                    \"characteristic\": {\r\n                        \"contactType\": \"billingAddress\",\r\n                        \"addrLine1\": \"house no 268\",\r\n                        \"addrLine2\": \"1000 ADDIS ABABA\",\r\n                        \"addrLine3\": \"Kebele 1, 1302/29\",\r\n                        \"addrLine4\": 2,\r\n                        \"addrLine5\": 1,\r\n                        \"addrLine6\": 1,\r\n                        \"addrLine7\": 1,\r\n                        \"addrLine8\": \"1000\",\r\n                        \"addrLine9\": \"P.O. Box 1519\",\r\n                        \"addrLine10\": \"8.9806\",\r\n                        \"addrLine11\": \"38.7578\"\r\n                    }\r\n                }\r\n            ],\r\n            \"serviceGroups\": [\r\n                {\r\n                    \"services\": [\r\n                        {\r\n                            \"serviceId\": \"251714779340\",\r\n                            \"isSimPaired\": \"false\",\r\n                            \"name\": \"GSM Service\",\r\n                            \"languageId\": \"1\",\r\n                            \"serviceType\": \"Master\",\r\n                            \"networkServiceId\": \"1\",\r\n                            \"chargingPattern\": \"2\",\r\n                            \"contactMedium\": [\r\n                                {\r\n                                    \"mediumType\": \"address\",\r\n                                    \"characteristic\": {\r\n                                        \"contactType\": \"residentialAddress\",\r\n                                        \"addrLine1\": \"house no 268\",\r\n                                        \"addrLine2\": \"1000 ADDIS ABABA\",\r\n                                        \"addrLine3\": \"Kebele 1, 1302/29\",\r\n                                        \"addrLine4\": 2,\r\n                                        \"addrLine5\": 1,\r\n                                        \"addrLine6\": 1,\r\n                                        \"addrLine7\": 1,\r\n                                        \"addrLine8\": \"1000\",\r\n                                        \"addrLine9\": \"P.O. Box 1519\",\r\n                                        \"addrLine10\": \"8.9806\",\r\n                                        \"addrLine11\": \"38.7578\"\r\n                                    }\r\n                                }\r\n                            ],\r\n                            \"characteristics\": [\r\n                                {\r\n                                    \"name\": \"ICCID\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"8925102406450009751\"\r\n                                },\r\n                                {\r\n                                    \"name\": \"IMSI\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"636024060009751\"\r\n                                }\r\n                            ],\r\n                            \"subscriptions\": [\r\n                                {\r\n                                    \"planId\": \"44\",\r\n                                    \"planType\": \"0\",\r\n                                    \"planName\": \"Baseplan\",\r\n                                    \"autoRenewal\": \"0\"\r\n                                }\r\n                            ]\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-orchestrator/orders/skip-or-retry",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-orchestrator",
+						"orders",
+						"skip-or-retry"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SOM call back _IMPL 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "Onboarding_0091123",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderId\": \"994861042307444736\",\r\n    \"subOrderId\": \"994861044400402432\",\r\n    \"correlationId\": \"SOMCallback:994861044400402432\",\r\n    \"status\": \"Failed\",\r\n    \"failureReason\": \"Data not found for entity: CFSS_UPC\",\r\n    \"isRollbacked\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-orchestrator/orders/continue-order",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-orchestrator",
+						"orders",
+						"continue-order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SOM call back _IMPL 2 Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "Onboarding_0091123",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderId\": \"994861042307444736\",\r\n    \"subOrderId\": \"994861044400402432\",\r\n    \"correlationId\": \"SOMCallback:994861044400402432\",\r\n    \"status\": \"Failed\",\r\n    \"failureReason\": \"Data not found for entity: CFSS_UPC\",\r\n    \"isRollbacked\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-orchestrator/orders/continue-order",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-orchestrator",
+						"orders",
+						"continue-order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add loyality points_IMPL2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "Onboarding_0091123",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"AddLoyaltyPoints\",\r\n    \"loyaltyManagement\": {\r\n        \"customerId\": \"5678907632\",\r\n        \"loyaltyId\": \"21212987654321\",\r\n        \"earnType\": \"Topup\",\r\n        \"quantity\": \"50\",\r\n        \"description\": \"test\"\r\n    },\r\n    \"authentication\": {\r\n        \"authType\": \"Biometric\",\r\n        \"authId\": \"1131312\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-service/orders/add-loyalty-points",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"add-loyalty-points"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add loyality points_IMPL2 Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "Onboarding_0091123",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"AddLoyaltyPoints\",\r\n    \"loyaltyManagement\": {\r\n        \"customerId\": \"5678907632\",\r\n        \"loyaltyId\": \"21212987654321\",\r\n        \"earnType\": \"Topup\",\r\n        \"quantity\": \"50\",\r\n        \"description\": \"test\"\r\n    },\r\n    \"authentication\": {\r\n        \"authType\": \"Biometric\",\r\n        \"authId\": \"1131312\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-service/orders/add-loyalty-points",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"add-loyalty-points"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deduct loyality points_IMPL2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "Onboarding_0091123",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderType\": \"DeductLoyaltyPoints\",\r\n  \"description\": \"Product Order illustration sample\",\r\n  \"externalId\": \"PO-456\",\r\n  \"requestedCompletionDate\": \"2022-10-03T13:44:39.648Z\",\r\n  \"requestedStartDate\": \"2022-10-03T13:44:39.648Z\",\r\n  \"loyaltyManagement\": {\r\n    \"customerId\": \"5678907632\",\r\n    \"loyaltyId\": \"21212987654321\",\r\n    \"earnType\": \"Topup\",\r\n    \"quantity\": \"50\",\r\n    \"description\": \"test\"\r\n  },\r\n  \"authentication\": {\r\n    \"authType\": \"Biometric\",\r\n    \"authId\": \"1131312\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-service/orders/deduct-loyalty-points",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"deduct-loyalty-points"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change sub-impl2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "Onboarding_0091123",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"orderType\": \"ChangeSubscription\",\r\n\t\"serviceManagement\": {\r\n\t\t\"serviceId\": \"251799500009\",\r\n\t\t\"newCart\": {\r\n\t\t\t\"subscriptions\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"planId\": \"336\",\r\n\t\t\t\t\t\"planType\": \"0\"\r\n\t\t\t\t}\r\n\t\t\t]\r\n\t\t}\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-service/orders/change-subscription",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"change-subscription"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Unfreeze_IMPL2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "Onboarding_0091123",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"orderType\":\"Unfreeze\",\r\n\t\"serviceManagement\":{\r\n\t\t\"serviceId\": \"251700603124\",\r\n        \"reason\": \"111\",\r\n        \"ocsTriggerEvent\": \"TO_FREEZE_4M\"\r\n\t\t\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-service/orders/unfreeze",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"unfreeze"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "freeze_IMPL2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "Onboarding_0091123",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"Freeze\",\r\n    \"serviceManagement\": {\r\n        \"serviceId\": \"251700603124\",\r\n        \"ocsTriggerEvent\": \"TO_FREEZE_4M\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-service/orders/freeze",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"freeze"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Connection Mig_IMPL2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "Onboarding_0091123",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"orderType\": \"ConnectionMigration\",\r\n\t\"description\": \"Connection Migration Order\",\r\n\t\"serviceManagement\": {\r\n\t\t\"serviceId\": \"251799132988\",\r\n\t\t\"destinationConnectionType\": \"1\",\r\n        \"deposit\": {\r\n            \"comment\": \"deposit\",\r\n            \"currencyCode\": \"USD\",\r\n            \"depositAmount\": \"150.00\"\r\n        },\r\n        \"creditLimit\": \"10000\",\r\n        \"creditClass\": \"A\",\r\n        \"creditLimitUpdateReqd\": \"true\",\r\n        \"depositReqd\": \"true\",\r\n\t\t\"subscriptions\": [\r\n\t\t\t{\r\n\t\t\t\t\"planId\": \"368\",\r\n\t\t\t\t\"planName\": \"TMF25\",\r\n\t\t\t\t\"planDesc\": \"GSM Base Plan\",\r\n\t\t\t\t\"planType\": \"0\"\r\n\t\t\t}\r\n\t\t]\r\n\t},\r\n    \"approvalDetails\": {\r\n        \"approvalReqd\": \"false\"\r\n    },\r\n\t\"profile\": {\r\n\t\t\"profileId\": \"78416\",\r\n\t\t\"account\": {\r\n\t\t\t\"chargingPattern\": \"1\",\r\n\t\t\t\"languageId\": \"1\",\r\n            \"smsNumbers\": \"657849\",\r\n            \"creditLimit\": \"100\",\r\n\t\t\t\"name\": \"Postpaid Account\",\r\n\t\t\t\"remarks\": \"string\",\r\n\t\t\t\"title\": \"Mr\",\r\n\t\t\t\"preferredCurrency\": \"USSD\",\r\n\t\t\t\"contactMedium\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"mediumType\": \"address\",\r\n\t\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\t\"contactType\": \"billingAddress\",\r\n\t\t\t\t\t\t\"addrLine1\": \"house no 268\",\r\n\t\t\t\t\t\t\"addrLine2\": \"1000 ADDIS ABABA\",\r\n\t\t\t\t\t\t\"addrLine3\": \"Kebele 1, 1302/29\",\r\n\t\t\t\t\t\t\"addrLine4\": 89,\r\n\t\t\t\t\t\t\"addrLine5\": 1,\r\n\t\t\t\t\t\t\"addrLine6\": 1,\r\n\t\t\t\t\t\t\"addrLine7\": 1,\r\n\t\t\t\t\t\t\"addrLine8\": \"1000\",\r\n\t\t\t\t\t\t\"addrLine9\": \"P.O. Box 1519\",\r\n\t\t\t\t\t\t\"addrLine10\": \"8.9806\",\r\n\t\t\t\t\t\t\"addrLine11\": \"38.7578\"\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\t\t\t]\r\n\t\t}\r\n\t},\r\n    \"payment\": {\r\n        \"upfrontPayment\": \"false\",\r\n        \"amount\": \"1000.0\",\r\n        \"comment\": \"order payment\",\r\n        \"totalDeposit\": \"150\",\r\n        \"paymentChannel\": \"bank\",\r\n        \"orderCharges\": \"30.0\"\r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-service/orders/connection-migration",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"connection-migration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Connection Mig_IMPL2 Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "Onboarding_0091123",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"orderType\": \"ConnectionMigration\",\r\n\t\"description\": \"Connection Migration Order\",\r\n\t\"serviceManagement\": {\r\n\t\t\"serviceId\": \"251796152227\",\r\n\t\t\"destinationConnectionType\": \"1\",\r\n\t\t\"subscriptions\": [\r\n\t\t\t{\r\n\t\t\t\t\"planId\": \"453\",\r\n\t\t\t\t\"planName\": \"Prepaid Base po\",\r\n\t\t\t\t\"planDesc\": \"GSM Base Plan\",\r\n\t\t\t\t\"planType\": \"0\"\r\n\t\t\t}\r\n\t\t]\r\n\t},\r\n\t\"profile\": {\r\n\t\t\"profileId\": \"124180\",\r\n\t\t\"account\": {\r\n\t\t\t\"chargingPattern\": \"1\",\r\n\t\t\t\"languageId\": \"1\",\r\n\t\t\t\"name\": \"Prepaid Account\",\r\n            \"creditManager\" : \"052fa566-10a8-430d-a958-bef37054bd5e\",\r\n            \"emailNotificationAllowed\" : 0,\r\n\t\t\t\"remarks\": \"string\",\r\n            \"smsNumbers\": \"34325434545\",\r\n\t\t\t\"title\": \"Mr\",\r\n\t\t\t\"preferredCurrency\": \"USSD\",\r\n\t\t\t\"contactMedium\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"mediumType\": \"address\",\r\n\t\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\t\"contactType\": \"billingAddress\",\r\n\t\t\t\t\t\t\"addrLine1\": \"house no 268\",\r\n\t\t\t\t\t\t\"addrLine2\": \"1000 ADDIS ABABA\",\r\n\t\t\t\t\t\t\"addrLine3\": \"Kebele 1, 1302/29\",\r\n\t\t\t\t\t\t\"addrLine4\": 2,\r\n\t\t\t\t\t\t\"addrLine5\": 1,\r\n\t\t\t\t\t\t\"addrLine6\": 1,\r\n\t\t\t\t\t\t\"addrLine7\": 1,\r\n\t\t\t\t\t\t\"addrLine8\": \"1000\",\r\n\t\t\t\t\t\t\"addrLine9\": \"P.O. Box 1519\",\r\n\t\t\t\t\t\t\"addrLine10\": \"8.9806\",\r\n\t\t\t\t\t\t\"addrLine11\": \"38.7578\"\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\t\t\t]\r\n\t\t}\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-service/orders/connection-migration",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"connection-migration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TOS_IMPL2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "Onboarding_0091123",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"orderType\": \"TransferOfService\",\r\n\t\"serviceManagement\": {\r\n\t\t\"destinationAccountId\": \"ET67627\",\r\n\t\t\"destinationProfileId\": \"78042\",\r\n\t\t\"serviceId\": \"251799500009\",\r\n\t\t\"subscriptions\": [\r\n\t\t\t{\r\n\t\t\t\t\"planId\": \"118\",\r\n\t\t\t\t\"planType\": \"0\"\r\n\t\t\t}\r\n\t\t]\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-service/orders/transfer-of-service",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"transfer-of-service"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addsubscription_IMPL2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "MPESA_SuperAPP_CVM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "645KLKLKL",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"AddSubscription\",\r\n    \"externalId\": \"MPESA-251700406656-251700406656\",\r\n    \"orderItem\": [\r\n        {\r\n            \"action\": \"add\",\r\n            \"service\": {\r\n                \"id\": \"251700990137\",\r\n                \"depositReqd\": false,\r\n                \"creditLimitUpdateReqd\": false\r\n            },\r\n            \"productOffering\": {\r\n                \"id\": \"1463\"\r\n            },\r\n            \"somCallRqd\": false,\r\n            \"esbCallRqd\": false\r\n        }\r\n    ],\r\n    \"payment\": {\r\n        \"amount\": \"30.\",\r\n        \"upfrontPayment\": \"false\",\r\n        \"id\": \"TEST\",\r\n        \"type\": \"MPESA\",\r\n        \"paymentReceived\": \"true\",\r\n        \"paymentChannel\": \"MPESA\"\r\n    },\r\n    \"auditInfo\": \"30.:BIRR\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/add-subscription",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"add-subscription"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CancelSubscription_IMPL2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "Onboarding_0091123",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderType\": \"CancelSubscription\", \r\n  \"orderItem\": [\r\n    {\r\n      \"itemCharacteristic\": [\r\n        {\r\n          \"name\": \"SUBSCRIPTION_ID\",\r\n          \"valueType\": \"string\",\r\n          \"value\": \"251873069367492655\"\r\n        }\r\n      ],\r\n      \"service\": {\r\n        \"id\": \"251873069367\",\r\n        \"name\": \"GSM Service\"\r\n      }\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-service/orders/cancel-subscription",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"cancel-subscription"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddSBBeneficiary_IMPL2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "Onboarding_0091123",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"orderType\": \"AddSBBeneficiary\",\r\n\t\"description\": \"Product Order illustration sample\",\r\n\t\"externalId\": \"PO-456\",\r\n\t\"requestedCompletionDate\": \"2023-02-20T08:43:50.060Z\",\r\n\t\"requestedStartDate\": \"2023-02-20T08:43:50.060Z\",\r\n\t\"serviceManagement\": {\r\n\t\t\"sponsorMsisdn\": \"251799132986\",\r\n\t\t\"adjustmentAmount\": \"240\",\r\n\t\t\"beneficiaries\": [\r\n\t\t\t{\r\n\t\t\t\t\"msisdn\": \"251799135299\",\r\n\t\t\t\t\"quota\": \"50\"\r\n\t\t\t}\r\n\t\t]\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-service/orders/add-sb-beneficiary",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"add-sb-beneficiary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RemoveSBBeneficiary_IMPL2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "Onboarding_0091123",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"orderType\": \"RemoveSBBeneficiary\",\r\n\t\"description\": \"Product Order illustration sample\",\r\n\t\"externalId\": \"PO-456\",\r\n\t\"requestedCompletionDate\": \"2023-02-20T08:44:53.526Z\",\r\n\t\"requestedStartDate\": \"2023-02-20T08:44:53.526Z\",\r\n\t\"serviceManagement\": {\r\n\t\t\"sponsorMsisdn\": \"251799132986\",\r\n\t\t\"beneficiaries\": [\r\n\t\t\t{\r\n\t\t\t\t\"msisdn\": \"251799132988\"\r\n\t\t\t}\r\n\t\t]\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-service/orders/remove-sb-beneficiary",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"remove-sb-beneficiary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateQuota_IMPL2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "Onboarding_0091123",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderType\": \"UpdateSBQuota\",\r\n  \"description\": \"Product Order illustration sample\",\r\n  \"externalId\": \"PO-456\",\r\n  \"requestedCompletionDate\": \"2023-02-22T14:04:33.823Z\",\r\n  \"requestedStartDate\": \"2023-02-22T14:04:33.824Z\",\r\n  \"serviceManagement\": {\r\n    \"sponsorMsisdn\": \"251883078392\",\r\n    \"beneficiary\": \"251873068230\",\r\n    \"quota\": \"650\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-service/orders/update-sb-quota",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"update-sb-quota"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create SB grup_IMPL2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "Onboarding_0091123",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderType\": \"CreateSBGroup\",\r\n  \"serviceManagement\": {\r\n    \"sponsorMsisdn\": \"251701256573\",\r\n    \"beneficiaries\": [\r\n      {\r\n        \"msisdn\": \"251701256574\",\r\n        \"quota\": \"50\"\r\n      }\r\n    ]\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-service/orders/create-sb-group",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"create-sb-group"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteSBgroup_IMPL2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "Onboarding_0091123",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderType\": \"DeleteSBGroup\",\r\n  \"serviceManagement\": {\r\n    \"groupId\": \"12078\",\r\n    \"sponsorMsisdn\": \"251873069377\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-service/orders/delete-sb-group",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"delete-sb-group"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RegisterMpesa_IMPL2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "Onboarding_0091123",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"RegisterMpesa\",\r\n    \"description\": \"Product Order illustration sample\",\r\n    \"externalId\": \"PO-456\",\r\n    \"requestedCompletionDate\": \"2023-04-14T05:38:32.813Z\",\r\n    \"requestedStartDate\": \"2023-04-14T05:38:32.813Z\",\r\n    \"serviceManagement\": {\r\n        \"serviceId\": \"251799132900\",\r\n        \"mpesaUniqueId\": \"1231321322131221\",\r\n        \"registrationStatus\": \"Yes-L1\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-service/orders/register-mpesa",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"register-mpesa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create-adjustment_IMPL2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "Onboarding_0091123",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"orderType\": \"CreateAdjustment\",\r\n\t\"description\": \"Product Order illustration sample\",\r\n\t\"externalId\": \"PO-456\",\r\n\t\"requestedCompletionDate\": \"2022-01-05T08:13:20.723Z\",\r\n\t\"requestedStartDate\": \"2022-01-05T08:13:20.723Z\",\r\n\t\"adjustment\": {\r\n\t\t\"serviceId\": \"251700404001\",\r\n\t\t\"adjustmentAmount\": 20,\r\n\t\t\"adjustmentReason\": 15,\r\n\t\t\"adjustmentType\": 2\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-service/orders/create-adjustment",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"create-adjustment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change sim _IMPL2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "Onboarding_0091123",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"ChangeSim\",\r\n    \"serviceManagement\": {\r\n        \"serviceId\": \"251799152225\",\r\n        \"currentImsi\": \"6360211291315915\",\r\n        \"newImsi\": \"636029031755520\",\r\n        \"currentIccid\": \"89251120025061828913\",\r\n        \"newIccid\": \"89251020870131083130\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io//order-service/orders/change-sim",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"",
+						"order-service",
+						"orders",
+						"change-sim"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update oob status",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "Onboarding_0091123",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"UpdateOobFlag\",\r\n    \"description\": \"Product Order illustration sample\",\r\n    \"serviceManagement\": {\r\n        \"oobFlag\": \"true\",\r\n        \"serviceId\": \"251799135179\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io//order-service/orders/update-oobflag",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"",
+						"order-service",
+						"orders",
+						"update-oobflag"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create FNF",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "Onboarding_0091123",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"CreateFnf\",\r\n    \"description\": \"CreateFnf Order\",\r\n    \"groupManagement\": {\r\n        \"groupInitiatorMsisdn\": \"251759313171\",\r\n        \"groupPlanId\": \"446\",\r\n        \"members\": [\r\n            {\r\n                \"serviceId\": \"251701943428\"\r\n            }\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io//order-service/orders/create-fnf",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"",
+						"order-service",
+						"orders",
+						"create-fnf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FNF-AddMember",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "Onboarding_0091123",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"orderType\": \"AddFnfMember\",\r\n\t\"description\": \"Product Order illustration sample\",\r\n\t\"externalId\": \"PO-456\",\r\n\t\"requestedCompletionDate\": \"2023-06-12T10:29:56.963Z\",\r\n\t\"requestedStartDate\": \"2023-06-12T10:29:56.963Z\",\r\n\t\"groupManagement\": {\r\n\t\t\"groupId\": \"491\",\r\n\t\t\"groupInitiatorMsisdn\": \"251759313171\",\r\n\t\t\"members\": [\r\n\t\t\t{\r\n\t\t\t\t\"serviceId\": \"251701943442\"\r\n\t\t\t}\r\n\t\t]\r\n\t}\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io//order-service/orders/add-fnf-member",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"",
+						"order-service",
+						"orders",
+						"add-fnf-member"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FNF-Remove Member",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "Onboarding_0091123",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"RemoveFnfMember\",\r\n    \"description\": \"Product Order illustration sample\",\r\n    \"externalId\": \"PO-456\",\r\n    \"requestedCompletionDate\": \"2023-06-20T12:13:08.841Z\",\r\n    \"requestedStartDate\": \"2023-06-20T12:13:08.841Z\",\r\n    \"groupManagement\": {\r\n        \"groupId\": \"567045\",\r\n        \"groupInitiatorMsisdn\": \"987654321\",\r\n        \"members\": [\r\n            {\r\n                \"serviceId\": \"98765432321\"\r\n            }\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io//order-service/orders/remove-fnf-member",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"",
+						"order-service",
+						"orders",
+						"remove-fnf-member"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FNF-Remove ALL Member",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "Onboarding_0091123",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"RemoveAllFnfMembers\",\r\n    \"description\": \"Product Order illustration sample\",\r\n    \"externalId\": \"PO-456\",\r\n    \"requestedCompletionDate\": \"2023-06-16T09:37:40.827Z\",\r\n    \"requestedStartDate\": \"2023-06-16T09:37:40.827Z\",\r\n    \"groupManagement\": {\r\n        \"groupId\": \"488\",\r\n        \"groupInitiatorMsisdn\": \"251700495891\",\r\n        \"members\": [\r\n            {\r\n                \"serviceId\": \"251700495338\"\r\n            }\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io//order-service/orders/remove-all-fnf",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"",
+						"order-service",
+						"orders",
+						"remove-all-fnf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FNF-Opt out",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "Onboarding_0091123",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderType\": \"OptOutFromFnf\",\r\n  \"groupManagement\": {\r\n    \"groupId\": \"499\",\r\n    \"groupInitiatorMsisdn\": \"251759313171\"\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io//order-service/orders/opt-out-fnf",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"",
+						"order-service",
+						"orders",
+						"opt-out-fnf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FNF-CancelSubscription",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "Onboarding_0091123",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderType\": \"OptOutFromFnf\",\r\n  \"groupManagement\": {\r\n    \"groupId\": \"499\",\r\n    \"groupInitiatorMsisdn\": \"251759313171\"\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io//order-service/orders/opt-out-fnf",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"",
+						"order-service",
+						"orders",
+						"opt-out-fnf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SOM req impl2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "Onboarding_0091123",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderType\": \"OptOutFromFnf\",\r\n  \"groupManagement\": {\r\n    \"groupId\": \"499\",\r\n    \"groupInitiatorMsisdn\": \"251759313171\"\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io//order-service/orders/opt-out-fnf",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"",
+						"order-service",
+						"orders",
+						"opt-out-fnf"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

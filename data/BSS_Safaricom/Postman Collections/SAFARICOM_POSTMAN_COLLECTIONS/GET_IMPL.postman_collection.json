@@ -1,0 +1,2586 @@
+{
+	"info": {
+		"_postman_id": "e9d4568b-8ca8-4346-a8d8-5a5ee5e587e6",
+		"name": "GET_IMPL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19382143"
+	},
+	"item": [
+		{
+			"name": "New Folder Copy",
+			"item": [
+				{
+					"name": "cache reload orch",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Request-ID",
+								"value": "123456789",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Username",
+								"value": "crmuser",
+								"type": "text"
+							},
+							{
+								"key": "X-Trace-ID",
+								"value": "76665443211",
+								"type": "text"
+							},
+							{
+								"key": "Channel",
+								"value": "CRM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://wakanda.com-impl.10.0.14.241.nip.io/order-orchestrator/CacheReload",
+							"protocol": "http",
+							"host": [
+								"wakanda",
+								"com-impl",
+								"10",
+								"0",
+								"14",
+								"241",
+								"nip",
+								"io"
+							],
+							"path": [
+								"order-orchestrator",
+								"CacheReload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cache reload orch Copy",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Request-ID",
+								"value": "123456789",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Username",
+								"value": "crmuser",
+								"type": "text"
+							},
+							{
+								"key": "X-Trace-ID",
+								"value": "76665443211",
+								"type": "text"
+							},
+							{
+								"key": "Channel",
+								"value": "CRM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://wakanda.com-impl.10.0.14.241.nip.io/order-orchestrator/CacheReload",
+							"protocol": "http",
+							"host": [
+								"wakanda",
+								"com-impl",
+								"10",
+								"0",
+								"14",
+								"241",
+								"nip",
+								"io"
+							],
+							"path": [
+								"order-orchestrator",
+								"CacheReload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cache reload orch3",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Request-ID",
+								"value": "123456789",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Username",
+								"value": "crmuser",
+								"type": "text"
+							},
+							{
+								"key": "X-Trace-ID",
+								"value": "76665443211",
+								"type": "text"
+							},
+							{
+								"key": "Channel",
+								"value": "CRM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://wakanda.com3-impl-2.10.0.14.241.nip.io/order-orchestrator/CacheReload",
+							"protocol": "http",
+							"host": [
+								"wakanda",
+								"com3-impl-2",
+								"10",
+								"0",
+								"14",
+								"241",
+								"nip",
+								"io"
+							],
+							"path": [
+								"order-orchestrator",
+								"CacheReload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cache reload orch IMPL2",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Request-ID",
+								"value": "123456789",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Username",
+								"value": "crmuser",
+								"type": "text"
+							},
+							{
+								"key": "X-Trace-ID",
+								"value": "76665443211",
+								"type": "text"
+							},
+							{
+								"key": "Channel",
+								"value": "CRM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-orchestrator/CacheReload",
+							"protocol": "http",
+							"host": [
+								"wakanda",
+								"com-impl-2",
+								"10",
+								"0",
+								"14",
+								"241",
+								"nip",
+								"io"
+							],
+							"path": [
+								"order-orchestrator",
+								"CacheReload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cache reload batch IMPL2 Copy",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Request-ID",
+								"value": "123456789",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Username",
+								"value": "crmuser",
+								"type": "text"
+							},
+							{
+								"key": "X-Trace-ID",
+								"value": "76665443211",
+								"type": "text"
+							},
+							{
+								"key": "Channel",
+								"value": "CRM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/batch-service/CacheReload",
+							"protocol": "http",
+							"host": [
+								"wakanda",
+								"com-impl-2",
+								"10",
+								"0",
+								"14",
+								"241",
+								"nip",
+								"io"
+							],
+							"path": [
+								"batch-service",
+								"CacheReload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cache reload orch Copy",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Request-ID",
+								"value": "123456789",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Username",
+								"value": "crmuser",
+								"type": "text"
+							},
+							{
+								"key": "X-Trace-ID",
+								"value": "76665443211",
+								"type": "text"
+							},
+							{
+								"key": "Channel",
+								"value": "CRM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://wakanda.com-impl.10.0.14.241.nip.io/order-orchestrator/CacheReload",
+							"protocol": "http",
+							"host": [
+								"wakanda",
+								"com-impl",
+								"10",
+								"0",
+								"14",
+								"241",
+								"nip",
+								"io"
+							],
+							"path": [
+								"order-orchestrator",
+								"CacheReload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cache reload enrich",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Request-ID",
+								"value": "123456789",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Username",
+								"value": "crmuser",
+								"type": "text"
+							},
+							{
+								"key": "X-Trace-ID",
+								"value": "76665443211",
+								"type": "text"
+							},
+							{
+								"key": "Channel",
+								"value": "CRM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://wakanda.com-impl.10.0.14.241.nip.io/order-enrichment/CacheReload",
+							"protocol": "http",
+							"host": [
+								"wakanda",
+								"com-impl",
+								"10",
+								"0",
+								"14",
+								"241",
+								"nip",
+								"io"
+							],
+							"path": [
+								"order-enrichment",
+								"CacheReload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cache reload enrich Copy",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Request-ID",
+								"value": "123456789",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Username",
+								"value": "crmuser",
+								"type": "text"
+							},
+							{
+								"key": "X-Trace-ID",
+								"value": "76665443211",
+								"type": "text"
+							},
+							{
+								"key": "Channel",
+								"value": "CRM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-enrichment/CacheReload",
+							"protocol": "http",
+							"host": [
+								"wakanda",
+								"com-impl-2",
+								"10",
+								"0",
+								"14",
+								"241",
+								"nip",
+								"io"
+							],
+							"path": [
+								"order-enrichment",
+								"CacheReload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cache reload capture",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Request-ID",
+								"value": "123456789",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Username",
+								"value": "crmuser",
+								"type": "text"
+							},
+							{
+								"key": "X-Trace-ID",
+								"value": "76665443211",
+								"type": "text"
+							},
+							{
+								"key": "Channel",
+								"value": "CRM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://wakanda.com-impl.10.0.14.241.nip.io/order-service/CacheReload",
+							"protocol": "http",
+							"host": [
+								"wakanda",
+								"com-impl",
+								"10",
+								"0",
+								"14",
+								"241",
+								"nip",
+								"io"
+							],
+							"path": [
+								"order-service",
+								"CacheReload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cache reload capture Copy",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Request-ID",
+								"value": "123456789",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Username",
+								"value": "crmuser",
+								"type": "text"
+							},
+							{
+								"key": "X-Trace-ID",
+								"value": "76665443211",
+								"type": "text"
+							},
+							{
+								"key": "Channel",
+								"value": "CRM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-service/CacheReload",
+							"protocol": "http",
+							"host": [
+								"wakanda",
+								"com-impl-2",
+								"10",
+								"0",
+								"14",
+								"241",
+								"nip",
+								"io"
+							],
+							"path": [
+								"order-service",
+								"CacheReload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cache reload query",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Request-ID",
+								"value": "123456789",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Username",
+								"value": "crmuser",
+								"type": "text"
+							},
+							{
+								"key": "X-Trace-ID",
+								"value": "76665443211",
+								"type": "text"
+							},
+							{
+								"key": "Channel",
+								"value": "CRM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://com.bss.blueprint.lab/query-service/CacheReload",
+							"protocol": "http",
+							"host": [
+								"com",
+								"bss",
+								"blueprint",
+								"lab"
+							],
+							"path": [
+								"query-service",
+								"CacheReload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cache reload report",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Request-ID",
+								"value": "123456789",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Username",
+								"value": "crmuser",
+								"type": "text"
+							},
+							{
+								"key": "X-Trace-ID",
+								"value": "76665443211",
+								"type": "text"
+							},
+							{
+								"key": "Channel",
+								"value": "CRM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://wakanda.com-impl.10.0.14.241.nip.io/order-report/CacheReload",
+							"protocol": "http",
+							"host": [
+								"wakanda",
+								"com-impl",
+								"10",
+								"0",
+								"14",
+								"241",
+								"nip",
+								"io"
+							],
+							"path": [
+								"order-report",
+								"CacheReload"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Queryplan_IMPL",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "channel",
+						"value": "USSD",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "346611",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/query-service/query-plan/251799558120?size=10&page=1",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"query-service",
+						"query-plan",
+						"251799558120"
+					],
+					"query": [
+						{
+							"key": "size",
+							"value": "10"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Queryplan_BP",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "channel",
+						"value": "USSD",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "346611",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/query-service/query-plan/251700404140?size=10&page=1",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"query-service",
+						"query-plan",
+						"251700404140"
+					],
+					"query": [
+						{
+							"key": "size",
+							"value": "10"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get paln details",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "123113234344354354",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://wakanda.upc-core.10.0.14.241.nip.io/UPC/ProductOffering?id=474",
+					"protocol": "https",
+					"host": [
+						"wakanda",
+						"upc-core",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"UPC",
+						"ProductOffering"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "474"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get paln details Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "123113234344354354",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://apigw.bss.blueprint.lab/query-service/query-plan/251700405366",
+					"protocol": "https",
+					"host": [
+						"apigw",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"query-service",
+						"query-plan",
+						"251700405366"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Queryplan_IMPL Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "123113234344354354",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://10.0.12.54:31553/query-service/query-plan/1006108205?size=10&page=1",
+					"protocol": "http",
+					"host": [
+						"10",
+						"0",
+						"12",
+						"54"
+					],
+					"port": "31553",
+					"path": [
+						"query-service",
+						"query-plan",
+						"1006108205"
+					],
+					"query": [
+						{
+							"key": "size",
+							"value": "10"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch deposit_IMPL",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Request-ID",
+						"value": "1234567987654589",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "276378686",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://10.0.0.33:8010/depositManagement/FetchDeposits?depositId=2131",
+					"protocol": "http",
+					"host": [
+						"10",
+						"0",
+						"0",
+						"33"
+					],
+					"port": "8010",
+					"path": [
+						"depositManagement",
+						"FetchDeposits"
+					],
+					"query": [
+						{
+							"key": "depositId",
+							"value": "2131"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch_Contact_IMPL",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Request-ID",
+						"value": "1234567987654589",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "276378686",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://10.0.0.33:8096/contactManagement",
+					"protocol": "http",
+					"host": [
+						"10",
+						"0",
+						"0",
+						"33"
+					],
+					"port": "8096",
+					"path": [
+						"contactManagement"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch_account_IMPL Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Request-ID",
+						"value": "1234567987654589",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "276378686",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					},
+					{
+						"key": "Channel-ID",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "Request-ID",
+						"value": "5678999",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://wakanda.bill.10.0.14.241.nip.io/accountManagement/fetchAccountById?accountId=ET8347",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"bill",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"accountManagement",
+						"fetchAccountById"
+					],
+					"query": [
+						{
+							"key": "accountId",
+							"value": "ET8347"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "QueryAccount_IMPL",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "123113234344354354",
+						"type": "text"
+					},
+					{
+						"key": "Request-ID",
+						"value": "123334444",
+						"type": "text"
+					},
+					{
+						"key": "Channel-ID",
+						"value": "1234555555",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://wakanda.com-impl.10.0.14.241.nip.io/accountManagement/fetchAccountById?accountId=ET8337",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"accountManagement",
+						"fetchAccountById"
+					],
+					"query": [
+						{
+							"key": "accountId",
+							"value": "ET8337"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch_Address_IMPL",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "channel-id",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "123113234344354354",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "request-id",
+						"value": "123113234344354354",
+						"type": "text"
+					},
+					{
+						"key": "channel-id",
+						"value": "COM",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-report/get-attributes?level=2&subOrderId=1070311021349494784",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-report",
+						"get-attributes"
+					],
+					"query": [
+						{
+							"key": "level",
+							"value": "2"
+						},
+						{
+							"key": "subOrderId",
+							"value": "1070311021349494784"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View_Payment_IMPL",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "channel-id",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "123113234344354354",
+						"type": "text"
+					},
+					{
+						"key": "request-id",
+						"value": "123113234344354354",
+						"type": "text"
+					},
+					{
+						"key": "channel-id",
+						"value": "COM",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://10.0.12.54: 32720/paymentManagement/fetchPayments?accountId=6dbss1827",
+					"protocol": "http",
+					"host": [
+						"10",
+						"0",
+						"12",
+						"54"
+					],
+					"port": " 32720",
+					"path": [
+						"paymentManagement",
+						"fetchPayments"
+					],
+					"query": [
+						{
+							"key": "accountId",
+							"value": "6dbss1827"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query_Profile_IMPL",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Request-ID",
+						"value": "1234567987654589",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://10.0.12.41:31553/query-service/customer-info/profiles/11320",
+					"protocol": "http",
+					"host": [
+						"10",
+						"0",
+						"12",
+						"41"
+					],
+					"port": "31553",
+					"path": [
+						"query-service",
+						"customer-info",
+						"profiles",
+						"11320"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query_balance_IMPL",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Request-ID",
+						"value": "1234567987654589",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://10.0.12.41:31553/ticl/api/v1/queryaccbalance/1000088724",
+					"protocol": "http",
+					"host": [
+						"10",
+						"0",
+						"12",
+						"41"
+					],
+					"port": "31553",
+					"path": [
+						"ticl",
+						"api",
+						"v1",
+						"queryaccbalance",
+						"1000088724"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query_Service_IMPL",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Request-ID",
+						"value": "1234567987654589",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://10.0.12.41:31553/query-service/customer-info/services/0971000123",
+					"protocol": "http",
+					"host": [
+						"10",
+						"0",
+						"12",
+						"41"
+					],
+					"port": "31553",
+					"path": [
+						"query-service",
+						"customer-info",
+						"services",
+						"0971000123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query_Service_IMPL Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Request-ID",
+						"value": "1234567987654589",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-ID",
+						"value": "455322999",
+						"type": "text"
+					},
+					{
+						"key": "Channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "Username",
+						"value": "crmuser",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/query-service/customer-info/services/251799103104",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"query-service",
+						"customer-info",
+						"services",
+						"251799103104"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Service and account query_IMPL",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Request-ID",
+						"value": "1234567987654589",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://10.0.12.41:31553/query-service/customer-info/services/0971000123?filter=account,service",
+					"protocol": "http",
+					"host": [
+						"10",
+						"0",
+						"12",
+						"41"
+					],
+					"port": "31553",
+					"path": [
+						"query-service",
+						"customer-info",
+						"services",
+						"0971000123"
+					],
+					"query": [
+						{
+							"key": "filter",
+							"value": "account,service"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Order_Payload",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Request-ID",
+						"value": "1234567987654589",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://10.0.12.41:30697/order-report/orders/917724490604003328/payload",
+					"protocol": "http",
+					"host": [
+						"10",
+						"0",
+						"12",
+						"41"
+					],
+					"port": "30697",
+					"path": [
+						"order-report",
+						"orders",
+						"917724490604003328",
+						"payload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Dynamic_Attributes",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Request-ID",
+						"value": "1234567987654589",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://10.0.12.41:30697/order-report/get-attributes?level=subOrder&subOrderId=913451680941854720",
+					"protocol": "http",
+					"host": [
+						"10",
+						"0",
+						"12",
+						"41"
+					],
+					"port": "30697",
+					"path": [
+						"order-report",
+						"get-attributes"
+					],
+					"query": [
+						{
+							"key": "level",
+							"value": "subOrder"
+						},
+						{
+							"key": "subOrderId",
+							"value": "913451680941854720"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_fetch_service",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Request-ID",
+						"value": "1234567987654589",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://10.0.12.41:30697/order-report/get-attributes?level=subOrder&subOrderId=913451680941854720",
+					"protocol": "http",
+					"host": [
+						"10",
+						"0",
+						"12",
+						"41"
+					],
+					"port": "30697",
+					"path": [
+						"order-report",
+						"get-attributes"
+					],
+					"query": [
+						{
+							"key": "level",
+							"value": "subOrder"
+						},
+						{
+							"key": "subOrderId",
+							"value": "913451680941854720"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_fetch_subscribtion",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Request-ID",
+						"value": "1234567987654589",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://10.0.12.41:30697/order-report/get-attributes?level=subOrder&subOrderId=913451680941854720",
+					"protocol": "http",
+					"host": [
+						"10",
+						"0",
+						"12",
+						"41"
+					],
+					"port": "30697",
+					"path": [
+						"order-report",
+						"get-attributes"
+					],
+					"query": [
+						{
+							"key": "level",
+							"value": "subOrder"
+						},
+						{
+							"key": "subOrderId",
+							"value": "913451680941854720"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query_Plan",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Request-ID",
+						"value": "1234567987654589",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://10.0.12.41:31553/query-service/query-plan/6563000899?size=10&page=1",
+					"protocol": "http",
+					"host": [
+						"10",
+						"0",
+						"12",
+						"41"
+					],
+					"port": "31553",
+					"path": [
+						"query-service",
+						"query-plan",
+						"6563000899"
+					],
+					"query": [
+						{
+							"key": "size",
+							"value": "10"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query info",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Request-ID",
+						"value": "1234567987654589",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://10.0.12.41:31553/query-service/query-plan/6563000899?size=10&page=1",
+					"protocol": "http",
+					"host": [
+						"10",
+						"0",
+						"12",
+						"41"
+					],
+					"port": "31553",
+					"path": [
+						"query-service",
+						"query-plan",
+						"6563000899"
+					],
+					"query": [
+						{
+							"key": "size",
+							"value": "10"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Metaorder_IMPL",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Request-ID",
+						"value": "1234567987654589",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://10.0.12.41:31553/query-service/query-plan/6563000899?size=10&page=1",
+					"protocol": "http",
+					"host": [
+						"10",
+						"0",
+						"12",
+						"41"
+					],
+					"port": "31553",
+					"path": [
+						"query-service",
+						"query-plan",
+						"6563000899"
+					],
+					"query": [
+						{
+							"key": "size",
+							"value": "10"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LMS call",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Request-ID",
+						"value": "1234567987654589",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X_CORRELATION_ID",
+						"value": "918171193406447616",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://10.0.12.41:31291/manage-account/loyaltyManagement/loyaltyProgramMember/onboard/0981000066",
+					"protocol": "http",
+					"host": [
+						"10",
+						"0",
+						"12",
+						"41"
+					],
+					"port": "31291",
+					"path": [
+						"manage-account",
+						"loyaltyManagement",
+						"loyaltyProgramMember",
+						"onboard",
+						"0981000066"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LMS call Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Request-ID",
+						"value": "1234567987654589",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X_CORRELATION_ID",
+						"value": "918171193406447616",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cm.bss2.safaricomet.net/TTM/viewTickets?teamId=366&limit=1&userId=1446",
+					"protocol": "https",
+					"host": [
+						"cm",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"TTM",
+						"viewTickets"
+					],
+					"query": [
+						{
+							"key": "teamId",
+							"value": "366"
+						},
+						{
+							"key": "limit",
+							"value": "1"
+						},
+						{
+							"key": "userId",
+							"value": "1446"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dynamic order",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Request-ID",
+						"value": "1234567987654589",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "123113234344354354",
+						"type": "default"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "default"
+					},
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://10.0.12.54:30697/order-report/orders/915127353702629376/payload",
+					"protocol": "http",
+					"host": [
+						"10",
+						"0",
+						"12",
+						"54"
+					],
+					"port": "30697",
+					"path": [
+						"order-report",
+						"orders",
+						"915127353702629376",
+						"payload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dynamic attributes",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Request-ID",
+						"value": "1234567987654589",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "123113234344354354",
+						"type": "default"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "default"
+					},
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://10.0.12.54:30697/order-report/orders/915127353702629376/payload",
+					"protocol": "http",
+					"host": [
+						"10",
+						"0",
+						"12",
+						"54"
+					],
+					"port": "30697",
+					"path": [
+						"order-report",
+						"orders",
+						"915127353702629376",
+						"payload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dynamic attributes filter",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Request-ID",
+						"value": "1234567987654589",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "123113234344354354",
+						"type": "default"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "default"
+					},
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://10.0.12.54:30697/order-report/get-attributes?level=2&subOrderId=92130768523893968&exclusions=subscriptions",
+					"protocol": "http",
+					"host": [
+						"10",
+						"0",
+						"12",
+						"54"
+					],
+					"port": "30697",
+					"path": [
+						"order-report",
+						"get-attributes"
+					],
+					"query": [
+						{
+							"key": "level",
+							"value": "2"
+						},
+						{
+							"key": "subOrderId",
+							"value": "92130768523893968"
+						},
+						{
+							"key": "exclusions",
+							"value": "subscriptions"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profile_BS_Details_IMPL",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Request-ID",
+						"value": "1234567987654589",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://wakanda-dev.crm.10.0.14.242.nip.io/create-customer/individual/10589",
+					"protocol": "http",
+					"host": [
+						"wakanda-dev",
+						"crm",
+						"10",
+						"0",
+						"14",
+						"242",
+						"nip",
+						"io"
+					],
+					"path": [
+						"create-customer",
+						"individual",
+						"10589"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Msisdn_IMPL",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Request-ID",
+						"value": "1234567987654589",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://wakanda.nms.10.0.14.241.nip.io/external-msisdn/Numberpool/search?filterNumberType=1&filterCategoryId=4&filterConnectionType=2&filterCustomerType=1",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"nms",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"external-msisdn",
+						"Numberpool",
+						"search"
+					],
+					"query": [
+						{
+							"key": "filterNumberType",
+							"value": "1"
+						},
+						{
+							"key": "filterCategoryId",
+							"value": "4"
+						},
+						{
+							"key": "filterConnectionType",
+							"value": "2"
+						},
+						{
+							"key": "filterCustomerType",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Msisdn_BP Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Request-ID",
+						"value": "1234567987654589",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://nms.bss.blueprint.lab/external-msisdn/Numberpool/search?filterNumberType=1&filterCategoryId=4&filterConnectionType=2&filterCustomerType=1",
+					"protocol": "http",
+					"host": [
+						"nms",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"external-msisdn",
+						"Numberpool",
+						"search"
+					],
+					"query": [
+						{
+							"key": "filterNumberType",
+							"value": "1"
+						},
+						{
+							"key": "filterCategoryId",
+							"value": "4"
+						},
+						{
+							"key": "filterConnectionType",
+							"value": "2"
+						},
+						{
+							"key": "filterCustomerType",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Msisdn_IMPL Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Request-ID",
+						"value": "1234567987654589",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://bp-6dapps-sit.nms.bss.blueprint.lab/external-msisdn/Numberpool/search?filterNumberType=1",
+					"protocol": "http",
+					"host": [
+						"bp-6dapps-sit",
+						"nms",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"external-msisdn",
+						"Numberpool",
+						"search"
+					],
+					"query": [
+						{
+							"key": "filterNumberType",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_view order",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Request-ID",
+						"value": "1234567987654589",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "4545663432",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "crm",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmuser",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-report/orders/1097574537826717696/sub-orders/1097574538359394304/stages?limit=20",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-report",
+						"orders",
+						"1097574537826717696",
+						"sub-orders",
+						"1097574538359394304",
+						"stages"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_view order Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Request-ID",
+						"value": "1234567987654589",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "4545663432",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "crm",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmuser",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://wakanda.com-impl-2.10.0.14.241.nip.io/order-report/orders/970590710779428864/sub-orders?offset=0&limit=10",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl-2",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"order-report",
+						"orders",
+						"970590710779428864",
+						"sub-orders"
+					],
+					"query": [
+						{
+							"key": "offset",
+							"value": "0"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_IMSIandICCID_IMPL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://wakanda.nms.10.0.14.241.nip.io/external-sim/getNumberDeatils?filterImsi=636022000000064",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"nms",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"external-sim",
+						"getNumberDeatils"
+					],
+					"query": [
+						{
+							"key": "filterImsi",
+							"value": "636022000000064"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_IMSIandICCID_IMPL Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Request-ID",
+						"value": "123456789",
+						"type": "text"
+					},
+					{
+						"key": "Username",
+						"value": "crmuser",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://wakanda.invntry.10.0.14.241.nip.io/manageAsset/assetDetails?filterAssetState=NEW&filterProduct=29&filterProductType=2&pageNo=1&perPageCount=10",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"invntry",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"manageAsset",
+						"assetDetails"
+					],
+					"query": [
+						{
+							"key": "filterAssetState",
+							"value": "NEW"
+						},
+						{
+							"key": "filterProduct",
+							"value": "29"
+						},
+						{
+							"key": "filterProductType",
+							"value": "2"
+						},
+						{
+							"key": "pageNo",
+							"value": "1"
+						},
+						{
+							"key": "perPageCount",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_IMSIandICCID_IMPL Copy 2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Request-ID",
+						"value": "123456789",
+						"type": "text"
+					},
+					{
+						"key": "Username",
+						"value": "crmuser",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://wakanda.nms.10.0.14.241.nip.io/external-sim/getNumberDeatils?filterImsi=636026200040155",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"nms",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"external-sim",
+						"getNumberDeatils"
+					],
+					"query": [
+						{
+							"key": "filterImsi",
+							"value": "636026200040155"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "batch_generate_report_IMPL",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "123113234344354354",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://wakanda.com-impl.10.0.14.241.nip.io/batch-service/generateReport/930722232903090176",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"batch-service",
+						"generateReport",
+						"930722232903090176"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "batch_generate_report_IMPL Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "123113234344354354",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://wakanda.com-impl.10.0.14.241.nip.io/batch-service/generateReport/930722232903090176",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"batch-service",
+						"generateReport",
+						"930722232903090176"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetchaccountIMPL",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "123113234344354354",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://wakanda.com-impl.10.0.14.241.nip.io/accountManagement/fetchAccountById?accountId=6dbss58835",
+					"protocol": "http",
+					"host": [
+						"wakanda",
+						"com-impl",
+						"10",
+						"0",
+						"14",
+						"241",
+						"nip",
+						"io"
+					],
+					"path": [
+						"accountManagement",
+						"fetchAccountById"
+					],
+					"query": [
+						{
+							"key": "accountId",
+							"value": "6dbss58835"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetchaccountIMPL Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "123113234344354354",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://bill-complex:3083/complexQueryManagement/getBasicDetails?serviceId=251799102591",
+					"protocol": "https",
+					"host": [
+						"bill-complex"
+					],
+					"port": "3083",
+					"path": [
+						"complexQueryManagement",
+						"getBasicDetails"
+					],
+					"query": [
+						{
+							"key": "serviceId",
+							"value": "251799102591"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
