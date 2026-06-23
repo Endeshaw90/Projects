@@ -15,6 +15,10 @@ logs/
 # Streamlit
 .streamlit/
 
+# Project data artifacts
+data/COM_CHANNEL_CONFIG
+data/.gitignore
+
 # OS/system files
 .DS_Store
 Thumbs.db
