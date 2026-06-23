@@ -1,0 +1,10 @@
+bs_service status/NCC status
+===========================
+0=Preactive/PREREGISTERED
+1=Active/Active
+2=Suspend/Expired
+3=Pre-terminate
+4=Terminate/Freepool
+5=Recycle/Recycle
+7=PT-Restore
+12=Dummy

@@ -1,0 +1,4071 @@
+{
+	"info": {
+		"_postman_id": "ed0e1434-91f4-483b-ba51-c1cf326cce18",
+		"name": "DC2_Setup",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19382143"
+	},
+	"item": [
+		{
+			"name": "Add service-DC2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "eKYC",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "F002C0FDC7634",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "lhata1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"AddService\",\r\n    \"description\": \"Add service To Existing Customer\",\r\n    \"profile\": {\r\n        \"profileId\": \"3555823\",\r\n        \"account\": {\r\n            \"chargingPattern\": \"2\",\r\n            \"serviceGroups\": [\r\n                {\r\n                    \"services\": [\r\n                        {\r\n                            \"serviceId\": \"251717921625\",\r\n                            \"languageId\": \"1\",\r\n                            \"isSimPaired\": \"false\",\r\n                            \"name\": \"Daniel Tsegaye Yemataw\",\r\n                            \"serviceType\": \"1\",\r\n                            \"subscriptions\": [\r\n                                {\r\n                                    \"planType\": \"0\",\r\n                                    \"somCallRqd\": false,\r\n                                    \"esbCallRqd\": false,\r\n                                    \"commonAddon\": false,\r\n                                    \"mandatoryAddon\": false,\r\n                                    \"planId\": \"118\",\r\n                                    \"planName\": \"Base All in One PO\"\r\n                                }\r\n                            ],\r\n                            \"characteristics\": [\r\n                                {\r\n                                    \"name\": \"IMSI\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"636020116729549\"\r\n                                },\r\n                                {\r\n                                    \"name\": \"ICCID\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"89251020001167295499\"\r\n                                }\r\n                            ],\r\n                            \"chargingPattern\": \"2\",\r\n                            \"networkServiceId\": \"1\",\r\n                            \"depositReqd\": false,\r\n                            \"creditLimitUpdateReqd\": false\r\n                        }\r\n                    ]\r\n                }\r\n            ],\r\n            \"accountId\": \"PREPAID_ACCOUNT\"\r\n        }\r\n    },\r\n    \"authentication\": {\r\n        \"authType\": \"Biometric\",\r\n        \"authId\": \"2cdafe0a-9e5a-43c9-b305-b1e4c23051d3\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/order-service/orders/add-service",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"add-service"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Onboarding DC",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM-M"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "6dtest2912345"
+					},
+					{
+						"key": "username",
+						"value": "scriptops"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"Onboarding\",\r\n    \"description\": \"Onboarding order\",\r\n    \"externalId\": \"576583542475798\",\r\n    \"profile\": {\r\n        \"birthDate\": \"18-04-1987\",\r\n        \"localizedBirthDate\": \"21-01-1992\",\r\n        \"salesId\": \"123\",\r\n        \"givenName\": \"6d\",\r\n        \"familyName\": \"test\",\r\n        \"middleName\": \"service\",\r\n        \"nationality\": \"3\",\r\n        \"title\": \"1\",\r\n        \"partyCharacteristic\": [\r\n            {\r\n                \"name\": \"profileType\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"0\"\r\n            },\r\n            {\r\n                \"name\": \"subscriberCategory\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"23\"\r\n            },\r\n            {\r\n                \"name\": \"subscriberSubCategory\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"231\"\r\n            },\r\n            {\r\n                \"name\": \"biometricId\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"32132434324\"\r\n            },\r\n            {\r\n                \"name\": \"minorFlag\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"0\"\r\n            },\r\n            {\r\n                \"name\": \"paymentPreference\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"1\"\r\n            },\r\n            {\r\n                \"name\": \"occupation\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"Operations Engineer\"\r\n            },\r\n            {\r\n                \"name\": \"employer\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"6D\"\r\n            },\r\n            {\r\n                \"name\": \"position\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"Lead\"\r\n            },\r\n            {\r\n                \"name\": \"averageMonthlyIncome\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"2\"\r\n            },\r\n            {\r\n                \"name\": \"testIdentifier\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"external\"\r\n            }\r\n        ],\r\n        \"languageAbility\": [\r\n            {\r\n                \"languageCode\": \"1\"\r\n            }\r\n        ],\r\n        \"individualIdentification\": [\r\n            {\r\n                \"attachment\": [\r\n                    {\r\n                        \"description\": \"passport pdf\",\r\n                        \"mimeType\": \"pdf\",\r\n                        \"name\": \"passport copy\",\r\n                        \"url\": \"wwww.docsshare.com/customer11/passport/passport.pdf\",\r\n                        \"kycReferenceId\": \"12123232999\"\r\n                    }\r\n                ],\r\n                \"identificationId\": \"13258889571221\",\r\n                \"identificationType\": \"101\",\r\n                \"issuingAuthority\": \"ethiopian embassy\",\r\n                \"issuingDate\": \"12-10-2022 11:44:52\",\r\n                \"isExpired\": \"false\",\r\n                \"validFor\": {\r\n                    \"endDateTime\": \"14-10-2022 11:44:52\",\r\n                    \"startDateTime\": \"12-10-2022 11:44:52\"\r\n                }\r\n            }\r\n        ],\r\n        \"attachments\": [\r\n            {\r\n                \"description\": \"test attachment\",\r\n                \"mimeType\": \"test\",\r\n                \"name\": \"test doc\",\r\n                \"url\": \"test url\",\r\n                \"kycReferenceId\": \"121232329991\"\r\n            }\r\n        ],\r\n        \"contactMedium\": [\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"telephoneNumber\",\r\n                \"characteristic\": {\r\n                    \"phoneNumber\": \"9381231283213\",\r\n                    \"contactType\": \"smsNumber\"\r\n                }\r\n            },\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"telephoneNumber\",\r\n                \"characteristic\": {\r\n                    \"faxNumber\": \"11231283213\",\r\n                    \"contactType\": \"faxNumber\"\r\n                }\r\n            },\r\n            {\r\n                \"characteristic\": {\r\n                    \"contactType\": \"alternateSmsNumber\",\r\n                    \"altPhoneNumber\": \"9738646475\"\r\n                },\r\n                \"mediumType\": \"telephoneNumber\"\r\n            },\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"emailAddress\",\r\n                \"characteristic\": {\r\n                    \"emailAddress\": \"poornima.thota@6dtech.co.in\",\r\n                    \"contactType\": \"emailAddress\"\r\n                }\r\n            },\r\n            {\r\n                \"characteristic\": {\r\n                    \"contactType\": \"residentialAddress\",\r\n                    \"addrLine4\": \"bangalore\",\r\n                    \"addrLine5\": \"urban\"\r\n                },\r\n                \"mediumType\": \"address\"\r\n            },\r\n            {\r\n                \"characteristic\": {\r\n                    \"contactType\": \"permanentAddress\",\r\n                    \"addrLine4\": \"bangalore\",\r\n                    \"addrLine5\": \"urban\"\r\n                },\r\n                \"mediumType\": \"address\"\r\n            }\r\n        ],\r\n        \"account\": {\r\n            \"chargingPattern\": \"2\",\r\n            \"languageId\": \"1\",\r\n            \"name\": \"test account\",\r\n            \"remarks\": \"string\",\r\n            \"title\": \"Mr\",\r\n            \"preferredCurrency\": \"USSD\",\r\n            \"contactMedium\": [\r\n                {\r\n                    \"mediumType\": \"address\",\r\n                    \"characteristic\": {\r\n                        \"contactType\": \"billingAddress\",\r\n                        \"addrLine4\": 2,\r\n                        \"addrLine5\": 1\r\n                    }\r\n                }\r\n            ],\r\n            \"serviceGroups\": [\r\n                {\r\n                    \"services\": [\r\n                        {\r\n                            \"serviceId\": \"251799122600\",\r\n                            \"isSimPaired\": \"false\",\r\n                            \"name\": \"GSM Service\",\r\n                            \"languageId\": \"2\",\r\n                            \"serviceType\": \"Master\",\r\n                            \"networkServiceId\": \"1\",\r\n                            \"chargingPattern\": \"2\",\r\n                            \"contactMedium\": [\r\n                                {\r\n                                    \"mediumType\": \"address\",\r\n                                    \"characteristic\": {\r\n                                        \"contactType\": \"residentialAddress\",\r\n                                        \"addrLine4\": 2,\r\n                                        \"addrLine5\": 1\r\n                                    }\r\n                                }\r\n                            ],\r\n                            \"characteristics\": [\r\n                                {\r\n                                    \"name\": \"ICCID\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"89251020001160253560\"\r\n                                },\r\n                                {\r\n                                    \"name\": \"IMSI\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"636020116025356\"\r\n                                }\r\n                            ],\r\n                            \"subscriptions\": [\r\n                                {\r\n                                    \"planId\": \"118\",\r\n                                    \"planType\": \"0\",\r\n                                    \"planName\": \"Baseplan\",\r\n                                    \"autoRenewal\": \"0\"\r\n                                }\r\n                            ]\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss3.safaricomet.net/order-service/orders/onboarding",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss3",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"onboarding"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EKYC profile deletion",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "source",
+						"value": "NCC",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "requestId",
+						"value": "1",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "requestTimestamp",
+						"value": "1006260220402",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "orderId",
+						"value": "1286990486820720641",
+						"type": "text"
+					},
+					{
+						"key": "requestId",
+						"value": "1726912838417-D_6453984",
+						"type": "text"
+					},
+					{
+						"key": "taskId",
+						"value": "1286990487269511168-EKYC_DELETE_PROFILE",
+						"type": "text"
+					},
+					{
+						"key": "requestTimestamp",
+						"value": "2024-09-21 12:05:36",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"correlationId\" : \"eKYCDelProfileCallBack:1286990487269511168\",\r\n  \"orderId\" : \"1286990486820720641\",\r\n  \"msisdn\" : \"251704296691\",\r\n  \"ekycId\" : \"3eda69db-9909-4faa-b0da-43a496f5b28e\",\r\n  \"reason\" : \"LC service recycling\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://esb.bss2.safaricomet.net/service-mgmt/safaricom/api/v1/ekycdeleteoperation",
+					"protocol": "https",
+					"host": [
+						"esb",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"service-mgmt",
+						"safaricom",
+						"api",
+						"v1",
+						"ekycdeleteoperation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mpesa delink api",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "source",
+						"value": "NCC",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "requestId",
+						"value": "1",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "requestTimestamp",
+						"value": "1006260220402",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "orderId",
+						"value": "1286990486820720641",
+						"type": "text"
+					},
+					{
+						"key": "requestId",
+						"value": "1726912838417-D_6453984",
+						"type": "text"
+					},
+					{
+						"key": "taskId",
+						"value": "1286990487269511168-MPESA_ACCOUNT_DELINKING",
+						"type": "text"
+					},
+					{
+						"key": "requestTimestamp",
+						"value": "2024-09-21 12:05:36",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"characteristic\" : [ {\r\n    \"name\" : \"commandID\",\r\n    \"value\" : \"delink\",\r\n    \"valueType\" : \"string\",\r\n    \"@type\" : \"string\",\r\n    \"@baseType\" : \"string\",\r\n    \"@schemaLocation\" : \"string\",\r\n    \"arrayIndex\" : \"-1\"\r\n  }, {\r\n    \"name\" : \"MSISDN\",\r\n    \"value\" : \"251704296691\",\r\n    \"valueType\" : \"string\",\r\n    \"@type\" : \"string\",\r\n    \"@baseType\" : \"string\",\r\n    \"@schemaLocation\" : \"string\",\r\n    \"arrayIndex\" : \"-1\"\r\n  } ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://esb.bss2.safaricomet.net/customer-mgmt/safaricom/api/v1/mpesalink/customer",
+					"protocol": "https",
+					"host": [
+						"esb",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"customer-mgmt",
+						"safaricom",
+						"api",
+						"v1",
+						"mpesalink",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add service-BP",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "SLM407i9eg_1714494458724",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "ec6a3902-12d8-47a1-aebe-cae71ed65a40",
+						"type": "text"
+					},
+					{
+						"key": "useremail",
+						"value": "kemila.musema@safaricom.et",
+						"type": "text"
+					},
+					{
+						"key": "txnid",
+						"value": "SLM407i9eg_1714494458724",
+						"type": "text"
+					},
+					{
+						"key": "source",
+						"value": "SLM",
+						"type": "text"
+					},
+					{
+						"key": "userid",
+						"value": "ec6a3902-12d8-47a1-aebe-cae71ed65a40",
+						"type": "text"
+					},
+					{
+						"key": "teamid",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "languageid",
+						"value": "1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"category\": \"B2C product order\",\r\n    \"orderType\": \"AddServiceToNewAccount\",\r\n    \"description\": \"Product Order illustration sample\",\r\n    \"saFormId\": \"SA_30042024192347766\",\r\n    \"shopId\": \"S07\",\r\n    \"externalId\": \"PO-456\",\r\n    \"priority\": \"1\",\r\n    \"channel\": [\r\n        {\r\n            \"id\": \"1\",\r\n            \"name\": \"CRM\",\r\n            \"role\": \"Used channel for order capture\"\r\n        }\r\n    ],\r\n    \"profile\": {\r\n        \"profileId\": \"4031511\",\r\n        \"account\": {\r\n            \"name\": \"Purpose black ETH Trading Share company\",\r\n            \"billcycleId\": \"1\",\r\n            \"chargingPattern\": \"1\",\r\n            \"dispatchMode\": \"1\",\r\n            \"entityId\": \"200\",\r\n            \"itemizedBillRequired\": \"0\",\r\n            \"excelFileFlag\": \"0\",\r\n            \"languageId\": \"1\",\r\n            \"notificationAllowed\": \"0\",\r\n            \"taxCode\": \"1\",\r\n            \"contactMedium\": [\r\n                {\r\n                    \"preferred\": false,\r\n                    \"mediumType\": \"address\",\r\n                    \"characteristic\": {\r\n                        \"contactType\": \"residentialAddress\",\r\n                        \"addrLine4\": \"4\",\r\n                        \"addrLine5\": \"1\"\r\n                    }\r\n                }\r\n            ],\r\n            \"serviceGroups\": [\r\n                {\r\n                    \"orderCharges\": [\r\n                        {\r\n                            \"chargeType\": \"stampDuty\",\r\n                            \"amount\": \"5\",\r\n                            \"reasonCode\": \"48\"\r\n                        }\r\n                    ],\r\n                    \"services\": [\r\n                        {\r\n                            \"serviceId\": \"251700391134\",\r\n                            \"languageId\": \"1\",\r\n                            \"isSimPaired\": \"false\",\r\n                            \"name\": \"Purpose black ETH Trading Share company\",\r\n                            \"serviceType\": \"4\",\r\n                            \"connectionType\": \"1\",\r\n                            \"contactMedium\": [\r\n                                {\r\n                                    \"preferred\": false,\r\n                                    \"mediumType\": \"address\",\r\n                                    \"characteristic\": {\r\n                                        \"contactType\": \"permanentAddress\",\r\n                                        \"addrLine4\": \"4\",\r\n                                        \"addrLine5\": \"1\"\r\n                                    }\r\n                                }\r\n                            ],\r\n                            \"chargingPattern\": \"1\",\r\n                            \"networkServiceId\": \"4\",\r\n                            \"creditLimit\": \"116000\",\r\n                            \"creditClass\": \"Custom Credit\",\r\n                            \"redemptionEnabled\": \"False\",\r\n                            \"autoEnrollment\": \"True\",\r\n                            \"msisdnCategory\": \"Fixed Data\",\r\n                            \"serviceAccessTechnology\": \"P2MP\",\r\n                            \"serviceOffering\": \"DIA\",\r\n                            \"serviceOfferingID\": \"82\",\r\n                            \"serviceOfferingDesc\": \"Dedicated Internet (DIA)\"\r\n                        }\r\n                    ],\r\n                    \"subscriptions\": [\r\n                        {\r\n                            \"planDesc\": \"AirFiber Dedicated Internet P2MP\",\r\n                            \"planType\": \"0\",\r\n                            \"autoRenewal\": \"1\",\r\n                            \"somCallRqd\": false,\r\n                            \"esbCallRqd\": false,\r\n                            \"commonAddon\": false,\r\n                            \"mandatoryAddon\": false,\r\n                            \"planId\": \"960\",\r\n                            \"planName\": \"AirFiber Dedicated Internet P2MP\"\r\n                        },\r\n                        {\r\n                            \"planDesc\": \"AirFiber Dedicated Internet Addon P2MP\",\r\n                            \"planType\": \"1\",\r\n                            \"charges\": [\r\n                                {\r\n                                    \"upcChargeName\": \"Installation Charges DI P2MP\",\r\n                                    \"upcChargeId\": \"1597\",\r\n                                    \"quantity\": \"1\",\r\n                                    \"amount\": \"0\",\r\n                                    \"prorataEnabled\": false,\r\n                                    \"chargeDesc\": \"Installation Charges DI P2MP\",\r\n                                    \"overridden\": \"0\",\r\n                                    \"upcPriceCategory\": \"20\",\r\n                                    \"chargeOverridden\": false\r\n                                },\r\n                                {\r\n                                    \"upcChargeName\": \"AirFiber Dedicated Internet P2MP Addon\",\r\n                                    \"upcChargeId\": \"1598\",\r\n                                    \"quantity\": \"1\",\r\n                                    \"amount\": \"116000\",\r\n                                    \"prorataEnabled\": false,\r\n                                    \"chargeDesc\": \"AirFiber Dedicated Internet P2MP Addon\",\r\n                                    \"overridden\": \"0\",\r\n                                    \"upcPriceCategory\": \"8\",\r\n                                    \"chargeOverridden\": false\r\n                                }\r\n                            ],\r\n                            \"autoRenewal\": \"1\",\r\n                            \"somCallRqd\": false,\r\n                            \"esbCallRqd\": false,\r\n                            \"commonAddon\": false,\r\n                            \"mandatoryAddon\": false,\r\n                            \"characteristics\": [\r\n                                {\r\n                                    \"name\": \"paymentMode\",\r\n                                    \"value\": \"invoice\"\r\n                                },\r\n                                {\r\n                                    \"name\": \"bandWidthName\",\r\n                                    \"value\": \"100 Mbps\"\r\n                                },\r\n                                {\r\n                                    \"name\": \"Bandwidth\",\r\n                                    \"value\": \"10\"\r\n                                }\r\n                            ],\r\n                            \"planId\": \"958\",\r\n                            \"planName\": \"AirFiber Dedicated Internet Addon P2MP\"\r\n                        }\r\n                    ],\r\n                    \"contactMedium\": [\r\n                        {\r\n                            \"preferred\": false,\r\n                            \"mediumType\": \"address\",\r\n                            \"characteristic\": {\r\n                                \"contactType\": \"installationAddress\",\r\n                                \"addrLine4\": \"4\",\r\n                                \"addrLine5\": \"1\"\r\n                            }\r\n                        }\r\n                    ]\r\n                }\r\n            ],\r\n            \"contacts\": [\r\n                {\r\n                    \"contactId\": \"32405\",\r\n                    \"contactType\": \"S\",\r\n                    \"status\": \"A\",\r\n                    \"notificationPref\": \"0\"\r\n                }\r\n            ],\r\n            \"preferredCurrency\": \"USD\",\r\n            \"smsNumbers\": \"251913642212\",\r\n            \"contactEmailId\": \"ruthgebru458@gmail.com\",\r\n            \"autoDebit\": \"0\",\r\n            \"smsNotificationAllowed\": \"1\",\r\n            \"emailNotificationAllowed\": \"1\",\r\n            \"keyAccountManager\": \"ec6a3902-12d8-47a1-aebe-cae71ed65a40\",\r\n            \"taxApplicable\": \"1\",\r\n            \"creditManager\": \"07426e4c-9973-4d20-b263-c35215b7b760\",\r\n            \"exciseDutyApplicable\": \"0\",\r\n            \"networkType\": \"4\"\r\n        },\r\n        \"salesId\": \"ec6a3902-12d8-47a1-aebe-cae71ed65a40\"\r\n    },\r\n    \"payment\": {\r\n        \"amount\": \"0.0\",\r\n        \"upfrontPayment\": \"true\",\r\n        \"isPaymentCollected\": \"false\",\r\n        \"paymentChannel\": \"shop\"\r\n    },\r\n    \"sourceNode\": \"CRM\",\r\n    \"approvalDetails\": {\r\n        \"approvalReqd\": \"false\"\r\n    },\r\n    \"saFormFilePath\": \"/crm-documents/\",\r\n    \"saFormFileName\": \"SA_Form_SA_30042024192347766.pdf\",\r\n    \"saFormDetails\": {\r\n        \"opportunityName\": \"Purpose black ETH Air fiber\",\r\n        \"opportunityOwnerUser\": \"ec6a3902-12d8-47a1-aebe-cae71ed65a40\",\r\n        \"opportunityOwnerEmailId\": \"kemila.musema@safaricom.et\"\r\n    },\r\n    \"partnerId\": \"Direct\",\r\n    \"bmcWorkOrderId\": \"WO0000000014506\",\r\n    \"userDetails\": {\r\n        \"userRegion\": \"36\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/order-service/orders/add-service-to-new-account",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"add-service-to-new-account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change subscription DC2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "USSD",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "tuytuy",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"ChangeSubscription\",\r\n    \"externalId\": \"251700405952-549341172-s1test1\",\r\n    \"payment\": {\r\n        \"amount\": \"250\",\r\n        \"upfrontPayment\": \"false\",\r\n        \"comment\": \"change plan\",\r\n        \"paymentChannel\": \"bank\"\r\n    },\r\n    \"serviceManagement\": {\r\n        \"serviceId\": \"251700860746\",\r\n        \"creditLimit\": \"500.0\",\r\n        \"creditClass\": \"Custom Credit\",\r\n        \"oldCart\": {\r\n            \"basePlanId\": \"250\"\r\n        },\r\n        \"newCart\": {\r\n            \"subscriptions\": [\r\n                {\r\n                    \"planType\": \"250\",\r\n                    \"somCallRqd\": false,\r\n                    \"esbCallRqd\": false,\r\n                    \"commonAddon\": false,\r\n                    \"mandatoryAddon\": false,\r\n                    \"planId\": \"653\",\r\n                    \"planName\": \"Monthly PostPay Data Plan 250\"\r\n                }\r\n            ]\r\n        },\r\n        \"creditLimitUpdateReqd\": \"true\",\r\n        \"depositReqd\": \"false\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss3.safaricomet.net/order-service/orders/change-subscription",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss3",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"change-subscription"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Credit refund",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "addService_677801",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"creditRefund\" : {\r\n    \"refundRequested\" : \"10\",\r\n    \"chargeCode\" : \"1\",\r\n    \"comment\" : \"Test1\",\r\n    \"accountId\" : \"6dbss42439\"\r\n  },\r\n  \"orderType\" : \"CreditRefund\",\r\n  \"sourceNode\" : \"CRM\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/order-service/orders/credit-refund",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"credit-refund"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MpesaPaymentCallaback_Prod",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "MPESA_USSD",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "MPESA-SIB0G0CNO0-251707118446-251707118446",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "esbuser",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderId\": \"1283425922975211520\",\r\n    \"payment\": {\r\n        \"comment\": \"Buy bundle via MPESA\",\r\n        \"totalAmount\": \"5.00\",\r\n        \"transactionId\": \"MPESA-SIB0G0CNO0-251707118446-251707118446\",\r\n        \"paymentDetail\": [\r\n            {\r\n                \"paymentMode\": \"5\",\r\n                \"amountPaid\": \"5.00\",\r\n                \"referenceExternalId\": \"MPESA-SIB0G0CNO0-251707118446-251707118446\",\r\n                \"msisdn\": \"251707118446\"\r\n            }\r\n        ]\r\n    },\r\n    \"isRollbacked\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://com.bss2.safaricomet.net/order-orchestrator/orders/payment-callback",
+					"protocol": "https",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"order-orchestrator",
+						"orders",
+						"payment-callback"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book deposit DC2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "addService_677801",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"orderType\": \"BookDeposit\",\r\n\t\"description\": \"Product Order illustration sample\",\r\n\t\"externalId\": \"11361524030894\",\r\n\t\"state\": \"Acknowledged\",\r\n\t\"sourceNode\": \"CRM\",\r\n\t\"deposit\": {\r\n\t\t\"comment\": \"test\",\r\n\t\t\"currencyCode\": \"USD\",\r\n\t\t\"bookingId\": \"1\",\r\n\t\t\"depositAmount\": \"550.00\",\r\n\t\t\"serviceId\": \"251793000377\",\r\n\t\t\"depositType\": \"1\",\r\n         \"status\": \"0\",\r\n\t\t\"amountPaid\": \"550.00\",\r\n\t\t\"upfrontPayment\": \"true\",\r\n        \"paymentChannel\" : \"bank\",\r\n\t\t\"paymentDetails\": [\r\n\t\t\t{\r\n\t\t\t\t\"paymentMode\": \"5\",\r\n\t\t\t\t\"amountPaid\": \"550.0\",\r\n\t\t\t\t\"referenceExternalId\": \"123234\"\r\n\t\t\t}\r\n\t\t]\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/order-service/orders/book-deposit",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"book-deposit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "nms",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Request-ID",
+						"value": "CRM12mxmkn_1674593339150",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"pairingDetail\" : [ {\r\n    \"msisdn\" : \"251711171919\",\r\n    \"iccid\" : \"89251020010292113808\",\r\n    \"imsi\" : \"636020102930210\"\r\n  } ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://nms.bss.safaricomet.net/external-sim/pairing",
+					"protocol": "http",
+					"host": [
+						"nms",
+						"bss",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"external-sim",
+						"pairing"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Starterpack_provisiong DC2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "addService_677801",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"orderType\": \"StarterPackProvisioning\",\r\n\t\"starterPack\": {\r\n\t\t\"serviceId\": \"251007100037\",\r\n\t\t\"imsi\": \"636021230000255\",\r\n\t\t\"iccid\": \"8925402123410000255\",\r\n\t\t\"subscriptions\": [\r\n\t\t\t{\r\n\t\t\t\t\"planId\": \"118\",\r\n\t\t\t\t\"planType\": \"0\"\r\n\t\t\t}\r\n\t\t]\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/order-service/orders/starter-pack",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"starter-pack"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update starterpack ekyc_DC2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "addService_677801",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"orderType\": \"StarterPackProvisioning\",\r\n\t\"starterPack\": {\r\n\t\t\"serviceId\": \"251007100037\",\r\n\t\t\"imsi\": \"636021230000255\",\r\n\t\t\"iccid\": \"8925402123410000255\",\r\n\t\t\"subscriptions\": [\r\n\t\t\t{\r\n\t\t\t\t\"planId\": \"118\",\r\n\t\t\t\t\"planType\": \"0\"\r\n\t\t\t}\r\n\t\t]\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/order-service/orders/update-starterpack-kyc",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"update-starterpack-kyc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update starterpack ekyc_DC2 Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "addService_677801",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"orderType\": \"UpdateStarterPackKYC\",\r\n\t\"description\": \"Product Order illustration sample\",\r\n\t\"authentication\": {\r\n\t\t\"authType\": \"Biometric\",\r\n\t\t\"authId\": \"1131512\"\r\n\t},\r\n\t\"externalId\": \"PO-456\",\r\n\t\"requestedCompletionDate\": \"2021-11-26T03:26:26.627Z\",\r\n\t\"requestedStartDate\": \"2021-11-26T03:26:26.627Z\",\r\n\t\"customerInfo\": {\r\n\t\t\"birthDate\": \"18-04-1987\",\r\n\t\t\"familyName\": \"Dinkk\",\r\n\t\t\"profileId\" : \"12212\",\r\n\t\t\"serviceId\": \"1006108279\",\r\n\t\t\"givenName\": \"john\",\r\n\t\t\"nationality\": \"3\",\r\n\t\t\"title\": \"1\",\r\n\t\t\"partyCharacteristic\": [\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"profileType\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"0\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"subscriberCategory\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"11\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"subscriberSubCategory\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"111\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"biometricId\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"32132434324\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"minorFlag\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"0\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"paymentPreference\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"2,1\"\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"languageAbility\": [\r\n\t\t\t{\r\n\t\t\t\t\"languageCode\": \"1\"\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"individualIdentification\": [\r\n\t\t\t{\r\n\t\t\t\t\"attachment\": [\r\n\t\t\t\t\t{\r\n\t\t\t\t\t\t\"content\": \"pdf\",\r\n\t\t\t\t\t\t\"description\": \"passport pdf\",\r\n\t\t\t\t\t\t\"mimeType\": \"pdf\",\r\n\t\t\t\t\t\t\"name\": \"passport copy\",\r\n\t\t\t\t\t\t\"url\": \"wwww.docsshare.com/customer11/passport/passport.pdf\",\r\n\t\t\t\t\t\t\"kycReferenceId\": \"121232323213\"\r\n\t\t\t\t\t}\r\n\t\t\t\t],\r\n\t\t\t\t\"identificationId\": \"1321323213213\",\r\n\t\t\t\t\"identificationType\": \"107\",\r\n\t\t\t\t\"issuingAuthority\": \"ethiopian embassy\",\r\n\t\t\t\t\"issuingDate\": \"2021-11-09\",\r\n\t\t\t\t\"validFor\": {\r\n\t\t\t\t\t\"endDateTime\": \"2001-11-10T07:00:43.894Z\",\r\n\t\t\t\t\t\"startDateTime\": \"2026-11-09T07:00:43.894Z\"\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"contactMedium\": [\r\n\t\t\t{\r\n\t\t\t\t\"preferred\": false,\r\n\t\t\t\t\"mediumType\": \"telephoneNumber\",\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"phoneNumber\": \"9381231283213\",\r\n\t\t\t\t\t\"contactType\": \"smsNumber\"\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"preferred\": false,\r\n\t\t\t\t\"mediumType\": \"telephoneNumber\",\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"faxNumber\": \"11231283213\",\r\n\t\t\t\t\t\"contactType\": \"faxNumber\"\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"contactType\": \"alternateSmsNumber\",\r\n\t\t\t\t\t\"altPhoneNumber\": \"9738646475\"\r\n\t\t\t\t},\r\n\t\t\t\t\"mediumType\": \"telephoneNumber\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"preferred\": false,\r\n\t\t\t\t\"mediumType\": \"emailAddress\",\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"emailAddress\": \"testing@gmail.com\",\r\n\t\t\t\t\t\"contactType\": \"emailAddress\"\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"contactType\": \"permanentAddress\",\r\n\t\t\t\t\t\"addrLine1\": \"house no 269\",\r\n\t\t\t\t\t\"addrLine2\": \"1000 ADDIS ABABA\",\r\n\t\t\t\t\t\"addrLine3\": \"Kebele 1, 1302/29\",\r\n\t\t\t\t\t\"addrLine4\": \"Addis Ababa\",\r\n\t\t\t\t\t\"addrLine5\": \"Addis Ababa\",\r\n\t\t\t\t\t\"addrLine6\": \"Shoa\",\r\n\t\t\t\t\t\"addrLine7\": \"Achefer\",\r\n\t\t\t\t\t\"addrLine8\": \"1000\",\r\n\t\t\t\t\t\"addrLine9\": \"P.O. Box 1519\",\r\n\t\t\t\t\t\"addrLine10\": \"8.9806\",\r\n\t\t\t\t\t\"addrLine11\": \"38.7578\"\r\n\t\t\t\t},\r\n\t\t\t\t\"mediumType\": \"address\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"contactType\": \"residentialAddress\",\r\n\t\t\t\t\t\"addrLine1\": \"house no R268\",\r\n\t\t\t\t\t\"addrLine2\": \"1000 ADDIS RABABA\",\r\n\t\t\t\t\t\"addrLine3\": \"Kebele 1, R1302/29\",\r\n\t\t\t\t\t\"addrLine4\": \"Addis RAbaba\",\r\n\t\t\t\t\t\"addrLine5\": \"Addis RAbaba\",\r\n\t\t\t\t\t\"addrLine6\": \"RShoa\",\r\n\t\t\t\t\t\"addrLine7\": \"RAchefer\",\r\n\t\t\t\t\t\"addrLine8\": \"R1000\",\r\n\t\t\t\t\t\"addrLine9\": \"RP.O. Box 1519\",\r\n\t\t\t\t\t\"addrLine10\": \"R8.9806\",\r\n\t\t\t\t\t\"addrLine11\": \"R38.7578\"\r\n\t\t\t\t},\r\n\t\t\t\t\"mediumType\": \"address\"\r\n\t\t\t}\r\n\t\t]\r\n\t}\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/order-service/orders/update-starterpack-kyc",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"update-starterpack-kyc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update profile DC2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "addService_677801",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderType\": \"UpdateProfile\",\r\n  \"profileManagement\": {\r\n    \"profileId\": \"11964\",\r\n    \"basicInfo\": [\r\n      {\r\n        \"id\": \"familyName\",\r\n        \"value\": \"Washington Family\"\r\n      },\r\n      {\r\n        \"id\": \"givenName\",\r\n        \"value\": \"George Bush II\"\r\n      },\r\n      {\r\n        \"id\": \"nationality\",\r\n        \"value\": \"2\"\r\n      },\r\n      {\r\n        \"id\": \"birthDate\",\r\n        \"value\": \"02-10-1965\"\r\n      },\r\n      {\r\n        \"id\": \"minorFlag\",\r\n        \"value\": \"1\"\r\n      },\r\n      {\r\n        \"id\": \"annualTurnover\",\r\n        \"value\": \"100000000\"\r\n      },\r\n      {\r\n        \"id\": \"businessDescription\",\r\n        \"value\": \"American_President\"\r\n      },\r\n      {\r\n        \"id\": \"noOfEmployees\",\r\n        \"value\": \"1000\"\r\n      },\r\n      {\r\n        \"id\": \"noOfVoiceLines\",\r\n        \"value\": \"5\"\r\n      },\r\n      {\r\n        \"id\": \"industry\",\r\n        \"value\": \"1\"\r\n      }\r\n    ]\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/order-service/orders/update-profile",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"update-profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update account DC2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "addService_677801",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderType\": \"UpdateAccount\",\r\n  \"description\": \"Product Order illustration sample\",\r\n  \"externalId\": \"PO-456\",\r\n  \"requestedCompletionDate\": \"2021-12-31T06:08:29.796Z\",\r\n  \"requestedStartDate\": \"2021-12-31T06:08:29.796Z\",\r\n  \"accountManagement\": {\r\n    \"accountId\": \"0001\",\r\n    \"basicInfo\": [\r\n      {\r\n        \"id\": \"billingOnHold\",\r\n        \"value\": 0\r\n      },\r\n      {\r\n        \"id\": \"itemizedbillRequired\",\r\n        \"value\": 0\r\n      },\r\n      {\r\n        \"id\": \"dunningExclusion\",\r\n        \"value\": 0\r\n      },\r\n      {\r\n        \"id\": \"excelFileFlag\",\r\n        \"value\": 0\r\n      },\r\n      {\r\n        \"id\": \"languageId\",\r\n        \"value\": \"1\"\r\n      },\r\n      {\r\n        \"id\": \"name\",\r\n        \"value\": \"Shyam Mohan\"\r\n      }\r\n    \r\n    ]\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/order-service/orders/update-account",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"update-account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update language DC2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "addService_677801",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderType\": \"UpdateLanguage\",\r\n  \"description\": \"Product Order illustration sample\",\r\n  \"externalId\": \"920602945187946496\",\r\n  \"requestedCompletionDate\": \"2021-12-16T13:47:31.923Z\",\r\n  \"requestedStartDate\": \"2021-12-16T13:47:31.923Z\",\r\n  \"serviceManagement\": {\r\n    \"serviceId\": \"251799200020\",\r\n    \"languageId\": \"4\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/order-service/orders/update-language",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"update-language"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add subscription DC2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "SND",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "302dc324-d314-4f22-b4d9-ae02d3801c2f",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "snduser",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"AddSubscription\",\r\n    \"description\": \"order reinitiated for 1258771874015895552\",\r\n    \"externalId\": \"71700347295952529\",\r\n    \"requestedCompletionDate\": \"2024-07-05T16:10:01Z\",\r\n    \"requestedStartDate\": \"2024-07-05T16:10:01Z\",\r\n    \"relatedParty\": [\r\n        {\r\n            \"id\": \"afantahun1\",\r\n            \"name\": \"afantahun1\",\r\n            \"role\": \"ROLE_REE\"\r\n        },\r\n        {\r\n            \"id\": \"251703466222\",\r\n            \"name\": \"Dileab Birhanu Gamew\",\r\n            \"role\": \"Customer\"\r\n        }\r\n    ],\r\n    \"channel\": [\r\n        {\r\n            \"id\": \"1\",\r\n            \"name\": \"SND\",\r\n            \"role\": \"Used channel for order capture\"\r\n        }\r\n    ],\r\n    \"orderItem\": [\r\n        {\r\n            \"id\": \"1\",\r\n            \"action\": \"add\",\r\n            \"service\": {\r\n                \"id\": \"251703466222\",\r\n                \"name\": \"Dileab Birhanu Gamew\"\r\n            },\r\n            \"productOffering\": {\r\n                \"id\": \"915\",\r\n                \"name\": \"Monthly\"\r\n            },\r\n            \"itemPrice\": [\r\n                {\r\n                    \"name\": \"CBU Monthly Unlimited Tired Price\",\r\n                    \"priceType\": \"Non-Recurring\",\r\n                    \"recurringChargePeriod\": \"Monthly\",\r\n                    \"price\": {\r\n                        \"totalAmount\": {\r\n                            \"unit\": \"ETB\",\r\n                            \"value\": 1300.0\r\n                        }\r\n                    },\r\n                    \"productOfferingPrice\": {\r\n                        \"id\": \"1116\"\r\n                    }\r\n                }\r\n            ],\r\n            \"somCallRqd\": false,\r\n            \"esbCallRqd\": false\r\n        }\r\n    ],\r\n    \"payment\": {\r\n        \"amount\": \"1300\",\r\n        \"upfrontPayment\": \"true\",\r\n        \"id\": \"192697\",\r\n        \"name\": \"Cash Payment\",\r\n        \"type\": \"CashPayment\",\r\n        \"paymentReceived\": \"true\"\r\n    },\r\n    \"authentication\": {\r\n        \"authType\": \"Biometric\",\r\n        \"authId\": \"8a701a11-fec4-4ca0-b601-31f1d98b17ec\"\r\n    },\r\n    \"auditInfo\": \"1300.0:BIRR:223.4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/order-service/orders/add-subscription",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"add-subscription"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cancel subscription DC2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "addService_677801",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"CancelSubscription\",\r\n    \"orderItem\": [\r\n        {\r\n            \"id\": \"1\",\r\n            \"action\": \"delete\",\r\n            \"itemCharacteristic\": [\r\n                {\r\n                    \"name\": \"SUBSCRIPTION_ID\",\r\n                    \"valueType\": \"string\",\r\n                    \"value\": \"50b7a22f-7f8f-417b-a488-83ba395a31c3\"\r\n                }\r\n            ],\r\n            \"service\": {\r\n                \"id\": \"251700199962\"\r\n            },\r\n            \"productOffering\": {\r\n                \"id\": \"363\"\r\n            }\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/order-service/orders/cancel-subscription",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"cancel-subscription"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adjust ma balance DC2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "addService_677801",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"orderType\": \"AdjustMainAccount\",\r\n\t\"description\": \"Adjust Main Account Order\",\r\n\t\"externalId\": \"3987694759\",\r\n\t\"serviceManagement\": {\r\n\t\t\"serviceId\": \"1006108287\",\r\n\t\t\"adjustment\": {\r\n\t\t\t\"amount\": \"50\",\r\n\t\t\t\"negativeCredit\": \"y\",\r\n\t\t\t\"reason\": \"adjustment\",\r\n\t\t\t\"adjustmentType\": \"MA\",\r\n\t\t\t\"adjustAction\": \"INC\"\r\n\t\t}\r\n\t}\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/order-service/orders/adjust-main-account",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"adjust-main-account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add service to NEW account-DC2 Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "addService_677801",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"AddServiceToNewAccount\",\r\n    \"description\": \"Add Service order\",\r\n    \"externalId\": \"12131231632197296124\",\r\n    \"profile\": {\r\n        \"profileId\": \"48121\",\r\n        \"account\": {\r\n            \"chargingPattern\": \"2\",\r\n            \"languageId\": \"4\",\r\n            \"name\": \"test account\",\r\n            \"remarks\": \"string\",\r\n            \"title\": \"Mr\",\r\n            \"preferredCurrency\": \"USSD\",\r\n            \"contactMedium\": [\r\n                {\r\n                    \"mediumType\": \"address\",\r\n                    \"characteristic\": {\r\n                        \"contactType\": \"billingAddress\",\r\n                        \"addrLine1\": \"abcdfe\",\r\n                        \"addrLine2\": \"ssadffg\",\r\n                        \"addrLine4\": \"3\",\r\n                        \"addrLine5\": \"4\"\r\n                    }\r\n                }\r\n            ],\r\n            \"serviceGroups\": [\r\n                {\r\n                    \"services\": [\r\n                        {\r\n                            \"serviceId\": \"251700150202\",\r\n                            \"isSimPaired\": \"false\",\r\n                            \"name\": \"GSM Service\",\r\n                            \"languageId\": \"1\",\r\n                            \"serviceType\": \"Master\",\r\n                            \"networkServiceId\": \"1\",\r\n                            \"chargingPattern\": \"2\",\r\n                            \"contactMedium\": [\r\n                                {\r\n                                    \"mediumType\": \"address\",\r\n                                    \"characteristic\": {\r\n                                        \"contactType\": \"residentialAddress\",\r\n                                        \"addrLine1\": \"abcde\",\r\n                                        \"addrLine2\": \"efghh\",\r\n                                        \"addrLine4\": \"ytrfg\",\r\n                                        \"addrLine5\": \"23\"\r\n                                    }\r\n                                }\r\n                            ],\r\n                            \"characteristics\": [\r\n                                {\r\n                                    \"name\": \"ICCID\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"8925102406450088913\"\r\n                                },\r\n                                {\r\n                                    \"name\": \"IMSI\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"636024060088913\"\r\n                                }\r\n                            ],\r\n                            \"subscriptions\": [\r\n                                {\r\n                                    \"planId\": \"118\",\r\n                                    \"planType\": \"0\",\r\n                                    \"planName\": \"Baseplan\",\r\n                                    \"autoRenewal\": \"0\"\r\n                                }\r\n                            ]\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/order-service/orders/add-service-to-new-account",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"add-service-to-new-account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add service to NEW account-DC2 Copy 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "addService_677801",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"AddServiceToNewAccount\",\r\n    \"description\": \"Add Service order\",\r\n    \"externalId\": \"12131231632197296124\",\r\n    \"profile\": {\r\n        \"profileId\": \"48121\",\r\n        \"account\": {\r\n            \"chargingPattern\": \"2\",\r\n            \"languageId\": \"4\",\r\n            \"name\": \"test account\",\r\n            \"remarks\": \"string\",\r\n            \"title\": \"Mr\",\r\n            \"preferredCurrency\": \"USSD\",\r\n            \"contactMedium\": [\r\n                {\r\n                    \"mediumType\": \"address\",\r\n                    \"characteristic\": {\r\n                        \"contactType\": \"billingAddress\",\r\n                        \"addrLine1\": \"abcdfe\",\r\n                        \"addrLine2\": \"ssadffg\",\r\n                        \"addrLine4\": \"3\",\r\n                        \"addrLine5\": \"4\"\r\n                    }\r\n                }\r\n            ],\r\n            \"serviceGroups\": [\r\n                {\r\n                    \"services\": [\r\n                        {\r\n                            \"serviceId\": \"251700150202\",\r\n                            \"isSimPaired\": \"false\",\r\n                            \"name\": \"GSM Service\",\r\n                            \"languageId\": \"1\",\r\n                            \"serviceType\": \"Master\",\r\n                            \"networkServiceId\": \"1\",\r\n                            \"chargingPattern\": \"2\",\r\n                            \"contactMedium\": [\r\n                                {\r\n                                    \"mediumType\": \"address\",\r\n                                    \"characteristic\": {\r\n                                        \"contactType\": \"residentialAddress\",\r\n                                        \"addrLine1\": \"abcde\",\r\n                                        \"addrLine2\": \"efghh\",\r\n                                        \"addrLine4\": \"ytrfg\",\r\n                                        \"addrLine5\": \"23\"\r\n                                    }\r\n                                }\r\n                            ],\r\n                            \"characteristics\": [\r\n                                {\r\n                                    \"name\": \"ICCID\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"8925102406450088913\"\r\n                                },\r\n                                {\r\n                                    \"name\": \"IMSI\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"636024060088913\"\r\n                                }\r\n                            ],\r\n                            \"subscriptions\": [\r\n                                {\r\n                                    \"planId\": \"118\",\r\n                                    \"planType\": \"0\",\r\n                                    \"planName\": \"Baseplan\",\r\n                                    \"autoRenewal\": \"0\"\r\n                                }\r\n                            ]\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/add-service-to-new-account",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"add-service-to-new-account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prepaid_Onboarding-DC2 Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "onboarding_09888",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"Onboarding\",\r\n    \"description\": \"Onboarding order\",\r\n    \"externalId\": \"1213120126047759845\",\r\n    \"profile\": {\r\n        \"birthDate\": \"01-01-1999\",\r\n        \"familyName\": \"saaa\",\r\n        \"givenName\": \"ghai\",\r\n        \"nationality\": \"3\",\r\n        \"title\": \"1\",\r\n        \"partyCharacteristic\": [\r\n            {\r\n                \"name\": \"profileType\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"0\"\r\n            },\r\n            {\r\n                \"name\": \"subscriberCategory\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"11\"\r\n            },\r\n            {\r\n                \"name\": \"minorFlag\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"0\"\r\n            },\r\n            {\r\n                \"name\": \"subscriberSubCategory\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"111\"\r\n            },\r\n            {\r\n                \"name\": \"biometricId\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"32132434324\"\r\n            },\r\n            {\r\n                \"name\": \"paymentPreference\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"2,1\"\r\n            }\r\n        ],\r\n        \"languageAbility\": [\r\n            {\r\n                \"languageCode\": \"1\"\r\n            }\r\n        ],\r\n        \"individualIdentification\": [\r\n            {\r\n                \"attachment\": [\r\n                    {\r\n                        \"content\": \"pdf\",\r\n                        \"description\": \"passport pdf\",\r\n                        \"mimeType\": \"pdf\",\r\n                        \"name\": \"passport copy\",\r\n                        \"url\": \"wwww.docsshare.com/customer11/passport/passport.pdf\",\r\n                        \"kycReferenceId\": \"12123343213\"\r\n                    }\r\n                ],\r\n                \"identificationId\": \"4077335518543254376\",\r\n                \"identificationType\": \"107\",\r\n                \"issuingAuthority\": \"ethiopian embassy\",\r\n                \"issuingDate\": \"2021-11-09\",\r\n                \"validFor\": {\r\n                    \"endDateTime\": \"2001-11-10T07:00:43.894Z\",\r\n                    \"startDateTime\": \"2026-11-09T07:00:43.894Z\"\r\n                }\r\n            }\r\n        ],\r\n        \"contactMedium\": [\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"telephoneNumber\",\r\n                \"characteristic\": {\r\n                    \"phoneNumber\": \"9381231283213\",\r\n                    \"contactType\": \"smsNumber\"\r\n                }\r\n            },\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"telephoneNumber\",\r\n                \"characteristic\": {\r\n                    \"faxNumber\": \"11231283213\",\r\n                    \"contactType\": \"faxNumber\"\r\n                }\r\n            },\r\n            {\r\n                \"characteristic\": {\r\n                    \"contactType\": \"alternateSmsNumber\",\r\n                    \"altPhoneNumber\": \"9738646475\"\r\n                },\r\n                \"mediumType\": \"telephoneNumber\"\r\n            },\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"emailAddress\",\r\n                \"characteristic\": {\r\n                    \"emailAddress\": \"abcd@gmail.com\",\r\n                    \"contactType\": \"emailAddress\"\r\n                }\r\n            },\r\n            {\r\n                \"mediumType\": \"address\",\r\n                \"characteristic\": {\r\n                    \"contactType\": \"residentialAddress\",\r\n                    \"addrLine1\": \"house no 268\",\r\n                    \"addrLine2\": \"1000 ADDIS ABABA\",\r\n                    \"addrLine3\": \"Kebele 1, 1302/29\",\r\n                    \"addrLine4\": 2,\r\n                    \"addrLine5\": 1,\r\n                    \"addrLine6\": 1,\r\n                    \"addrLine7\": 1,\r\n                    \"addrLine8\": \"1000\",\r\n                    \"addrLine9\": \"P.O. Box 1519\",\r\n                    \"addrLine10\": \"8.9806\",\r\n                    \"addrLine11\": \"38.7578\"\r\n                }\r\n            },\r\n            {\r\n                \"characteristic\": {\r\n                    \"contactType\": \"permanentAddress\",\r\n                    \"addrLine1\": \"house no 268\",\r\n                    \"addrLine2\": \"1000 ADDIS ABABA\",\r\n                    \"addrLine3\": \"Kebele 1, 1302/29\",\r\n                    \"addrLine4\": 2,\r\n                    \"addrLine5\": 1,\r\n                    \"addrLine6\": 1,\r\n                    \"addrLine7\": 1,\r\n                    \"addrLine8\": \"1000\",\r\n                    \"addrLine9\": \"P.O. Box 1519\",\r\n                    \"addrLine10\": \"8.9806\",\r\n                    \"addrLine11\": \"38.7578\"\r\n                },\r\n                \"mediumType\": \"address\"\r\n            }\r\n        ],\r\n        \"account\": {\r\n            \"chargingPattern\": \"2\",\r\n            \"languageId\": \"1\",\r\n            \"name\": \"test account\",\r\n            \"remarks\": \"string\",\r\n            \"title\": \"Mr\",\r\n            \"preferredCurrency\": \"USSD\",\r\n            \"contactMedium\": [\r\n                {\r\n                    \"mediumType\": \"address\",\r\n                    \"characteristic\": {\r\n                        \"contactType\": \"billingAddress\",\r\n                        \"addrLine1\": \"house no 268\",\r\n                        \"addrLine2\": \"1000 ADDIS ABABA\",\r\n                        \"addrLine3\": \"\",\r\n                        \"addrLine4\": 2,\r\n                        \"addrLine5\": 1,\r\n                        \"addrLine6\": \"\",\r\n                        \"addrLine7\": \"\",\r\n                        \"addrLine8\": \"\",\r\n                        \"addrLine9\": \"\",\r\n                        \"addrLine10\": \"\",\r\n                        \"addrLine11\": \"\"\r\n                    }\r\n                }\r\n            ],\r\n            \"serviceGroups\": [\r\n                {\r\n                    \"services\": [\r\n                        {\r\n                            \"serviceId\": \"251700150208\",\r\n                            \"isSimPaired\": \"false\",\r\n                            \"name\": \"GSM Service\",\r\n                            \"languageId\": \"1\",\r\n                            \"serviceType\": \"Master\",\r\n                            \"networkServiceId\": \"1\",\r\n                            \"chargingPattern\": \"2\",\r\n                            \"contactMedium\": [\r\n                                {\r\n                                    \"mediumType\": \"address\",\r\n                                    \"characteristic\": {\r\n                                        \"contactType\": \"residentialAddress\",\r\n                                        \"addrLine1\": \"house no 268\",\r\n                                        \"addrLine2\": \"1000 ADDIS ABABA\",\r\n                                        \"addrLine3\": \"Kebele 1, 1302/29\",\r\n                                        \"addrLine4\": 2,\r\n                                        \"addrLine5\": 1,\r\n                                        \"addrLine6\": 1,\r\n                                        \"addrLine7\": 1,\r\n                                        \"addrLine8\": \"1000\",\r\n                                        \"addrLine9\": \"P.O. Box 1519\",\r\n                                        \"addrLine10\": \"8.9806\",\r\n                                        \"addrLine11\": \"38.7578\"\r\n                                    }\r\n                                }\r\n                            ],\r\n                            \"characteristics\": [\r\n                                {\r\n                                    \"name\": \"ICCID\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"89251999510000499820\"\r\n                                },\r\n                                {\r\n                                    \"name\": \"IMSI\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"636025100049982\"\r\n                                }\r\n                            ],\r\n                            \"subscriptions\": [\r\n                                {\r\n                                    \"planId\": \"118\",\r\n                                    \"planType\": \"0\",\r\n                                    \"planName\": \"Baseplan\",\r\n                                    \"autoRenewal\": \"0\"\r\n                                }\r\n                                \r\n                            ]\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        }\r\n    },\r\n    \"authentication\": {\r\n        \"authType\": \"Biometric\",\r\n        \"authId\": \"Biometric\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/order-service/orders/onboarding",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"onboarding"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Gifting DC2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "languageId",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "onboarding_09888",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "source",
+						"value": "SLM",
+						"type": "text"
+					},
+					{
+						"key": "userName",
+						"value": "akhil",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "userId",
+						"value": "7792795e-4bca-4b37-a574-d38370c737fa",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "SLM52hxf5m_1750680286657",
+						"type": "text"
+					},
+					{
+						"key": "txnId",
+						"value": "SLM52hxf5m_1750680286657",
+						"type": "text"
+					},
+					{
+						"key": "teamId",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "useremail",
+						"value": "akhil.gs@partner.safaricom.et",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "7792795e-4bca-4b37-a574-d38370c737fa",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderType\" : \"TechnologyChange\",\r\n  \"saFormId\" : \"SA_23062025120115103\",\r\n  \"shopId\" : \"S07\",\r\n  \"approvalDetails\" : {\r\n    \"approvalReqd\" : \"false\"\r\n  },\r\n  \"saFormFileName\" : \"SA_Form_SA_23062025120115103.pdf\",\r\n  \"saFormFilePath\" : \"/crm-documents/\",\r\n  \"partnerName\" : \"Axiom\",\r\n  \"partnerId\" : \"Indirect \",\r\n  \"saFormDetails\" : {\r\n    \"opportunityName\" : \"Cambridge Academy\",\r\n    \"opportunityOwnerUser\" : \"e0aad1a0-2119-465f-a31f-d7d705c51a44\",\r\n    \"opportunityOwnerEmailId\" : \"wubit.degemu@axiom.et\",\r\n    \"activityType\" : \"3\"\r\n  },\r\n  \"bmcWorkOrderId\" : \"Cambridge\",\r\n  \"serviceManagement\" : {\r\n    \"serviceGroups\" : [ {\r\n      \"services\" : [ {\r\n        \"serviceId\" : \"251700391357\",\r\n        \"deposit\" : [ {\r\n          \"comment\" : \"deposit\",\r\n          \"currencyCode\" : \"ETB\",\r\n          \"bookingId\" : \"1\",\r\n          \"status\" : \"1\",\r\n          \"depositAmount\" : \"102000\"\r\n        } ],\r\n        \"creditClass\" : \"Custom Credit\",\r\n        \"creditLimit\" : \"116000\",\r\n        \"serviceOffering\" : \"DIA\",\r\n        \"serviceAccessTechnology\" : \"P2MP\",\r\n        \"serviceOfferingID\" : \"82\",\r\n        \"serviceOfferingDesc\" : \"AirFiber Dedicated Internet\"\r\n      }, {\r\n        \"serviceId\" : \"251700391357\",\r\n        \"deposit\" : [ {\r\n          \"comment\" : \"deposit\",\r\n          \"currencyCode\" : \"ETB\",\r\n          \"bookingId\" : \"1\",\r\n          \"status\" : \"1\",\r\n          \"depositAmount\" : \"102000\"\r\n        } ],\r\n        \"creditClass\" : \"Custom Credit\",\r\n        \"creditLimit\" : \"116000\",\r\n        \"serviceOffering\" : \"DIA\",\r\n        \"serviceAccessTechnology\" : \"P2MP\",\r\n        \"serviceOfferingID\" : \"82\",\r\n        \"serviceOfferingDesc\" : \"AirFiber Dedicated Internet\"\r\n      } ],\r\n      \"subscriptions\" : [ {\r\n        \"planId\" : \"960\",\r\n        \"planType\" : 0,\r\n        \"planName\" : \"AirFiber Dedicated Internet P2MP\",\r\n        \"planDesc\" : \"AirFiber Dedicated Internet P2MP\",\r\n        \"autoRenewal\" : \"1\",\r\n        \"activationMode\" : \"nextMonth\",\r\n        \"charges\" : [ {\r\n          \"chargeDesc\" : \"AirFiber Dedicated Internet P2MP\",\r\n          \"quantity\" : \"1\",\r\n          \"upcChargeId\" : \"1601\",\r\n          \"upcChargeName\" : \"AirFiber Dedicated Internet P2MP\",\r\n          \"overridden\" : 0,\r\n          \"chargeCategory\" : \"2\",\r\n          \"upcPriceCategory\" : \"21\",\r\n          \"amount\" : \"0\"\r\n        } ]\r\n      }, {\r\n        \"planId\" : \"958\",\r\n        \"planType\" : 1,\r\n        \"planName\" : \"AirFiber Dedicated Internet Addon P2MP\",\r\n        \"planDesc\" : \"AirFiber Dedicated Internet Addon P2MP\",\r\n        \"autoRenewal\" : \"1\",\r\n        \"characteristics\" : [ {\r\n          \"name\" : \"paymentMode\",\r\n          \"value\" : \"upfront\"\r\n        }, {\r\n          \"name\" : \"bandWidthName\",\r\n          \"value\" : \"100 Mbps\"\r\n        }, {\r\n          \"name\" : \"Bandwidth\",\r\n          \"value\" : \"10\"\r\n        } ],\r\n        \"activationMode\" : \"nextMonth\",\r\n        \"charges\" : [ {\r\n          \"chargeDesc\" : \"Installation Charges DI P2MP\",\r\n          \"quantity\" : \"1\",\r\n          \"upcChargeId\" : \"1597\",\r\n          \"upcChargeName\" : \"Installation Charges DI P2MP\",\r\n          \"overridden\" : 0,\r\n          \"chargeCategory\" : \"3\",\r\n          \"upcPriceCategory\" : \"20\",\r\n          \"amount\" : \"0.00\"\r\n        }, {\r\n          \"chargeDesc\" : \"AirFiber Dedicated Internet P2MP Addon\",\r\n          \"quantity\" : \"1\",\r\n          \"upcChargeId\" : \"1598\",\r\n          \"upcChargeName\" : \"AirFiber Dedicated Internet P2MP Addon\",\r\n          \"overridden\" : 0,\r\n          \"chargeCategory\" : \"2\",\r\n          \"upcPriceCategory\" : \"22\",\r\n          \"amount\" : \"116000\"\r\n        } ]\r\n      } ]\r\n    } ]\r\n  },\r\n  \"payment\" : {\r\n    \"isPaymentCollected\" : \"false\",\r\n    \"upfrontPayment\" : \"true\",\r\n    \"amount\" : \"102000.0\",\r\n    \"paymentChannel\" : \"shop\",\r\n    \"totalDeposit\" : \"102000.0\"\r\n  },\r\n  \"channel\" : [ {\r\n    \"id\" : \"1\",\r\n    \"role\" : \"Used channel for order capture\",\r\n    \"name\" : \"CRM\"\r\n  } ],\r\n  \"description\" : \"Product Order illustration sample\",\r\n  \"priority\" : \"1\",\r\n  \"sourceNode\" : \"CRM\",\r\n  \"category\" : \"B2C product order\",\r\n  \"externalId\" : \"PO-456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss3.safaricomet.net/order-service/orders/technology-change",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss3",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"technology-change"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change sim DC2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "M-PESA",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "c0790d3a-6706-4e04-848d-98cbb0a1e02e",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "mpesa",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"RegisterMpesa\",\r\n    \"serviceManagement\": {\r\n        \"serviceId\": \"251712809970\",\r\n        \"mpesaUniqueId\": \"97d70494-f07a-4dbf-91da-d0e822e8fb9f\",\r\n        \"registrationStatus\": \"Yes-L2\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/order-service/orders/register-mpesa",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"register-mpesa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change sim DC2 Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "onboarding_09888",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"ChangeSim\",\r\n    \"externalId\": \"PO-456\",\r\n    \"requestedCompletionDate\": \"2021-12-08T05:03:52.790Z\",\r\n    \"requestedStartDate\": \"2021-12-08T05:03:52.790Z\",\r\n    \"serviceManagement\": {\r\n        \"serviceId\": \"1006108443\",\r\n        \"currentImsi\": \"233150000016384 \",\r\n        \"newImsi\": \"233150000016213\",\r\n        \"currentIccid\": \"69097770700000016374 \",\r\n        \"newIccid\": \"69097770700000016213\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/order-service/orders/change-sim",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"change-sim"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bill call",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel-id",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "onboarding_09888",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "create-user",
+						"value": "9f520290-2366-47bb-b2d2-3ec33ce6c403",
+						"type": "text"
+					},
+					{
+						"key": "request-id",
+						"value": "SLM82k1d8k_1726807019367",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"subscriptions\": [\r\n        {\r\n            \"planDesc\": \"Enterprise Postpay Welcome offer\",\r\n            \"planType\": \"1\",\r\n            \"planGroupId\": \"1\",\r\n            \"planGroupName\": \"GSM PO Group\",\r\n            \"charges\": [\r\n                {\r\n                    \"upcChargeName\": \"Enterprise Postpay Welcome offer\",\r\n                    \"upcChargeId\": \"739\",\r\n                    \"chargeRecurranceType\": \"1\",\r\n                    \"chargeCategory\": \"1\",\r\n                    \"chargeFrequency\": \"2\",\r\n                    \"rate\": \"0\",\r\n                    \"amount\": \"0\",\r\n                    \"chargeVersion\": \"1\",\r\n                    \"prorationFlag\": \"0\",\r\n                    \"prorataEnabled\": false,\r\n                    \"chargeDesc\": \"Enterprise Postpay Welcome offer\",\r\n                    \"chargeCode\": \"1\",\r\n                    \"chargeType\": \"1\",\r\n                    \"chargeFactor\": \"1\",\r\n                    \"billingChargeType\": \"2\",\r\n                    \"upcPriceCategory\": \"8\",\r\n                    \"chargeOverridden\": false\r\n                }\r\n            ],\r\n            \"autoRenewal\": \"0\",\r\n            \"marketingDescription\": \"Enterprise Postpay Welcome offer\",\r\n            \"ocsPlanId\": \"ENTERPRISE_WELCOME_MONTHLY_POST\",\r\n            \"planId\": \"539\",\r\n            \"planName\": \"Enterprise Postpay Welcome offer\",\r\n            \"upcVersion\": \"3\",\r\n            \"ocsSubscriptionId\": \"25881611-bc99-4f2b-aecb-376eab8a8904\"\r\n        }\r\n    ],\r\n    \"serviceId\": \"251711111762\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bss-prod-apps.bill.bss.safaricomet.net/subscriptionManagement/create",
+					"protocol": "https",
+					"host": [
+						"bss-prod-apps",
+						"bill",
+						"bss",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"subscriptionManagement",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "USSD call",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "source",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "onboarding_09888",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "requestTimestamp",
+						"value": "2024-09-30 12:08:57",
+						"type": "text"
+					},
+					{
+						"key": "taskId",
+						"value": "1286546640861175808-USSD_SYNC_CUSTOMER",
+						"type": "text"
+					},
+					{
+						"key": "orderId",
+						"value": "1286546640655654912",
+						"type": "text"
+					},
+					{
+						"key": "requestId",
+						"value": "SLM82k1d8k_1726807019367",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"additionalFields\": {\r\n        \"ProfileID\": \"7450772\",\r\n        \"OCS_UniqueKey\": \"23937003\",\r\n        \"NetworkType\": \"1\",\r\n        \"BasePlan\": \"745\",\r\n        \"P_SubCategory\": \"15\",\r\n        \"P_Category\": \"151\",\r\n        \"profileType\": \"1\"\r\n    },\r\n    \"paramList\": [\r\n        {\r\n            \"name\": \"language\",\r\n            \"value\": \"1\"\r\n        },\r\n        {\r\n            \"name\": \"groupId\",\r\n            \"value\": \"1\"\r\n        },\r\n        {\r\n            \"name\": \"imsisdn\",\r\n            \"value\": \"251711111762\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://esb.bss.safaricomet.net/service-mgmt/safaricom/api/v1/createcrmprofile/service",
+					"protocol": "https",
+					"host": [
+						"esb",
+						"bss",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"service-mgmt",
+						"safaricom",
+						"api",
+						"v1",
+						"createcrmprofile",
+						"service"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "USSD call Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "source",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "onboarding_09888",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "requestTimestamp",
+						"value": "2024-09-30 12:08:57",
+						"type": "text"
+					},
+					{
+						"key": "taskId",
+						"value": "1286546640861175808-USSD_SYNC_CUSTOMER",
+						"type": "text"
+					},
+					{
+						"key": "orderId",
+						"value": "1286546640655654912",
+						"type": "text"
+					},
+					{
+						"key": "requestId",
+						"value": "SLM82k1d8k_1726807019367",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"additionalFields\": {\r\n        \"ProfileID\": \"7450772\",\r\n        \"OCS_UniqueKey\": \"23937003\",\r\n        \"NetworkType\": \"1\",\r\n        \"BasePlan\": \"745\",\r\n        \"P_SubCategory\": \"15\",\r\n        \"P_Category\": \"151\",\r\n        \"profileType\": \"1\"\r\n    },\r\n    \"paramList\": [\r\n        {\r\n            \"name\": \"language\",\r\n            \"value\": \"1\"\r\n        },\r\n        {\r\n            \"name\": \"groupId\",\r\n            \"value\": \"1\"\r\n        },\r\n        {\r\n            \"name\": \"imsisdn\",\r\n            \"value\": \"251711111762\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://esb.bss.safaricomet.net/service-mgmt/safaricom/api/v1/createcrmprofile/service",
+					"protocol": "https",
+					"host": [
+						"esb",
+						"bss",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"service-mgmt",
+						"safaricom",
+						"api",
+						"v1",
+						"createcrmprofile",
+						"service"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cvm",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "source",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "onboarding_09888",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "requestTimestamp",
+						"value": "2024-09-30 12:08:57",
+						"type": "text"
+					},
+					{
+						"key": "orderId",
+						"value": "1286546640655654912",
+						"type": "text"
+					},
+					{
+						"key": "requestId",
+						"value": "SLM82k1d8k_1726807019367",
+						"type": "text"
+					},
+					{
+						"key": "taskId",
+						"value": "1286546640861175808-CVM_CALL",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"serviceCharacteristic\" : [ {\r\n    \"name\" : \"channel\",\r\n    \"value\" : \"CRM\",\r\n    \"@type\" : \"string\",\r\n    \"id\" : \"string\",\r\n    \"characteristicRelationship\" : [ {\r\n      \"id\" : \"string\",\r\n      \"relationshipType\" : \"string\"\r\n    } ],\r\n    \"arrayIndex\" : \"-1\",\r\n    \"@schemaLocation\" : \"string\",\r\n    \"valueType\" : \"string\",\r\n    \"@baseType\" : \"string\"\r\n  }, {\r\n    \"name\" : \"created_user\",\r\n    \"value\" : \"9f520290-2366-47bb-b2d2-3ec33ce6c403\",\r\n    \"@type\" : \"string\",\r\n    \"id\" : \"string\",\r\n    \"characteristicRelationship\" : [ {\r\n      \"id\" : \"string\",\r\n      \"relationshipType\" : \"string\"\r\n    } ],\r\n    \"arrayIndex\" : \"-1\",\r\n    \"@schemaLocation\" : \"string\",\r\n    \"valueType\" : \"string\",\r\n    \"@baseType\" : \"string\"\r\n  }, {\r\n    \"name\" : \"user_name\",\r\n    \"value\" : \"9f520290-2366-47bb-b2d2-3ec33ce6c403\",\r\n    \"@type\" : \"string\",\r\n    \"id\" : \"string\",\r\n    \"characteristicRelationship\" : [ {\r\n      \"id\" : \"string\",\r\n      \"relationshipType\" : \"string\"\r\n    } ],\r\n    \"arrayIndex\" : \"-1\",\r\n    \"@schemaLocation\" : \"string\",\r\n    \"valueType\" : \"string\",\r\n    \"@baseType\" : \"string\"\r\n  }, {\r\n    \"name\" : \"customerStatus\",\r\n    \"value\" : \"Active\",\r\n    \"@type\" : \"string\",\r\n    \"id\" : \"string\",\r\n    \"characteristicRelationship\" : [ {\r\n      \"id\" : \"string\",\r\n      \"relationshipType\" : \"string\"\r\n    } ],\r\n    \"arrayIndex\" : \"-1\",\r\n    \"@schemaLocation\" : \"string\",\r\n    \"valueType\" : \"string\",\r\n    \"@baseType\" : \"string\"\r\n  }, {\r\n    \"name\" : \"activationType\",\r\n    \"value\" : \"Onboarding\",\r\n    \"@type\" : \"string\",\r\n    \"id\" : \"string\",\r\n    \"characteristicRelationship\" : [ {\r\n      \"id\" : \"string\",\r\n      \"relationshipType\" : \"string\"\r\n    } ],\r\n    \"arrayIndex\" : \"-1\",\r\n    \"@schemaLocation\" : \"string\",\r\n    \"valueType\" : \"string\",\r\n    \"@baseType\" : \"string\"\r\n  }, {\r\n    \"name\" : \"ProfileType\",\r\n    \"value\" : \"Enterprise\",\r\n    \"@type\" : \"string\",\r\n    \"id\" : \"string\",\r\n    \"characteristicRelationship\" : [ {\r\n      \"id\" : \"string\",\r\n      \"relationshipType\" : \"string\"\r\n    } ],\r\n    \"arrayIndex\" : \"-1\",\r\n    \"@schemaLocation\" : \"string\",\r\n    \"valueType\" : \"string\",\r\n    \"@baseType\" : \"string\"\r\n  }, {\r\n    \"name\" : \"email\",\r\n    \"value\" : \"solomonhailu1614@gmail.com\",\r\n    \"@type\" : \"string\",\r\n    \"id\" : \"string\",\r\n    \"characteristicRelationship\" : [ {\r\n      \"id\" : \"string\",\r\n      \"relationshipType\" : \"string\"\r\n    } ],\r\n    \"arrayIndex\" : \"-1\",\r\n    \"@schemaLocation\" : \"string\",\r\n    \"valueType\" : \"string\",\r\n    \"@baseType\" : \"string\"\r\n  }, {\r\n    \"name\" : \"customerID\",\r\n    \"value\" : \"7450772\",\r\n    \"@type\" : \"string\",\r\n    \"id\" : \"string\",\r\n    \"characteristicRelationship\" : [ {\r\n      \"id\" : \"string\",\r\n      \"relationshipType\" : \"string\"\r\n    } ],\r\n    \"arrayIndex\" : \"-1\",\r\n    \"@schemaLocation\" : \"string\",\r\n    \"valueType\" : \"string\",\r\n    \"@baseType\" : \"string\"\r\n  }, {\r\n    \"name\" : \"connection_name\",\r\n    \"value\" : \"postpaid\",\r\n    \"@type\" : \"string\",\r\n    \"id\" : \"string\",\r\n    \"characteristicRelationship\" : [ {\r\n      \"id\" : \"string\",\r\n      \"relationshipType\" : \"string\"\r\n    } ],\r\n    \"arrayIndex\" : \"-1\",\r\n    \"@schemaLocation\" : \"string\",\r\n    \"valueType\" : \"string\",\r\n    \"@baseType\" : \"string\"\r\n  }, {\r\n    \"name\" : \"language\",\r\n    \"value\" : \"1\",\r\n    \"@type\" : \"string\",\r\n    \"id\" : \"string\",\r\n    \"characteristicRelationship\" : [ {\r\n      \"id\" : \"string\",\r\n      \"relationshipType\" : \"string\"\r\n    } ],\r\n    \"arrayIndex\" : \"-1\",\r\n    \"@schemaLocation\" : \"string\",\r\n    \"valueType\" : \"string\",\r\n    \"@baseType\" : \"string\"\r\n  }, {\r\n    \"name\" : \"msisdn\",\r\n    \"value\" : \"251711111762\",\r\n    \"@type\" : \"string\",\r\n    \"id\" : \"string\",\r\n    \"characteristicRelationship\" : [ {\r\n      \"id\" : \"string\",\r\n      \"relationshipType\" : \"string\"\r\n    } ],\r\n    \"arrayIndex\" : \"-1\",\r\n    \"@schemaLocation\" : \"string\",\r\n    \"valueType\" : \"string\",\r\n    \"@baseType\" : \"string\"\r\n  }, {\r\n    \"name\" : \"iccid\",\r\n    \"value\" : \"89251020001149016716\",\r\n   \"@type\" : \"string\",\r\n    \"id\" : \"string\",\r\n    \"characteristicRelationship\" : [ {\r\n      \"id\" : \"string\",\r\n      \"relationshipType\" : \"string\"\r\n    } ],\r\n    \"arrayIndex\" : \"-1\",\r\n    \"@schemaLocation\" : \"string\",\r\n    \"valueType\" : \"string\",\r\n    \"@baseType\" : \"string\"\r\n  }, {\r\n    \"name\" : \"imsi\",\r\n    \"value\" : \"636020114901671\",\r\n    \"@type\" : \"string\",\r\n    \"id\" : \"string\",\r\n    \"characteristicRelationship\" : [ {\r\n      \"id\" : \"string\",\r\n      \"relationshipType\" : \"string\"\r\n    } ],\r\n    \"arrayIndex\" : \"-1\",\r\n    \"@schemaLocation\" : \"string\",\r\n    \"valueType\" : \"string\",\r\n    \"@baseType\" : \"string\"\r\n  }, {\r\n    \"name\" : \"companyName\",\r\n    \"value\" : \"AYALNESH ESHETU YEMAR\",\r\n    \"@type\" : \"string\",\r\n    \"id\" : \"string\",\r\n    \"characteristicRelationship\" : [ {\r\n      \"id\" : \"string\",\r\n      \"relationshipType\" : \"string\"\r\n    } ],\r\n    \"arrayIndex\" : \"-1\",\r\n    \"@schemaLocation\" : \"string\",\r\n    \"valueType\" : \"string\",\r\n    \"@baseType\" : \"string\"\r\n  }, {\r\n    \"name\" : \"dateTime\",\r\n    \"value\" : \"2024-09-30T12:08:57.343Z\",\r\n    \"@type\" : \"string\",\r\n    \"id\" : \"string\",\r\n    \"characteristicRelationship\" : [ {\r\n      \"id\" : \"string\",\r\n      \"relationshipType\" : \"string\"\r\n    } ],\r\n    \"arrayIndex\" : \"-1\",\r\n    \"@schemaLocation\" : \"string\",\r\n    \"valueType\" : \"string\",\r\n    \"@baseType\" : \"string\"\r\n  } ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://esb.bss.safaricomet.net/service-mgmt/safaricom/api/v1/customeractivationbss/service",
+					"protocol": "https",
+					"host": [
+						"esb",
+						"bss",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"service-mgmt",
+						"safaricom",
+						"api",
+						"v1",
+						"customeractivationbss",
+						"service"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LMS call",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "onboarding_09888",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer J0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9",
+						"type": "text"
+					},
+					{
+						"key": "X-LANGUAGE",
+						"value": "EN",
+						"type": "text"
+					},
+					{
+						"key": "X-CORRELATION-ID",
+						"value": "SLM82k1d8k_1726807019367",
+						"type": "text"
+					},
+					{
+						"key": "CREATE-USER",
+						"value": "9f520290-2366-47bb-b2d2-3ec33ce6c403",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customerType\" : \"Enterprise\",\r\n  \"billingAccountNumber\" : \"ET7548286\",\r\n  \"customerId\" : 7450772,\r\n  \"profileId\" : 7450772,\r\n  \"accountType\" : \"postpaid\",\r\n  \"redemptionEnabled\" : false,\r\n  \"autoEnrollment\" : false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://lms.bss.safaricomet.net/manage-account/loyaltyManagement/loyaltyProgramMember/onboard/251711111762",
+					"protocol": "https",
+					"host": [
+						"lms",
+						"bss",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"manage-account",
+						"loyaltyManagement",
+						"loyaltyProgramMember",
+						"onboard",
+						"251711111762"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SLM call Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "onboarding_09888",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1234",
+						"type": "text"
+					},
+					{
+						"key": "X-UnAuth-Request",
+						"value": "true",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "SLM82k1d8k_1726807019367",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"saFormId\" : \"SA_19092024082515215\",\r\n  \"profileId\" : \"7450772\",\r\n  \"billingAccountId\" : \"ET7548286\",\r\n  \"orderstatus\" : \"completed\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://slm.bss2.safaricomet.net/capture-opportunity/accountprofilebillingmapping",
+					"protocol": "https",
+					"host": [
+						"slm",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"capture-opportunity",
+						"accountprofilebillingmapping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Identification",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "onboarding_09888",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"CreateIdentification\",\r\n    \"identification\": {\r\n        \"subscriberId\": \"621687\",\r\n        \"subscriberLevel\": \"0\",\r\n        \"identificationNumber\": \"1234\",\r\n        \"identificationType\": \"102\",\r\n        \"idIssueDate\": \"01-02-2020 00:00:00\",\r\n        \"isExpired\": \"true\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/order-service/orders/create-identification",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"create-identification"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Identification",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "onboarding_09888",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"UpdateIdentification\",\r\n    \"identification\": {\r\n        \"idIssueDate\": \"01-01-2012 00:00:00\",\r\n        \"idExpiryDate\": \"24-02-2026 00:00:00\",\r\n        \"identificationId\": \"185976\",\r\n        \"identificationNumber\": \"24155391\",\r\n        \"identificationType\": \"102\",\r\n        \"subscriberId\": \"621687\",\r\n        \"subscriberLevel\": \"0\",\r\n        \"isExpired\": \"false\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/order-service/orders/update-identification",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"update-identification"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Termination SOM",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "1711392875232-D_10932320",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "correlationId",
+						"value": "SOMLifeCycleTerminationCallback:1221895057440002048",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"externalId\": \"1221895057104457728\",\r\n    \"externalServiceId\": \"251713068375\",\r\n    \"category\": \"MOBILESERVICE\",\r\n    \"priority\": \"1\",\r\n    \"description\": \"Suspend all GSM HLR services\",\r\n    \"requestedCompletionDate\": \"2024-03-25T21:54:35.232Z\",\r\n    \"requestedStartDate\": \"2024-03-25T21:54:35.232Z\",\r\n    \"serviceOrderItem\": [\r\n        {\r\n            \"id\": \"1\",\r\n            \"action\": \"modify\",\r\n            \"service\": {\r\n                \"id\": \"ba82b6ddc1bc4e01b15fb0ed97921e4a\",\r\n                \"state\": \"inactive\",\r\n                \"type\": \"CFS\",\r\n                \"serviceSpecification\": {\r\n                    \"id\": \"1\",\r\n                    \"href\": \"http://som-pod-1:3085/ServiceCatalogue/ServiceSpecificationActive/1\",\r\n                    \"name\": \"CFSS_GSM_DATA\",\r\n                    \"version\": \"1\"\r\n                }\r\n            },\r\n            \"@type\": \"ServiceOrderItem\"\r\n        },\r\n        {\r\n            \"id\": \"2\",\r\n            \"action\": \"modify\",\r\n            \"service\": {\r\n                \"id\": \"b672853ca5974a8da8dc0722973dcce3\",\r\n                \"state\": \"inactive\",\r\n                \"type\": \"CFS\",\r\n                \"serviceSpecification\": {\r\n                    \"id\": \"1\",\r\n                    \"href\": \"http://som-pod-1:3085/ServiceCatalogue/ServiceSpecificationActive/1\",\r\n                    \"name\": \"CFSS_GSM_SMS\",\r\n                    \"version\": \"1\"\r\n                }\r\n            },\r\n            \"@type\": \"ServiceOrderItem\"\r\n        },\r\n        {\r\n            \"id\": \"3\",\r\n            \"action\": \"modify\",\r\n            \"service\": {\r\n                \"id\": \"666903f3a59c462db00a6fa5e843aef1\",\r\n                \"state\": \"inactive\",\r\n                \"type\": \"CFS\",\r\n                \"serviceSpecification\": {\r\n                    \"id\": \"1\",\r\n                    \"href\": \"http://som-pod-1:3085/ServiceCatalogue/ServiceSpecificationActive/1\",\r\n                    \"name\": \"CFSS_GSM_VOICE\",\r\n                    \"version\": \"1\"\r\n                }\r\n            },\r\n            \"@type\": \"ServiceOrderItem\"\r\n        },\r\n        {\r\n            \"id\": \"4\",\r\n            \"action\": \"modify\",\r\n            \"service\": {\r\n                \"id\": \"edeb5e22cad04b7b996524cf719f07a6\",\r\n                \"state\": \"inactive\",\r\n                \"type\": \"CFS\",\r\n                \"serviceSpecification\": {\r\n                    \"id\": \"1\",\r\n                    \"href\": \"http://som-pod-1:3085/ServiceCatalogue/ServiceSpecificationActive/1\",\r\n                    \"name\": \"CFSS_INTL_ROAM\",\r\n                    \"version\": \"1\"\r\n                }\r\n            },\r\n            \"@type\": \"ServiceOrderItem\"\r\n        },\r\n        {\r\n            \"id\": \"5\",\r\n            \"action\": \"modify\",\r\n            \"service\": {\r\n                \"id\": \"812aa8c86b594399ac18259b7e910ce4\",\r\n                \"state\": \"inactive\",\r\n                \"type\": \"CFS\",\r\n                \"serviceSpecification\": {\r\n                    \"id\": \"1\",\r\n                    \"href\": \"http://som-pod-1:3085/ServiceCatalogue/ServiceSpecificationActive/1\",\r\n                    \"name\": \"CFSS_INTL_ROAM_DATA\",\r\n                    \"version\": \"1\"\r\n                }\r\n            },\r\n            \"@type\": \"ServiceOrderItem\"\r\n        },\r\n        {\r\n            \"id\": \"6\",\r\n            \"action\": \"modify\",\r\n            \"service\": {\r\n                \"id\": \"d13d7d7d27404c00a536a7589575486d\",\r\n                \"state\": \"inactive\",\r\n                \"type\": \"PRS\",\r\n                \"serviceSpecification\": {\r\n                    \"id\": \"1\",\r\n                    \"href\": \"http://som-pod-1:3085/ServiceCatalogue/ServiceSpecificationActive/1\",\r\n                    \"name\": \"PRS_SIM\",\r\n                    \"version\": \"1\"\r\n                }\r\n            },\r\n            \"@type\": \"ServiceOrderItem\"\r\n        },\r\n        {\r\n            \"id\": \"7\",\r\n            \"action\": \"modify\",\r\n            \"service\": {\r\n                \"id\": \"81f042c0ffbc498d88f6793f5a157b8e\",\r\n                \"state\": \"inactive\",\r\n                \"type\": \"LRS\",\r\n                \"serviceSpecification\": {\r\n                    \"id\": \"1\",\r\n                    \"href\": \"http://som-pod-1:3085/ServiceCatalogue/ServiceSpecificationActive/1\",\r\n                    \"name\": \"LRS_MSISDN\",\r\n                    \"version\": \"1\"\r\n                }\r\n            },\r\n            \"@type\": \"ServiceOrderItem\"\r\n        }\r\n    ],\r\n    \"@type\": \"ServiceOrder\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://som-pod-2.bss.safaricomet.net/ServiceOrder/serviceOrder",
+					"protocol": "https",
+					"host": [
+						"som-pod-2",
+						"bss",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"ServiceOrder",
+						"serviceOrder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateOOB falg",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM-M",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "EKYC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "MAN_47265645",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"UpdateOobFlag\",\r\n    \"description\": \"Product Order illustration sample\",\r\n    \"serviceManagement\": {\r\n        \"serviceId\": \"251711000489\",\r\n        \"serviceSeqId\": \"16505429\",\r\n        \"oobFlag\": \"TRUE\",\r\n        \"waveOffFlag\": false\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/order-service/orders/update-oobflag",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"update-oobflag"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get msisd",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://nms.bss2.safaricomet.net/external-msisdn/Numberpool/search?filterNumberType=1",
+					"protocol": "http",
+					"host": [
+						"nms",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"external-msisdn",
+						"Numberpool",
+						"search"
+					],
+					"query": [
+						{
+							"key": "filterNumberType",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cache reload orch",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-trace-id",
+						"value": "78779878777",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "admin",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/order-orchestrator/CacheReload",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"order-orchestrator",
+						"CacheReload"
+					],
+					"query": [
+						{
+							"key": "channel",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cache reload orch Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-trace-id",
+						"value": "78779878777",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "admin",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "com-batch.bss2.safaricomet.net/order-orchestrator/CacheReload",
+					"host": [
+						"com-batch",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"order-orchestrator",
+						"CacheReload"
+					],
+					"query": [
+						{
+							"key": "channel",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cache reload orch Copy 2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-trace-id",
+						"value": "78779878777",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "admin",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "com3.bss2.safaricomet.net/order-orchestrator/CacheReload",
+					"host": [
+						"com3",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"order-orchestrator",
+						"CacheReload"
+					],
+					"query": [
+						{
+							"key": "channel",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cache reload orch BP",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-trace-id",
+						"value": "78779878777",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "admin",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-orchestrator/CacheReload",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-orchestrator",
+						"CacheReload"
+					],
+					"query": [
+						{
+							"key": "channel",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cache reload orch BP Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-trace-id",
+						"value": "78779878777",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "admin",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://com3.bss.blueprint.lab/order-orchestrator/CacheReload",
+					"protocol": "http",
+					"host": [
+						"com3",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-orchestrator",
+						"CacheReload"
+					],
+					"query": [
+						{
+							"key": "channel",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cache reload orch BP Copy 2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-trace-id",
+						"value": "78779878777",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "admin",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://com-batch.bss.blueprint.lab/order-orchestrator/CacheReload",
+					"protocol": "http",
+					"host": [
+						"com-batch",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-orchestrator",
+						"CacheReload"
+					],
+					"query": [
+						{
+							"key": "channel",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cache reload report",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-trace-id",
+						"value": "55678",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmuser",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/order-report/CacheReload",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"order-report",
+						"CacheReload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cache reload report Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-trace-id",
+						"value": "55678",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmuser",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://com.bss.safaricomet.net/order-report/CacheReload",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"order-report",
+						"CacheReload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cache reload report BP",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-trace-id",
+						"value": "55678",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmuser",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-report/CacheReload",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-report",
+						"CacheReload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cache reload enrich",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-trace-id",
+						"value": "334",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "admin",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/order-enrichment/CacheReload",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"order-enrichment",
+						"CacheReload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cache reload enrich BP",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-trace-id",
+						"value": "334",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "admin",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-enrichment/CacheReload",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-enrichment",
+						"CacheReload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cache reload enrich Copy 2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-trace-id",
+						"value": "334",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "admin",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/order-enrichment/CacheReload",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"order-enrichment",
+						"CacheReload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cache relaod capture",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-trace-id",
+						"value": "3453765",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "admin",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/order-service/CacheReload",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"order-service",
+						"CacheReload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cache relaod Batch DC",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-trace-id",
+						"value": "6765",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "admin",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/batch-service/CacheReload",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"batch-service",
+						"CacheReload"
+					],
+					"query": [
+						{
+							"key": "x-trace-id",
+							"value": "233745",
+							"disabled": true
+						},
+						{
+							"key": "channel",
+							"value": "CRM",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cache relaod Batch DC Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-trace-id",
+						"value": "146567",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "admin",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://com.bss.safaricomet.net/batch-service/CacheReload",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"batch-service",
+						"CacheReload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cache relaod Batch BP",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-trace-id",
+						"value": "146567",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "admin",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/batch-service/CacheReload",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"batch-service",
+						"CacheReload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cache relaod capture BP",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-trace-id",
+						"value": "21wt66",
+						"type": "text"
+					},
+					{
+						"key": "Channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "admin",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/CacheReload",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"CacheReload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cache relaod capture BP Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-trace-id",
+						"value": "21wt66",
+						"type": "text"
+					},
+					{
+						"key": "Channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "admin",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/CacheReload",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"CacheReload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get IMSIand iccid Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-request-id",
+						"value": "2223344",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://bss-prod-apps.invntry.bss2.safaricomet.net/manageAsset/assetDetails?filterAssetState=NEW&filterProduct=29&filterProductType=2&pageNo=2&perPageCount=30",
+					"protocol": "http",
+					"host": [
+						"bss-prod-apps",
+						"invntry",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"manageAsset",
+						"assetDetails"
+					],
+					"query": [
+						{
+							"key": "filterAssetState",
+							"value": "NEW"
+						},
+						{
+							"key": "filterProduct",
+							"value": "29"
+						},
+						{
+							"key": "filterProductType",
+							"value": "2"
+						},
+						{
+							"key": "pageNo",
+							"value": "2"
+						},
+						{
+							"key": "perPageCount",
+							"value": "30"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Queryplan_IMPL Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "channel",
+						"value": "USSD",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "test67986684444",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://com.bss2.safaricomet.net/query-service/query-plan/251707436934?size=10&page=1",
+					"protocol": "https",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"query-service",
+						"query-plan",
+						"251707436934"
+					],
+					"query": [
+						{
+							"key": "size",
+							"value": "10"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query service",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "123113234344354354",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/query-service/customer-info/services/251700352720?filter=service",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"query-service",
+						"customer-info",
+						"services",
+						"251700352720"
+					],
+					"query": [
+						{
+							"key": "filter",
+							"value": "service"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query service Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "123113234344354354",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/query-service/customer-info/services/251700352720?filter=service",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"query-service",
+						"customer-info",
+						"services",
+						"251700352720"
+					],
+					"query": [
+						{
+							"key": "filter",
+							"value": "service"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query service Copy 2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "123113234344354354",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/query-service/customer-info/services/251700352720?filter=service",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"query-service",
+						"customer-info",
+						"services",
+						"251700352720"
+					],
+					"query": [
+						{
+							"key": "filter",
+							"value": "service"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query service Copy 3",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "123113234344354354",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/query-service/customer-info/services/251700352720?filter=service",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"query-service",
+						"customer-info",
+						"services",
+						"251700352720"
+					],
+					"query": [
+						{
+							"key": "filter",
+							"value": "service"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query account",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "746734",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/query-service/customer-info/accounts/ET9903839",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"query-service",
+						"customer-info",
+						"accounts",
+						"ET9903839"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch account",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "123113234344354354",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://bss-prod-apps.bill.bss2.safaricomet.net/paymentManagement/fetchPayments?page=2&accountId=6dbss22114",
+					"protocol": "http",
+					"host": [
+						"bss-prod-apps",
+						"bill",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"paymentManagement",
+						"fetchPayments"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						},
+						{
+							"key": "accountId",
+							"value": "6dbss22114"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch service billing DC2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "123113234344354354",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://bss-prod-apps.bill.bss2.safaricomet.net/paymentManagement/fetchPayments?page=2&accountId=6dbss22114",
+					"protocol": "http",
+					"host": [
+						"bss-prod-apps",
+						"bill",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"paymentManagement",
+						"fetchPayments"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						},
+						{
+							"key": "accountId",
+							"value": "6dbss22114"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch account_DC2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "123113234344354354",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/query-service/group-info?accountId=ET12334",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"query-service",
+						"group-info"
+					],
+					"query": [
+						{
+							"key": "accountId",
+							"value": "ET12334"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch account_BP",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "123113234344354354",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/query-service/group-info?accountId=ET12334",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"query-service",
+						"group-info"
+					],
+					"query": [
+						{
+							"key": "accountId",
+							"value": "ET12334"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch invoice id DC2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "channel-id",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "123113234344354354",
+						"type": "text"
+					},
+					{
+						"key": "request-id",
+						"value": "5567",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://bss-prod-apps.bill.bss2.safaricomet.net/InvoiceManagement/fetchInvoiceDetailsApproved?accountId=ET36632&action=fetchInvoiceDetails&order=desc&page=1&size=10&sort=accountId",
+					"protocol": "http",
+					"host": [
+						"bss-prod-apps",
+						"bill",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"InvoiceManagement",
+						"fetchInvoiceDetailsApproved"
+					],
+					"query": [
+						{
+							"key": "accountId",
+							"value": "ET36632"
+						},
+						{
+							"key": "action",
+							"value": "fetchInvoiceDetails"
+						},
+						{
+							"key": "order",
+							"value": "desc"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "size",
+							"value": "10"
+						},
+						{
+							"key": "sort",
+							"value": "accountId"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch group_DC2 Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "123113234344354354",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/query-service/group-info/members?talkGroupId=10229",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"query-service",
+						"group-info",
+						"members"
+					],
+					"query": [
+						{
+							"key": "talkGroupId",
+							"value": "10229"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch group_BP",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "123113234344354354",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/query-service/group-info/members?talkGroupId=10229",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"query-service",
+						"group-info",
+						"members"
+					],
+					"query": [
+						{
+							"key": "talkGroupId",
+							"value": "10229"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch account_DC2 Copy 2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "123113234344354354",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/query-service/group-info?accountId=ET12334",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"query-service",
+						"group-info"
+					],
+					"query": [
+						{
+							"key": "accountId",
+							"value": "ET12334"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch loyality entrollmenr",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "123113234344354354",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/manage-account/loyaltyManagement/loyaltyProgramMember/251791002565",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"manage-account",
+						"loyaltyManagement",
+						"loyaltyProgramMember",
+						"251791002565"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch upc",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "123113234344354354",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "customercategory",
+						"value": "11",
+						"type": "text"
+					},
+					{
+						"key": "ConnectionType",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "customersubcategory",
+						"value": "115",
+						"type": "text"
+					},
+					{
+						"key": "channel",
+						"value": "3",
+						"type": "text"
+					},
+					{
+						"key": "customerprofiletype",
+						"value": "1",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://upc.bss2.safaricomet.net/UPC/ProductOffering?eligibilityOffers.eligibilityType.id=1&productFamily.id=1&baseOfferId=495",
+					"protocol": "https",
+					"host": [
+						"upc",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"UPC",
+						"ProductOffering"
+					],
+					"query": [
+						{
+							"key": "eligibilityOffers.eligibilityType.id",
+							"value": "1"
+						},
+						{
+							"key": "productFamily.id",
+							"value": "1"
+						},
+						{
+							"key": "baseOfferId",
+							"value": "495"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "view order DC2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "123113234344354354",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-report/orders/962955320879484928/sub-orders/962955321550573568/stages?limit=20",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-report",
+						"orders",
+						"962955320879484928",
+						"sub-orders",
+						"962955321550573568",
+						"stages"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "view order DC2 Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "123113234344354354",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://upc-core.bss2.safaricomet.net/UPC/ProductOffering?id=187",
+					"protocol": "https",
+					"host": [
+						"upc-core",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"UPC",
+						"ProductOffering"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "187"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upc fetch",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "123113234344354354",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://upc-core.bss2.safaricomet.net/UPC/ProductOffering?id=187",
+					"protocol": "https",
+					"host": [
+						"upc-core",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"UPC",
+						"ProductOffering"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "187"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upc fetch Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "123113234344354354",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/order-report/get-attributes?level=2&subOrderId=1035274148999462912",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"order-report",
+						"get-attributes"
+					],
+					"query": [
+						{
+							"key": "level",
+							"value": "2"
+						},
+						{
+							"key": "subOrderId",
+							"value": "1035274148999462912"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upc fetch Copy 2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					},
+					{
+						"key": "X-Trace-Id",
+						"value": "123113234344354354",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://com.bss2.safaricomet.net/order-report/get-attributes?level=2&subOrderId=1035274148999462912",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"order-report",
+						"get-attributes"
+					],
+					"query": [
+						{
+							"key": "level",
+							"value": "2"
+						},
+						{
+							"key": "subOrderId",
+							"value": "1035274148999462912"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SA form cancel",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-unauth-request",
+						"value": "true"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "Tes-11062025"
+					},
+					{
+						"key": "Username",
+						"value": "thanvir.jalal"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer 1234"
+					},
+					{
+						"key": "channel",
+						"value": "CRM"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"errorCode\": \"28\",\n    \"saFormId\": \"SA_21022025152314719\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://slm.bss3.safaricomet.net/capture-opportunity/serviceApplication/provisioningStatusCallback",
+					"protocol": "https",
+					"host": [
+						"slm",
+						"bss3",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"capture-opportunity",
+						"serviceApplication",
+						"provisioningStatusCallback"
+					]
+				},
+				"description": "Generated from cURL: curl --location --request POST 'https://slm.bss3.safaricomet.net/capture-opportunity/serviceApplication/provisioningStatusCallback' \\\n--header 'x-unauth-request: true' \\\n--header 'x-trace-id: Tes-11062025' \\\n--header 'Username: thanvir.jalal' \\\n--header 'authorization: Bearer 1234' \\\n--header 'channel: CRM' \\\n--header 'Content-Type: application/json' \\\n--data-raw '{\n    \"errorCode\": \"28\",\n    \"saFormId\": \"SA_12082024130812488\"\n}'"
+			},
+			"response": []
+		}
+	]
+}

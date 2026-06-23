@@ -1,0 +1,46 @@
+Failed
+Request sending [POST http://sm-pod-1:3081/Activation, third party id=sm-offer-activation-renewal, headers={Content-Type=application/json}, payload={
+  "sourceNode" : "SND",
+  "requestId" : "01981781464939759707731",
+  "externalServiceId" : "251700393242",
+  "requestParam" : {
+    "seqId" : "43726832",
+    "purchaseTime" : "2026-06-14 22:22:20",
+    "planId" : "1141",
+    "subscriptionId" : "15134275813184693242",
+    "autoRenewal" : 0,
+    "upFrontBilling" : "true"
+  },
+  "channel" : "8",
+  "requestTimeStamp" : "2026-06-14T22:22:22.762Z",
+  "password" : "password",
+  "featureId" : "Activation",
+  "username" : "username",
+  "sourceAddress" : "179.12.0.1"
+}
+
+
+
+
+Success
+Request sending [POST http://sm-pod-1:3081/Activation, third party id=sm-offer-activation, headers={Content-Type=application/json}, payload={  
+"requestId" : "251715392710-1456986493-gifting-ibex",  
+"requestParam" : {    "externalTransactionId" : "251715392710-1456986493-gifting-ibex",
+    "purchaseTime" : "2026-06-14 21:07:33",    
+	"planId" : "1829",
+    "autoRenewal" : 0,     "giftSender" : "251715392710",    "seqId" : "35879169",
+    "subscriptionId" : "524ee3cc-61bc-412a-b040-dce7f189fc15",
+    "giftIdentifier" : "true",
+    "status" : "Active"
+  },  "sourceNode" : "USSD",
+  "externalServiceId" : "251713931165",
+  "channel" : "2",
+  "requestTimeStamp" : "2026-06-14 21:07:37",
+  "sourceAddress" : "179.12.0.1",
+  "featureId" : "Activation",
+  "password" : "password",
+  "username" : "username"
+}
+
+COM-SM Curl request
+curl -X POST "http://sm-pod-1:3081/Activation" -H "Content-Type: application/json" -d '{"sourceNode":"SND","requestId":"01981781464939759707731","externalServiceId":"251700393242","requestParam":{"seqId":"43726832","purchaseTime":"2026-06-14 22:22:20","planId":"1141","subscriptionId":"15134275813184693242","autoRenewal":0,"upFrontBilling":"true"},"channel":"8","requestTimeStamp":"2026-06-14T22:22:22.762Z","password":"password","featureId":"Activation","username":"username","sourceAddress":"179.12.0.1"}'

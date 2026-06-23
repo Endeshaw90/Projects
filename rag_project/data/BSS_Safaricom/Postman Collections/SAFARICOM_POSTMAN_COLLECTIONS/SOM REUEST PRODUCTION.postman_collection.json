@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "a9c5840d-83b2-4cf2-81ff-8cd83112b5e6",
+		"name": "SOM REUEST PRODUCTION",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19382143"
+	},
+	"item": [
+		{
+			"name": "SOM_Reuest",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-trace-id",
+						"value": "17096896807267867",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "correlationId",
+						"value": "SOMCallback:1089961271672819712",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"externalId\": \"1146001242349649920\",\n\t\"externalServiceId\": \"251713569922\",\n\t\"description\": \"Subscriber On-boarding\",\n\t\"requestedStartDate\": \"2023-03-27T17:17:01.330394Z\",\n\t\"orderType\": \"onboarding\",\n\t\"serviceOrderItem\": [\n\t\t{\n\t\t\t\"id\": \"1\",\n\t\t\t\"action\": \"add\",\n\t\t\t\"service\": {\n\t\t\t\t\"state\": \"active\",\n\t\t\t\t\"type\": \"CFS\",\n\t\t\t\t\"serviceCharacteristic\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"SubscriptionType\",\n\t\t\t\t\t\t\"valueType\": \"String\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"CONNECTION_TYPE\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"2\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"SUBSCRIPTION_ID\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"838a343a-fd8e-4fea-b175-7e0f3a97d9a1\"\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"serviceSpecification\": {\n\t\t\t\t\t\"id\": \"22\",\n\t\t\t\t\t\"name\": \"CFSS_GSM_DATA\"\n\t\t\t\t}\n\t\t\t},\n\t\t\t\"@type\": \"ServiceOrderItem\"\n\t\t},\n\t\t{\n\t\t\t\"id\": \"2\",\n\t\t\t\"action\": \"add\",\n\t\t\t\"service\": {\n\t\t\t\t\"state\": \"active\",\n\t\t\t\t\"type\": \"CFS\",\n\t\t\t\t\"serviceCharacteristic\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"SubscriptionType\",\n\t\t\t\t\t\t\"valueType\": \"String\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"CONNECTION_TYPE\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"2\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"SUBSCRIPTION_ID\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"838a343a-fd8e-4fea-b175-7e0f3a97d9a1\"\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"serviceSpecification\": {\n\t\t\t\t\t\"id\": \"23\",\n\t\t\t\t\t\"name\": \"CFSS_GSM_SMS\"\n\t\t\t\t}\n\t\t\t},\n\t\t\t\"@type\": \"ServiceOrderItem\"\n\t\t},\n\t\t{\n\t\t\t\"id\": \"3\",\n\t\t\t\"action\": \"add\",\n\t\t\t\"service\": {\n\t\t\t\t\"state\": \"active\",\n\t\t\t\t\"type\": \"CFS\",\n\t\t\t\t\"serviceCharacteristic\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"SubscriptionType\",\n\t\t\t\t\t\t\"valueType\": \"String\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"CONNECTION_TYPE\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"2\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"SUBSCRIPTION_ID\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"838a343a-fd8e-4fea-b175-7e0f3a97d9a1\"\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"serviceSpecification\": {\n\t\t\t\t\t\"id\": \"24\",\n\t\t\t\t\t\"name\": \"CFSS_GSM_VOICE\"\n\t\t\t\t}\n\t\t\t},\n\t\t\t\"@type\": \"ServiceOrderItem\"\n\t\t},\n\t\t{\n\t\t\t\"id\": \"4\",\n\t\t\t\"action\": \"add\",\n\t\t\t\"service\": {\n\t\t\t\t\"state\": \"active\",\n\t\t\t\t\"type\": \"CFS\",\n\t\t\t\t\"serviceCharacteristic\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"CONNECTION_TYPE\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"2\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"SUBSCRIPTION_ID\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"838a343a-fd8e-4fea-b175-7e0f3a97d9a1\"\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"serviceSpecification\": {\n\t\t\t\t\t\"id\": \"55\",\n\t\t\t\t\t\"name\": \"CFSS_INTL_ROAM\"\n\t\t\t\t}\n\t\t\t},\n\t\t\t\"@type\": \"ServiceOrderItem\"\n\t\t},\n\t\t{\n\t\t\t\"id\": \"5\",\n\t\t\t\"action\": \"add\",\n\t\t\t\"service\": {\n\t\t\t\t\"state\": \"active\",\n\t\t\t\t\"type\": \"CFS\",\n\t\t\t\t\"serviceCharacteristic\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"CONNECTION_TYPE\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"2\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"SUBSCRIPTION_ID\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"838a343a-fd8e-4fea-b175-7e0f3a97d9a1\"\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"serviceSpecification\": {\n\t\t\t\t\t\"id\": \"3878\",\n\t\t\t\t\t\"name\": \"CFSS_INTL_ROAM_DATA\"\n\t\t\t\t}\n\t\t\t},\n\t\t\t\"@type\": \"ServiceOrderItem\"\n\t\t},\n\t\t{\n\t\t\t\"id\": \"6\",\n\t\t\t\"action\": \"add\",\n\t\t\t\"service\": {\n\t\t\t\t\"state\": \"active\",\n\t\t\t\t\"type\": \"PRS\",\n\t\t\t\t\"serviceCharacteristic\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"KI\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"2D810821824F01B155082B9FAEE48C9C\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"IMSI\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"636020109242877\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"ICCID\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"89251020001092428777\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"TPLID\",\n\t\t\t\t\t\t\"valueType\": \"String\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"BLACKLIST_REASON\",\n\t\t\t\t\t\t\"valueType\": \"String\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"meName\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"KLT1\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"ALGOID\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"3\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"KDBID\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"3\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"SUBSCRIPTION_ID\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"838a343a-fd8e-4fea-b175-7e0f3a97d9a1\"\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"serviceSpecification\": {\n\t\t\t\t\t\"id\": \"5\",\n\t\t\t\t\t\"name\": \"PRS_SIM\"\n\t\t\t\t}\n\t\t\t},\n\t\t\t\"@type\": \"ServiceOrderItem\"\n\t\t},\n\t\t{\n\t\t\t\"id\": \"7\",\n\t\t\t\"action\": \"add\",\n\t\t\t\"service\": {\n\t\t\t\t\"state\": \"active\",\n\t\t\t\t\"type\": \"LRS\",\n\t\t\t\t\"serviceCharacteristic\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"MSISDN\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"251713569922\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"SUBSCRIPTION_ID\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"838a343a-fd8e-4fea-b175-7e0f3a97d9a1\"\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"serviceSpecification\": {\n\t\t\t\t\t\"id\": \"6\",\n\t\t\t\t\t\"name\": \"LRS_MSISDN\"\n\t\t\t\t}\n\t\t\t},\n\t\t\t\"@type\": \"ServiceOrderItem\"\n\t\t}\n\t],\n\t\"@type\": \"ServiceOrder\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://som-pod-2.bss2.safaricomet.net/ServiceOrder/serviceOrder",
+					"protocol": "https",
+					"host": [
+						"som-pod-2",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"ServiceOrder",
+						"serviceOrder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SOM_Reuest Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-trace-id",
+						"value": "17096896807267867",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "correlationId",
+						"value": "SOMCallback:1089961271672819712",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"externalId\": \"1146001242349649920\",\n\t\"externalServiceId\": \"251713569922\",\n\t\"description\": \"Subscriber On-boarding\",\n\t\"requestedStartDate\": \"2023-03-27T17:17:01.330394Z\",\n\t\"orderType\": \"onboarding\",\n\t\"serviceOrderItem\": [\n\t\t{\n\t\t\t\"id\": \"1\",\n\t\t\t\"action\": \"add\",\n\t\t\t\"service\": {\n\t\t\t\t\"state\": \"active\",\n\t\t\t\t\"type\": \"CFS\",\n\t\t\t\t\"serviceCharacteristic\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"SubscriptionType\",\n\t\t\t\t\t\t\"valueType\": \"String\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"CONNECTION_TYPE\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"2\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"SUBSCRIPTION_ID\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"838a343a-fd8e-4fea-b175-7e0f3a97d9a1\"\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"serviceSpecification\": {\n\t\t\t\t\t\"id\": \"22\",\n\t\t\t\t\t\"name\": \"CFSS_GSM_DATA\"\n\t\t\t\t}\n\t\t\t},\n\t\t\t\"@type\": \"ServiceOrderItem\"\n\t\t},\n\t\t{\n\t\t\t\"id\": \"2\",\n\t\t\t\"action\": \"add\",\n\t\t\t\"service\": {\n\t\t\t\t\"state\": \"active\",\n\t\t\t\t\"type\": \"CFS\",\n\t\t\t\t\"serviceCharacteristic\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"SubscriptionType\",\n\t\t\t\t\t\t\"valueType\": \"String\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"CONNECTION_TYPE\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"2\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"SUBSCRIPTION_ID\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"838a343a-fd8e-4fea-b175-7e0f3a97d9a1\"\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"serviceSpecification\": {\n\t\t\t\t\t\"id\": \"23\",\n\t\t\t\t\t\"name\": \"CFSS_GSM_SMS\"\n\t\t\t\t}\n\t\t\t},\n\t\t\t\"@type\": \"ServiceOrderItem\"\n\t\t},\n\t\t{\n\t\t\t\"id\": \"3\",\n\t\t\t\"action\": \"add\",\n\t\t\t\"service\": {\n\t\t\t\t\"state\": \"active\",\n\t\t\t\t\"type\": \"CFS\",\n\t\t\t\t\"serviceCharacteristic\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"SubscriptionType\",\n\t\t\t\t\t\t\"valueType\": \"String\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"CONNECTION_TYPE\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"2\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"SUBSCRIPTION_ID\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"838a343a-fd8e-4fea-b175-7e0f3a97d9a1\"\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"serviceSpecification\": {\n\t\t\t\t\t\"id\": \"24\",\n\t\t\t\t\t\"name\": \"CFSS_GSM_VOICE\"\n\t\t\t\t}\n\t\t\t},\n\t\t\t\"@type\": \"ServiceOrderItem\"\n\t\t},\n\t\t{\n\t\t\t\"id\": \"4\",\n\t\t\t\"action\": \"add\",\n\t\t\t\"service\": {\n\t\t\t\t\"state\": \"active\",\n\t\t\t\t\"type\": \"CFS\",\n\t\t\t\t\"serviceCharacteristic\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"CONNECTION_TYPE\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"2\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"SUBSCRIPTION_ID\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"838a343a-fd8e-4fea-b175-7e0f3a97d9a1\"\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"serviceSpecification\": {\n\t\t\t\t\t\"id\": \"55\",\n\t\t\t\t\t\"name\": \"CFSS_INTL_ROAM\"\n\t\t\t\t}\n\t\t\t},\n\t\t\t\"@type\": \"ServiceOrderItem\"\n\t\t},\n\t\t{\n\t\t\t\"id\": \"5\",\n\t\t\t\"action\": \"add\",\n\t\t\t\"service\": {\n\t\t\t\t\"state\": \"active\",\n\t\t\t\t\"type\": \"CFS\",\n\t\t\t\t\"serviceCharacteristic\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"CONNECTION_TYPE\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"2\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"SUBSCRIPTION_ID\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"838a343a-fd8e-4fea-b175-7e0f3a97d9a1\"\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"serviceSpecification\": {\n\t\t\t\t\t\"id\": \"3878\",\n\t\t\t\t\t\"name\": \"CFSS_INTL_ROAM_DATA\"\n\t\t\t\t}\n\t\t\t},\n\t\t\t\"@type\": \"ServiceOrderItem\"\n\t\t},\n\t\t{\n\t\t\t\"id\": \"6\",\n\t\t\t\"action\": \"add\",\n\t\t\t\"service\": {\n\t\t\t\t\"state\": \"active\",\n\t\t\t\t\"type\": \"PRS\",\n\t\t\t\t\"serviceCharacteristic\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"KI\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"2D810821824F01B155082B9FAEE48C9C\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"IMSI\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"636020109242877\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"ICCID\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"89251020001092428777\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"TPLID\",\n\t\t\t\t\t\t\"valueType\": \"String\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"BLACKLIST_REASON\",\n\t\t\t\t\t\t\"valueType\": \"String\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"meName\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"KLT1\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"ALGOID\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"3\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"KDBID\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"3\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"SUBSCRIPTION_ID\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"838a343a-fd8e-4fea-b175-7e0f3a97d9a1\"\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"serviceSpecification\": {\n\t\t\t\t\t\"id\": \"5\",\n\t\t\t\t\t\"name\": \"PRS_SIM\"\n\t\t\t\t}\n\t\t\t},\n\t\t\t\"@type\": \"ServiceOrderItem\"\n\t\t},\n\t\t{\n\t\t\t\"id\": \"7\",\n\t\t\t\"action\": \"add\",\n\t\t\t\"service\": {\n\t\t\t\t\"state\": \"active\",\n\t\t\t\t\"type\": \"LRS\",\n\t\t\t\t\"serviceCharacteristic\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"MSISDN\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"251713569922\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"name\": \"SUBSCRIPTION_ID\",\n\t\t\t\t\t\t\"valueType\": \"String\",\n\t\t\t\t\t\t\"value\": \"838a343a-fd8e-4fea-b175-7e0f3a97d9a1\"\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"serviceSpecification\": {\n\t\t\t\t\t\"id\": \"6\",\n\t\t\t\t\t\"name\": \"LRS_MSISDN\"\n\t\t\t\t}\n\t\t\t},\n\t\t\t\"@type\": \"ServiceOrderItem\"\n\t\t}\n\t],\n\t\"@type\": \"ServiceOrder\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://som-pod-2.bss2.safaricomet.net/ServiceOrder/serviceOrder",
+					"protocol": "https",
+					"host": [
+						"som-pod-2",
+						"bss2",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"ServiceOrder",
+						"serviceOrder"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

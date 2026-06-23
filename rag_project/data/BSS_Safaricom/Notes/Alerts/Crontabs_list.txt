@@ -1,0 +1,347 @@
+[pamrw1@et02-bss-jump01 ~]$ crontab -l
+0 2 * * * /home/pamrw/NOC_SCRIPT/Transfer_backup_log_v1.sh >> /home/pamrw/NOC_SCRIPT/logs/Transfer_backups_cron.log 2>&1
+0 * * * * /bin/bash "/home/mohammed.arif@safaricomet.net/missingcdr-dc2.sh" >> /tmp/lms_cron.log 2>&1
+0 2,20 * * * /scripts/MakePayment/makepaymentAlert.sh
+0 2,20 * * * /scripts/TicketStatus/noc_tickets.sh
+30 6 * * 1 /scripts/Audit/mail_to_audit.sh
+30 1 * * * /bin/bash "/home/mohammed.arif@safaricomet.net/missingcdr-dc2-daily.sh" >> /tmp/lms_cron_daily.log 2>&1
+[pamrw1@et02-bss-jump01 ~]$ sudo su
+[root@et02-bss-jump01 pamrw1]# crontabs -l
+bash: crontabs: command not found
+[root@et02-bss-jump01 pamrw1]# crontab -l
+### Daily Logs HouseKeeping ###
+#00 02 * * * /home/sashi.kumar@safaricomet.net/log_rotation/log_rotation.sh > /home/sashi.kumar@safaricomet.net/log_rotation/logs/log_rotation.log 2>&1
+00 02 * * * /home/svc-bss-pam@safaricomet.net/OPS/Daily-HouseKeeping-Scripts/Daily-HouseKeeping-Scripts.sh > /home/svc-bss-pam@safaricomet.net/OPS/Daily-HouseKeeping-Scripts/Daily-HouseKeeping-Scripts.log 2>&1
+
+#NMS MONITORING SCRIPT
+*/30 * * * * sh /home/priyanka.rebello@safaricomet.net/ECHELON/CRONTAB_SCRIPTS/ALERT_SCRIPT/CurrentHourTrafficCounts.sh > /home/priyanka.rebello@safaricomet.net/ECHELON/CRONTAB_SCRIPTS/ALERT_SCRIPT/CurrentHourTrafficCounts.log 2>&1
+
+#NMS DNA Time Check
+*/5 * * * * sh /home/thanvir.jalal@safaricomet.net/monitoring/NMS/DNS_PAIRING_CHECK.sh >> /home/thanvir.jalal@safaricomet.net/monitoring/DNS_PAIRING_CHECK.log 2>&1
+
+#API-STAT
+0 1 * * * sh /home/svc-bss-pam@safaricomet.net/Api-Details/Script.sh
+
+# Timeout Exception APIGW
+*/2 * * * * sh /home/anpin.abraham@safaricomet.net/scripts/APIGWalarm/timeoutcheck-new.sh > /home/anpin.abraham@safaricomet.net/scripts/APIGWalarm/timeoutcheck.log 2>&1
+
+#Fetch Timeout in NMS
+*/5 * * * * sh /home/thanvir.jalal@safaricomet.net/monitoring/NMS/API_Timeout.sh >>/home/thanvir.jalal@safaricomet.net/monitoring/NMS/API_Timeout.log 2>&1
+
+#Heap Memory Error in CCBL
+* * * * * sh /home/thanvir.jalal@safaricomet.net/monitoring/CCBL/heap_error.sh >> /home/thanvir.jalal@safaricomet.net/monitoring/CCBL/heap_error.log
+
+#####TOKEN CHECK#####
+* * * * * sh /home/anpin.abraham@safaricomet.net/scripts/tokencheck.sh >> /home/anpin.abraham@safaricomet.net/scripts/tokenalarm.log 2>&1
+
+
+* * * * * sh /home/svc-bss-pam@safaricomet.net/OPS/SDP-APIGW/tokencheck.sh >> /home/svc-bss-pam@safaricomet.net/OPS/SDP-APIGW/tokenalarm.log 2>&1
+
+#clean docker system, which will remove everything 
+5 0 * * * docker system prune -af
+
+#clean docker images
+05 * * * * docker image prune -af
+
+#Control File Generation Script
+10 * * * * /BSS_App_Data/bss-nfs-cdr/Control_File_Generator/exe/control_file_generator.sh >/dev/null 2>&1
+15 * * * * /BSS_App_Data/bss-nfs-cdr/Control_File_Generator/SDP_controlfile/SDP_control_file_generator.sh >/dev/null 2>&1
+
+###ERROR CHECK FROM LOG###
+55 * * * * sh /home/anpin.abraham@safaricomet.net/scripts/NMS/logerrorcheck.sh >> /home/anpin.abraham@safaricomet.net/scripts/NMS/errorcheck.log 2>&1
+
+###NFS DISK ALERT###
+*/05 * * * * sh /home/anpin.abraham@safaricomet.net/scripts/disk/space.sh
+
+###NMS PATTERN HOURLY AND CONSOLIDATED REPORT####
+#15 * * * * sh /home/anpin.abraham@safaricomet.net/scripts/NMS/pattern/NmsPattern.sh >> /home/anpin.abraham@safaricomet.net/scripts/NMS/pattern/NmsPattern.log
+#10 0 * * * sh /home/anpin.abraham@safaricomet.net/scripts/NMS/pattern/consolidated/NmsdailyPattern.sh >> /home/anpin.abraham@safaricomet.net/scripts/NMS/pattern/consolidated/NmsdailyPattern.log
+
+###NMS API REPORTS###
+10 * * * * sh /home/anpin.abraham@safaricomet.net/scripts/NMS/api/NmsApi.sh >> /home/anpin.abraham@safaricomet.net/scripts/NMS/api/NmsApi.log
+20 0 * * * sh /home/anpin.abraham@safaricomet.net/scripts/NMS/api/consolidated/NmsApi_Con.sh >> /home/anpin.abraham@safaricomet.net/scripts/NMS/api/consolidated/NmsApi_Con.log
+
+####CM CHECK####
+*/2 * * * * sh /home/anpin.abraham@safaricomet.net/scripts/CM/cmticket.sh >> /home/anpin.abraham@safaricomet.net/scripts/CM/cmalarm.log
+
+####API RESPONSE TIME REPORT####
+15 02 * * * sh /home/anpin.abraham@safaricomet.net/scripts/ResponseCheck/responsecheck-new.sh >> /home/anpin.abraham@safaricomet.net/scripts/ResponseCheck/responsecheck.log
+
+####log alarms####
+*/5 * * * * sh /home/anpin.abraham@safaricomet.net/scripts/Common/logerroralarm.sh >> /home/anpin.abraham@safaricomet.net/scripts/Common/errorcheck.log 2>&1
+
+###Proxy Sql###
+#0 8,20 * * *  sh /home/anpin.abraham@safaricomet.net/scripts/proxy/ProxySqlMemorycheck.sh >> /home/anpin.abraham@safaricomet.net/scripts/proxy/ProxySqlMemorycheck.log 2>&1
+
+####NDC Utilization Report####
+30 6 * * * sh /home/anpin.abraham@safaricomet.net/scripts/NMS/NDC/script.sh >> /home/anpin.abraham@safaricomet.net/scripts/NMS/NDC/ndclogger
+#0 3 * * * sh /home/anpin.abraham@safaricomet.net/scripts/NMS/NDC/totaldetail.sh >> /home/anpin.abraham@safaricomet.net/scripts/NMS/NDC/ndclogger
+
+
+###Unprocessed CDR Check###
+*/30 * * * * sh /home/sreya.kv@safaricomet.net/scripts/CDRProcessing/newCDRProcessCheck.sh >> /home/sreya.kv@safaricomet.net/scripts/CDRProcessing/CDRcheck.log
+
+
+####PRM CDR backup###
+30 1 * * * sh /BSS_App_Data/bss-nfs-cdr/PRM/RATING_LOCATION/BACKUPS/bkp_dumped.sh >/BSS_App_Data/bss-nfs-cdr/PRM/RATING_LOCATION/BACKUPS/bkp_dumped.log
+#30 1 * * * sh /BSS_App_Data/bss-nfs-cdr/PRM/RATING_LOCATION/BACKUPS/bkp_rated.sh >/BSS_App_Data/bss-nfs-cdr/PRM/RATING_LOCATION/BACKUPS/bkp_rated.log
+30 1 * * * sh /BSS_App_Data/bss-nfs-cdr/PRM/RATING_LOCATION/BACKUPS/bkp_sucess.sh >/BSS_App_Data/bss-nfs-cdr/PRM/RATING_LOCATION/BACKUPS/bkp_sucess.log
+
+#10 1-22/3 * * * sh /home/svc-bss-pam@safaricomet.net/scripts/PRM/ROAMING/NR_filecheck.sh >> /home/svc-bss-pam@safaricomet.net/scripts/PRM/ROAMING/NR_filecheck.log
+#15 8 * * * sh /home/svc-bss-pam@safaricomet.net/scripts/PRM/ROAMING/controlfiles/controlfilecheck.sh >> /home/svc-bss-pam@safaricomet.net/scripts/PRM/ROAMING/controlfiles/controlfilecheck.log 
+
+#10 1-22/3 * * * find /BSS_App_Data/bss-nfs-cdr/PRM/ROAM_PROCESS/NR_OUT/NR_OUT_FILE_GEN_PATH/ -type f -name "NR*" | xargs -I {} mv {} /BSS_App_Data/bss-nfs-cdr/PRM/ROAM_PROCESS/TAP_OUT/TAP_OUT_FILE_COLLECTION/
+#0 3 * * * find /BSS_App_Data/bss-nfs-cdr/PRM/ROAM_PROCESS/TAP_OUT/TAP_OUT_GEN_PATH/ -type f -exec mv {} /BSS_App_Data/bss-nfs-cdr/PRM/ROAM_PROCESS/TAP_OUT/TAP_OUT_FILE_COLLECTION/ \;
+
+#0,15,30,55 * * * *  find /BSS_App_Data/bss-nfs-cdr/PRM/RATING_LOCATION/INPUT_CDR_VOICE/ -type f -name "*MSS*" | xargs -I {} mv {} /BSS_App_Data/bss-nfs-cdr/PRM_3/RATING_LOCATION/INPUT_CDR
+#5,20,35,45 * * * * find /BSS_App_Data/bss-nfs-cdr/PRM/RATING_LOCATION/INPUT_CDR_VOICE/ -type f -name "*MSS*" | xargs -I {} mv {} /BSS_App_Data/bss-nfs-cdr/PRM_1/RATING_LOCATION/INPUT_CDR
+#10,25,40,50 * * * * find /BSS_App_Data/bss-nfs-cdr/PRM/RATING_LOCATION/INPUT_CDR_VOICE/ -type f -name "*MSS*" | xargs -I {} mv {} /BSS_App_Data/bss-nfs-cdr/PRM_2/RATING_LOCATION/INPUT_CDR
+
+
+
+####TPS Check APIGW#####
+*/5 * * * * sh /home/svc-bss-pam@safaricomet.net/scripts/TPSCheck/TpsCheck.sh
+
+##########PRM unprocess file
+#*/30 * * * * sh /home/arun.govindaraj@safaricomet.net/Script/prm_unprocess.sh >>/home/arun.govindaraj@safaricomet.net/Script/prm_unprocess.log
+
+###ESB###
+#5 * * * * sh /home/anpin.abraham@safaricomet.net/scripts/ESB/lifecyclesync.sh >> /home/anpin.abraham@safaricomet.net/scripts/ESB/logger
+
+##Number Recycling##
+#10 0 * * * sh /home/svc-bss-pam@safaricomet.net/OPS/Recycling-WA/Recycling-WA.sh >> /home/svc-bss-pam@safaricomet.net/OPS/Recycling-WA/Recycling-WA.log
+
+## Request Backup##
+36 0 * * * sh /home/svc-bss-pam@safaricomet.net/OPS/COM-Capture-Fetch/COM-Capture-Request-fetch.sh >> /home/svc-bss-pam@safaricomet.net/OPS/COM-Capture-Fetch/COM-Capture-Request-fetch.log
+50 0 * * * sh /home/svc-bss-pam@safaricomet.net/OPS/ESB-Req-Fetch/ESB-request-fetch.sh >> /home/svc-bss-pam@safaricomet.net/OPS/ESB-Req-Fetch/ESB-request-fetch.log
+
+##CDR Check##
+#*/15 * * * * sh /home/svc-bss-pam@safaricomet.net/scripts/LOG_MONITORING/script.sh
+
+#PRM
+15 08 * * * /home/svc-bss-pam@safaricomet.net/scripts/PRM/script.sh >> /home/svc-bss-pam@safaricomet.net/scripts/PRM/prm.log
+#00 08 * * * /home/svc-bss-pam@safaricomet.net/scripts/PRM/Rated/rated_cdr_compare.sh >>/home/svc-bss-pam@safaricomet.net/scripts/PRM/Rated/rated_cdr_compare.log
+*/10 * * * * sh /home/svc-bss-pam@safaricomet.net/scripts/PRM/Rated/input_cdr.sh >>/home/svc-bss-pam@safaricomet.net/scripts/PRM/Rated/input_cdr.log
+#*/30 * * * * sh /BSS_App_Data/bss-nfs-batchfile/wkn-operations/operations-automation/edge-dc2/PRM/SuccessCDR/fileProcessing.sh >> /BSS_App_Data/bss-nfs-batchfile/wkn-operations/operations-automation/edge-dc2/PRM/SuccessCDR/fileProcessing.log
+
+00 8 * * * sh /home/svc-bss-pam@safaricomet.net/scripts/PRM/ROAMING/RoamFileCount/fileCount.sh > /home/svc-bss-pam@safaricomet.net/scripts/PRM/ROAMING/RoamFileCount/fileCount.log
+
+
+#ARM Fetch asset Time Check
+*/5 * * * * sh /home/anpin.abraham@safaricomet.net/scripts/ARM/ARM_assetFetch.sh >> /home/anpin.abraham@safaricomet.net/scripts/ARM/ARM_assetFetch.log 2>&1
+
+#FILE SYNC ISSUE
+*/10 * * * * sh /home/nishmitha.mahesh@safaricomet.net/scripts/FileCount/fileCount.sh >> /home/nishmitha.mahesh@safaricomet.net/scripts/FileCount/fileCount.LOG 2>&1
+
+
+#### SOM WORKFLOW ERROR MONITORING ###
+#03 09 * * * sh /home/svc-bss-pam@safaricomet.net/scripts/SOM_script/SOM_script.sh >> /home/svc-bss-pam@safaricomet.net/scripts/SOM_script/SOM_script.log
+
+
+############ELASTIC SEARCH USAGE#################
+
+#1 * * * * sh /home/svc-bss-pam@safaricomet.net/scripts/usage/usage.sh >> /home/svc-bss-pam@safaricomet.net/scripts/usage/usage.log
+
+#5 1-22/3 * * * sh /home/svc-bss-pam@safaricomet.net/scripts/PRM/ROAMING/NR_filecheck.sh >> /home/svc-bss-pam@safaricomet.net/scripts/PRM/ROAMING/NR_filecheck.log
+#*/30 * * * * sh /home/svc-bss-pam@safaricomet.net/scripts/PRM/Rating/UnprocessedFiles/UnprocessFiles.sh >> /home/svc-bss-pam@safaricomet.net/scripts/PRM/Rating/UnprocessedFiles/UnprocessFiles.log
+#22,49 * * * * sh -x /home/anpin.abraham@safaricomet.net/PRM/NRTLoader-HealthCheck/healthCheck.sh >> /home/anpin.abraham@safaricomet.net/PRM/NRTLoader-HealthCheck/healthCheck.log
+
+
+#### PRM TAPIN move 
+#00 11 * * * sh /BSS_App_Data/bss-nfs-cdr/PRM/ROAM_PROCESS/Script/BI_dump_tapin_move.sh >>/BSS_App_Data/bss-nfs-cdr/PRM/ROAM_PROCESS/Script/BI_dump_tapin_move.log
+*/5 * * * * sh /BSS_App_Data/bss-nfs-cdr/PRM/ROAM_PROCESS/Script/nr_out_rename.sh >>/BSS_App_Data/bss-nfs-cdr/PRM/ROAM_PROCESS/Script/nr_out_rename.log
+#30 1 * * * sh /BSS_App_Data/bss-nfs-cdr/PRM/ROAM_PROCESS/BACKUP/bkp_RO_dumped.sh >/BSS_App_Data/bss-nfs-cdr/PRM/ROAM_PROCESS/BACKUP/bkp_RO_dumped.log
+
+#CDR EDR Processing Check
+#*/30 1-23 * * * sh /home/anpin.abraham@safaricomet.net/scripts/CDRProcessing/script.sh >> /home/anpin.abraham@safaricomet.net/scripts/CDRProcessing/transaction.log
+*/30 * * * * /home/anpin.abraham@safaricomet.net/scripts/CDRProcessing/NCCKLT/dcscript.sh >> /home/anpin.abraham@safaricomet.net/scripts/CDRProcessing/NCCKLT/KLTCDRcheck.log
+
+#POSTPAY CBU/EBU KPI REPORT
+30 6 * * * sh /home/anpin.abraham@safaricomet.net/scripts/BILL/postpaykpireport.sh
+
+### APIGW CP Error Check ###
+
+*/2 * * * * /bin/bash /home/arun.mohanan@safaricomet.net/Script/APIGWSCRIPT/CPscript-new.sh
+
+### NCC-BSS CDR/EDR Trend Report ###
+15 0 * * * sh /home/thanvir.jalal@safaricomet.net/scripts/CDR-Trend/cdr-trend.sh >> /home/thanvir.jalal@safaricomet.net/scripts/CDR-Trend/cdr-trend.log
+
+###SDP CDR comparison vs NCC###
+00 11 * * * /bin/bash  /home/svc-bss-pam@safaricomet.net/OPS/SDP_Reconcilation/CDR_Comparison.sh
+00,30 10 * * * /bin/bash  /home/svc-bss-pam@safaricomet.net/OPS/SDP_Reconcilation/Dataloading.sh > /home/svc-bss-pam@safaricomet.net/OPS/SDP_Reconcilation/logs/Dataloading.log
+
+########## Mediation CDR rotation Script ##########
+20 12 * * * /home/svc-bss-pam@safaricomet.net/OPS/CDR_Rotation/cdr_rotation_new.sh >> /home/svc-bss-pam@safaricomet.net/OPS/CDR_Rotation/cdr_rotation_new.log 2>&1
+
+## PostPaid CDR trend raw check
+0 05 * * *  /bin/bash /home/svc-bss-pam@safaricomet.net/OPS/BILLING_SCRIPTS/PostpaidCDRCheck.sh
+
+################### DISK SPACE MONITORING SCRIPT ########################
+*/5 * * * * sh /home/anpin.abraham@safaricomet.net/scripts/DISKSPACE/diskmonitoring.sh
+
+#### Mpesa Bundle Purchase Reprocess ####
+#*/5 * * * * sh -x /home/svc-bss-pam@safaricomet.net/OPS/MpesaBundleSubscription-Reprocess/MpesaBundleSubscription-Reprocess.sh >> /home/svc-bss-pam@safaricomet.net/OPS/MpesaBundleSubscription-Reprocess/logs/MpesaBundleSubscription-Reprocess.log 2>&1
+*/15 * * * * sh -x /home/svc-bss-pam@safaricomet.net/OPS/Mpesa_payment_callback/Mpesa_paymentcallback.sh >>/home/svc-bss-pam@safaricomet.net/OPS/Mpesa_payment_callback/Mpesa_paymentcallback.log
+### Automated Failure Callback to eKYC ###
+#*/5 * * * * sh -x /home/svc-bss-pam@safaricomet.net/OPS/Ekyc-SYNC-callback/Ekyc-SYNC-callback.sh >> /home/svc-bss-pam@safaricomet.net/OPS/Ekyc-SYNC-callback/logs/Detailed-log.log 2>&1
+
+###ARM synchroniser###
+* * * * * curl "inventory.bss2.safaricomet.net/job/run"
+
+####CM CDR ROTATION SCRIPT#######
+00 2 * * * /home/svc-bss-pam@safaricomet.net/OPS/CM_CDR_ROTATION/CM_CDR_ROTATION.sh
+
+####Daily M-PESA Failure Report ####
+45 05 * * * sh /home/svc-bss-pam@safaricomet.net/OPS/MpesaBundlePurcase_FailureReport/MpesaBundlePurcase_FailureReport-mrng.sh
+15 14 * * * sh /home/svc-bss-pam@safaricomet.net/OPS/MpesaBundlePurcase_FailureReport/MpesaBundlePurcase_FailureReport-aftr.sh
+
+#### SDP Connection Timeout ######
+
+#*/15 * * * * sh /home/anjali.mathew@safaricomet.net/Script/SDP/sdp_alert.sh >> /home/anjali.mathew@safaricomet.net/Script/SDP/sdp_alert.log
+ 
+##########COM EDR ROTATION###########
+
+00 2 * * * sh /home/svc-bss-pam@safaricomet.net/OPS/COM_EDR_ROTATION/com_capture_edr_rotation.sh
+00 2 * * * sh /home/svc-bss-pam@safaricomet.net/OPS/COM_EDR_ROTATION/com_orchestrator_edr_rotation.sh
+
+
+## One OFF Bundle Deactivation ##
+20 00 * * * sh /home/svc-bss-pam@safaricomet.net/OPS/SM-Deactivation/SM-One-OFF-Deactivation-0to1.sh >> /home/svc-bss-pam@safaricomet.net/OPS/SM-Deactivation/logs/Detailed-log.log 2>&1
+
+20 00 * * * sh /home/svc-bss-pam@safaricomet.net/OPS/SM-Deactivation/SM-One-OFF-Deactivation-2to3.sh >> /home/svc-bss-pam@safaricomet.net/OPS/SM-Deactivation/logs/Detailed-log_1.log 2>&1
+
+20 00 * * * sh /home/svc-bss-pam@safaricomet.net/OPS/SM-Deactivation/SM-One-OFF-Deactivation-4to5.sh >> /home/svc-bss-pam@safaricomet.net/OPS/SM-Deactivation/logs/Detailed-log_3.log 3>&1
+
+20 00 * * * sh /home/svc-bss-pam@safaricomet.net/OPS/SM-Deactivation/SM-One-OFF-Deactivation-6to7.sh >> /home/svc-bss-pam@safaricomet.net/OPS/SM-Deactivation/logs/Detailed-log_4.log 2>&1
+
+20 00 * * * sh /home/svc-bss-pam@safaricomet.net/OPS/SM-Deactivation/SM-One-OFF-Deactivation-8to9.sh >> /home/svc-bss-pam@safaricomet.net/OPS/SM-Deactivation/logs/Detailed-log_5.log 2>&1
+
+## SM Unlimited Bundle Deactivation ##
+*/5 * * * * sh -x  /home/svc-bss-pam@safaricomet.net/OPS/SM-UnliPlan-Deactivation/SMUnliPlanDeactivation-0to3.sh >> /home/svc-bss-pam@safaricomet.net/OPS/SM-UnliPlan-Deactivation/logs/Detailed-log.log 2>&1
+
+*/5 * * * * sh -x  /home/svc-bss-pam@safaricomet.net/OPS/SM-UnliPlan-Deactivation/SMUnliPlanDeactivation-4to6.sh >> /home/svc-bss-pam@safaricomet.net/OPS/SM-UnliPlan-Deactivation/logs/Detailed-log_1.log 2>&1
+
+*/5 * * * * sh -x  /home/svc-bss-pam@safaricomet.net/OPS/SM-UnliPlan-Deactivation/SMUnliPlanDeactivation-7to9.sh >> /home/svc-bss-pam@safaricomet.net/OPS/SM-UnliPlan-Deactivation/logs/Detailed-log_2.log 2>&1
+
+
+
+### Table Truncation ####
+##Daily##
+15 01 * * * sh /home/svc-bss-pam@safaricomet.net/OPS/TableTruncation/CRM/CRM-Daily-Truncation.sh
+23 01 * * * sh /home/svc-bss-pam@safaricomet.net/OPS/TableTruncation/CM/CM-Daily-Truncation.sh
+30 05 * * * sh /home/svc-bss-pam@safaricomet.net/OPS/TableTruncation/ESB/ESB-Daily-Truncation.sh
+45 01 * * * sh /home/svc-bss-pam@safaricomet.net/OPS/TableTruncation/MED/MED-Daily-Truncation.sh
+##Monthly##
+30 01 28 * * sh /home/svc-bss-pam@safaricomet.net/OPS/TableTruncation/CM/CM-Monthly-Truncation.sh
+35 05 01 * * sh /home/svc-bss-pam@safaricomet.net/OPS/TableTruncation/ESB/ESB-Monthly-Truncation.sh
+
+################ BS_PROFILE Daily dump generation ############################
+00 02 * * * sh -x /home/svc-bss-pam@safaricomet.net/OPS/RPT/Daily_Dump/kettle_daily_dump.sh > /home/svc-bss-pam@safaricomet.net/OPS/RPT/Daily_Dump/kettle_daily_dump.log
+
+############ RPT CDR ROTATION #####################
+00 14 * * * sh /home/svc-bss-pam@safaricomet.net/OPS/CDR_ROTATION/RPT_CDR_ROTATION.sh > /home/svc-bss-pam@safaricomet.net/OPS/CDR_ROTATION/RPT_CDR_ROTATION.log
+
+*/12 * * * * sh /home/svc-bss-pam@safaricomet.net/OPS/ProcessedOrderCOunt/ProcessedOrderCOunt.sh
+
+#################### COM Retry or Skip Automation #################################
+*/5 * * * * sh -x /home/svc-bss-pam@safaricomet.net/OPS/FailedOrderRetryAutomation/ComRetryAutomation-new.sh >> /home/svc-bss-pam@safaricomet.net/OPS/FailedOrderRetryAutomation/logs/Detailed-log.log 2>&1
+
+## Daily MEB Check ####
+15 08 * * * sh /home/svc-bss-pam@safaricomet.net/OPS/Meb_Check/Daily_Meb_Check.sh
+
+###BSS APIGW LOGS LOADING TO REPORTING #####
+20 * * * * /bin/bash /home/svc-bss-pam@safaricomet.net/scripts/TPSDB/TPSDB1.sh
+10 4 * * * /bin/bash /home/svc-bss-pam@safaricomet.net/scripts/TPSDB/Tabletruncation.sh 
+
+####### DB HEALTH SCRIPTS #######
+*/10 * * * * sh /home/anpin.abraham@safaricomet.net/scripts/DB/dbfullmonitoring.sh >> /home/anpin.abraham@safaricomet.net/scripts/DB/logs/dbhealth.log 2>&1
+
+#*/15 * * * * sh /home/svc-bss-pam@safaricomet.net/scripts/PRM/Rating/Rename.sh >> /home/svc-bss-pam@safaricomet.net/scripts/PRM/Rating/Rename.log
+
+
+#### Deleting old subscription from SM tables #####
+20 02 * * * /bin/bash  /home/svc-bss-pam@safaricomet.net/OPS/SM_SUBSCRIBER_OLD_DATA_DELETTION/SM_SUBSCRIBER_OLD_DATA_DELETTION_T8_T9.sh
+
+15 03 * * * /bin/bash  /home/svc-bss-pam@safaricomet.net/OPS/SM_SUBSCRIBER_OLD_DATA_DELETTION/SM_SUBSCRIBER_OLD_DATA_DELETTION_T0_T3.sh
+
+00 04 * * * /bin/bash  /home/svc-bss-pam@safaricomet.net/OPS/SM_SUBSCRIBER_OLD_DATA_DELETTION/SM_SUBSCRIBER_OLD_DATA_DELETTION_T4_T7.sh
+
+*/30 * * * * sh /home/anpin.abraham@safaricomet.net/scripts/MED/dumpercheck.sh >> /home/anpin.abraham@safaricomet.net/scripts/MED/dumpercheck.log
+
+*/5 * * * * sh /home/anpin.abraham@safaricomet.net/scripts/PING/pingalert.sh
+
+*/30 * * * * /home/anpin.abraham@safaricomet.net/scripts/NGW/notificationcheck.sh >> /home/anpin.abraham@safaricomet.net/scripts/NGW/notification.log
+
+0 9 1 * * sh /home/drowpathy.b@safaricomet.net/Script/MonthlyKPIreport.sh
+
+30 03 * * * sh /home/svc-bss-pam@safaricomet.net/OPS/UMS_USER_BULK_DEACTIVATION/Automated-Disabling/Automated-User-Disabling.sh
+
+05 */1 * * * sh /home/svc-bss-pam@safaricomet.net/OPS/HOURLY_CM_TOP_TICKETS/HOURLY_CM_TOP_TICKETS_V4.sh
+
+00 2,7 * * * sh /home/svc-bss-pam@safaricomet.net/OPS/RandomRequest2SDP4CDR/RandomRequest2SDP4CDR.sh
+
+00 1 * * * sh /home/svc-bss-pam@safaricomet.net/OPS/EkycDeletionCallback/EkycDeletionCallback.sh
+
+*/05 * * * * sh -x /home/svc-bss-pam@safaricomet.net/OPS/LMS_ORDER_RETRY/LMS_ORDER_RETRY.sh > /home/akshay.pp@safaricomet.net/Scripts/LMS_ORDER_RETRY/LMS_ORDER_RETRY.log
+
+
+##SDP CP NOTIFICATION RETRY
+30 */3 * * * /home/anpin.abraham@safaricomet.net/scripts/SDP/cpnotificationretry.sh
+
+##Keycloak BaseURL Check ##
+#*/5 * * * * sh -x /home/svc-bss-pam@safaricomet.net/OPS/Keycloak-ClientCheck/Keycloak-ClientCheck-MultiDC.sh >> /home/svc-bss-pam@safaricomet.net/OPS/Keycloak-ClientCheck/logs/Detailed-log.log 2>&1
+
+## To take daily Backup of Config Tables for Cluster 1
+
+00 04 * * * sh /home/svc-bss-pam@safaricomet.net/OPS/DailyDBDump/Cluster1/DailyDBDumpCluster1.sh
+
+## CMS CDR Procssing ###
+
+0 */3 * * * sh /home/svc-bss-pam@safaricomet.net/OPS/CMS_CDR_Processing_Check/CMS_SUB_DEL_CDR_countCheck.sh
+
+############################# SDP FAILED CDRS ############################################################
+00 */1 * * * sh /home/svc-bss-pam@safaricomet.net/OPS/SDP-CDR/SDP-MISSED-FILES/sdp_failed_cdrs.sh > /home/svc-bss-pam@safaricomet.net/OPS/SDP-CDR/SDP-MISSED-FILES/sdp_failed_cdrs.log 2>&1
+
+################################## FTTH EXPIRED PLANS ##################################
+0 */2 * * * sh /home/svc-bss-pam@safaricomet.net/OPS/SM-FTTH-EXPIRED-PLAN/sm-ftth-expired-plan.sh > /home/svc-bss-pam@safaricomet.net/OPS/SM-FTTH-EXPIRED-PLAN/sm-ftth-expired-plan.log 2>&1
+* * * * * /BSS_App_Data/bss-nfs-cdr/PRM/RATING_LOCATION/filecount.sh >> /BSS_App_Data/bss-nfs-cdr/PRM/RATING_LOCATION/filecount.log
+
+#####ESB_Third_Party_Delay_Load #####
+
+30 0 * * * sh /home/vishnu.das@safaricomet.net/ESB_THIRD_PARTY_TIME.sh
+
+
+##### Daily Report ########
+
+0 06 * * * /sbin/runuser -u asnake.mammo -- bash -c 'cd /home/asnake.mammo@safaricomet.net/api-report && python3 reporter.py'
+
+######UPC MONITORING####
+
+0 * * * * /opt/wkn-operations/operations-automation/edge-dc2/UPC/UPC-Monitoring/UPC-Monitoring.sh >> /opt/wkn-operations/operations-automation/edge-dc2/UPC/UPC-Monitoring/UPC-Monitoring.log 2>&1
+
+#### NOKIA CM REPORT#####
+
+0 * * * * /scripts/new.sh >> /scripts/new.log 2>&1
+
+###APIGW-SDP-OOM######
+5 * * * * /home/anpin.abraham@safaricomet.net/scripts/APIGW-SDP-SMS/check_oom.sh >> /home/anpin.abraham@safaricomet.net/scripts/APIGW-SDP-SMS/cron_run.log 2>&1
+
+#APIGW HEALTH CHECK LATENCY
+* * * * * sh /home/anpin.abraham@safaricomet.net/scripts/APIGW/healthlatency.sh
+
+
+#####SM-Hourly-Plan-Deactivation######
+
+*/30 * * * * sh /home/svc-bss-pam@safaricomet.net/OPS/SM-Deactivation/SM-One-OFF-Deactivation-1Hourly-2to3.sh >> /home/svc-bss-pam@safaricomet.net/OPS/SM-Deactivation/logs/Detailed-log_Hourly-Plan-Deactivation.log 2>&1
+*/30 * * * * sh /home/svc-bss-pam@safaricomet.net/OPS/SM-Deactivation/SM-One-OFF-Deactivation-1Hourly-0to1.sh >> /home/svc-bss-pam@safaricomet.net/OPS/SM-Deactivation/logs/Detailed-log_1_Hourly-Plan-Deactivation.log 2>&1
+*/30 * * * * sh /home/svc-bss-pam@safaricomet.net/OPS/SM-Deactivation/SM-One-OFF-Deactivation-1Hourly-4to5.sh  >> /home/svc-bss-pam@safaricomet.net/OPS/SM-Deactivation/logs/Detailed-log_3_Hourly-Plan-Deactivation.log 3>&1
+*/30 * * * * sh /home/svc-bss-pam@safaricomet.net/OPS/SM-Deactivation/SM-One-OFF-Deactivation-1Hourly6to7.sh >> /home/svc-bss-pam@safaricomet.net/OPS/SM-Deactivation/logs/Detailed-log_4_Hourly-Plan-Deactivation.log 2>&1
+*/30 * * * * sh /home/svc-bss-pam@safaricomet.net/OPS/SM-Deactivation/SM-One-OFF-Deactivation-1Hourly-8to9.sh >> /home/svc-bss-pam@safaricomet.net/OPS/SM-Deactivation/logs/Detailed-log_5_Hourly-Plan-Deactivation.log 2>&1
+##LMS RULE HEALTH CHECK
+*/10 * * * * /bin/bash /home/mohammed.arif@safaricomet.net/rule_status_check.sh >> /home/mohammed.arif@safaricomet.net/rule_monitor.log 2>&1
+## LMS FEATRURES POINTS TREND
+0 * * * * /bin/bash /home/mohammed.arif@safaricomet.net/Loyalty_Hourly_Trend_v7.sh >> /home/mohammed.arif@safaricomet.net/loyalty_trend.log 2>&1
+
+##LMS API LATENCY CHECK
+*/15 * * * * /bin/bash /home/mohammed.arif@safaricomet.net/scripts/lms_latency_alert.sh >> /home/mohammed.arif@safaricomet.net/scripts/latency_monitor.log 2>&1
+[root@et02-bss-jump01 pamrw1]# 

@@ -1,0 +1,15 @@
+Query: What is BSS?
+Answer: BSS Business Support System NCC
+============================================================
+Query: List the BSS applications.
+Answer: Upc-web-portal UPC
+============================================================
+Query: Steps to onboard a customer.
+Answer: a customer service rep
+============================================================
+Query: Who approves user access requests?
+Answer: Line Manager or Supervisor and resource owner
+============================================================
+Query: Explain the employee information section.
+Answer: 
+============================================================

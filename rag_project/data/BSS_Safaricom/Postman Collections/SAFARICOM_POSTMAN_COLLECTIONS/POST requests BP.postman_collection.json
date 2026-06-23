@@ -1,0 +1,2475 @@
+{
+	"info": {
+		"_postman_id": "ef8c9684-406e-4e5a-ba7a-6280d0b4d9cc",
+		"name": "POST requests BP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19382143"
+	},
+	"item": [
+		{
+			"name": "MpesaBundle",
+			"item": [
+				{
+					"name": "MpesaBundlePurchase",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-trace-id",
+								"value": "Mpesatest122222"
+							},
+							{
+								"key": "channel",
+								"value": "MPESA_USSD"
+							},
+							{
+								"key": "username",
+								"value": "esbuser"
+							},
+							{
+								"key": "X-Authorization",
+								"value": "Bearer c3VwZXJ1c2VyLUEqMTcxNzMyOTQyMTY3NQ=="
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"orderType\": \"MpesaBundlePurchase\",\r\n    \"description\": \"This is a test by sixdee from postman\",\r\n    \"externalId\": \"Tes-63954441\",\r\n    \"mpesaPin\": \"U0PFOr4zsRigQxOT4DbpU2m/uB2yKggfA3Apf65VhaL/tcWtMUBTlxS07FOLc8D3pXKfP23UptcSRe0lKwbCMmt50sSIQN1hngsT0LyqeqWXLOHarQEO//z09EstFE4bXs8GEDNODVbYf0u/9+p3Spp1cViSxExrSdf8VSJsegLR021doC1RlvtDE+99oN5OSMI6+fx2Rfca3UpKLIwltoj5Jh4h3Mhsdby7kYx4C3TnqBqtNDOLCnlCJdi4KHaPc32cAbqTUFNUMup38E1sxvdFqe8Cr34wYGWQX/xgdr42lLjKmGz4e9BiO/moPIOyTTiLoBDy9dU1498qdne4irX5j3+RkD48x2GdcTGt5dCrw3QIGP38TEpfwT2uOfO1K6UT4x+Bl46JOp2JtRCj7PhSprMFsJcIuiSMwW+fKpMCrAN/aaCWk7bVigDla6tuu7sqT+D1/P7Jjs1AxpGB7g==\",\r\n    \"secretKey\": \"ATcTGQDfgFQO390QhzW2JNzsawOFhWTbLSBONKWbB6ext7pWGnShmkVhhQDd5jgBRjtGsHchzBVX5cNMF+6UbZilJAmUOg8eT61laIGeGPQtVdLlzsQtMfWaXp11j9mvhHZllx3pAzDzwIMXOFMBbauAYKHUbhVR2tspVRxEpoNzOr+sgsRySqIK0rxfLf1VLfrfhfMZ/FkV6p3jwTlfzvtvgaAdDHGggzc7pgsgtTKMoW4JIHJEcol0nPRe9bWC+hAAXcYGwCvAwd7jhwQd4bCjNRUz/C7EnGdunIc69BATw4Jcg+9lB6l5usqpYdDDsD4w/w2muzyPcq2tEYh9rg==\",\r\n    \"clientAction\": \"AddSubscription\",\r\n    \"auditInfo\": \"This is an AddSubscription order\",\r\n    \"locationInfo\": {\r\n        \"location1\": \"Undefined 63602#Undefined#Undefined\",\r\n        \"cellId\": \"Undefined\",\r\n        \"imsi\": \"Undefined\",\r\n        \"lat\": \"Undefined\",\r\n        \"lon\": \"Undefined\",\r\n        \"cgi\": \"Undefined 63602#Undefined#Undefined\",\r\n        \"cgi_hex\": \"Undefined\",\r\n        \"enodebid\": \"00000\"\r\n    },\r\n    \"orderItem\": [\r\n        {\r\n            \"action\": \"add\",\r\n            \"productOffering\": {\r\n                \"id\": \"1178\"\r\n            },\r\n            \"itemCharacteristic\": [\r\n                {\r\n                    \"name\": \"beneficiary\",\r\n                    \"valueType\": \"string\",\r\n                    \"value\": \"251700405480\"\r\n                }\r\n            ],\r\n            \"service\": {\r\n                \"id\": \"251700405480\"\r\n            }\r\n        }\r\n    ],\r\n    \"payment\": {\r\n        \"amount\": \"1\",\r\n        \"paymentReceived\": \"false\",\r\n        \"upfrontPayment\": \"true\",\r\n        \"paymentChannel\": \"MPESA\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://com.bss.blueprint.lab/order-service/orders/mpesa-bundle-purchase",
+							"protocol": "https",
+							"host": [
+								"com",
+								"bss",
+								"blueprint",
+								"lab"
+							],
+							"path": [
+								"order-service",
+								"orders",
+								"mpesa-bundle-purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MpesaBundlePurchase Copy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-trace-id",
+								"value": "Mpesatest128126387326"
+							},
+							{
+								"key": "channel",
+								"value": "MPESA_USSD"
+							},
+							{
+								"key": "username",
+								"value": "esbuser"
+							},
+							{
+								"key": "X-Authorization",
+								"value": "Bearer c3VwZXJ1c2VyLUEqMTcxNzMyOTQyMTY3NQ=="
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"orderType\": \"MpesaBundlePurchase\",\r\n  \"description\": \"400 MB+ 10 tele + Unlimited Safaricom mins@10ETB_24 hrs\",\r\n  \"externalId\": \"a3c8d85e-37ca-4d46-b7c9-9bd4922c733f\",\r\n  \"mpesaPin\": \"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\",\r\n  \"secretKey\": \"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\",\r\n  \"clientAction\": \"AddSubscription\",\r\n  \"auditInfo\": \"This is an AddSubscription order\",\r\n  \"locationInfo\": {\r\n    \"location1\": \"32760 32760\",\r\n    \"cellId\": \"32760 32760\",\r\n    \"imsi\": \"notReturnedFromNetwork\",\r\n    \"lat\": \"8.993342\",\r\n    \"lon\": \"38.776791\",\r\n    \"cgi\": \"63602-05555-32760\",\r\n    \"cgi_hex\": \"63602-15B3-7FF8\",\r\n    \"enodebid\": \"63602-15B3-7FF8\"\r\n  },\r\n  \"orderItem\": [\r\n    {\r\n      \"action\": \"add\",\r\n      \"buckets\": [\r\n        {\r\n          \"bucketName\": \"J4U_DAILY_DATA_BUCKET\",\r\n          \"bucketUnit\": \"VOLUME\",\r\n          \"bucketValue\": \"419430400\"\r\n        },\r\n        {\r\n          \"bucketName\": \"J4U_DAILY_MIN_ALN_BUCKET\",\r\n          \"bucketUnit\": \"TIME\",\r\n          \"bucketValue\": \"600\"\r\n        },\r\n        {\r\n          \"bucketName\": \"J4U_DAILY_SMS_BUCKET\",\r\n          \"bucketUnit\": \"UNIT\",\r\n          \"bucketValue\": \"5\"\r\n        },\r\n        {\r\n          \"bucketName\": \"J4U_DAILY_MIN_ONN_BUCKET\",\r\n          \"bucketUnit\": \"TIME\",\r\n          \"bucketValue\": \"6000\"\r\n        }\r\n      ],\r\n      \"itemPrice\": [\r\n        {\r\n          \"name\": \"offer fee\",\r\n          \"overriddenPrice\": \"true\",\r\n          \"price\": {\r\n            \"totalAmount\": {\r\n              \"unit\": \"CENTS\",\r\n              \"value\": \"0\"\r\n            },\r\n            \"taxIncludedAmount\": {\r\n              \"unit\": \"CENTS\",\r\n              \"value\": \"1000.0\"\r\n            }\r\n          },\r\n          \"priceType\": \"onetime\",\r\n          \"recurringChargePeriod\": \"month\",\r\n          \"priceCode\": \"string\"\r\n        }\r\n      ],\r\n      \"productOffering\": {\r\n        \"id\": \"710\"\r\n      },\r\n      \"itemCharacteristic\": [\r\n        {\r\n          \"name\": \"beneficiary\",\r\n          \"valueType\": \"string\",\r\n          \"value\": \"251700405480\"\r\n        }\r\n      ],\r\n      \"service\": {\r\n        \"id\": \"251700405480\"\r\n      }\r\n    }\r\n  ],\r\n  \"payment\": {\r\n    \"amount\": \"10.0\",\r\n    \"paymentReceived\": \"false\",\r\n    \"upfrontPayment\": \"true\",\r\n    \"paymentChannel\": \"MPESA\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://com.bss.blueprint.lab/order-service/orders/mpesa-bundle-purchase",
+							"protocol": "https",
+							"host": [
+								"com",
+								"bss",
+								"blueprint",
+								"lab"
+							],
+							"path": [
+								"order-service",
+								"orders",
+								"mpesa-bundle-purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MpesaBundlePurchase Gifting",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-trace-id",
+								"value": "8989VBNVCDF"
+							},
+							{
+								"key": "channel",
+								"value": "MPESA_USSD"
+							},
+							{
+								"key": "username",
+								"value": "esbuser"
+							},
+							{
+								"key": "X-Authorization",
+								"value": "Bearer c3VwZXJ1c2VyLUEqMTcxNzMyOTQyMTY3NQ=="
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "channel",
+								"value": "MPESA_SuperAPP",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"orderType\": \"MpesaBundlePurchase\",\r\n    \"description\": \"This is a test by sixdee from postman\",\r\n    \"externalId\": \"Gifting-6dtest+2veQ\",\r\n    \"orderItem\": [\r\n        {\r\n            \"action\": \"add\",\r\n            \"service\": {\r\n                \"id\": \"251700510826\"\r\n            },\r\n            \"productOffering\": {\r\n                \"id\": \"1178\"\r\n            },\r\n            \"itemCharacteristic\": [\r\n                {\r\n                    \"name\": \"beneficiary\",\r\n                    \"valueType\": \"string\",\r\n                    \"value\": \"251700405480\"\r\n                }\r\n            ],\r\n            \"somCallRqd\": false,\r\n            \"esbCallRqd\": false\r\n        }\r\n    ],\r\n    \"payment\": {\r\n        \"amount\": \"3\",\r\n        \"upfrontPayment\": \"true\",\r\n        \"paymentReceived\": \"false\",\r\n        \"paymentChannel\": \"MPESA\"\r\n    },\r\n    \"auditInfo\": \"This is an Gifting order\",\r\n    \"locationInfo\": {\r\n        \"location1\": \"01300-144088-020 63602#144088#20020\",\r\n        \"cellId\": \"20 020\",\r\n        \"imsi\": \"633363032303130\",\r\n        \"lat\": \"8.993507\",\r\n        \"lon\": \"38.776894\",\r\n        \"cgi\": \"01300-144088-020 63602#144088#20020\",\r\n        \"enodebid\": \"00000\",\r\n        \"cgi_hex\": \"01300-232D8-14\"\r\n    },\r\n    \"mpesaPin\": \"***\",\r\n    \"secretKey\": \"***\",\r\n    \"clientAction\": \"Gifting\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://com.bss.blueprint.lab/order-service/orders/mpesa-bundle-purchase",
+							"protocol": "https",
+							"host": [
+								"com",
+								"bss",
+								"blueprint",
+								"lab"
+							],
+							"path": [
+								"order-service",
+								"orders",
+								"mpesa-bundle-purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MpesaCallback",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-trace-id",
+								"value": "1364161498135744512"
+							},
+							{
+								"key": "channel",
+								"value": "MPESA_USSD"
+							},
+							{
+								"key": "username",
+								"value": "esbuser"
+							},
+							{
+								"key": "X-Authorization",
+								"value": "Bearer c3VwZXJ1c2VyLUEqMTcxNzMyOTQyMTY3NQ=="
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"orderId\": \"1364162117558947840\",\r\n    \"payment\": {\r\n        \"totalAmount\": \"1.00\",\r\n        \"transactionId\": \"MPESA-9023423746\",\r\n        \"comment\": \"Buy bundle via MPESA\",\r\n        \"currencycode\": \"ETB\",\r\n        \"collectionDate\": \"2024-06-02T12:00:14.000Z\",\r\n        \"paymentDate\": \"2024-06-02T12:00:14.000Z\",\r\n        \"paymentDetail\": [\r\n            {\r\n                \"paymentMode\": \"5\",\r\n                \"amountPaid\": \"1.00\",\r\n                \"isPaymentCollected\": \"true\",\r\n                \"referenceExternalId\": \"SDOPOPTYTn080\",\r\n                \"msisdn\": \"251700860006\"\r\n            }\r\n        ]\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://com.bss.blueprint.lab/order-orchestrator/orders/payment-callback",
+							"protocol": "https",
+							"host": [
+								"com",
+								"bss",
+								"blueprint",
+								"lab"
+							],
+							"path": [
+								"order-orchestrator",
+								"orders",
+								"payment-callback"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MpesaCallback -Failure",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-trace-id",
+								"value": "Tes-90UIOPIPIO"
+							},
+							{
+								"key": "channel",
+								"value": "MPESA_USSD"
+							},
+							{
+								"key": "username",
+								"value": "esbuser"
+							},
+							{
+								"key": "X-Authorization",
+								"value": "Bearer c3VwZXJ1c2VyLUEqMTcxNzMyOTQyMTY3NQ=="
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"orderId\": \"1364160880398651392\",\r\n    \"resultCode\": \"1\",\r\n    \"resultDesc\": \"Declined -The service request is processed successfully.\",\r\n    \"isRollbacked\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://com.bss.blueprint.lab/order-orchestrator/orders/payment-callback",
+							"protocol": "https",
+							"host": [
+								"com",
+								"bss",
+								"blueprint",
+								"lab"
+							],
+							"path": [
+								"order-orchestrator",
+								"orders",
+								"payment-callback"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MpesaCallback -Reversal",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-trace-id",
+								"value": "Tes-90UIOPIPIO"
+							},
+							{
+								"key": "channel",
+								"value": "MPESA_USSD"
+							},
+							{
+								"key": "username",
+								"value": "esbuser"
+							},
+							{
+								"key": "X-Authorization",
+								"value": "Bearer c3VwZXJ1c2VyLUEqMTcxNzMyOTQyMTY3NQ=="
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"orderId\": \"1371151652150927360\",\r\n    \"resultCode\": \"0\",\r\n    \"resultDesc\": \"Bundle Reversal successful\",\r\n    \"type\": \"bundle-reversal\",\r\n    \"isRollbacked\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://com.bss.blueprint.lab/order-orchestrator/orders/payment-callback",
+							"protocol": "https",
+							"host": [
+								"com",
+								"bss",
+								"blueprint",
+								"lab"
+							],
+							"path": [
+								"order-orchestrator",
+								"orders",
+								"payment-callback"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Onboarding",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "eKYC",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "763487273735",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "esbadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"Onboarding\",\r\n    \"description\": \"Subscriber On-boarding\",\r\n    \"profile\": {\r\n        \"givenName\": \"NBK\",\r\n        \"birthDate\": \"13-01-2003\",\r\n        \"familyName\": \"Ethiopia\",\r\n        \"gender\": \"2\",\r\n        \"middleName\": \"\",\r\n        \"nationality\": \"72\",\r\n        \"title\": \"3\",\r\n        \"partyCharacteristic\": [\r\n            {\r\n                \"name\": \"profileType\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"0\"\r\n            },\r\n            {\r\n                \"name\": \"subscriberCategory\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"23\"\r\n            },\r\n            {\r\n                \"name\": \"subscriberSubCategory\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"233\"\r\n            },\r\n            {\r\n                \"name\": \"minorFlag\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"0\"\r\n            },\r\n            {\r\n                \"name\": \"language\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"1\"\r\n            },\r\n            {\r\n                \"name\": \"occupation\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"N/A\"\r\n            },\r\n            {\r\n                \"name\": \"position\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"N/A\"\r\n            },\r\n            {\r\n                \"name\": \"employer\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"N/A\"\r\n            },\r\n            {\r\n                \"name\": \"averageMonthlyIncome\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"0\"\r\n            },\r\n            {\r\n                \"name\": \"biometricId\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"019720be-6a3b-7f86-9c73-3436fa243b92\"\r\n            }\r\n        ],\r\n        \"languageAbility\": [\r\n            {\r\n                \"languageCode\": \"1\"\r\n            }\r\n        ],\r\n        \"contactMedium\": [\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"telephoneNumber\",\r\n                \"characteristic\": {\r\n                    \"contactType\": \"alternateSmsNumber\",\r\n                    \"altPhoneNumber\": \"251700990129\"\r\n                }\r\n            },\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"telephoneNumber\",\r\n                \"characteristic\": {\r\n                    \"faxNumber\": \"251700990129\",\r\n                    \"contactType\": \"faxNumber\"\r\n                }\r\n            },\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"telephoneNumber\",\r\n                \"characteristic\": {\r\n                    \"phoneNumber\": \"251700990129\",\r\n                    \"contactType\": \"smsNumber\"\r\n                }\r\n            },\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"emailAddress\",\r\n                \"characteristic\": {\r\n                    \"emailAddress\": \"251700990129@safaricom.et\",\r\n                    \"contactType\": \"emailAddress\"\r\n                }\r\n            },\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"address\",\r\n                \"characteristic\": {\r\n                    \"contactType\": \"permanentAddress\",\r\n                    \"addrLine1\": \"\",\r\n                    \"addrLine2\": \"\",\r\n                    \"addrLine3\": \"12\",\r\n                    \"addrLine4\": \"2\",\r\n                    \"addrLine5\": \"1\",\r\n                    \"addrLine6\": \"\",\r\n                    \"addrLine7\": \"\",\r\n                    \"addrLine8\": \"\",\r\n                    \"addrLine9\": \"\",\r\n                    \"addrLine10\": \"0.0\",\r\n                    \"addrLine11\": \"0.0\"\r\n                }\r\n            },\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"address\",\r\n                \"characteristic\": {\r\n                    \"contactType\": \"residentialAddress\",\r\n                    \"addrLine1\": \"\",\r\n                    \"addrLine2\": \"\",\r\n                    \"addrLine3\": \"12\",\r\n                    \"addrLine4\": \"2\",\r\n                    \"addrLine5\": \"1\",\r\n                    \"addrLine6\": \"\",\r\n                    \"addrLine7\": \"\",\r\n                    \"addrLine8\": \"\",\r\n                    \"addrLine9\": \"\",\r\n                    \"addrLine10\": \"0.0\",\r\n                    \"addrLine11\": \"0.0\"\r\n                }\r\n            }\r\n        ],\r\n        \"individualIdentification\": [\r\n            {\r\n                \"identificationId\": \"722727\",\r\n                \"identificationType\": \"111\",\r\n                \"issuingAuthority\": \"ADDIS\",\r\n                \"issuingDate\": \"03-04-2020 00:00:00\",\r\n                \"attachment\": [\r\n                    {\r\n                        \"content\": \"Government ID\",\r\n                        \"description\": \"good\",\r\n                        \"mimeType\": \"JPEG\",\r\n                        \"name\": \"ID_CARD\",\r\n                        \"url\": \"string\",\r\n                        \"kycReferenceId\": \"019720be-6a3b-7f86-9c73-3436fa243b92\"\r\n                    }\r\n                ],\r\n                \"validFor\": {\r\n                    \"startDateTime\": \"03-04-2020 00:00:00\",\r\n                    \"endDateTime\": \"03-04-2070 00:00:00\"\r\n                },\r\n                \"isExpired\": \"false\"\r\n            }\r\n        ],\r\n        \"account\": {\r\n            \"name\": \"testaccountsixde\",\r\n            \"chargingPattern\": \"2\",\r\n            \"languageId\": \"1\",\r\n            \"remarks\": \"Line test\",\r\n            \"title\": \"3\",\r\n            \"contactMedium\": [\r\n                {\r\n                    \"preferred\": false,\r\n                    \"mediumType\": \"address\",\r\n                    \"characteristic\": {\r\n                        \"contactType\": \"permanentAddress\",\r\n                        \"addrLine1\": \"\",\r\n                        \"addrLine2\": \"\",\r\n                        \"addrLine3\": \"12\",\r\n                        \"addrLine4\": \"2\",\r\n                        \"addrLine5\": \"1\",\r\n                        \"addrLine6\": \"\",\r\n                        \"addrLine7\": \"\",\r\n                        \"addrLine8\": \"\",\r\n                        \"addrLine9\": \"\",\r\n                        \"addrLine10\": \"0.0\",\r\n                        \"addrLine11\": \"0.0\"\r\n                    }\r\n                }\r\n            ],\r\n            \"serviceGroups\": [\r\n                {\r\n                    \"services\": [\r\n                        {\r\n                            \"serviceId\": \"251700510380\",\r\n                            \"languageId\": \"1\",\r\n                            \"isSimPaired\": \"false\",\r\n                            \"name\": \"NBK Ethiopia\",\r\n                            \"serviceType\": \"1\",\r\n                            \"contactMedium\": [\r\n                                {\r\n                                    \"preferred\": false,\r\n                                    \"mediumType\": \"address\",\r\n                                    \"characteristic\": {\r\n                                        \"contactType\": \"permanentAddress\",\r\n                                        \"addrLine1\": \"\",\r\n                                        \"addrLine2\": \"\",\r\n                                        \"addrLine3\": \"12\",\r\n                                        \"addrLine4\": \"2\",\r\n                                        \"addrLine5\": \"1\",\r\n                                        \"addrLine6\": \"\",\r\n                                        \"addrLine7\": \"\",\r\n                                        \"addrLine8\": \"\",\r\n                                        \"addrLine9\": \"\",\r\n                                        \"addrLine10\": \"0.0\",\r\n                                        \"addrLine11\": \"0.0\"\r\n                                    }\r\n                                }\r\n                            ],\r\n                            \"subscriptions\": [\r\n                                {\r\n                                    \"planType\": \"0\",\r\n                                    \"somCallRqd\": false,\r\n                                    \"esbCallRqd\": false,\r\n                                    \"commonAddon\": false,\r\n                                    \"mandatoryAddon\": false,\r\n                                    \"planId\": \"118\",\r\n                                    \"planName\": \"Base All in One PO\"\r\n                                }\r\n                            ],\r\n                            \"characteristics\": [\r\n                                {\r\n                                    \"name\": \"IMSI\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"636020101005376\"\r\n                                },\r\n                                {\r\n                                    \"name\": \"ICCID\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"89251020010100065463\"\r\n                                }\r\n                            ],\r\n                            \"chargingPattern\": \"2\",\r\n                            \"networkServiceId\": \"1\",\r\n                            \"depositReqd\": false,\r\n                            \"creditLimitUpdateReqd\": false\r\n                        }\r\n                    ]\r\n                }\r\n            ],\r\n            \"preferredCurrency\": \"BIRR\"\r\n        },\r\n        \"localizedBirthDate\": \"05-05-1995\"\r\n    },\r\n    \"authentication\": {\r\n        \"authType\": \"Biometric\",\r\n        \"authId\": \"\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/onboarding",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"onboarding"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Onboarding prepaid",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "4442221111555",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"Onboarding\",\r\n    \"description\": \"Onboarding order\",\r\n    \"externalId\": \"121312012604786759845\",\r\n    \"profile\": {\r\n        \"birthDate\": \"18-04-1987\",\r\n        \"familyName\": \"AG\",\r\n        \"givenName\": \"AGS\",\r\n        \"localizedBirthDate\": \"01-01-1999\",\r\n        \"nationality\": \"3\",\r\n        \"title\": \"1\",\r\n        \"partyCharacteristic\": [\r\n            {\r\n                \"name\": \"subscriberCategory\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"11\"\r\n            },\r\n            {\r\n                \"name\": \"subscriberSubCategory\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"111\"\r\n            },\r\n            {\r\n                \"name\": \"profileType\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"1\"\r\n            },\r\n            {\r\n                \"name\": \"customerType\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"1111\"\r\n            },\r\n            {\r\n                \"name\": \"minorFlag\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"no\"\r\n            },\r\n            {\r\n                \"name\": \"annualTurnover\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"60000000\"\r\n            },\r\n            {\r\n                \"name\": \"businessDescription\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"test\"\r\n            },\r\n            {\r\n                \"name\": \"industry\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"1\"\r\n            },\r\n            {\r\n                \"name\": \"sector\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"Trades\"\r\n            },\r\n            {\r\n                \"name\": \"registrationNumber\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"hhgh778\"\r\n            },\r\n            {\r\n                \"name\": \"tinNumber\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"7654234\"\r\n            },\r\n            {\r\n                \"name\": \"safaricomPartner\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"false\"\r\n            },\r\n            {\r\n                \"name\": \"companyName\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"6DTechnologies\"\r\n            }\r\n        ],\r\n        \"languageAbility\": [\r\n            {\r\n                \"languageCode\": \"1\"\r\n            }\r\n        ],\r\n        \"individualIdentification\": [\r\n            {\r\n                \"attachment\": [\r\n                    {\r\n                        \"content\": \"pdf\",\r\n                        \"description\": \"passport pdf\",\r\n                        \"mimeType\": \"pdf\",\r\n                        \"name\": \"passport copy\",\r\n                        \"type\": \"6\",\r\n                        \"url\": \"wwww.docsshare.com/customer11/passport/passport.pdf\",\r\n                        \"kycReferenceId\": \"12123343213\"\r\n                    }\r\n                ],\r\n                \"identificationId\": \"1298021\",\r\n                \"identificationType\": \"107\",\r\n                \"issuingAuthority\": \"ethiopian embassy\",\r\n                \"issuingDate\": \"2021-11-09\",\r\n                \"validFor\": {\r\n                    \"endDateTime\": \"2001-11-10T07:00:43.894Z\",\r\n                    \"startDateTime\": \"2026-11-09T07:00:43.894Z\"\r\n                }\r\n            }\r\n        ],\r\n        \"contactMedium\": [\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"telephoneNumber\",\r\n                \"characteristic\": {\r\n                    \"phoneNumber\": \"9381231283213\",\r\n                    \"contactType\": \"smsNumber\"\r\n                }\r\n            },\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"telephoneNumber\",\r\n                \"characteristic\": {\r\n                    \"faxNumber\": \"11231283213\",\r\n                    \"contactType\": \"faxNumber\"\r\n                }\r\n            },\r\n            {\r\n                \"characteristic\": {\r\n                    \"contactType\": \"alternateSmsNumber\",\r\n                    \"altPhoneNumber\": \"9738646475\"\r\n                },\r\n                \"mediumType\": \"telephoneNumber\"\r\n            },\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"emailAddress\",\r\n                \"characteristic\": {\r\n                    \"emailAddress\": \"testing@gmail.com\",\r\n                    \"contactType\": \"emailAddress\"\r\n                }\r\n            },\r\n            {\r\n                \"mediumType\": \"address\",\r\n                \"characteristic\": {\r\n                    \"contactType\": \"residentialAddress\",\r\n                    \"addrLine1\": \"house no 268\",\r\n                    \"addrLine2\": \"1000 ADDIS ABABA\",\r\n                    \"addrLine3\": \"Kebele 1, 1302/29\",\r\n                    \"addrLine4\": 2,\r\n                    \"addrLine5\": 1,\r\n                    \"addrLine6\": 1,\r\n                    \"addrLine7\": 1,\r\n                    \"addrLine8\": \"1000\",\r\n                    \"addrLine9\": \"P.O. Box 1519\",\r\n                    \"addrLine10\": \"8.9806\",\r\n                    \"addrLine11\": \"38.7578\"\r\n                }\r\n            },\r\n            {\r\n                \"characteristic\": {\r\n                    \"contactType\": \"permanentAddress\",\r\n                    \"addrLine1\": \"house no 268\",\r\n                    \"addrLine2\": \"1000 ADDIS ABABA\",\r\n                    \"addrLine3\": \"Kebele 1, 1302/29\",\r\n                    \"addrLine4\": 2,\r\n                    \"addrLine5\": 1,\r\n                    \"addrLine6\": 1,\r\n                    \"addrLine7\": 1,\r\n                    \"addrLine8\": \"1000\",\r\n                    \"addrLine9\": \"P.O. Box 1519\",\r\n                    \"addrLine10\": \"8.9806\",\r\n                    \"addrLine11\": \"38.7578\"\r\n                },\r\n                \"mediumType\": \"address\"\r\n            }\r\n        ],\r\n        \"account\": {\r\n            \"chargingPattern\": \"2\",\r\n            \"languageId\": \"3\",\r\n            \"name\": \"test account\",\r\n            \"remarks\": \"string\",\r\n            \"title\": \"Mr\",\r\n            \"preferredCurrency\": \"USSD\",\r\n            \"contactMedium\": [\r\n                {\r\n                    \"mediumType\": \"address\",\r\n                    \"characteristic\": {\r\n                        \"contactType\": \"billingAddress\",\r\n                        \"addrLine1\": \"house no 268\",\r\n                        \"addrLine2\": \"1000 ADDIS ABABA\",\r\n                        \"addrLine3\": \"Kebele 1, 1302/29\",\r\n                        \"addrLine4\": 2,\r\n                        \"addrLine5\": 1,\r\n                        \"addrLine6\": 1,\r\n                        \"addrLine7\": 1,\r\n                        \"addrLine8\": \"1000\",\r\n                        \"addrLine9\": \"P.O. Box 1519\",\r\n                        \"addrLine10\": \"8.9806\",\r\n                        \"addrLine11\": \"38.7578\"\r\n                    }\r\n                }\r\n            ],\r\n            \"serviceGroups\": [\r\n                {\r\n                    \"services\": [\r\n                        {\r\n                            \"serviceId\": \"251700494292\",\r\n                            \"isSimPaired\": \"false\",\r\n                            \"name\": \"GSM Service\",\r\n                            \"languageId\": \"2\",\r\n                            \"serviceType\": \"1\",\r\n                            \"networkServiceId\": \"1\",\r\n                            \"chargingPattern\": \"2\",\r\n                            \"redemptionEnabled\": \"true\",\r\n                            \"autoEnrollment\": \"true\",\r\n                            \"contactMedium\": [\r\n                                {\r\n                                    \"mediumType\": \"address\",\r\n                                    \"characteristic\": {\r\n                                        \"contactType\": \"residentialAddress\",\r\n                                        \"addrLine1\": \"house no 268\",\r\n                                        \"addrLine2\": \"1000 ADDIS ABABA\",\r\n                                        \"addrLine3\": \"Kebele 1, 1302/29\",\r\n                                        \"addrLine4\": 2,\r\n                                        \"addrLine5\": 1,\r\n                                        \"addrLine6\": 1,\r\n                                        \"addrLine7\": 1,\r\n                                        \"addrLine8\": \"1000\",\r\n                                        \"addrLine9\": \"P.O. Box 1519\",\r\n                                        \"addrLine10\": \"8.9806\",\r\n                                        \"addrLine11\": \"38.7578\"\r\n                                    }\r\n                                }\r\n                            ],\r\n                            \"characteristics\": [\r\n                                {\r\n                                    \"name\": \"ICCID\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"89251887490000010991\"\r\n                                },\r\n                                {\r\n                                    \"name\": \"IMSI\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"636024900001991\"\r\n                                }\r\n                            ],\r\n                            \"subscriptions\": [\r\n                                {\r\n                                    \"planId\": \"118\",\r\n                                    \"planType\": \"0\",\r\n                                    \"planName\": \"Baseplan\",\r\n                                    \"autoRenewal\": \"0\"\r\n                                }\r\n                            ]\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/onboarding",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"onboarding"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Onboarding prepaid_Enterprise",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "6547542547",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"Onboarding\",\r\n    \"saFormId\": \"SA_25112022100049\",\r\n    \"channel\": [\r\n        {\r\n            \"id\": \"1\",\r\n            \"name\": \"CRM\",\r\n            \"role\": \"Used channel for order capture\"\r\n        }\r\n    ],\r\n    \"profile\": {\r\n        \"profileType\": \"1\",\r\n        \"partyCharacteristic\": [\r\n            {\r\n                \"name\": \"profileType\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"0\"\r\n            },\r\n            {\r\n                \"name\": \"subscriberCategory\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"23\"\r\n            },\r\n            {\r\n                \"name\": \"subscriberSubCategory\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"231\"\r\n            },\r\n            {\r\n                \"name\": \"biometricId\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"32132434324\"\r\n            },\r\n            {\r\n                \"name\": \"minorFlag\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"0\"\r\n            },\r\n            {\r\n                \"name\": \"paymentPreference\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"1\"\r\n            },\r\n            {\r\n                \"name\": \"occupation\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"IT Professional\"\r\n            },\r\n            {\r\n                \"name\": \"employer\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"6d Technologies\"\r\n            },\r\n            {\r\n                \"name\": \"position\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"Software Engineer\"\r\n            },\r\n            {\r\n                \"name\": \"averageMonthlyIncome\",\r\n                \"valueType\": \"string\",\r\n                \"value\": \"1\"\r\n            }\r\n        ],\r\n        \"languageAbility\": [\r\n            {\r\n                \"languageCode\": \"1\"\r\n            }\r\n        ],\r\n        \"individualIdentification\": [\r\n            {\r\n                \"attachment\": [\r\n                    {\r\n                        \"content\": \"pdf\",\r\n                        \"description\": \"passport pdf\",\r\n                        \"mimeType\": \"pdf\",\r\n                        \"name\": \"passport copy\",\r\n                        \"url\": \"wwww.docsshare.com/customer11/passport/passport.pdf\",\r\n                        \"kycReferenceId\": \"12123343213\"\r\n                    }\r\n                ],\r\n                \"identificationId\": \"347533334\",\r\n                \"identificationType\": \"107\",\r\n                \"issuingAuthority\": \"ethiopian embassy\",\r\n                \"issuingDate\": \"2021-11-09\",\r\n                \"validFor\": {\r\n                    \"endDateTime\": \"2001-11-10T07:00:43.894Z\",\r\n                    \"startDateTime\": \"2026-11-09T07:00:43.894Z\"\r\n                }\r\n            }\r\n        ],\r\n        \"contactMedium\": [\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"telephoneNumber\",\r\n                \"characteristic\": {\r\n                    \"phoneNumber\": \"9381231283213\",\r\n                    \"contactType\": \"smsNumber\"\r\n                }\r\n            },\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"telephoneNumber\",\r\n                \"characteristic\": {\r\n                    \"faxNumber\": \"11231283213\",\r\n                    \"contactType\": \"faxNumber\"\r\n                }\r\n            },\r\n            {\r\n                \"characteristic\": {\r\n                    \"contactType\": \"alternateSmsNumber\",\r\n                    \"altPhoneNumber\": \"9738646475\"\r\n                },\r\n                \"mediumType\": \"telephoneNumber\"\r\n            },\r\n            {\r\n                \"preferred\": false,\r\n                \"mediumType\": \"emailAddress\",\r\n                \"characteristic\": {\r\n                    \"emailAddress\": \"testing@gmail.com\",\r\n                    \"contactType\": \"emailAddress\"\r\n                }\r\n            },\r\n            {\r\n                \"mediumType\": \"address\",\r\n                \"characteristic\": {\r\n                    \"contactType\": \"residentialAddress\",\r\n                    \"addrLine1\": \"house no 268\",\r\n                    \"addrLine2\": \"1000 ADDIS ABABA\",\r\n                    \"addrLine3\": \"Kebele 1, 1302/29\",\r\n                    \"addrLine4\": 2,\r\n                    \"addrLine5\": 1,\r\n                    \"addrLine6\": 1,\r\n                    \"addrLine7\": 1,\r\n                    \"addrLine8\": \"1000\",\r\n                    \"addrLine9\": \"P.O. Box 1519\",\r\n                    \"addrLine10\": \"8.9806\",\r\n                    \"addrLine11\": \"38.7578\"\r\n                }\r\n            },\r\n            {\r\n                \"characteristic\": {\r\n                    \"contactType\": \"permanentAddress\",\r\n                    \"addrLine1\": \"house no 268\",\r\n                    \"addrLine2\": \"1000 ADDIS ABABA\",\r\n                    \"addrLine3\": \"Kebele 1, 1302/29\",\r\n                    \"addrLine4\": 2,\r\n                    \"addrLine5\": 1,\r\n                    \"addrLine6\": 1,\r\n                    \"addrLine7\": 1,\r\n                    \"addrLine8\": \"1000\",\r\n                    \"addrLine9\": \"P.O. Box 1519\",\r\n                    \"addrLine10\": \"8.9806\",\r\n                    \"addrLine11\": \"38.7578\"\r\n                },\r\n                \"mediumType\": \"address\"\r\n            }\r\n        ],\r\n        \"account\": {\r\n            \"chargingPattern\": \"2\",\r\n            \"languageId\": \"1\",\r\n            \"name\": \"test account\",\r\n            \"remarks\": \"string\",\r\n            \"title\": \"Mr\",\r\n            \"preferredCurrency\": \"USSD\",\r\n            \"contactMedium\": [\r\n                {\r\n                    \"mediumType\": \"address\",\r\n                    \"characteristic\": {\r\n                        \"contactType\": \"billingAddress\",\r\n                        \"addrLine1\": \"house no 268\",\r\n                        \"addrLine2\": \"1000 ADDIS ABABA\",\r\n                        \"addrLine3\": \"Kebele 1, 1302/29\",\r\n                        \"addrLine4\": 2,\r\n                        \"addrLine5\": 1,\r\n                        \"addrLine6\": 1,\r\n                        \"addrLine7\": 1,\r\n                        \"addrLine8\": \"1000\",\r\n                        \"addrLine9\": \"P.O. Box 1519\",\r\n                        \"addrLine10\": \"8.9806\",\r\n                        \"addrLine11\": \"38.7578\"\r\n                    }\r\n                }\r\n            ],\r\n            \"serviceGroups\": [\r\n                {\r\n                    \"services\": [\r\n                        {\r\n                            \"serviceId\": \"251700400509\",\r\n                            \"isSimPaired\": \"false\",\r\n                            \"name\": \"GSM Service\",\r\n                            \"languageId\": \"1\",\r\n                            \"serviceType\": \"1\",\r\n                            \"networkServiceId\": \"1\",\r\n                            \"chargingPattern\": \"2\",\r\n                            \"contactMedium\": [\r\n                                {\r\n                                    \"mediumType\": \"address\",\r\n                                    \"characteristic\": {\r\n                                        \"contactType\": \"residentialAddress\",\r\n                                        \"addrLine1\": \"house no 268\",\r\n                                        \"addrLine2\": \"1000 ADDIS ABABA\",\r\n                                        \"addrLine3\": \"Kebele 1, 1302/29\",\r\n                                        \"addrLine4\": 2,\r\n                                        \"addrLine5\": 1,\r\n                                        \"addrLine6\": 1,\r\n                                        \"addrLine7\": 1,\r\n                                        \"addrLine8\": \"1000\",\r\n                                        \"addrLine9\": \"P.O. Box 1519\",\r\n                                        \"addrLine10\": \"8.9806\",\r\n                                        \"addrLine11\": \"38.7578\"\r\n                                    }\r\n                                }\r\n                            ],\r\n                            \"characteristics\": [\r\n                                {\r\n                                    \"name\": \"ICCID\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"89251999510000437490\"\r\n                                },\r\n                                {\r\n                                    \"name\": \"IMSI\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"636025100043749\"\r\n                                }\r\n                            ],\r\n                            \"subscriptions\": [\r\n                                {\r\n                                    \"planId\": \"136\",\r\n                                    \"planType\": \"0\",\r\n                                    \"planName\": \"Baseplan\",\r\n                                    \"autoRenewal\": \"0\"\r\n                                }\r\n                            ]\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/onboarding",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"onboarding"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Onboarding SLM",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "6547542547",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"category\": \"B2C product order\",\r\n\t\"orderType\": \"Onboarding\",\r\n\t\"description\": \"Product Order illustration sample\",\r\n\t\"saFormId\": \"SA_04082022104349\",\r\n\t\"externalId\": \"PO-456\",\r\n\t\"priority\": \"1\",\r\n\t\"channel\": [\r\n\t\t{\r\n\t\t\t\"id\": \"1\",\r\n\t\t\t\"name\": \"CRM\",\r\n\t\t\t\"role\": \"Used channel for order capture\"\r\n\t\t}\r\n\t],\r\n\t\"profile\": {\r\n\t\t\"profileType\": \"1\",\r\n\t\t\"partyCharacteristic\": [\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"subscriberCategory\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"11\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"subscriberSubCategory\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"111\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"profileType\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"1\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"customerType\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"1111\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"minorFlag\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"0\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"annualTurnover\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"43545455555\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"businessDescription\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"Enterprise\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"noOfEmployees\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"2\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"industry\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"1\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"sector\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"Trades\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"registrationNumber\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"r5654654\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"tinNumber\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"5654656565\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"safaricomPartner\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"false\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"companyName\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"SIXDEE\"\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"languageAbility\": [\r\n\t\t\t{\r\n\t\t\t\t\"languageCode\": \"1\"\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"contactMedium\": [\r\n\t\t\t{\r\n\t\t\t\t\"preferred\": false,\r\n\t\t\t\t\"mediumType\": \"telephoneNumber\",\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"phoneNumber\": \"251876455511\",\r\n\t\t\t\t\t\"contactType\": \"smsNumber\"\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"preferred\": false,\r\n\t\t\t\t\"mediumType\": \"emailAddress\",\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"emailAddress\": \"yash@gmail.com\",\r\n\t\t\t\t\t\"contactType\": \"emailAddress\"\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"preferred\": false,\r\n\t\t\t\t\"mediumType\": \"emailAddress\",\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"contactType\": \"socialMediaAddress\",\r\n\t\t\t\t\t\"socialMediaAddress\": \"enterprise@gmail.com\"\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"preferred\": false,\r\n\t\t\t\t\"mediumType\": \"address\",\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"contactType\": \"permanentAddress\",\r\n\t\t\t\t\t\"addrLine4\": \"1\",\r\n\t\t\t\t\t\"addrLine5\": \"1\"\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"preferred\": false,\r\n\t\t\t\t\"mediumType\": \"address\",\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"contactType\": \"residentialAddress\",\r\n\t\t\t\t\t\"addrLine4\": \"1\",\r\n\t\t\t\t\t\"addrLine5\": \"1\"\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"individualIdentification\": [\r\n\t\t\t{\r\n\t\t\t\t\"identificationId\": \"522871301\",\r\n\t\t\t\t\"identificationType\": \"102\",\r\n\t\t\t\t\"issuingDate\": \"30-07-2019 10:48:22\",\r\n\t\t\t\t\"attachment\": [\r\n\t\t\t\t\t{\r\n\t\t\t\t\t\t\"name\": \"SLM65uubum_1659599321963_SA_Form_21072022141143.pdf\",\r\n\t\t\t\t\t\t\"url\": \"/files\"\r\n\t\t\t\t\t}\r\n\t\t\t\t],\r\n\t\t\t\t\"validFor\": {\r\n\t\t\t\t\t\"startDateTime\": \"30-07-2019 10:48:22\",\r\n\t\t\t\t\t\"endDateTime\": \"04-08-2024 10:48:26\"\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"account\": {\r\n\t\t\t\"name\": \"Yashaswini Raj\",\r\n\t\t\t\"billcycleId\": \"1\",\r\n\t\t\t\"chargingPattern\": \"1\",\r\n\t\t\t\"entityId\": \"200\",\r\n\t\t\t\"excelFileFlag\": \"0\",\r\n\t\t\t\"languageId\": \"1\",\r\n\t\t\t\"notificationAllowed\": \"0\",\r\n\t\t\t\"riskcategoryId\": \"20\",\r\n\t\t\t\"contactMedium\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"preferred\": false,\r\n\t\t\t\t\t\"mediumType\": \"address\",\r\n\t\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\t\"contactType\": \"residentialAddress\",\r\n\t\t\t\t\t\t\"addrLine4\": \"1\",\r\n\t\t\t\t\t\t\"addrLine5\": \"1\"\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\t\t\t],\r\n\t\t\t\"serviceGroups\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"services\": [\r\n\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\"serviceId\": \"251700400242\",\r\n\t\t\t\t\t\t\t\"languageId\": \"1\",\r\n\t\t\t\t\t\t\t\"isSimPaired\": \"false\",\r\n\t\t\t\t\t\t\t\"name\": \"SIXDEE\",\r\n\t\t\t\t\t\t\t\"serviceType\": \"1\",\r\n\t\t\t\t\t\t\t\"connectionType\": \"1\",\r\n\t\t\t\t\t\t\t\"contactMedium\": [\r\n\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\"preferred\": false,\r\n\t\t\t\t\t\t\t\t\t\"mediumType\": \"address\",\r\n\t\t\t\t\t\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\t\t\t\t\t\"contactType\": \"residentialAddress\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine4\": \"1\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine5\": \"1\"\r\n\t\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t],\r\n\t\t\t\t\t\t\t\"deposit\": [\r\n\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\"comment\": \"deposit\",\r\n\t\t\t\t\t\t\t\t\t\"currencyCode\": \"ETB\",\r\n\t\t\t\t\t\t\t\t\t\"bookingId\": \"1\",\r\n\t\t\t\t\t\t\t\t\t\"status\": \"1\",\r\n\t\t\t\t\t\t\t\t\t\"depositAmount\": \"1000\"\r\n\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t],\r\n                            \"contract\": {\r\n                                \"contractType\": \"2\",\r\n                                \"contractDesc\": \"1 yr contract\",\r\n                                \"contractName\": \"service contract\",\r\n                                \"contractPeriod\": \"12\",\r\n                                \"contractFrequency\": \"2\"\r\n                            },\r\n\t\t\t\t\t\t\t\"subscriptions\": [\r\n\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\"planDesc\": \"Common POG for GSM\",\r\n\t\t\t\t\t\t\t\t\t\"planType\": \"0\",\r\n\t\t\t\t\t\t\t\t\t\"charges\": [\r\n\t\t\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\t\t\"upcChargeName\": \"0 birr postpaid\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"upcChargeId\": \"304\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"chargeRecurranceType\": \"2\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"chargeCategory\": \"1\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"chargeFrequency\": \"2\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"quantity\": \"1\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"amount\": \"0.0\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"chargeVersion\": \"1\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"prorataEnabled\": false,\r\n\t\t\t\t\t\t\t\t\t\t\t\"chargeDesc\": \"0 birr postpaid\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"chargeCode\": \"1\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"chargeType\": \"1\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"chargeFactor\": \"1\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"overridden\": \"0\"\r\n\t\t\t\t\t\t\t\t\t\t},\r\n\t\t\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\t\t\"upcChargeName\": \"0 birr postpaid RNW\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"upcChargeId\": \"364\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"chargeRecurranceType\": \"2\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"chargeCategory\": \"1\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"chargeFrequency\": \"2\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"quantity\": \"1\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"amount\": \"0.0\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"chargeVersion\": \"1\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"prorataEnabled\": false,\r\n\t\t\t\t\t\t\t\t\t\t\t\"chargeDesc\": \"0 birr postpaid RNW\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"chargeCode\": \"1\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"chargeType\": \"1\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"chargeFactor\": \"1\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"overridden\": \"0\"\r\n\t\t\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t\t\t],\r\n\t\t\t\t\t\t\t\t\t\"autoRenewal\": \"0\",\r\n\t\t\t\t\t\t\t\t\t\"somCallRqd\": false,\r\n\t\t\t\t\t\t\t\t\t\"esbCallRqd\": false,\r\n\t\t\t\t\t\t\t\t\t\"commonAddon\": false,\r\n\t\t\t\t\t\t\t\t\t\"quantity\": \"1\",\r\n\t\t\t\t\t\t\t\t\t\"planId\": \"381\",\r\n\t\t\t\t\t\t\t\t\t\"planName\": \"ENTERPRISE POSTPAY BASE PLAN\",\r\n\t\t\t\t\t\t\t\t\t\"upcVersion\": \"3\"\r\n\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t],\r\n\t\t\t\t\t\t\t\"characteristics\": [\r\n\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\"name\": \"ICCID\",\r\n\t\t\t\t\t\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\t\t\t\t\t\"value\": \"89251999510000899860\"\r\n\t\t\t\t\t\t\t\t},\r\n\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\"name\": \"IMSI\",\r\n\t\t\t\t\t\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\t\t\t\t\t\"value\": \"636025100089986\"\r\n\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t],\r\n\t\t\t\t\t\t\t\"chargingPattern\": \"1\",\r\n\t\t\t\t\t\t\t\"networkServiceId\": \"1\",\r\n\t\t\t\t\t\t\t\"creditLimit\": \"50000\",\r\n\t\t\t\t\t\t\t\"creditClass\": \"1\"\r\n\t\t\t\t\t\t},\r\n\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\"serviceId\": \"251700400252\",\r\n\t\t\t\t\t\t\t\"languageId\": \"1\",\r\n\t\t\t\t\t\t\t\"isSimPaired\": \"false\",\r\n\t\t\t\t\t\t\t\"name\": \"SIXDEE\",\r\n\t\t\t\t\t\t\t\"serviceType\": \"1\",\r\n\t\t\t\t\t\t\t\"connectionType\": \"1\",\r\n\t\t\t\t\t\t\t\"contactMedium\": [\r\n\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\"preferred\": false,\r\n\t\t\t\t\t\t\t\t\t\"mediumType\": \"address\",\r\n\t\t\t\t\t\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\t\t\t\t\t\"contactType\": \"residentialAddress\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine4\": \"1\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine5\": \"1\"\r\n\t\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t],\r\n\t\t\t\t\t\t\t\"deposit\": [\r\n\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\"comment\": \"deposit\",\r\n\t\t\t\t\t\t\t\t\t\"currencyCode\": \"ETB\",\r\n\t\t\t\t\t\t\t\t\t\"bookingId\": \"1\",\r\n\t\t\t\t\t\t\t\t\t\"status\": \"1\",\r\n\t\t\t\t\t\t\t\t\t\"depositAmount\": \"1000\"\r\n\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t],\r\n                             \"contract\": {\r\n                                \"contractType\": \"2\",\r\n                                \"contractDesc\": \"1 yr contract\",\r\n                                \"contractName\": \"service contract\",\r\n                                \"contractPeriod\": \"12\",\r\n                                \"contractFrequency\": \"2\"\r\n                            },\r\n\t\t\t\t\t\t\t\"subscriptions\": [\r\n\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\"planDesc\": \"Common POG for GSM\",\r\n\t\t\t\t\t\t\t\t\t\"planType\": \"0\",\r\n\t\t\t\t\t\t\t\t\t\"charges\": [\r\n\t\t\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\t\t\"upcChargeName\": \"0 birr postpaid\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"upcChargeId\": \"304\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"chargeRecurranceType\": \"2\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"chargeCategory\": \"1\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"chargeFrequency\": \"2\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"quantity\": \"1\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"amount\": \"0.0\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"chargeVersion\": \"1\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"prorataEnabled\": false,\r\n\t\t\t\t\t\t\t\t\t\t\t\"chargeDesc\": \"0 birr postpaid\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"chargeCode\": \"1\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"chargeType\": \"1\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"chargeFactor\": \"1\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"overridden\": \"0\"\r\n\t\t\t\t\t\t\t\t\t\t},\r\n\t\t\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\t\t\"upcChargeName\": \"0 birr postpaid RNW\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"upcChargeId\": \"364\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"chargeRecurranceType\": \"2\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"chargeCategory\": \"1\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"chargeFrequency\": \"2\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"quantity\": \"1\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"amount\": \"0.0\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"chargeVersion\": \"1\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"prorataEnabled\": false,\r\n\t\t\t\t\t\t\t\t\t\t\t\"chargeDesc\": \"0 birr postpaid RNW\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"chargeCode\": \"1\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"chargeType\": \"1\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"chargeFactor\": \"1\",\r\n\t\t\t\t\t\t\t\t\t\t\t\"overridden\": \"0\"\r\n\t\t\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t\t\t],\r\n\t\t\t\t\t\t\t\t\t\"autoRenewal\": \"0\",\r\n\t\t\t\t\t\t\t\t\t\"somCallRqd\": false,\r\n\t\t\t\t\t\t\t\t\t\"esbCallRqd\": false,\r\n\t\t\t\t\t\t\t\t\t\"commonAddon\": false,\r\n\t\t\t\t\t\t\t\t\t\"quantity\": \"1\",\r\n\t\t\t\t\t\t\t\t\t\"planId\": \"381\",\r\n\t\t\t\t\t\t\t\t\t\"planName\": \"ENTERPRISE POSTPAY BASE PLAN\",\r\n\t\t\t\t\t\t\t\t\t\"upcVersion\": \"3\"\r\n\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t],\r\n\t\t\t\t\t\t\t\"characteristics\": [\r\n\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\"name\": \"ICCID\",\r\n\t\t\t\t\t\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\t\t\t\t\t\"value\": \"89251999510000899870\"\r\n\t\t\t\t\t\t\t\t},\r\n\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\"name\": \"IMSI\",\r\n\t\t\t\t\t\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\t\t\t\t\t\"value\": \"636025100089987\"\r\n\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t],\r\n\t\t\t\t\t\t\t\"chargingPattern\": \"1\",\r\n\t\t\t\t\t\t\t\"networkServiceId\": \"1\",\r\n\t\t\t\t\t\t\t\"creditLimit\": \"50000\",\r\n\t\t\t\t\t\t\t\"creditClass\": \"1\"\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t]\r\n\t\t\t\t}\r\n\t\t\t],\r\n\t\t\t\"preferredCurrency\": \"USD\",\r\n\t\t\t\"dunningId\": \"1\",\r\n\t\t\t\"keyAccountManager\": \"b41d6074-17c6-46f8-8a53-8f75d71e7edc\",\r\n\t\t\t\"taxApplicable\": \"0\"\r\n\t\t}\r\n\t},\r\n\t\"payment\": {\r\n\t\t\"amount\": \"3060.00\",\r\n\t\t\"upfrontPayment\": \"true\",\r\n\t\t\"isPaymentCollected\": \"false\",\r\n\t\t\"paymentChannel\": \"shop\",\r\n\t\t\"orderCharges\": \"60.0\",\r\n\t\t\"totalDeposit\": \"3000.0\"\r\n\t},\r\n\t\"sourceNode\": \"CRM\",\r\n\t\"approvalDetails\": {\r\n\t\t\"approvalReqd\": \"true\"\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/onboarding",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"onboarding"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Starterpack",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "6547542547",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"StarterPackProvisioning\",\r\n    \"starterPack\": {\r\n        \"serviceId\": \"251700400774\",\r\n        \"imsi\": \"636025100043488\",\r\n        \"ki\": \"A556EE72AEF3F12E690F65C2E5DF4413\",\r\n        \"iccid\": \"89251999510000434880\",\r\n        \"algoId\": \"5678\",\r\n\t\t\"kdbId\": \"6789\",\r\n        \"subscriptions\": [\r\n            {\r\n                \"planId\": \"118\",\r\n                \"planType\": \"0\"\r\n            }\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/starter-pack",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"starter-pack"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Onboarding multiple",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "6547542547",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"orderType\": \"Onboarding\",\r\n\t\"description\": \"Onboarding order\",\r\n\t\"externalId\": \"121312321341243124\",\r\n\t\"profile\": {\r\n\t\t\"birthDate\": \"18-04-1987\",\r\n\t\t\"familyName\": \"Haani\",\r\n\t\t\"givenName\": \"Umme\",\r\n\t\t\"nationality\": \"3\",\r\n\t\t\"title\": \"1\",\r\n\t\t\"partyCharacteristic\": [\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"profileType\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"0\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"subscriberCategory\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"11\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"subscriberSubCategory\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"111\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"biometricId\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"32132434324\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"minorFlag\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"1\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"paymentPreference\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"2,1\"\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"languageAbility\": [\r\n\t\t\t{\r\n\t\t\t\t\"languageCode\": \"2\"\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"individualIdentification\": [\r\n\t\t\t{\r\n\t\t\t\t\"attachment\": [\r\n\t\t\t\t\t{\r\n\t\t\t\t\t\t\"description\": \"passport pdf\",\r\n\t\t\t\t\t\t\"mimeType\": \"pdf\",\r\n\t\t\t\t\t\t\"name\": \"passport copy\",\r\n\t\t\t\t\t\t\"url\": \"wwww.docsshare.com/customer11/passport/passport.pdf\",\r\n\t\t\t\t\t\t\"kycReferenceId\": \"132145627899298\"\r\n\t\t\t\t\t}\r\n\t\t\t\t],\r\n\t\t\t\t\"identificationId\": \"6761213\",\r\n\t\t\t\t\"identificationType\": \"353\",\r\n\t\t\t\t\"issuingAuthority\": \"ethiopian embassy\",\r\n\t\t\t\t\"issuingDate\": \"2021-11-09\",\r\n\t\t\t\t\"validFor\": {\r\n\t\t\t\t\t\"endDateTime\": \"2001-11-10T07:00:43.894Z\",\r\n\t\t\t\t\t\"startDateTime\": \"2026-11-09T07:00:43.894Z\"\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"attachments\": [\r\n\t\t\t{\r\n\t\t\t\t\"description\": \"test attachment\",\r\n\t\t\t\t\"mimeType\": \"test\",\r\n\t\t\t\t\"name\": \"test doc\",\r\n\t\t\t\t\"url\": \"test url\",\r\n\t\t\t\t\"kycReferenceId\": \"121232329991\"\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"contactMedium\": [\r\n\t\t\t{\r\n\t\t\t\t\"preferred\": false,\r\n\t\t\t\t\"mediumType\": \"telephoneNumber\",\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"phoneNumber\": \"9743191765\",\r\n\t\t\t\t\t\"contactType\": \"smsNumber\"\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"preferred\": false,\r\n\t\t\t\t\"mediumType\": \"telephoneNumber\",\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"faxNumber\": \"9743191765\",\r\n\t\t\t\t\t\"contactType\": \"faxNumber\"\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"contactType\": \"alternateSmsNumber\",\r\n\t\t\t\t\t\"altPhoneNumber\": \"9743191765\"\r\n\t\t\t\t},\r\n\t\t\t\t\"mediumType\": \"telephoneNumber\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"contactType\": \"residentialAddress\",\r\n\t\t\t\t\t\"addrLine1\": \"1\",\r\n\t\t\t\t\t\"addrLine2\": \"2\",\r\n\t\t\t\t\t\"addrLine3\": \"1\",\r\n\t\t\t\t\t\"addrLine4\": \"1\",\r\n\t\t\t\t\t\"addrLine5\": \"Addis Ababa\",\r\n\t\t\t\t\t\"addrLine6\": \"Shoa\",\r\n\t\t\t\t\t\"addrLine7\": \"Achefer\",\r\n\t\t\t\t\t\"addrLine8\": \"1000\",\r\n\t\t\t\t\t\"addrLine9\": \"P.O. Box 1519\",\r\n\t\t\t\t\t\"addrLine10\": \"8.9806\",\r\n\t\t\t\t\t\"addrLine11\": \"38.7578\"\r\n\t\t\t\t},\r\n\t\t\t\t\"mediumType\": \"address\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"contactType\": \"permanentAddress\",\r\n\t\t\t\t\t\"addrLine1\": \"1\",\r\n\t\t\t\t\t\"addrLine2\": \"2\",\r\n\t\t\t\t\t\"addrLine3\": \"1\",\r\n\t\t\t\t\t\"addrLine4\": \"1\",\r\n\t\t\t\t\t\"addrLine5\": \"Addis Ababa\",\r\n\t\t\t\t\t\"addrLine6\": \"Shoa\",\r\n\t\t\t\t\t\"addrLine7\": \"Achefer\",\r\n\t\t\t\t\t\"addrLine8\": \"1000\",\r\n\t\t\t\t\t\"addrLine9\": \"P.O. Box 1519\",\r\n\t\t\t\t\t\"addrLine10\": \"8.9806\",\r\n\t\t\t\t\t\"addrLine11\": \"38.7578\"\r\n\t\t\t\t},\r\n\t\t\t\t\"mediumType\": \"address\"\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"account\": {\r\n\t\t\t\"bankCode\": \"00\",\r\n\t\t\t\"bankName\": \"NATIONAL BANK OF ETHOPIA\",\r\n\t\t\t\"billcycleId\": \"1\",\r\n\t\t\t\"billingOnHold\": \"0\",\r\n\t\t\t\"keyAccountManager\": \"9c796181-796d-46d9-bae1-4e7b2ecf863e\",\r\n\t\t\t\"chargingPattern\": 1,\r\n\t\t\t\"autoDebit\": 1,\r\n\t\t\t\"bankAccountNo\": \"113124234234\",\r\n\t\t\t\"bankID\": \"1221\",\r\n\t\t\t\"bankAccountName\": \"abc\",\r\n\t\t\t\"bankAccountType\": \"Current\",\r\n\t\t\t\"branchName\": \"south branch\",\r\n\t\t\t\"dispatchMode\": 1,\r\n\t\t\t\"dunningExclusion\": 0,\r\n\t\t\t\"emailNotificationAllowed\": 0,\r\n\t\t\t\"smsNotificationAllowed\": 0,\r\n\t\t\t\"taxApplicable\": 0,\r\n\t\t\t\"entityId\": \"200\",\r\n\t\t\t\"itemizedbillRequired\": 0,\r\n\t\t\t\"excelFileFlag\": 0,\r\n\t\t\t\"languageId\": \"1\",\r\n\t\t\t\"name\": \"Abc S\",\r\n\t\t\t\"riskcategoryId\": 1,\r\n\t\t\t\"taxCode\": \"82\",\r\n\t\t\t\"taxExemptionCode\": \"1\",\r\n\t\t\t\"title\": \"Ms.\",\r\n\t\t\t\"unicodeName\": \"abc\",\r\n\t\t\t\"majorSicCode\": \"1\",\r\n\t\t\t\"sicCode\": \"1\",\r\n\t\t\t\"creditLimit\": \"10\",\r\n\t\t\t\"contactEmailId\": \"abc@gmail.com\",\r\n\t\t\t\"smsNumbers\": \"34325434545\",\r\n\t\t\t\"billingRegion\": \"string\",\r\n\t\t\t\"preferredCurrency\": \"string\",\r\n\t\t\t\"dunningId\": \"1\",\r\n\t\t\t\r\n\t\t\t\"contactMedium\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"mediumType\": \"address\",\r\n\t\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\t\"contactType\": \"billingAddress\",\r\n\t\t\t\t\t\t\"addrLine1\": \"house no 268\",\r\n\t\t\t\t\t\t\"addrLine2\": \"1000 ADDIS ABABA\",\r\n\t\t\t\t\t\t\"addrLine3\": \"Kebele 1, 1302/29\",\r\n\t\t\t\t\t\t\"addrLine4\": \"Addis Ababa\",\r\n\t\t\t\t\t\t\"addrLine5\": \"Addis Ababa\",\r\n\t\t\t\t\t\t\"addrLine6\": \"Shoa\",\r\n\t\t\t\t\t\t\"addrLine7\": \"Achefer\",\r\n\t\t\t\t\t\t\"addrLine8\": \"1000\",\r\n\t\t\t\t\t\t\"addrLine9\": \"P.O. Box 1519\",\r\n\t\t\t\t\t\t\"addrLine10\": \"8.9806\",\r\n\t\t\t\t\t\t\"addrLine11\": \"38.7578\"\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\t\t\t],\r\n\t\t\t\"serviceGroups\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"services\": [\r\n\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\"serviceId\": \"251700400093\",\r\n\t\t\t\t\t\t\t\"name\": \"GSM Service\",\r\n\t\t\t\t\t\t\t\"languageId\": \"3\",\r\n\t\t\t\t\t\t\t\"isSimPaired\": \"false\",\r\n\t\t\t\t\t\t\t\"serviceType\": \"Master\",\r\n\t\t\t\t\t\t\t\"networkServiceId\": \"1\",\r\n\t\t\t\t\t\t\t\"chargingPattern\": \"1\",\r\n\t\t\t\t\t\t\t\"creditLimit\": \"50000\",\r\n\t\t\t\t\t\t\t\"creditClass\": \"B\",\r\n\t\t\t\t\t\t\t\"contactMedium\": [\r\n\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\"mediumType\": \"address\",\r\n\t\t\t\t\t\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\t\t\t\t\t\"contactType\": \"residentialAddress\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine1\": \"house no 268\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine2\": \"1000 ADDIS ABABA\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine3\": \"Kebele 1, 1302/29\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine4\": \"Addis Ababa\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine5\": \"Addis Ababa\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine6\": \"Shoa\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine7\": \"Achefer\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine8\": \"1000\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine9\": \"P.O. Box 1519\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine10\": \"8.9806\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine11\": \"38.7578\"\r\n\t\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t],\r\n\t\t\t\t\t\t\t\"characteristics\": [\r\n\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\"name\": \"ICCID\",\r\n\t\t\t\t\t\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\t\t\t\t\t\"value\": \"89251999510000999320\"\r\n\t\t\t\t\t\t\t\t},\r\n\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\"name\": \"IMSI\",\r\n\t\t\t\t\t\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\t\t\t\t\t\"value\": \"636025100099932\"\r\n\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t],\r\n\t\t\t\t\t\t\t\"subscriptions\": [\r\n\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\"planId\": \"357\",\r\n\t\t\t\t\t\t\t\t\t\"planType\": \"0\",\r\n\t\t\t\t\t\t\t\t\t\"planName\": \"Prepaid Starter Pack PO\"\r\n\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t]\r\n\t\t\t\t\t\t},\r\n\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\"serviceId\": \"251700400092\",\r\n\t\t\t\t\t\t\t\"name\": \"GSM Service\",\r\n\t\t\t\t\t\t\t\"languageId\": \"3\",\r\n\t\t\t\t\t\t\t\"isSimPaired\": \"false\",\r\n\t\t\t\t\t\t\t\"serviceType\": \"Master\",\r\n\t\t\t\t\t\t\t\"networkServiceId\": \"1\",\r\n\t\t\t\t\t\t\t\"chargingPattern\": \"1\",\r\n\t\t\t\t\t\t\t\"creditLimit\": \"50000\",\r\n\t\t\t\t\t\t\t\"creditClass\": \"B\",\r\n\t\t\t\t\t\t\t\"contactMedium\": [\r\n\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\"mediumType\": \"address\",\r\n\t\t\t\t\t\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\t\t\t\t\t\"contactType\": \"residentialAddress\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine1\": \"house no 268\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine2\": \"1000 ADDIS ABABA\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine3\": \"Kebele 1, 1302/29\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine4\": \"Addis Ababa\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine5\": \"Addis Ababa\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine6\": \"Shoa\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine7\": \"Achefer\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine8\": \"1000\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine9\": \"P.O. Box 1519\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine10\": \"8.9806\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine11\": \"38.7578\"\r\n\t\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t],\r\n\t\t\t\t\t\t\t\"characteristics\": [\r\n\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\"name\": \"ICCID\",\r\n\t\t\t\t\t\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\t\t\t\t\t\"value\": \"89251999510000999330\"\r\n\t\t\t\t\t\t\t\t},\r\n\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\"name\": \"IMSI\",\r\n\t\t\t\t\t\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\t\t\t\t\t\"value\": \"636025100099933\"\r\n\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t],\r\n\t\t\t\t\t\t\t\"subscriptions\": [\r\n\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\"planId\": \"357\",\r\n\t\t\t\t\t\t\t\t\t\"planType\": \"0\",\r\n\t\t\t\t\t\t\t\t\t\"planName\": \"Prepaid Starter Pack PO\"\r\n\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t]\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t]\r\n\t\t\t\t}\r\n\t\t\t]\r\n\t\t}\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/onboarding",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"onboarding"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add-service",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "USSD",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "6547542547",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"AddService\",\r\n    \"profile\": {\r\n        \"profileId\": \"108535\",\r\n        \"account\": {\r\n            \"accountId\": \"ET57299\",\r\n            \"serviceGroups\": [\r\n                {\r\n                    \"services\": [\r\n                        {\r\n                            \"serviceId\": \"251700400686\",\r\n                            \"name\": \"GSM Service\",\r\n                            \"languageId\": \"1\",\r\n                            \"isSimPaired\": false,\r\n                            \"serviceType\": \"1\",\r\n                            \"networkServiceId\": \"1\",\r\n                            \"chargingPattern\": \"1\",\r\n                            \"itemizedRequired\": \"1\",\r\n                            \"creditLimit\": \"2000\",\r\n                            \"creditClass\": \"A\",\r\n                            \"contactMedium\": [\r\n                                {\r\n                                    \"mediumType\": \"address\",\r\n                                    \"characteristic\": {\r\n                                        \"contactType\": \"residentialAddress\",\r\n                                        \"addrLine1\": \"1\",\r\n                                        \"addrLine2\": \"2\",\r\n                                        \"addrLine3\": \"1\",\r\n                                        \"addrLine4\": \"1\",\r\n                                        \"addrLine5\": \"Addis Ababa\",\r\n                                        \"addrLine6\": \"Shoa\",\r\n                                        \"addrLine7\": \"Achefer\",\r\n                                        \"addrLine8\": \"1000\",\r\n                                        \"addrLine9\": \"P.O. Box 1519\",\r\n                                        \"addrLine10\": \"8.9806\",\r\n                                        \"addrLine11\": \"38.7578\"\r\n                                    }\r\n                                }\r\n                            ],\r\n                            \"deposit\": [\r\n                                {\r\n                                    \"comment\": \"deposit\",\r\n                                    \"currencyCode\": \"USD\",\r\n                                    \"bookingId\": \"1\",\r\n                                    \"status\": \"1\",\r\n                                    \"depositAmount\": \"5000.00\"\r\n                                }\r\n                            ],\r\n                           \r\n                            \"characteristics\": [\r\n                                {\r\n                                    \"name\": \"ICCID\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"89251887490000005001\"\r\n                                },\r\n                                {\r\n                                    \"name\": \"IMSI\",\r\n                                    \"valueType\": \"string\",\r\n                                    \"value\": \"636024900000501\"\r\n                                }\r\n                            ],\r\n                            \"subscriptions\": [\r\n                                {\r\n                                    \"planId\": \"538\",\r\n                                    \"planType\": \"0\",\r\n                                    \"planName\": \"Base Plan Postpaid\"\r\n                                }\r\n                            ]\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        }\r\n    },\r\n    \"payment\": {\r\n        \"amount\": \"1500.00\",\r\n        \"upfrontPayment\": \"true\",\r\n        \"isPaymentCollected\": \"false\",\r\n        \"paymentChannel\": \"shop\",\r\n        \"orderCharges\": \"500.0\",\r\n        \"totalDeposit\": \"1000.0\",\r\n        \"upfrontCallReq\": \"true\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/add-service",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"add-service"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TOS",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "source",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "890045656",
+						"type": "text"
+					},
+					{
+						"key": "requestTimestamp",
+						"value": "2024-01-05 11:08:05",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"accountType\" : \"POST_PAID\",\r\n  \"name\" : \"ARCANE TECHNOLOGIES PLC\",\r\n  \"characteristic\" : [ {\r\n    \"name\" : \"AcctKey\",\r\n    \"value\" : \"ET2715338\",\r\n    \"valueType\" : \"string\",\r\n    \"@baseType\" : \"string\",\r\n    \"@schemaLocation\" : \"string\",\r\n    \"@type\" : \"string\",\r\n    \"arrayIndex\" : \"-1\"\r\n  }, {\r\n    \"name\" : \"class\",\r\n    \"value\" : \"Corporate\",\r\n    \"valueType\" : \"string\",\r\n    \"arrayIndex\" : \"0\",\r\n    \"@baseType\" : \"string\",\r\n    \"@schemaLocation\" : \"string\",\r\n    \"@type\" : \"characsterics\"\r\n  } ],\r\n  \"contact\" : [ {\r\n    \"contactMedium\" : [ {\r\n      \"characteristic\" : {\r\n        \"city\" : \"112\",\r\n        \"country\" : \"12\",\r\n        \"additionalAddress3\" : \"12\",\r\n        \"additionalAddress2\" : \"12\"\r\n      },\r\n      \"mediumType\" : \"address\"\r\n    } ],\r\n    \"contactType\" : \"billingAddress\"\r\n  } ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://bss-prod-apps.esb.bss.safaricomet.net/account-mgmt/safaricom/api/v1/createerpaccount/billingAccount",
+					"protocol": "http",
+					"host": [
+						"bss-prod-apps",
+						"esb",
+						"bss",
+						"safaricomet",
+						"net"
+					],
+					"path": [
+						"account-mgmt",
+						"safaricom",
+						"api",
+						"v1",
+						"createerpaccount",
+						"billingAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add-subscription",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "MPESA_USSD"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "MPESA-251700406656-251700406656"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"AddSubscription\",\r\n    \"externalId\": \"MPESA-251700406656-251700406656\",\r\n    \"orderItem\": [\r\n        {\r\n            \"action\": \"add\",\r\n            \"service\": {\r\n                \"id\": \"251700406656\"\r\n            },\r\n            \"productOffering\": {\r\n                \"id\": \"1191\"\r\n            },\r\n            \"somCallRqd\": false,\r\n            \"esbCallRqd\": false\r\n        }\r\n    ],\r\n    \"payment\": {\r\n        \"amount\": \"30.\",\r\n        \"upfrontPayment\": \"false\",\r\n        \"id\": \"TEST\",\r\n        \"type\": \"MPESA\",\r\n        \"paymentReceived\": \"true\",\r\n        \"paymentChannel\": \"MPESA\"\r\n    },\r\n    \"auditInfo\": \"30.:BIRR\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/add-subscription",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"add-subscription"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add-subscription Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "USSD",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "654754254735",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"AddSubscription\",\r\n    \"externalId\": \"PO-456\",\r\n    \"auditInfo\": \"Add1234\",\r\n    \"orderItem\": [\r\n        {\r\n            \"action\": \"add\",\r\n            \"service\": {\r\n                \"id\": \"251700500015\"\r\n            },\r\n            \"product\": {\r\n                \"productSpecification\": {\r\n                    \"version\": \"1\",\r\n                    \"autoRenewal\": \"1\"\r\n                }\r\n            },\r\n            \"productOffering\": {\r\n                \"id\": \"460\"\r\n            },\r\n            \"deposit\": {\r\n                \"comment\": \"deposit\",\r\n                \"currencyCode\": \"USD\",\r\n                \"depositAmount\": \"300.00\"\r\n            },\r\n            \"creditLimit\": \"50000\",\r\n            \"creditClass\": \"B\",\r\n            \"creditLimitUpdateReqd\": \"true\",\r\n            \"depositReqd\": \"true\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/add-subscription",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"add-subscription"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Stop auto renewal",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "USSD",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "6547542547",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderType\": \"StopAutoRenewal\",\r\n  \r\n  \"serviceManagement\": {\r\n    \"serviceId\": \"251700400154\",\r\n    \"subscriptions\": [\r\n      {\r\n        \"subscriptionId\": \"5a182eb2-49e1-4de5-8ece-9d5beacdba17\",\r\n        \"autoRenewal\": \"0\",\r\n        \"planId\": \"414\",\r\n        \"planName\": \"MONTHLY_CBU_S_ONN_50SMS_RC\"\r\n      }\r\n    ]\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/stop-auto-renewal",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"stop-auto-renewal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add-service to new account",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "USSD",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "6547542547",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"orderType\": \"AddServiceToNewAccount\",\r\n\t\"profile\": {\r\n\t\t\"profileId\": \"98799\",\r\n\t\t\"account\": {\r\n\t\t\t\"chargingPattern\": \"1\",\r\n\t\t\t\"languageId\": \"1\",\r\n\t\t\t\"name\": \"test account\",\r\n\t\t\t\"remarks\": \"string\",\r\n\t\t\t\"title\": \"Mr\",\r\n\t\t\t\"preferredCurrency\": \"USSD\",\r\n\t\t\t\"contactMedium\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"mediumType\": \"address\",\r\n\t\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\t\"contactType\": \"billingAddress\",\r\n\t\t\t\t\t\t\"addrLine1\": \"house no 268\",\r\n\t\t\t\t\t\t\"addrLine2\": \"1000 ADDIS ABABA\",\r\n\t\t\t\t\t\t\"addrLine3\": \"Kebele 1, 1302/29\",\r\n\t\t\t\t\t\t\"addrLine4\": \"Addis Ababa\",\r\n\t\t\t\t\t\t\"addrLine5\": \"Addis Ababa\",\r\n\t\t\t\t\t\t\"addrLine6\": \"Shoa\",\r\n\t\t\t\t\t\t\"addrLine7\": \"Achefer\",\r\n\t\t\t\t\t\t\"addrLine8\": \"1000\",\r\n\t\t\t\t\t\t\"addrLine9\": \"P.O. Box 1519\",\r\n\t\t\t\t\t\t\"addrLine10\": \"8.9806\",\r\n\t\t\t\t\t\t\"addrLine11\": \"38.7578\"\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\t\t\t],\r\n\t\t\t\"serviceGroups\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"services\": [\r\n\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\"serviceId\": \"251700400255\",\r\n\t\t\t\t\t\t\t\"isSimPaired\": \"false\",\r\n\t\t\t\t\t\t\t\"name\": \"GSM Service\",\r\n\t\t\t\t\t\t\t\"languageId\": \"1\",\r\n\t\t\t\t\t\t\t\"serviceType\": \"Master\",\r\n\t\t\t\t\t\t\t\"networkServiceId\": \"1\",\r\n\t\t\t\t\t\t\t\"chargingPattern\": \"1\",\r\n                             \"itemizedRequired\":\"1\",\r\n\t\t\t\t\t\t\t\"contactMedium\": [\r\n\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\"mediumType\": \"address\",\r\n\t\t\t\t\t\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\t\t\t\t\t\"contactType\": \"residentialAddress\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine1\": \"house no 268\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine2\": \"1000 ADDIS ABABA\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine3\": \"Kebele 1, 1302/29\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine4\": \"Addis Ababa\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine5\": \"Addis Ababa\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine6\": \"Shoa\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine7\": \"Achefer\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine8\": \"1000\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine9\": \"P.O. Box 1519\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine10\": \"8.9806\",\r\n\t\t\t\t\t\t\t\t\t\t\"addrLine11\": \"38.7578\"\r\n\t\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t],\r\n                             \"deposit\": [\r\n                                {\r\n                                    \"comment\": \"deposit\",\r\n                                    \"currencyCode\": \"USD\",\r\n                                    \"bookingId\": \"1\",\r\n                                    \"status\": \"1\",\r\n                                    \"depositAmount\": \"300.00\"\r\n                                }\r\n                            ],\r\n\t\t\t\t\t\t\t\"characteristics\": [\r\n\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\"name\": \"ICCID\",\r\n\t\t\t\t\t\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\t\t\t\t\t\"value\": \"89251999510000440280\"\r\n\t\t\t\t\t\t\t\t},\r\n\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\"name\": \"IMSI\",\r\n\t\t\t\t\t\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\t\t\t\t\t\"value\": \"636025100044028\"\r\n\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t],\r\n\t\t\t\t\t\t\t\"subscriptions\": [\r\n\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\"planId\": \"359\",\r\n\t\t\t\t\t\t\t\t\t\"planType\": \"0\",\r\n\t\t\t\t\t\t\t\t\t\"planName\": \"Base Plan\",\r\n\t\t\t\t\t\t\t\t\t\"autoRenewal\": \"0\"\r\n\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t]\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t]\r\n\t\t\t\t}\r\n\t\t\t]\r\n\t\t}\r\n\t}\r\n    ,\r\n    \"payment\": {\r\n        \"upfrontPayment\": \"true\",\r\n        \"amount\": \"600.00\",\r\n        \"comment\": \"order payment\",\r\n        \"paymentChannel\": \"shop\",\r\n        \"totalDeposit\": \"300.00\",\r\n        \"ordercharges\": \"300.00\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/add-service-to-new-account",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"add-service-to-new-account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change Plan",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "62388276",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"ChangeSubscription\",\r\n    \"serviceManagement\": {\r\n        \"serviceId\": \"251700400287\",\r\n        \"oldCart\": {\r\n            \"basePlanId\": \"357\"\r\n        },\r\n        \"newCart\": {\r\n            \"subscriptions\": [\r\n                {\r\n                    \"planId\": \"358\",\r\n                    \"planName\": \"TMF25\",\r\n                    \"planDesc\": \"GSM Base Plan\",\r\n                    \"planType\": \"0\"\r\n                    \r\n                }\r\n            ]\r\n        },\r\n        \"deposit\": {\r\n            \"comment\": \"deposit\",\r\n            \"currencyCode\": \"USD\",\r\n            \"depositAmount\": \"580.00\"\r\n        },\r\n          \"creditLimit\": \"50000\",\r\n            \"creditClass\": \"B\",\r\n            \"creditLimitUpdateReqd\": \"true\",\r\n            \"depositReqd\": \"true\"\r\n\r\n    },\r\n    \"payment\": {\r\n        \"upfrontPayment\": \"true\",\r\n        \"amount\": \"600.0\",\r\n        \"comment\": \"order payment\",\r\n        \"paymentChannel\": \"bank\",\r\n        \"orderCharges\": \"20.0\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/change-subscription",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"change-subscription"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transfer_of_Service",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "62388276876",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"orderType\": \"TransferOfService\",\r\n\t\"description\": \"Transfer Of Service Order\",\r\n\t\"serviceManagement\": {\r\n         \"contract\": {\r\n            \"contractType\": \"2\",\r\n            \"contractDesc\": \"1 yr contract\",\r\n            \"contractName\": \"service contract\",\r\n            \"contractPeriod\": \"12\",\r\n            \"contractFrequency\": \"2\"\r\n        },\r\n\t\t\"serviceId\": \"251700400259\",\r\n\t\t\"depositTransfer\": \"0\",\r\n\t\t\"osCreditBalTransfer\": \"0\",\r\n\t\t\"subscriptions\": [\r\n\t\t\t{\r\n\t\t\t\t\"planId\": \"381\",\r\n\t\t\t\t\"planType\": \"0\"\t\t\t}\r\n\t\t]\r\n\t},\r\n\t\"profile\": {\r\n\t\t\"birthDate\": \"18-04-1987\",\r\n        \"localizedBirthDate\": \"21-01-1992\",\r\n\t\t\"familyName\": \"Dink\",\r\n\t\t\"middleName\": \"delvin\",\r\n\t\t\"givenName\": \"john\",\r\n\t\t\"nationality\": \"3\",\r\n\t\t\"title\": \"1\",\r\n\t\t\"partyCharacteristic\": [\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"profileType\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"1\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"subscriberCategory\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"11\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"subscriberSubCategory\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"111\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"biometricId\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"32132434324\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"minorFlag\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"1\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"paymentPreference\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"2,1\"\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"languageAbility\": [\r\n\t\t\t{\r\n\t\t\t\t\"languageCode\": \"1\"\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"attachments\": [\r\n\t\t\t{\r\n\t\t\t\t\"description\": \"test attachment\",\r\n\t\t\t\t\"mimeType\": \"test\",\r\n\t\t\t\t\"name\": \"test doc\",\r\n\t\t\t\t\"url\": \"test url\",\r\n\t\t\t\t\"kycReferenceId\": \"121232329991\"\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"contactMedium\": [\r\n\t\t\t{\r\n\t\t\t\t\"preferred\": false,\r\n\t\t\t\t\"mediumType\": \"telephoneNumber\",\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"phoneNumber\": \"9381231283213\",\r\n\t\t\t\t\t\"contactType\": \"smsNumber\"\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"preferred\": false,\r\n\t\t\t\t\"mediumType\": \"telephoneNumber\",\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"faxNumber\": \"11231283213\",\r\n\t\t\t\t\t\"contactType\": \"faxNumber\"\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"contactType\": \"alternateSmsNumber\",\r\n\t\t\t\t\t\"altPhoneNumber\": \"9738646475\"\r\n\t\t\t\t},\r\n\t\t\t\t\"mediumType\": \"telephoneNumber\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"preferred\": false,\r\n\t\t\t\t\"mediumType\": \"emailAddress\",\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"emailAddress\": \"poornima.thota@6dtech.co.in\",\r\n\t\t\t\t\t\"contactType\": \"emailAddress\"\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"contactType\": \"residentialAddress\",\r\n\t\t\t\t\t\"addrLine1\": \"1\",\r\n\t\t\t\t\t\"addrLine2\": \"2\",\r\n\t\t\t\t\t\"addrLine3\": \"1\",\r\n\t\t\t\t\t\"addrLine4\": \"1\",\r\n\t\t\t\t\t\"addrLine5\": \"Addis Ababa\",\r\n\t\t\t\t\t\"addrLine6\": \"Shoa\",\r\n\t\t\t\t\t\"addrLine7\": \"Achefer\",\r\n\t\t\t\t\t\"addrLine8\": \"1000\",\r\n\t\t\t\t\t\"addrLine9\": \"P.O. Box 1519\",\r\n\t\t\t\t\t\"addrLine10\": \"8.9806\",\r\n\t\t\t\t\t\"addrLine11\": \"38.7578\"\r\n\t\t\t\t},\r\n\t\t\t\t\"mediumType\": \"address\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"contactType\": \"permanentAddress\",\r\n\t\t\t\t\t\"addrLine1\": \"1\",\r\n\t\t\t\t\t\"addrLine2\": \"2\",\r\n\t\t\t\t\t\"addrLine3\": \"1\",\r\n\t\t\t\t\t\"addrLine4\": \"1\",\r\n\t\t\t\t\t\"addrLine5\": \"Addis Ababa\",\r\n\t\t\t\t\t\"addrLine6\": \"Shoa\",\r\n\t\t\t\t\t\"addrLine7\": \"Achefer\",\r\n\t\t\t\t\t\"addrLine8\": \"1000\",\r\n\t\t\t\t\t\"addrLine9\": \"P.O. Box 1519\",\r\n\t\t\t\t\t\"addrLine10\": \"8.9806\",\r\n\t\t\t\t\t\"addrLine11\": \"38.7578\"\r\n\t\t\t\t},\r\n\t\t\t\t\"mediumType\": \"address\"\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"account\": {\r\n\t\t\t\"chargingPattern\": \"1\",\r\n\t\t\t\"languageId\": \"1\",\r\n\t\t\t\"name\": \"test account\",\r\n\t\t\t\"remarks\": \"string\",\r\n\t\t\t\"title\": \"Mr\",\r\n\t\t\t\"preferredCurrency\": \"USSD\",\r\n\t\t\t\"contactMedium\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"mediumType\": \"address\",\r\n\t\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\t\"contactType\": \"billingAddress\",\r\n\t\t\t\t\t\t\"addrLine1\": \"house no 268\",\r\n\t\t\t\t\t\t\"addrLine2\": \"1000 ADDIS ABABA\",\r\n\t\t\t\t\t\t\"addrLine3\": \"Kebele 1, 1302/29\",\r\n\t\t\t\t\t\t\"addrLine4\": \"Addis Ababa\",\r\n\t\t\t\t\t\t\"addrLine5\": \"Addis Ababa\",\r\n\t\t\t\t\t\t\"addrLine6\": \"Shoa\",\r\n\t\t\t\t\t\t\"addrLine7\": \"Achefer\",\r\n\t\t\t\t\t\t\"addrLine8\": \"1000\",\r\n\t\t\t\t\t\t\"addrLine9\": \"P.O. Box 1519\",\r\n\t\t\t\t\t\t\"addrLine10\": \"8.9806\",\r\n\t\t\t\t\t\t\"addrLine11\": \"38.7578\"\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\t\t\t]\r\n\t\t}\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/transfer-of-service",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"transfer-of-service"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transfer_of_Service no plan change",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "62388276",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"orderType\": \"TransferOfService\",\r\n\t\"description\": \"Transfer Of Service Order\",\r\n\t\"serviceManagement\": {\r\n\t\t\"serviceId\": \"251700400211\",\r\n\t\t\"depositTransfer\": \"0\",\r\n\t\t\"osCreditBalTransfer\": \"0\"\r\n\t\t\r\n\t},\r\n\t\"profile\": {\r\n\t\t\"birthDate\": \"18-04-1987\",\r\n        \"localizedBirthDate\": \"21-01-1992\",\r\n\t\t\"familyName\": \"Dink\",\r\n\t\t\"middleName\": \"delvin\",\r\n\t\t\"givenName\": \"john\",\r\n\t\t\"nationality\": \"3\",\r\n\t\t\"title\": \"1\",\r\n\t\t\"partyCharacteristic\": [\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"profileType\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"0\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"subscriberCategory\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"11\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"subscriberSubCategory\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"111\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"biometricId\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"32132434324\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"minorFlag\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"1\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"paymentPreference\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"2,1\"\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"languageAbility\": [\r\n\t\t\t{\r\n\t\t\t\t\"languageCode\": \"1\"\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"attachments\": [\r\n\t\t\t{\r\n\t\t\t\t\"description\": \"test attachment\",\r\n\t\t\t\t\"mimeType\": \"test\",\r\n\t\t\t\t\"name\": \"test doc\",\r\n\t\t\t\t\"url\": \"test url\",\r\n\t\t\t\t\"kycReferenceId\": \"121232329991\"\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"contactMedium\": [\r\n\t\t\t{\r\n\t\t\t\t\"preferred\": false,\r\n\t\t\t\t\"mediumType\": \"telephoneNumber\",\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"phoneNumber\": \"9381231283213\",\r\n\t\t\t\t\t\"contactType\": \"smsNumber\"\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"preferred\": false,\r\n\t\t\t\t\"mediumType\": \"telephoneNumber\",\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"faxNumber\": \"11231283213\",\r\n\t\t\t\t\t\"contactType\": \"faxNumber\"\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"contactType\": \"alternateSmsNumber\",\r\n\t\t\t\t\t\"altPhoneNumber\": \"9738646475\"\r\n\t\t\t\t},\r\n\t\t\t\t\"mediumType\": \"telephoneNumber\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"preferred\": false,\r\n\t\t\t\t\"mediumType\": \"emailAddress\",\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"emailAddress\": \"poornima.thota@6dtech.co.in\",\r\n\t\t\t\t\t\"contactType\": \"emailAddress\"\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"contactType\": \"residentialAddress\",\r\n\t\t\t\t\t\"addrLine1\": \"1\",\r\n\t\t\t\t\t\"addrLine2\": \"2\",\r\n\t\t\t\t\t\"addrLine3\": \"1\",\r\n\t\t\t\t\t\"addrLine4\": \"1\",\r\n\t\t\t\t\t\"addrLine5\": \"Addis Ababa\",\r\n\t\t\t\t\t\"addrLine6\": \"Shoa\",\r\n\t\t\t\t\t\"addrLine7\": \"Achefer\",\r\n\t\t\t\t\t\"addrLine8\": \"1000\",\r\n\t\t\t\t\t\"addrLine9\": \"P.O. Box 1519\",\r\n\t\t\t\t\t\"addrLine10\": \"8.9806\",\r\n\t\t\t\t\t\"addrLine11\": \"38.7578\"\r\n\t\t\t\t},\r\n\t\t\t\t\"mediumType\": \"address\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"contactType\": \"permanentAddress\",\r\n\t\t\t\t\t\"addrLine1\": \"1\",\r\n\t\t\t\t\t\"addrLine2\": \"2\",\r\n\t\t\t\t\t\"addrLine3\": \"1\",\r\n\t\t\t\t\t\"addrLine4\": \"1\",\r\n\t\t\t\t\t\"addrLine5\": \"Addis Ababa\",\r\n\t\t\t\t\t\"addrLine6\": \"Shoa\",\r\n\t\t\t\t\t\"addrLine7\": \"Achefer\",\r\n\t\t\t\t\t\"addrLine8\": \"1000\",\r\n\t\t\t\t\t\"addrLine9\": \"P.O. Box 1519\",\r\n\t\t\t\t\t\"addrLine10\": \"8.9806\",\r\n\t\t\t\t\t\"addrLine11\": \"38.7578\"\r\n\t\t\t\t},\r\n\t\t\t\t\"mediumType\": \"address\"\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"account\": {\r\n\t\t\t\"chargingPattern\": \"1\",\r\n\t\t\t\"languageId\": \"1\",\r\n\t\t\t\"name\": \"test account\",\r\n\t\t\t\"remarks\": \"string\",\r\n\t\t\t\"title\": \"Mr\",\r\n\t\t\t\"preferredCurrency\": \"USSD\",\r\n\t\t\t\"contactMedium\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"mediumType\": \"address\",\r\n\t\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\t\"contactType\": \"billingAddress\",\r\n\t\t\t\t\t\t\"addrLine1\": \"house no 268\",\r\n\t\t\t\t\t\t\"addrLine2\": \"1000 ADDIS ABABA\",\r\n\t\t\t\t\t\t\"addrLine3\": \"Kebele 1, 1302/29\",\r\n\t\t\t\t\t\t\"addrLine4\": \"Addis Ababa\",\r\n\t\t\t\t\t\t\"addrLine5\": \"Addis Ababa\",\r\n\t\t\t\t\t\t\"addrLine6\": \"Shoa\",\r\n\t\t\t\t\t\t\"addrLine7\": \"Achefer\",\r\n\t\t\t\t\t\t\"addrLine8\": \"1000\",\r\n\t\t\t\t\t\t\"addrLine9\": \"P.O. Box 1519\",\r\n\t\t\t\t\t\t\"addrLine10\": \"8.9806\",\r\n\t\t\t\t\t\t\"addrLine11\": \"38.7578\"\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\t\t\t]\r\n\t\t}\r\n\t},\r\n     \"payment\": {\r\n    \"upfrontPayment\": \"true\",\r\n    \"amount\": \"60.0\",\r\n    \"comment\": \"order payment\",\r\n    \"paymentChannel\": \"shop\",\r\n    \"orderCharges\": \"30.0\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/transfer-of-service",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"transfer-of-service"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PlanUpgradeDowngradeBP",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "62388276",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					},
+					{
+						"key": "languageid",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "source",
+						"value": "SLM",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "8f5c3fa3-db02-4f5f-ace0-e23421ee4325",
+						"type": "text"
+					},
+					{
+						"key": "userid",
+						"value": "8f5c3fa3-db02-4f5f-ace0-e23421ee4325",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "SLM409c38ge_TestTwo",
+						"type": "text"
+					},
+					{
+						"key": "teamid",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "txnid",
+						"value": "SLM409c38ge_TestTwo",
+						"type": "text"
+					},
+					{
+						"key": "useremail",
+						"value": "akshaypramod107@gmail.com",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"category\": \"B2C product order\",\r\n    \"orderType\": \"PlanUpgradeDowngrade\",\r\n    \"description\": \"Product Order illustration sample\",\r\n    \"saFormId\": \"SA_28032025115652614\",\r\n    \"shopId\": \"S07\",\r\n    \"externalId\": \"PO-456\",\r\n    \"priority\": \"1\",\r\n    \"channel\": [\r\n        {\r\n            \"id\": \"1\",\r\n            \"name\": \"CRM\",\r\n            \"role\": \"Used channel for order capture\"\r\n        }\r\n    ],\r\n    \"payment\": {\r\n        \"amount\": \"1199\",\r\n        \"upfrontPayment\": \"true\",\r\n        \"isPaymentCollected\": \"false\",\r\n        \"paymentChannel\": \"shop\"\r\n    },\r\n    \"sourceNode\": \"CRM\",\r\n    \"serviceManagement\": {\r\n        \"serviceGroups\": [\r\n            {\r\n                \"services\": [\r\n                    {\r\n                        \"serviceId\": \"251700501782\",\r\n                        \"serviceAccessTechnology\": \"P2MP\",\r\n                        \"serviceOffering\": \"BIA\",\r\n                        \"serviceOfferingID\": \"83\",\r\n                        \"serviceOfferingDesc\": \"AirFiber Business Internet\",\r\n                        \"depositReqd\": false,\r\n                        \"creditLimitUpdateReqd\": false\r\n                    }\r\n                ],\r\n                \"subscriptions\": [\r\n                    {\r\n                        \"planDesc\": \"Prepaid AirFiber Business Internet\",\r\n                        \"planType\": \"0\",\r\n                        \"autoRenewal\": \"1\",\r\n                        \"somCallRqd\": false,\r\n                        \"esbCallRqd\": false,\r\n                        \"commonAddon\": false,\r\n                        \"mandatoryAddon\": false,\r\n                        \"activationMode\": \"nextMonth\",\r\n                        \"planId\": \"1549\",\r\n                        \"planName\": \"Prepaid AirFiber Business Internet\"\r\n                    },\r\n                    {\r\n                        \"planDesc\": \"Prepaid AirFiber Business Internet Addon\",\r\n                        \"planType\": \"1\",\r\n                        \"charges\": [\r\n                            {\r\n                                \"upcChargeName\": \"Airfiber Prepaid BI Addon POP\",\r\n                                \"upcChargeId\": \"2042\",\r\n                                \"quantity\": \"1\",\r\n                                \"amount\": \"1199\",\r\n                                \"prorataEnabled\": false,\r\n                                \"chargeDesc\": \"Airfiber Prepaid BI Addon POP\",\r\n                                \"overridden\": \"0\",\r\n                                \"upcPriceCategory\": \"8\",\r\n                                \"chargeOverridden\": false\r\n                            },\r\n                            {\r\n                                \"upcChargeName\": \"Prepaid Installation Charges BI P2MP\",\r\n                                \"upcChargeId\": \"2043\",\r\n                                \"quantity\": \"1\",\r\n                                \"amount\": \"0\",\r\n                                \"prorataEnabled\": false,\r\n                                \"chargeDesc\": \"Prepaid Installation Charges BI P2MP\",\r\n                                \"overridden\": \"0\",\r\n                                \"upcPriceCategory\": \"20\",\r\n                                \"chargeOverridden\": false\r\n                            }\r\n                        ],\r\n                        \"autoRenewal\": \"1\",\r\n                        \"somCallRqd\": false,\r\n                        \"esbCallRqd\": false,\r\n                        \"commonAddon\": false,\r\n                        \"mandatoryAddon\": false,\r\n                        \"characteristics\": [\r\n                            {\r\n                                \"name\": \"paymentMode\",\r\n                                \"value\": \"upfront\"\r\n                            },\r\n                            {\r\n                                \"name\": \"bandWidthName\",\r\n                                \"value\": \"FTTH - 10 Mbps\"\r\n                            },\r\n                            {\r\n                                \"name\": \"Bandwidth\",\r\n                                \"value\": \"34\"\r\n                            }\r\n                        ],\r\n                        \"activationMode\": \"nextMonth\",\r\n                        \"planId\": \"1548\",\r\n                        \"planName\": \"Prepaid AirFiber Business Internet Addon\"\r\n                    }\r\n                ]\r\n            }\r\n        ],\r\n        \"waveOffFlag\": false\r\n    },\r\n    \"approvalDetails\": {\r\n        \"approvalReqd\": \"false\"\r\n    },\r\n    \"saFormFilePath\": \"/documents/\",\r\n    \"saFormFileName\": \"SA_Form_SA_28032025115652614.pdf\",\r\n    \"saFormDetails\": {\r\n        \"opportunityName\": \"Individual Account Opportunity\",\r\n        \"opportunityOwnerUser\": \"8f5c3fa3-db02-4f5f-ace0-e23421ee4325\",\r\n        \"opportunityOwnerEmailId\": \"akshaypramod107@gmail.com\",\r\n        \"activityType\": \"2\"\r\n    },\r\n    \"partnerId\": \"Indirect \",\r\n    \"partnerName\": \"Team Lead\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/plan-upgrade-downgrade",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"plan-upgrade-downgrade"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transfer_of_Service existing account",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "eKYC",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "62388276",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n  \"orderType\" : \"TransferOfService\",\r\n    \"description\" : \"Product Order illustration sample\",\r\n    \"externalId\" : \"PO-456\",\r\n    \"requestedCompletionDate\" : \"2021-12-22T17:02:28.968Z\",\r\n    \"requestedStartDate\" : \"2021-12-22T17:02:28.968Z\",\r\n    \"serviceManagement\" : {\r\n      \"serviceId\" : \"251700400251\",\r\n      \"destinationProfileId\" : \"98799\",\r\n      \"destinationAccountId\" : \"ET37306\"\r\n    }\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/transfer-of-service",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"transfer-of-service"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TOS_Approval",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "eKYC",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "62388276",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"orderType\": \"TransferOfService\",\r\n\t\"description\": \"Transfer Of Service Order\",\r\n\t\"serviceManagement\": {\r\n\t\t\"serviceId\": \"251700400396\",\r\n\t\t\"depositTransfer\": \"0\",\r\n        \"deposit\": {\r\n\t\t\t\"comment\": \"deposit\",\r\n\t\t\t\"currencyCode\": \"USD\",\r\n\t\t\t\"depositAmount\": \"10.00\"\r\n\t\t},\r\n\t\t\"osCreditBalTransfer\": \"0\",\r\n\t\t\"subscriptions\": [\r\n\t\t\t{\r\n\t\t\t\t\"planId\": \"385\",\r\n\t\t\t\t\"planType\": \"0\"\t\t\t}\r\n\t\t]\r\n\t},\r\n\t\"profile\": {\r\n\t\t\"birthDate\": \"18-04-1987\",\r\n        \"localizedBirthDate\": \"21-01-1992\",\r\n\t\t\"familyName\": \"Dink\",\r\n\t\t\"middleName\": \"delvin\",\r\n\t\t\"givenName\": \"john\",\r\n\t\t\"nationality\": \"3\",\r\n\t\t\"title\": \"1\",\r\n\t\t\"partyCharacteristic\": [\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"profileType\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"1\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"subscriberCategory\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"11\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"subscriberSubCategory\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"111\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"biometricId\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"32132434324\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"minorFlag\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"1\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"name\": \"paymentPreference\",\r\n\t\t\t\t\"valueType\": \"string\",\r\n\t\t\t\t\"value\": \"2,1\"\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"languageAbility\": [\r\n\t\t\t{\r\n\t\t\t\t\"languageCode\": \"1\"\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"attachments\": [\r\n\t\t\t{\r\n\t\t\t\t\"description\": \"test attachment\",\r\n\t\t\t\t\"mimeType\": \"test\",\r\n\t\t\t\t\"name\": \"test doc\",\r\n\t\t\t\t\"url\": \"test url\",\r\n\t\t\t\t\"kycReferenceId\": \"121232329991\"\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"contactMedium\": [\r\n\t\t\t{\r\n\t\t\t\t\"preferred\": false,\r\n\t\t\t\t\"mediumType\": \"telephoneNumber\",\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"phoneNumber\": \"9381231283213\",\r\n\t\t\t\t\t\"contactType\": \"smsNumber\"\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"preferred\": false,\r\n\t\t\t\t\"mediumType\": \"telephoneNumber\",\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"faxNumber\": \"11231283213\",\r\n\t\t\t\t\t\"contactType\": \"faxNumber\"\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"contactType\": \"alternateSmsNumber\",\r\n\t\t\t\t\t\"altPhoneNumber\": \"9738646475\"\r\n\t\t\t\t},\r\n\t\t\t\t\"mediumType\": \"telephoneNumber\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"preferred\": false,\r\n\t\t\t\t\"mediumType\": \"emailAddress\",\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"emailAddress\": \"poornima.thota@6dtech.co.in\",\r\n\t\t\t\t\t\"contactType\": \"emailAddress\"\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"contactType\": \"residentialAddress\",\r\n\t\t\t\t\t\"addrLine1\": \"1\",\r\n\t\t\t\t\t\"addrLine2\": \"2\",\r\n\t\t\t\t\t\"addrLine3\": \"1\",\r\n\t\t\t\t\t\"addrLine4\": \"1\",\r\n\t\t\t\t\t\"addrLine5\": \"Addis Ababa\",\r\n\t\t\t\t\t\"addrLine6\": \"Shoa\",\r\n\t\t\t\t\t\"addrLine7\": \"Achefer\",\r\n\t\t\t\t\t\"addrLine8\": \"1000\",\r\n\t\t\t\t\t\"addrLine9\": \"P.O. Box 1519\",\r\n\t\t\t\t\t\"addrLine10\": \"8.9806\",\r\n\t\t\t\t\t\"addrLine11\": \"38.7578\"\r\n\t\t\t\t},\r\n\t\t\t\t\"mediumType\": \"address\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\"contactType\": \"permanentAddress\",\r\n\t\t\t\t\t\"addrLine1\": \"1\",\r\n\t\t\t\t\t\"addrLine2\": \"2\",\r\n\t\t\t\t\t\"addrLine3\": \"1\",\r\n\t\t\t\t\t\"addrLine4\": \"1\",\r\n\t\t\t\t\t\"addrLine5\": \"Addis Ababa\",\r\n\t\t\t\t\t\"addrLine6\": \"Shoa\",\r\n\t\t\t\t\t\"addrLine7\": \"Achefer\",\r\n\t\t\t\t\t\"addrLine8\": \"1000\",\r\n\t\t\t\t\t\"addrLine9\": \"P.O. Box 1519\",\r\n\t\t\t\t\t\"addrLine10\": \"8.9806\",\r\n\t\t\t\t\t\"addrLine11\": \"38.7578\"\r\n\t\t\t\t},\r\n\t\t\t\t\"mediumType\": \"address\"\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"account\": {\r\n\t\t\t\"chargingPattern\": \"1\",\r\n\t\t\t\"languageId\": \"1\",\r\n\t\t\t\"name\": \"test account\",\r\n\t\t\t\"remarks\": \"string\",\r\n\t\t\t\"title\": \"Mr\",\r\n\t\t\t\"preferredCurrency\": \"USSD\",\r\n\t\t\t\"contactMedium\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"mediumType\": \"address\",\r\n\t\t\t\t\t\"characteristic\": {\r\n\t\t\t\t\t\t\"contactType\": \"billingAddress\",\r\n\t\t\t\t\t\t\"addrLine1\": \"house no 268\",\r\n\t\t\t\t\t\t\"addrLine2\": \"1000 ADDIS ABABA\",\r\n\t\t\t\t\t\t\"addrLine3\": \"Kebele 1, 1302/29\",\r\n\t\t\t\t\t\t\"addrLine4\": \"Addis Ababa\",\r\n\t\t\t\t\t\t\"addrLine5\": \"Addis Ababa\",\r\n\t\t\t\t\t\t\"addrLine6\": \"Shoa\",\r\n\t\t\t\t\t\t\"addrLine7\": \"Achefer\",\r\n\t\t\t\t\t\t\"addrLine8\": \"1000\",\r\n\t\t\t\t\t\t\"addrLine9\": \"P.O. Box 1519\",\r\n\t\t\t\t\t\t\"addrLine10\": \"8.9806\",\r\n\t\t\t\t\t\t\"addrLine11\": \"38.7578\"\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\t\t\t]\r\n\t\t}\r\n\t},\r\n\t\"payment\": {\r\n\t\t\"amount\": \"100.00\",\r\n\t\t\"totalAmount\": \"100.00\",\r\n\t\t\"orderCharges\": \"30.00\",\r\n\t\t\"totalDeposit\": \"10.00\",\r\n\t\t\"totalDeviceCharges\": \"60.00\",\r\n        \"upfrontPayment\": \"true\",\r\n        \"paymentReceived\":\"false\"\r\n\r\n\t},\r\n        \"approvalDetails\":{\r\n\"approvalReqd\":\"true\"\r\n}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/transfer-of-service",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"transfer-of-service"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book Deposit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "SND",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "62388276",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderType\": \"BookDeposit\",\r\n  \"description\": \"Product Order illustration sample\",\r\n  \"externalId\": \"PO-456\",\r\n  \"requestedCompletionDate\": \"2022-01-07T05:45:59.525Z\",\r\n  \"requestedStartDate\": \"2022-01-07T05:45:59.525Z\",\r\n  \"deposit\": {\r\n    \"serviceId\": \"251700400135\",\r\n    \"depositAmount\": \"700.00\",\r\n    \"bookingId\": \"1\",\r\n    \"depositType\": \"1\",\r\n    \"currencyCode\": \"USD\",\r\n\t\t\"upfrontPayment\": \"true\",\r\n    \"comment\": \"service deposit\",\r\n    \"status\": \"0\",\r\n\t\t\"paymentChannel\": \"bank\",\r\n    \"paymentDetails\": [\r\n      {\r\n       \"paymentMode\" : \"3\",\r\n\t\t\t\t\"cardNumber\":\"34567\",\r\n\t\t\t\t\"amountPaid\": \"700.00\"\r\n      }\r\n    ]\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/book-deposit",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"book-deposit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create document",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "62388276",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"CreateDocument\",\r\n    \"documentDetails\": {\r\n        \"documentName\": \"ABCD.txt\",\r\n        \"kycReferenceId\": \"1234524\",\r\n        \"subscriberId\": \"107593\",\r\n        \"subscriberLevel\": \"0\",\r\n        \"identificationNumber\": \"54648\",\r\n        \"identificationType\": \"101\",\r\n        \"isIdDocument\": \"true\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/create-document",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"create-document"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update document",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "SND",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "62388276",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderType\": \"UpdateDocument\",\r\n\r\n  \"documentDetails\": {\r\n    \"kycReferenceId\": \"1234524\",\r\n    \"modifiedUser\": \"admin\",\r\n    \"subscriberId\": \"107593\",\r\n    \"isIdDocument\": \"true\",\r\n    \"subscriberLevel\": \"0\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/update-document",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"update-document"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete document",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "SND",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "62388276",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderType\": \"DeleteDocument\",\r\n  \"documentDetails\": {\r\n    \"kycReferenceId\": \"1234524\",\r\n    \"subscriberId\": \"107593\",\r\n    \"subscriberLevel\": \"0\",\r\n    \"isIdDocument\": \"true\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/delete-document",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"delete-document"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create CUG",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "62388276",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "admin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderType\": \"CreateGroupAccount\",\r\n  \"groupManagement\": {\r\n    \"accountId\": \"ET46162\",\r\n    \"groupName\": \"test group\",\r\n\t\t\"groupDesc\" :\"creating_grp\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/create-group",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"create-group"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete CUG",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "62388276",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"DeleteGroupAccount\",\r\n    \"groupManagement\": {\r\n        \"groupId\": \"10200\",\r\n        \"deleteType\": \"1\",\r\n        \"groupSeqId\": \"11810\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/delete-group",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"delete-group"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add group member - CUG",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "62388276",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderType\": \"AddMemberToGroup\",\r\n  \"groupManagement\": {\r\n    \"groupAccountId\": \"ET46162\",\r\n\t\t\"serviceId\": \"251700400391\",\r\n    \"groupId\": \"10217\",\r\n    \"groupSeqId\":\"11827\",\r\n\t\t\"subscriptions\": [\r\n      {\r\n        \"planId\": \"245\"\r\n\t\t\t}\r\n\t\t\t]\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/add-member",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"add-member"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove group member - CUG Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "62388276",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"orderType\":\"RemoveMemberFromGroup\",\r\n\t\"groupManagement\":{\r\n\t\t\"serviceId\":\"251700400391\",\r\n\t\t\"groupId\":\"10217\",\r\n\t\t\"memberSeqId\":\"258\",\r\n\t\t\"deleteType\":\"1\"\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/delete-member",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"delete-member"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Credit Limit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "SND",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "62388276",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"UpdateCreditLimit\",\r\n    \"description\": \"Update Credit Limit Order\",\r\n    \"serviceManagement\": {\r\n        \"serviceId\": \"251700400137\",\r\n        \"creditLimitInfo\": {\r\n            \"creditLimit\": \"50000\",\r\n            \"creditClass\": \"B\",\r\n            \"comment\": \"updating credit limit\"\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/update-credit-limit",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"update-credit-limit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Make Payment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "SND",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "11217916251239851",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "snduser",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"MakePayment\",\r\n    \"description\": \"BundleSale for Order: 11217916251239851\",\r\n    \"externalId\": \"11217916251239851\",\r\n    \"requestedCompletionDate\": \"2025-06-17T07:02:06.332z\",\r\n    \"requestedStartDate\": \"2025-06-17T07:02:01.000+00:00\",\r\n    \"payment\": {\r\n        \"amount\": \"2199\",\r\n        \"upfrontPayment\": \"true\",\r\n        \"isPaymentCollected\": \"true\",\r\n        \"comment\": \"BundleSale for Payment: 185793\",\r\n        \"currencyCode\": \"ETB\",\r\n        \"totalAmount\": \"2199\",\r\n        \"transactionId\": \"11217916251239851\",\r\n        \"paymentDetail\": [\r\n            {\r\n                \"paymentMode\": \"3\",\r\n                \"amountPaid\": \"2199.0\",\r\n                \"referenceExternalId\": \"11217916251239851\"\r\n            }\r\n        ],\r\n        \"collectionSourceType\": \"Normal\",\r\n        \"collectionId\": \"fgirma1\",\r\n        \"accountId\": \"ET81158\",\r\n        \"shopId\": \"S07\",\r\n        \"serviceId\": \"251700501779\",\r\n        \"isRenewal\": \"true\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/make-payment",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"make-payment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Make Payment Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "TIBCO-BANK",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "555555000",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"MakePayment\",\r\n    \"description\": \"CBE-BillPayment for Payment: FHDFJHJDFGRTY12345\",\r\n    \"externalId\": \"FHDFJHJDFGRTY12345\",\r\n    \"payment\": {\r\n        \"accountId\": \"ET71768\",\r\n        \"amount\": \"170.00\",\r\n        \"totalAmount\": \"170.00\",\r\n        \"comment\": \"CBE-BillPayment for Payment: FHDFJHJDFGRTY12345\",\r\n        \"currencyCode\": \"Birr\",\r\n        \"paymentDate\": \"20150504202020\",\r\n        \"transactionId\": \"FHDFJHJDFGRTY12345\",\r\n        \"paymentDetail\": [\r\n            {\r\n                \"paymentMode\": \"7\",\r\n                \"referenceExternalId\": \"FHDFJHJDFGRTY12345\",\r\n                \"amountPaid\": \"170.00\",\r\n                \"cardNumber\": \"12asdf34\",\r\n                \"bankCode\": \"IDB00013\",\r\n                \"bankName\": \"IDBC\",\r\n                \"accountHolderName\": \"CSK\",\r\n                \"debitAccountNumber\": \"9986748\"\r\n            }\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/make-payment",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"make-payment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Resume service",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "eKYC",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "62388276",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderType\": \"ResumeService\",\r\n  \"serviceManagement\": {\r\n    \"serviceId\" : \"251700400250\",\r\n    \"reason\" : \"1\"\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/resume-service",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"resume-service"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Loyalty Redemption",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "62388276",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderType\": \"LoyaltyPointsRedemption\",\r\n  \"description\": \"Product Order illustration sample\",\r\n  \"externalId\": \"PO-456\",\r\n  \"requestedCompletionDate\": \"2022-09-26T06:53:06.498Z\",\r\n  \"requestedStartDate\": \"2022-09-27T12:00:00.000Z\",\r\n  \"loyaltyManagement\": {\r\n    \"customerId\": \"251873063423\",\r\n    \"points\": \"10\",\r\n    \"redemptionType\": \"voice\",\r\n    \"loyaltyProductId\": \"453\",\r\n        \"amount\":\"50.90\",\r\n        \"unit\":\"Bytes\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/loyalty-redemption",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"loyalty-redemption"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Loyalty Account Update",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "eKYC",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "62388276",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderType\": \"LoyaltyAccountUpdate\",\r\n  \"description\": \"Product Order illustration sample\",\r\n  \"externalId\": \"PO-456\",\r\n  \"requestedCompletionDate\": \"2022-11-08T06:25:15.604Z\",\r\n  \"requestedStartDate\": \"2022-11-08T06:25:15.604Z\",\r\n  \"loyaltyManagement\": {\r\n    \"customerId\": \"251821333536\",\r\n    \"redemptionEnabled\": \"true\",\r\n    \"transferEnabled\": \"true\",\r\n    \"comment\": \"points barring\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/loyalty-account-update",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"loyalty-account-update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Loyalty DeEnrollment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "eKYC",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "62388276",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderType\": \"LoyaltyAccountUpdate\",\r\n  \"description\": \"Product Order illustration sample\",\r\n  \"externalId\": \"PO-456\",\r\n  \"requestedCompletionDate\": \"2022-11-08T06:25:15.604Z\",\r\n  \"requestedStartDate\": \"2022-11-08T06:25:15.604Z\",\r\n  \"loyaltyManagement\": {\r\n    \"customerId\": \"251821333536\",\r\n    \"redemptionEnabled\": \"true\",\r\n    \"transferEnabled\": \"true\",\r\n    \"comment\": \"points barring\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/loyalty-account-update",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"loyalty-account-update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Loyalty Enrollment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "eKYC",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "62388276",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderType\": \"LoyaltyAccountUpdate\",\r\n  \"description\": \"Product Order illustration sample\",\r\n  \"externalId\": \"PO-456\",\r\n  \"requestedCompletionDate\": \"2022-11-08T06:25:15.604Z\",\r\n  \"requestedStartDate\": \"2022-11-08T06:25:15.604Z\",\r\n  \"loyaltyManagement\": {\r\n    \"customerId\": \"251821333536\",\r\n    \"redemptionEnabled\": \"true\",\r\n    \"transferEnabled\": \"true\",\r\n    \"comment\": \"points barring\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/loyalty-account-update",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"loyalty-account-update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Credit Refund type 1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "eKYC",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "62388276",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"creditRefund\" : {\r\n    \"refundRequested\" : \"3\",\r\n    \"chargeCode\" : \"1\",\r\n    \"comment\" : \"Test1\",\r\n    \"accountId\" : \"6dbss43845\",\r\n        \"refundType\":\"1\"\r\n  },\r\n  \"orderType\" : \"CreditRefund\",\r\n  \"sourceNode\" : \"CRM\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/credit-refund",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"credit-refund"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Credit Refund type 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "eKYC",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "62388276",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"creditRefund\" : {\r\n    \"refundRequested\" : \"10\",\r\n    \"chargeCode\" : \"1\",\r\n    \"comment\" : \"Test1\",\r\n    \"accountId\" : \"6dbss44201\",\r\n        \"serviceId\" : \"251821111281\",\r\n        \"refundType\":\"2\"\r\n  },\r\n  \"orderType\" : \"CreditRefund\",\r\n  \"sourceNode\" : \"CRM\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/credit-refund",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"credit-refund"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Suspend service",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "62388276",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderType\" : \"\",\r\n  \"description\" : \"safe custody call from billing\",\r\n  \"externalId\" : \"241972\",\r\n  \"requestedCompletionDate\" : \"2022-01-31T09:56:32.062Z\",\r\n  \"requestedStartDate\" : \"2022-01-31T09:56:32.062Z\",\r\n  \"serviceManagement\" : {\r\n    \"serviceId\" : \"\"\r\n    \r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/suspend-service",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"suspend-service"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Gifting",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "eKYC",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "62388276",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"Gifting\",\r\n    \"orderItem\": [\r\n        {\r\n            \"id\": \"1\",\r\n            \"action\": \"add\",\r\n            \"itemCharacteristic\": [\r\n                {\r\n                    \"name\": \"beneficiary\",\r\n                    \"valueType\": \"string\",\r\n                    \"value\": \"251700400363\"\r\n                },\r\n                {\r\n                    \"name\": \"note\",\r\n                    \"valueType\": \"string\",\r\n                    \"value\": \"this is a gift\"\r\n                }\r\n            ],\r\n            \"service\": {\r\n                \"id\": \"251700400269\",\r\n                \"name\": \"GSM Service\"\r\n            },\r\n            \"product\": {\r\n                \"productSpecification\": {\r\n                    \"version\": \"1\"\r\n                }\r\n            },\r\n            \"productOffering\": {\r\n                \"id\": \"430\",\r\n                \"name\": \"TMF 25\"\r\n            }\r\n        }\r\n    ]\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/gifting",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"gifting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "payment callback",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "6238827621",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"orderId\": \"1032250929152802816\",\r\n\t\"externalId\": \"PO-456\",\r\n\t\"payment\": {\r\n\t\t\"accountId\": \"ET37388\",\r\n\t\t\"amount\": \"220.00\",\r\n\t\t\"totalAmount\": \"220.00\",\r\n\t\t\"comment\": \"order payment\",\r\n\t\t\"currencyCode\": \"USD\",\r\n\t\t\"collectionDate\": \"2022-01-31T14:31:40.485Z\",\r\n\t\t\"paymentDate\": \"2022-01-31T14:31:40.485Z\",\r\n\t\t\"transactionId\": \"13213234234\",\r\n\t\t\"paymentDetail\": [\r\n\t\t\t{\r\n\t\t\t\t\"paymentMode\": \"6\",\r\n\t\t\t\t\"referenceExternalId\": \"4604\",\r\n\t\t\t\t\"amountPaid\": \"220.00\"\r\n\t\t\t}\r\n\t\t]\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-orchestrator/orders/payment-callback",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-orchestrator",
+						"orders",
+						"payment-callback"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "move to fwa",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "6238827621",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"orderType\": \"MoveToFWA\",\r\n\t\"serviceManagement\": {\r\n\t\t\"serviceId\": \"251714199375\",\r\n\t\t\"primaryNumber\": \"251821111432\"\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-orchestrator/order-service/orders/move-to-fwa",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-orchestrator",
+						"order-service",
+						"orders",
+						"move-to-fwa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateprimaryno",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "channel",
+						"value": "CRM",
+						"type": "text"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "6238827621",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "crmadmin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderType\": \"UpdatePrimaryNumber\",\r\n    \"description\": \"Product Order illustration sample\",\r\n    \"externalId\": \"PO-456\",\r\n    \"requestedCompletionDate\": \"2022-09-28T06:37:01.806Z\",\r\n    \"requestedStartDate\": \"2022-09-28T06:37:01.806Z\",\r\n    \"serviceManagement\": {\r\n        \"serviceId\": \"251722000580\",\r\n        \"primaryNumber\": \"251821555133\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://com.bss.blueprint.lab/order-service/orders/update-primary-number",
+					"protocol": "http",
+					"host": [
+						"com",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"order-service",
+						"orders",
+						"update-primary-number"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch invoice BP",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Authorization",
+						"value": "Bearer c3VwZXJ1c2VyLUEqMTcxNTA3MDgzMTk1Nw=="
+					},
+					{
+						"key": "channel-id",
+						"value": "USSD"
+					},
+					{
+						"key": "username",
+						"value": "esbuser"
+					},
+					{
+						"key": "request-id",
+						"value": "dgfhjk6778890"
+					}
+				],
+				"url": {
+					"raw": "https://apigw.bss.blueprint.lab/InvoiceManagement/fetchInvoiceDetails?accountId=ET75033&dateFrom=2024-01-06&clearStatus=&dateTo=2024-05-07",
+					"protocol": "https",
+					"host": [
+						"apigw",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"InvoiceManagement",
+						"fetchInvoiceDetails"
+					],
+					"query": [
+						{
+							"key": "accountId",
+							"value": "ET75033"
+						},
+						{
+							"key": "dateFrom",
+							"value": "2024-01-06"
+						},
+						{
+							"key": "clearStatus",
+							"value": ""
+						},
+						{
+							"key": "dateTo",
+							"value": "2024-05-07"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch invoice bill",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accounttype",
+						"value": "1"
+					},
+					{
+						"key": "languageid",
+						"value": "1"
+					},
+					{
+						"key": "channel-id",
+						"value": "CRM"
+					},
+					{
+						"key": "accountseqid",
+						"value": "80898"
+					},
+					{
+						"key": "accountid",
+						"value": "ET75033"
+					},
+					{
+						"key": "subscriberlevel",
+						"value": "account"
+					},
+					{
+						"key": "request-id",
+						"value": "BILL11x1dzw_1715069662412"
+					}
+				],
+				"url": {
+					"raw": "https://bill.bss.blueprint.lab/InvoiceManagement/fetchInvoiceDetails?accountId=ET75033&dateFrom=06-01-2024&dateTo=07-05-2024",
+					"protocol": "https",
+					"host": [
+						"bill",
+						"bss",
+						"blueprint",
+						"lab"
+					],
+					"path": [
+						"InvoiceManagement",
+						"fetchInvoiceDetails"
+					],
+					"query": [
+						{
+							"key": "accountId",
+							"value": "ET75033"
+						},
+						{
+							"key": "dateFrom",
+							"value": "06-01-2024"
+						},
+						{
+							"key": "dateTo",
+							"value": "07-05-2024"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
