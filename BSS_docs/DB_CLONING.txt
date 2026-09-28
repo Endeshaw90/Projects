@@ -1,0 +1,39 @@
+Steps for cloning ===>>
+
+In Root [prefer primary DB server]
+>>mysqlsh
+
+\js
+
+\c ic_admin@10.3.174.24:3306 [password if asked : ic_admin@6Dtech]
+
+var c=dba.getCluster()
+
+c.status()
+
+c.rescan() [this will ask whether you want to join the member]
+
+c.removeInstance('mdc1-bss-adb09:3306') [use if need to remove the cluster member before cloning, else direct go for the command in line number 10]
+
+c.removeInstance('ic_admin@10.4.74.140:3306',{force: true}) [if the above command didn't worked due to queue]
+
+c.addInstance('ic_admin@10.4.74.132:3306',{recoveryMethod: 'CLONE'}) - [for full clone, else use command in line number 14]
+
+c.status()
+
+c.rescan() [Need to do once]
+ 
+FYR: c.addInstance("ic_admin@10.4.74.134:3306")
+ 
+c.addInstance('ic_admin@10.4.74.133:3306')
+
+c.forceQuorumUsingPartitionOf("et02-bss-adb01:3306")
+ 
+c.addInstance('ic_admin@et02-bss-adb02:3306',{recoveryMethod: 'CLONE'})
+
+c.rejoinInstance('ic_admin@10.4.74.140:3306')
+ 
+
+c.removeInstance('ic_admin@mdc1-bss-adb08:3306', {force: true})
+ 
+ SET GLOBAL group_replication_ip_allowlist='mdc1-bss-adb07,mdc1-bss-adb08,mdc1-bss-adb09,et01-bss-adb07,et01-bss-adb08,et01-bss-adb09,et02-bss-adb07,et02-bss-adb08,10.4.74.138,10.4.74.139,10.4.74.140,10.3.174.30,10.3.174.31';
